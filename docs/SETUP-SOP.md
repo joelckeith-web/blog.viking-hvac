@@ -1,7 +1,7 @@
 # Weather-Triggered Blog System — Setup SOP
 
-**Version:** 2.0
-**Last Updated:** March 2026
+**Version:** 3.0
+**Last Updated:** March 10, 2026
 **Purpose:** Step-by-step instructions for deploying this automated blog system for a new client.
 
 ---
@@ -63,14 +63,29 @@ git init
 gh repo create client-name-blog --private --source=. --push
 ```
 
-### 2.3 Generate GitHub Personal Access Token
+### 2.3 Generate GitHub Personal Access Token (Fine-Grained)
 
-1. Go to https://github.com/settings/tokens
-2. Click **Generate new token (classic)**
-3. Name: `client-name-blog-automation`
-4. Scopes: check `repo` (full control of private repos)
-5. Generate and **copy the token immediately** — you won't see it again
-6. Save it securely for the Vercel environment setup
+Use a **fine-grained token** (not classic) — it's more secure and can be scoped to specific repos.
+
+1. Go to **github.com → Settings → Developer settings → Personal access tokens → Fine-grained tokens**
+2. Click **"Generate new token"**
+3. Configure:
+   - **Token name:** `blog-automation` (one token can cover all blog projects)
+   - **Expiration:** 90 days (set a calendar reminder to rotate)
+   - **Resource owner:** Your GitHub account/org
+   - **Repository access:** Select **"Only select repositories"** → choose ALL blog repos (e.g., `blog.viking-hvac`, `blog.propertyprosmuncie`, future projects)
+   - **Permissions → Repository permissions:**
+     - **Contents:** Read and write (this is the ONLY permission needed)
+4. Click **"Generate token"** and copy it immediately
+5. Use the same token across all blog project Vercel deployments as `GITHUB_TOKEN`
+
+**Key advantages of one shared fine-grained token:**
+- Single token to manage across all blog projects
+- Minimal permissions (Contents only — not full repo access)
+- Easy to add new repos later (edit token → add repo)
+- When it expires, update once in each Vercel project
+
+**Token format:** Fine-grained tokens start with `github_pat_` (vs classic tokens that start with `ghp_`)
 
 ---
 
@@ -102,12 +117,12 @@ Required variables:
 | Variable | Description | Example |
 |----------|-------------|---------|
 | `ANTHROPIC_API_KEY` | Claude API key | `sk-ant-...` |
-| `GITHUB_TOKEN` | GitHub PAT with repo scope | `ghp_...` |
+| `GITHUB_TOKEN` | Fine-grained GitHub PAT (Contents: R/W) | `github_pat_...` |
 | `GITHUB_OWNER` | GitHub username or org | `joelckeith-web` |
-| `GITHUB_REPO` | Repository name | `blog.propertyprosmuncie` |
+| `GITHUB_REPO` | Repository name | `blog.viking-hvac` |
 | `GITHUB_BRANCH` | Target branch (use `main`) | `main` |
-| `NEXT_PUBLIC_SITE_URL` | Blog subdomain URL | `https://blog.propertyprosmuncie.com` |
-| `NEXT_PUBLIC_MAIN_SITE_URL` | Client's main site | `https://www.propertyprosmuncie.com` |
+| `NEXT_PUBLIC_SITE_URL` | Blog subdomain URL | `https://blog.viking-hvac.com` |
+| `NEXT_PUBLIC_MAIN_SITE_URL` | Client's main site | `https://www.viking-hvac.com` |
 | `CRON_SECRET` | Random secret for cron auth | (generated above) |
 
 Optional (for Google Indexing API):
@@ -147,12 +162,13 @@ The `vercel.json` file already contains the framework preset and cron schedule:
 }
 ```
 
-This runs every Sunday at 10:00 PM UTC (5:00 PM ET). Adjust the schedule as needed for the client's timezone.
+This runs every Monday at midnight UTC (Sunday 5:00 PM MST). Adjust the schedule as needed for the client's timezone.
 
 **Cron schedule reference:**
+- `0 0 * * 1` = Monday midnight UTC / Sunday 5 PM MST (weekly, current default)
+- `0 13 * * 1` = Monday 6:00 AM MST (13:00 UTC)
 - `0 22 * * 0` = Sunday 5:00 PM ET (10 PM UTC)
 - `0 14 * * 0` = Sunday 10:00 AM ET (2 PM UTC)
-- `0 22 * * 3` = Wednesday 5:00 PM ET
 
 ### 4.4 Configure Custom Domain
 
@@ -399,7 +415,7 @@ npm run generate:push
 ## 10. Ongoing Maintenance
 
 ### Automated Weekly Workflow
-1. **Sunday 5 PM ET:** Cron fires → weather fetched → blog generated → pushed to main → deployed → indexed
+1. **Monday midnight UTC (Sunday 5 PM MST):** Cron fires → weather fetched → blog generated → pushed to main → deployed → indexed
 2. **No human intervention needed** — system runs fully autonomously
 
 ### Monthly Tasks
@@ -423,7 +439,10 @@ npm run generate:push
 | Cron not firing | Check Vercel dashboard → Cron Jobs tab. Verify `CRON_SECRET` matches. |
 | Weather API error | NWS API occasionally has outages. Check https://api.weather.gov status. The cron will retry next week. |
 | Blog content too short | Adjust word count range in `content-generator.ts` system prompt. |
-| GitHub push fails | Verify `GITHUB_TOKEN` hasn't expired. Regenerate if needed. |
+| GitHub push fails (403) | Fine-grained PAT missing Contents: R/W permission. Edit token at github.com → Settings → Developer settings. See 11.17. |
+| GitHub push fails (401) | Token expired. Regenerate and update in Vercel env vars. |
+| Cron returns HTML not JSON | Wrong endpoint path. Verify `vercel.json` path matches `app/api/cron/*/route.ts`. See 11.18. |
+| CLI script: API key undefined | Missing `dotenv` or eager client init. See 11.15. |
 | Build fails on Vercel | Check build logs. Common issues: missing env vars, TypeScript errors in generated content. |
 | SEO schemas not showing | Test with https://search.google.com/test/rich-results — check for JSON-LD errors. |
 | Indexing API not working | Verify service account is added as Owner in Search Console. Check env vars. |
@@ -763,6 +782,107 @@ images: {
 - `SchemaMarkup.tsx` — separate named exports: `LocalBusinessSchema`, `WebSiteSchema`, `ArticleSchema`, `FaqSchema`, `BreadcrumbSchema`
 - `app/not-found.tsx` — branded 404 page
 
+### 11.15 CLI Scripts — `dotenv` Required for `.env.local` Loading
+
+**Problem:** The `scripts/generate-blog.ts` script runs via `npx tsx` outside of Next.js. Unlike `next dev` or `next build`, tsx does NOT auto-load `.env.local`. The Anthropic API key is undefined, causing `401 Unauthorized` errors from Claude.
+
+**Fix:** Install `dotenv` and load `.env.local` explicitly at the TOP of CLI scripts:
+
+```bash
+npm install dotenv
+```
+
+```ts
+// scripts/generate-blog.ts — MUST be first two lines
+import dotenv from "dotenv";
+dotenv.config({ path: ".env.local" });
+```
+
+**Critical timing issue:** The Anthropic client must be lazily initialized AFTER dotenv loads. If you create the client at module scope (`const anthropic = new Anthropic()`), it reads the API key at import time — before dotenv runs. Use a factory function instead:
+
+```ts
+// lib/content-generator.ts — WRONG (reads key at import time)
+const anthropic = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
+
+// lib/content-generator.ts — CORRECT (reads key at call time)
+function getAnthropicClient() {
+  return new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
+}
+```
+
+**Template rule:** Always use lazy client initialization in `content-generator.ts` so both Next.js (auto-loads env) and CLI scripts (dotenv) work correctly.
+
+### 11.16 Multi-Station Weather Monitoring — Regional Coverage
+
+**Problem:** Using a single NWS station (e.g., KCHD for Chandler) misses weather events that hit nearby areas. A dust storm may be detected at Mesa's station but not Chandler's, leading to missed content triggers.
+
+**Fix:** Configure multiple NWS observation stations in `lib/weather.ts` to cover the full service area:
+
+```ts
+const VALLEY_STATIONS = [
+  { id: "KCHD", name: "Chandler" },
+  { id: "KFFZ", name: "Mesa/Falcon Field" },
+  { id: "KIWA", name: "Gilbert/Phoenix-Mesa Gateway" },
+  { id: "KPHX", name: "Phoenix Sky Harbor" },
+];
+```
+
+- Fetch all stations in parallel via `Promise.allSettled` (gracefully handles individual station failures)
+- Aggregate using worst-case logic: highest wind gust, highest temp, any severe events from ANY station
+- Average precipitation across reporting stations
+- Reference "Phoenix East Valley" (or the client's broader service area) in summary text
+
+**For new clients:** Look up all NWS stations within the service area at https://www.weather.gov/wrh/stationlookup. Typical coverage: 2-4 stations for a metro area, 1 station for small towns.
+
+### 11.17 GitHub PAT Permissions — Fine-Grained Token Gotcha
+
+**Problem:** After creating a fine-grained GitHub PAT and setting it in Vercel, the cron endpoint returned:
+```
+GitHub API error 403: Resource not accessible by personal access token
+```
+
+The token was created but the **Contents** permission was not set to **Read and write** — it defaulted to "No access."
+
+**Fix:** When creating or editing a fine-grained token:
+1. Go to **Repository permissions** (not Account permissions)
+2. Find **Contents** and explicitly set to **Read and write**
+3. This is the only permission needed — do not add others
+
+**How to verify:** Test the token before deploying:
+```bash
+curl -H "Authorization: Bearer github_pat_YOUR_TOKEN" \
+  https://api.github.com/repos/OWNER/REPO/contents/README.md
+```
+If this returns the file contents, the token works. If it returns 403, the Contents permission is missing.
+
+**Template rule:** Always test the PAT with a simple API call before setting it in Vercel. The cron endpoint generates a full blog post before attempting the push — a PAT failure wastes an Anthropic API call.
+
+### 11.18 End-to-End Cron Testing — Correct Endpoint Path
+
+**Problem:** The cron endpoint path in `vercel.json` must exactly match the API route directory structure. A mismatch (e.g., `/api/cron/generate` vs `/api/cron/generate-blog`) returns the HTML homepage instead of triggering the API route, with no obvious error message.
+
+**Fix:** Verify the path matches:
+- `vercel.json` path: `/api/cron/generate-blog`
+- File location: `app/api/cron/generate-blog/route.ts`
+
+**Test command (run after deploy):**
+```bash
+curl -s "https://blog-CLIENTSITE.vercel.app/api/cron/generate-blog" \
+  -H "Authorization: Bearer YOUR_CRON_SECRET"
+```
+
+**Expected success response:**
+```json
+{
+  "success": true,
+  "post": { "title": "...", "slug": "...", "weatherMode": "..." },
+  "weather": { "mode": "...", "dominantHazard": "..." },
+  "githubUrl": "https://github.com/..."
+}
+```
+
+If you get HTML back instead of JSON, the path is wrong. If you get `{"error":"Unauthorized"}`, the `CRON_SECRET` doesn't match.
+
 ---
 
 ## 12. New Client Setup — Quick Start Checklist
@@ -792,6 +912,8 @@ Use this checklist when duplicating for a new client. It incorporates all lesson
 - [ ] Add logo image domain to `next.config.ts` `images.domains`
 - [ ] Remove `target="_blank"` from all main-site links (see 11.12)
 - [ ] Match Property Pros component structure exactly (see 11.14)
+- [ ] Install `dotenv` and use lazy API client init (see 11.15)
+- [ ] Configure multi-station weather if client covers a metro area (see 11.16)
 - [ ] Set git user.name and user.email before first commit
 - [ ] Customize all files per Section 7 checklist
 - [ ] Verify build passes locally: `npx next build`
@@ -800,11 +922,14 @@ Use this checklist when duplicating for a new client. It incorporates all lesson
 ### Deploy
 - [ ] Import repo in Vercel
 - [ ] Set Framework Preset to **Next.js** in Vercel settings
-- [ ] Add all 8 required environment variables
+- [ ] Add all 8 required environment variables (see Section 3.2)
+- [ ] Use shared fine-grained GitHub PAT with Contents: R/W (see 2.3, 11.17)
+- [ ] Test PAT with curl before deploying (see 11.17)
 - [ ] Add custom domain (blog.clientsite.com)
 - [ ] Configure DNS CNAME → cname.vercel-dns.com
 - [ ] Verify deployment succeeds
-- [ ] Test cron endpoint with curl
+- [ ] Test cron endpoint with curl — verify JSON response (see 11.18)
+- [ ] Confirm blog post appears on live site after cron push
 
 ### Post-Deploy
 - [ ] Add blog property in Google Search Console
