@@ -7,7 +7,7 @@ import { siteConfig } from "@/lib/site-config";
 
 export const metadata: Metadata = {
   title: {
-    default: `${siteConfig.shortName} Blog | HVAC Tips for ${siteConfig.primaryCity} & the East Valley`,
+    default: `${siteConfig.shortName} Blog | HVAC Tips for ${siteConfig.primaryCity} & the Greater Phoenix Area`,
     template: `%s | ${siteConfig.shortName} Blog`,
   },
   description: siteConfig.description,
@@ -35,7 +35,7 @@ export default function RootLayout({
       <head>
         <SchemaMarkup pageType="home" />
       </head>
-      <body className="bg-[var(--color-light)] min-h-screen flex flex-col">
+      <body className="min-h-screen flex flex-col bg-white">
         <Header />
         <main className="flex-grow">{children}</main>
         <Footer />
