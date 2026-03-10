@@ -187,8 +187,6 @@ export default async function BlogPostPage({ params }: PageProps) {
                 <div className="flex flex-col sm:flex-row gap-3 justify-center">
                   <a
                     href={siteConfig.keyPages.contact}
-                    target="_blank"
-                    rel="noopener noreferrer"
                     className="btn-primary"
                   >
                     Schedule Service
@@ -246,8 +244,6 @@ export default async function BlogPostPage({ params }: PageProps) {
                       <li key={service.url}>
                         <a
                           href={service.url}
-                          target="_blank"
-                          rel="noopener noreferrer"
                           className="text-sm text-brand-text-secondary hover:text-brand-accent transition-colors"
                         >
                           &rarr; {service.name}

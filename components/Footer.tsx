@@ -23,8 +23,7 @@ export default function Footer() {
                   <a
                     key={url}
                     href={url}
-                    target="_blank"
-                    rel="noopener noreferrer"
+
                     className="text-gray-400 hover:text-brand-accent transition-colors"
                     aria-label={url.includes("facebook") ? "Facebook" : url.includes("instagram") ? "Instagram" : "LinkedIn"}
                   >
@@ -58,8 +57,7 @@ export default function Footer() {
                 <li key={service.url}>
                   <a
                     href={service.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
+
                     className="text-gray-300 text-sm hover:text-brand-accent transition-colors"
                   >
                     {service.name}
@@ -125,8 +123,6 @@ export default function Footer() {
 
             <a
               href={siteConfig.keyPages.contact}
-              target="_blank"
-              rel="noopener noreferrer"
               className="inline-block mt-4 btn-primary text-sm"
             >
               Schedule Service
@@ -145,16 +141,12 @@ export default function Footer() {
             <span>{siteConfig.license}</span>
             <a
               href={siteConfig.keyPages.contact}
-              target="_blank"
-              rel="noopener noreferrer"
               className="hover:text-brand-accent transition-colors"
             >
               Contact
             </a>
             <a
               href={siteConfig.mainSiteUrl}
-              target="_blank"
-              rel="noopener noreferrer"
               className="hover:text-brand-accent transition-colors"
             >
               Main Site

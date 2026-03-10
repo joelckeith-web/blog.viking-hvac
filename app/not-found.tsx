@@ -17,8 +17,6 @@ export default function NotFound() {
         </Link>
         <a
           href={siteConfig.keyPages.contact}
-          target="_blank"
-          rel="noopener noreferrer"
           className="btn-secondary"
         >
           Contact Us

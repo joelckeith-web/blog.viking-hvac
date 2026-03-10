@@ -79,8 +79,6 @@ export default function Header() {
                       <a
                         key={service.url}
                         href={service.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
                         className="block px-4 py-2 text-sm text-brand-text-secondary hover:bg-brand-accent-light hover:text-brand-accent transition-colors"
                       >
                         {service.name}
@@ -96,8 +94,6 @@ export default function Header() {
               <a
                 href={siteConfig.keyPages.contact}
                 className="ml-4 btn-primary text-sm"
-                target="_blank"
-                rel="noopener noreferrer"
               >
                 Schedule Service
               </a>
@@ -133,8 +129,6 @@ export default function Header() {
                 <a
                   key={service.url}
                   href={service.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
                   className="block pl-6 py-2 text-sm text-brand-text-secondary hover:text-brand-accent"
                 >
                   {service.name}
@@ -144,8 +138,6 @@ export default function Header() {
               <MobileLink href={siteConfig.keyPages.contact} label="Contact" />
               <a
                 href={siteConfig.keyPages.contact}
-                target="_blank"
-                rel="noopener noreferrer"
                 className="block mt-4 btn-primary text-center text-sm"
               >
                 Schedule Service
@@ -176,7 +168,7 @@ function NavLink({
 
   if (isExternal) {
     return (
-      <a href={href} target="_blank" rel="noopener noreferrer" className={className}>
+      <a href={href} className={className}>
         {label}
       </a>
     );
@@ -205,7 +197,7 @@ function MobileLink({
 
   if (isExternal) {
     return (
-      <a href={href} target="_blank" rel="noopener noreferrer" className={className}>
+      <a href={href} className={className}>
         {label}
       </a>
     );

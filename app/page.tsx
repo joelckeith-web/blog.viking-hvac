@@ -39,8 +39,7 @@ export default async function HomePage() {
                 <a
                   key={service.url}
                   href={service.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
+
                   className="text-sm bg-white/10 hover:bg-brand-accent px-3 py-1.5 rounded-full transition-colors"
                 >
                   {service.name}
@@ -83,8 +82,6 @@ export default async function HomePage() {
             </p>
             <a
               href={siteConfig.keyPages.contact}
-              target="_blank"
-              rel="noopener noreferrer"
               className="inline-block mt-6 btn-primary"
             >
               Contact Us Today
@@ -107,8 +104,6 @@ export default async function HomePage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href={siteConfig.keyPages.contact}
-              target="_blank"
-              rel="noopener noreferrer"
               className="btn-primary"
             >
               Schedule Service

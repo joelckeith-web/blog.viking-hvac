@@ -17,8 +17,6 @@ export default function ServiceAreaFooter({ links }: ServiceAreaFooterProps) {
           <a
             key={link.url}
             href={link.url}
-            target="_blank"
-            rel="noopener noreferrer"
             className="text-xs bg-gray-100 text-brand-dark px-3 py-1.5 rounded-full hover:bg-brand-accent-light hover:text-brand-accent transition-colors"
           >
             {link.label}
