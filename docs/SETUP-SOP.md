@@ -136,9 +136,10 @@ In Vercel project settings → Environment Variables, add ALL variables from `.e
 
 ### 4.3 Configure Cron
 
-The `vercel.json` file already contains the cron schedule:
+The `vercel.json` file already contains the framework preset and cron schedule:
 ```json
 {
+  "framework": "nextjs",
   "crons": [{
     "path": "/api/cron/generate-blog",
     "schedule": "0 22 * * 0"
@@ -247,21 +248,13 @@ For each new client, update these files:
 - [ ] Update NWS User-Agent email
 - [ ] Tip: Find coords at https://www.latlong.net
 
-### 7.3 `tailwind.config.ts` — Brand Colors
-- [ ] Primary brand color (replace `brand.orange`)
-- [ ] Hover state color
-- [ ] Light variant (for backgrounds)
-- [ ] Dark color (headings, nav)
-- [ ] Dark secondary
-- [ ] Text color
-- [ ] Font family (if client uses custom fonts)
-
-### 7.4 `styles/globals.css` — Accent Styles
-- [ ] Key takeaway border color
-- [ ] AI Summary Box styling
-- [ ] Link colors
-- [ ] Blockquote border color
-- [ ] Button colors
+### 7.3 `styles/globals.css` — Brand Colors & Styles (Tailwind CSS 4)
+- [ ] Update `@theme` block with client brand colors (primary, secondary, dark, light, accent)
+- [ ] Update `.cta-button` background color
+- [ ] Update `.cta-button:hover` color
+- [ ] Update `.prose h2` border color
+- [ ] Update `.weather-badge` background color
+- [ ] Note: **No `tailwind.config.ts` needed** — Tailwind 4 uses CSS-based `@theme` configuration
 
 ### 7.5 `components/Header.tsx` — Navigation
 - [ ] Logo (replace PP placeholder with client logo)
@@ -435,3 +428,213 @@ npm run generate:push
 | SEO schemas not showing | Test with https://search.google.com/test/rich-results — check for JSON-LD errors. |
 | Indexing API not working | Verify service account is added as Owner in Search Console. Check env vars. |
 | Wrong weather mode | Check `determineWeatherMode()` thresholds in `lib/weather.ts`. |
+
+---
+
+## 11. Known Build Issues & Fixes (Lessons Learned)
+
+This section documents issues encountered during the Viking HVAC build that apply to **all future client projects**. Address these proactively when setting up a new project to avoid deployment failures.
+
+### 11.1 Next.js Version — CVE-2025-66478
+
+**Problem:** Vercel blocks deployment of Next.js versions affected by CVE-2025-66478 (includes 15.2.3 and earlier minor patches).
+
+**Fix:** Always use Next.js **15.2.4 or later** (recommended: latest 15.5.x). When initializing a new project:
+
+```bash
+# Use the latest patched version
+npm install next@15.5 eslint-config-next@15.5
+```
+
+**Template rule:** The `package.json` template should pin `next` to `"15.5.x"` or later, never `"15.2.3"`.
+
+### 11.2 Vercel Framework Detection — "No Output Directory named public"
+
+**Problem:** If Vercel doesn't detect the project as Next.js, it looks for a `public/` output directory instead of `.next/`. Build succeeds but deployment fails with:
+```
+Error: No Output Directory named "public" found after the Build completed.
+```
+
+**Fix:** Add `"framework": "nextjs"` to `vercel.json`:
+```json
+{
+  "framework": "nextjs",
+  "crons": [...]
+}
+```
+
+**Also:** In Vercel project settings (Settings → General → Framework Preset), manually select **Next.js** as the framework. This is a belt-and-suspenders approach — do both.
+
+### 11.3 Git Identity Not Configured
+
+**Problem:** First commit fails with `Author identity unknown` on fresh machines or new user profiles.
+
+**Fix:** Set git identity in the repo before committing:
+```bash
+git config user.name "Your Name"
+git config user.email "your@email.com"
+```
+
+**Note:** Do NOT use `--global` flag unless you want this identity for all repos on the machine.
+
+### 11.4 Tailwind CSS 4 — PostCSS Configuration
+
+**Problem:** Tailwind CSS 4 uses `@tailwindcss/postcss` instead of the old `tailwindcss` PostCSS plugin. Using the wrong config causes styles to not compile.
+
+**Fix:** Use this exact `postcss.config.mjs`:
+```js
+const config = {
+  plugins: {
+    "@tailwindcss/postcss": {},
+  },
+};
+export default config;
+```
+
+And in `styles/globals.css`, use `@import "tailwindcss"` instead of the old `@tailwind` directives. Brand colors go in a `@theme` block:
+```css
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #004281;
+  --color-secondary: #eb1c23;
+  --color-dark: #000000;
+  --color-light: #f5f5f5;
+}
+```
+
+**No `tailwind.config.ts` needed** — Tailwind 4 uses CSS-based configuration via `@theme`.
+
+### 11.5 Package.json — Required Dependencies
+
+**Problem:** Missing dependencies cause build failures. Here is the complete dependency list that works:
+
+```json
+{
+  "dependencies": {
+    "next": "15.5.12",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "gray-matter": "^4.0.3",
+    "react-markdown": "^9.0.1",
+    "rehype-raw": "^7.0.0",
+    "rehype-slug": "^6.0.0",
+    "remark-gfm": "^4.0.0",
+    "@anthropic-ai/sdk": "^0.39.0",
+    "date-fns": "^4.1.0",
+    "feed": "^4.2.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "typescript": "^5.7.0",
+    "tsx": "^4.19.0",
+    "tailwindcss": "^4.0.0",
+    "@tailwindcss/postcss": "^4.0.0",
+    "postcss": "^8.5.0",
+    "eslint": "^9.0.0",
+    "eslint-config-next": "15.5.12"
+  }
+}
+```
+
+### 11.6 Wix-Based Client Sites — Brand Color Extraction
+
+**Problem:** Many home service clients use Wix. Wix renders dynamically, so you can't extract brand colors from HTML source or crawl data.
+
+**Fix:** Ask the client for their Canva Brand Kit or Wix Site Colors:
+- **Canva:** Settings → Brand Kit → Colors (screenshot works)
+- **Wix:** Dashboard → Site Design → Colors
+- **Fallback:** Use browser DevTools on the rendered site, or ask the client directly
+
+### 11.7 Google Maps CID Extraction
+
+**Problem:** The CID number isn't always visible in the Google Maps URL. Sometimes the URL uses hex format (`0x...`) instead of decimal.
+
+**Fix:** If the URL contains a hex CID (e.g., `0x258b892e09a78bb1`), convert to decimal:
+```bash
+python3 -c "print(int('0x258b892e09a78bb1', 16))"
+# Output: 2705406831989590961
+```
+
+The sameAs URL format is: `https://www.google.com/maps?cid=DECIMAL_NUMBER`
+
+### 11.8 Empty GitHub Repo — No Template Cloning Needed
+
+**Problem:** When creating a new client blog, you may be tempted to clone the Property Pros repo. This creates unnecessary git history and potential merge conflicts.
+
+**Fix:** Create an empty repo on GitHub first, clone it locally, then build/copy files into it:
+```bash
+# Create empty repo on GitHub, then:
+git clone https://github.com/org/blog.clientsite.git
+cd blog.clientsite
+# Copy template files or build from scratch
+```
+
+### 11.9 npm Install in Wrong Directory
+
+**Problem:** If you create `package.json` before `cd`-ing into the project directory, `npm install` runs in the parent directory and installs `node_modules` in the wrong place.
+
+**Fix:** Always verify your working directory before running `npm install`:
+```bash
+pwd  # Should be /path/to/blog.clientsite
+ls package.json  # Should exist in current directory
+npm install
+```
+
+### 11.10 NWS Weather Station Selection
+
+**Problem:** Using the wrong NWS station results in inaccurate weather data for the client's area.
+
+**Fix:**
+1. Go to https://www.weather.gov/wrh/stationlookup
+2. Search by state → find the closest station to the client's city
+3. Use the **4-letter station code** (e.g., KCHD for Chandler, KMIE for Muncie)
+4. For the NWS forecast office (used in weather stories), go to https://www.weather.gov and enter the client's city — the URL shows the office code
+
+**Arizona stations:** KCHD (Chandler), KPHX (Phoenix Sky Harbor), KSDL (Scottsdale), KFFZ (Mesa/Falcon Field)
+
+---
+
+## 12. New Client Setup — Quick Start Checklist
+
+Use this checklist when duplicating for a new client. It incorporates all lessons learned above.
+
+### Pre-Build
+- [ ] Gather all client info (see Section 7)
+- [ ] Run Apify Website Content Crawler on client's site → save JSON
+- [ ] Run Apify Sitemap URL Extractor → save JSON
+- [ ] Extract Google Maps CID (convert hex to decimal if needed)
+- [ ] Get brand colors from Canva/Wix/client
+- [ ] Look up NWS station at weather.gov/wrh/stationlookup
+- [ ] Get lat/long from latlong.net
+
+### Build
+- [ ] Create empty GitHub repo
+- [ ] Clone locally
+- [ ] Initialize with Next.js **15.5.x+** (not 15.2.3!)
+- [ ] Include `"framework": "nextjs"` in `vercel.json`
+- [ ] Use `@tailwindcss/postcss` in postcss.config.mjs (Tailwind 4)
+- [ ] Use `@theme` block in globals.css for brand colors (no tailwind.config.ts)
+- [ ] Set git user.name and user.email before first commit
+- [ ] Customize all files per Section 7 checklist
+- [ ] Verify build passes locally: `npx next build`
+- [ ] Commit and push
+
+### Deploy
+- [ ] Import repo in Vercel
+- [ ] Set Framework Preset to **Next.js** in Vercel settings
+- [ ] Add all 8 required environment variables
+- [ ] Add custom domain (blog.clientsite.com)
+- [ ] Configure DNS CNAME → cname.vercel-dns.com
+- [ ] Verify deployment succeeds
+- [ ] Test cron endpoint with curl
+
+### Post-Deploy
+- [ ] Add blog property in Google Search Console
+- [ ] Submit sitemap: blog.clientsite.com/sitemap.xml
+- [ ] (Optional) Set up Google Indexing API
+- [ ] Add "Blog" link to client's main site navigation
+- [ ] Generate 12-month content calendar
+- [ ] Store crawl data, calendar, and SOPs in `docs/` folder
