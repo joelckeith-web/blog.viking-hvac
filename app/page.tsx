@@ -1,143 +1,116 @@
 import { getAllPosts } from "@/lib/posts";
 import PostCard from "@/components/PostCard";
+import SchemaMarkup from "@/components/SchemaMarkup";
 import { siteConfig } from "@/lib/site-config";
-import Link from "next/link";
 
 export default async function HomePage() {
   const posts = await getAllPosts();
 
   return (
     <>
-      {/* Hero — compact, clean, matching Viking site */}
-      <section className="bg-[#004281] py-10 text-center">
-        <div className="max-w-4xl mx-auto px-4">
-          <h1 className="text-3xl md:text-4xl font-bold text-white mb-2">
-            Helpful HVAC Tips &amp; Tricks
-          </h1>
-          <div className="w-16 h-[3px] bg-[#eb1c23] mx-auto my-3" />
-          <p className="text-white/70 text-base max-w-xl mx-auto">
-            Expert advice and weather-triggered insights for{" "}
-            {siteConfig.primaryCity} and the Greater Phoenix area.
-          </p>
-        </div>
-      </section>
+      <SchemaMarkup pageType="home" />
 
-      {/* Posts */}
-      <section className="bg-white py-10">
-        <div className="max-w-6xl mx-auto px-4">
-          {posts.length > 0 ? (
-            <>
-              {/* Featured / latest post — full width */}
-              <div className="mb-8">
-                <FeaturedPost post={posts[0]} />
-              </div>
-
-              {/* Remaining posts in grid */}
-              {posts.length > 1 && (
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                  {posts.slice(1).map((post) => (
-                    <PostCard key={post.slug} post={post} />
-                  ))}
-                </div>
-              )}
-            </>
-          ) : (
-            <div className="text-center py-16">
-              <h2 className="text-xl font-bold text-gray-400 mb-3">Coming Soon</h2>
-              <p className="text-gray-500 max-w-md mx-auto mb-6 text-sm">
-                Weather-triggered blog posts are on the way. Expert HVAC tips tailored to{" "}
-                {siteConfig.primaryCity}&apos;s conditions.
-              </p>
-              <a
-                href={siteConfig.keyPages.contact}
-                className="cta-button text-sm"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Need Service Now? Contact Us
-              </a>
+      {/* Hero section */}
+      <section className="bg-brand-dark text-white">
+        <div className="max-w-7xl mx-auto px-4 py-16 lg:py-20">
+          <div className="max-w-3xl">
+            <h1 className="text-3xl lg:text-4xl font-bold mb-4">
+              {siteConfig.primaryCity} HVAC Blog
+            </h1>
+            <p className="text-lg text-gray-300 mb-6">
+              Expert advice on heating, cooling, and indoor air quality — powered
+              by real local weather data for{" "}
+              {siteConfig.primaryCity},{" "}
+              {siteConfig.primaryState} and the Greater Phoenix area.
+            </p>
+            <div className="flex flex-wrap gap-2">
+              {siteConfig.services.slice(0, 6).map((service) => (
+                <a
+                  key={service.url}
+                  href={service.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm bg-white/10 hover:bg-brand-accent px-3 py-1.5 rounded-full transition-colors"
+                >
+                  {service.name}
+                </a>
+              ))}
             </div>
-          )}
+          </div>
         </div>
       </section>
 
-      {/* CTA — compact */}
-      <section className="bg-[#004281] py-10 text-center">
-        <div className="max-w-2xl mx-auto px-4">
-          <h2 className="text-xl md:text-2xl font-bold text-white mb-2">
-            Need HVAC Service?
-          </h2>
-          <p className="text-white/70 text-sm mb-5">
-            24/7 emergency service for the Greater Phoenix area. Call today.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-3 justify-center">
-            <a href={`tel:${siteConfig.phoneRaw}`} className="cta-button text-sm">
-              Call {siteConfig.phone}
-            </a>
+      {/* Blog posts grid */}
+      <section className="max-w-7xl mx-auto px-4 py-12">
+        {posts.length > 0 ? (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {posts.map((post) => (
+              <PostCard key={post.slug} post={post} />
+            ))}
+          </div>
+        ) : (
+          <div className="text-center py-20">
+            <svg
+              className="w-16 h-16 mx-auto text-gray-300 mb-4"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={1.5}
+                d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"
+              />
+            </svg>
+            <h2 className="text-2xl font-bold text-brand-dark mb-2">
+              Blog Coming Soon
+            </h2>
+            <p className="text-brand-text-secondary max-w-md mx-auto">
+              We&apos;re preparing expert HVAC content for {siteConfig.primaryCity}{" "}
+              homeowners. Check back soon for weather-informed tips and guides.
+            </p>
             <a
               href={siteConfig.keyPages.contact}
-              className="cta-button-outline text-sm"
               target="_blank"
               rel="noopener noreferrer"
+              className="inline-block mt-6 btn-primary"
             >
-              Schedule Online
+              Contact Us Today
+            </a>
+          </div>
+        )}
+      </section>
+
+      {/* CTA section */}
+      <section className="bg-brand-accent-light">
+        <div className="max-w-7xl mx-auto px-4 py-12 text-center">
+          <h2 className="text-2xl font-bold text-brand-dark mb-3">
+            Need HVAC Service?
+          </h2>
+          <p className="text-brand-text-secondary mb-6 max-w-2xl mx-auto">
+            From emergency AC repairs to complete system installations,{" "}
+            {siteConfig.companyName} is your trusted local HVAC contractor in{" "}
+            {siteConfig.primaryCity}, {siteConfig.primaryState}.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href={siteConfig.keyPages.contact}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary"
+            >
+              Schedule Service
+            </a>
+            <a
+              href={`tel:${siteConfig.phoneRaw}`}
+              className="btn-secondary"
+            >
+              Call {siteConfig.phone}
             </a>
           </div>
         </div>
       </section>
     </>
-  );
-}
-
-/* Featured post — full width card for the latest/only post */
-import type { BlogPost } from "@/lib/types";
-
-function FeaturedPost({ post }: { post: BlogPost }) {
-  const { frontmatter, readingTime } = post;
-
-  return (
-    <Link href={`/blog/${post.slug}`} className="block">
-      <article className="bg-white border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg transition-shadow md:flex">
-        {/* Left accent */}
-        <div className="bg-[#004281] md:w-2 shrink-0 hidden md:block" />
-
-        <div className="p-6 md:p-8 flex-grow">
-          <div className="flex items-center gap-3 mb-3">
-            <span className="inline-block bg-[#004281] text-white px-3 py-1 rounded text-xs font-bold uppercase tracking-wide">
-              {frontmatter.category.replace(/-/g, " ")}
-            </span>
-            {frontmatter.weatherTriggered && (
-              <span className="inline-block bg-[#eb1c23] text-white px-3 py-1 rounded text-xs font-bold uppercase tracking-wide">
-                Weather Alert
-              </span>
-            )}
-            <span className="text-xs text-gray-400">
-              {new Date(frontmatter.publishDate).toLocaleDateString("en-US", {
-                month: "long",
-                day: "numeric",
-                year: "numeric",
-              })}
-            </span>
-          </div>
-
-          <h2 className="text-xl md:text-2xl font-bold text-[#002147] mb-2 hover:text-[#eb1c23] transition-colors">
-            {frontmatter.title}
-          </h2>
-
-          <p className="text-gray-600 text-sm leading-relaxed mb-4 max-w-2xl">
-            {frontmatter.metaDescription}
-          </p>
-
-          <div className="flex items-center gap-4 text-xs text-gray-400">
-            <span>{readingTime}</span>
-            <span>•</span>
-            <span>{frontmatter.author}</span>
-            <span className="ml-auto text-[#004281] font-bold uppercase tracking-wide text-sm hover:text-[#eb1c23]">
-              Read Article →
-            </span>
-          </div>
-        </div>
-      </article>
-    </Link>
   );
 }

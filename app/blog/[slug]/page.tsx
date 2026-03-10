@@ -4,9 +4,12 @@ import ReactMarkdown from "react-markdown";
 import rehypeRaw from "rehype-raw";
 import rehypeSlug from "rehype-slug";
 import remarkGfm from "remark-gfm";
-import { getPostBySlug, getAllPostSlugs } from "@/lib/posts";
+import { getPostBySlug, getAllPostSlugs, getRecentPosts } from "@/lib/posts";
+import PostCard from "@/components/PostCard";
+import ServiceAreaFooter from "@/components/ServiceAreaFooter";
 import SchemaMarkup from "@/components/SchemaMarkup";
 import { siteConfig } from "@/lib/site-config";
+import Link from "next/link";
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -47,98 +50,217 @@ export default async function BlogPostPage({ params }: PageProps) {
     notFound();
   }
 
+  const recentPosts = await getRecentPosts(3, slug);
+
   return (
     <>
       <SchemaMarkup post={post} pageType="post" />
 
-      {/* Post hero — navy banner matching Viking site style */}
-      <section className="section-navy py-12 md:py-16">
-        <div className="max-w-4xl mx-auto px-4 text-center">
-          <div className="flex items-center justify-center gap-3 mb-5">
-            <span className="badge-category">{post.frontmatter.category.replace(/-/g, " ")}</span>
-            {post.frontmatter.weatherTriggered && (
-              <span className="badge-weather">
-                Weather Alert
+      <article>
+        {/* Post header */}
+        <header className="bg-brand-dark text-white">
+          <div className="max-w-4xl mx-auto px-4 py-12 lg:py-16">
+            {/* Breadcrumb */}
+            <nav className="text-sm text-gray-400 mb-6">
+              <a
+                href={siteConfig.mainSiteUrl}
+                className="hover:text-brand-accent transition-colors"
+              >
+                Home
+              </a>
+              <span className="mx-2">/</span>
+              <Link
+                href="/"
+                className="hover:text-brand-accent transition-colors"
+              >
+                Blog
+              </Link>
+              <span className="mx-2">/</span>
+              <span className="text-gray-300 capitalize">
+                {post.frontmatter.category.replace(/-/g, " ")}
               </span>
-            )}
-          </div>
-          <h1 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-4">
-            {post.frontmatter.title}
-          </h1>
-          <div className="divider-red" />
-          <div className="flex items-center justify-center gap-4 text-sm text-white/60 mt-4">
-            <time dateTime={post.frontmatter.publishDate}>
-              {new Date(post.frontmatter.publishDate).toLocaleDateString("en-US", {
-                year: "numeric",
-                month: "long",
-                day: "numeric",
-              })}
-            </time>
-            <span>•</span>
-            <span>{post.readingTime}</span>
-            <span>•</span>
-            <span>{post.frontmatter.author}</span>
-          </div>
-        </div>
-      </section>
+            </nav>
 
-      {/* Post content */}
-      <section className="section-white py-12">
-        <article className="max-w-3xl mx-auto px-4">
-          <div className="prose prose-lg max-w-none">
-            <ReactMarkdown
-              remarkPlugins={[remarkGfm]}
-              rehypePlugins={[rehypeRaw, rehypeSlug]}
-            >
-              {post.content}
-            </ReactMarkdown>
-          </div>
-
-          {/* Tags */}
-          {post.frontmatter.tags.length > 0 && (
-            <div className="mt-10 pt-6 border-t border-gray-200">
-              <h3 className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-3">Tags</h3>
-              <div className="flex flex-wrap gap-2">
-                {post.frontmatter.tags.map((tag) => (
-                  <span
-                    key={tag}
-                    className="text-xs bg-[#f0f4f8] text-[#004281] px-3 py-1.5 rounded font-medium"
-                  >
-                    {tag}
-                  </span>
-                ))}
-              </div>
+            {/* Meta info */}
+            <div className="flex flex-wrap items-center gap-3 mb-4">
+              <span className="text-xs font-semibold bg-brand-accent px-3 py-1 rounded-full capitalize">
+                {post.frontmatter.category.replace(/-/g, " ")}
+              </span>
+              <time
+                dateTime={post.frontmatter.publishDate}
+                className="text-sm text-gray-300"
+              >
+                {new Date(post.frontmatter.publishDate).toLocaleDateString(
+                  "en-US",
+                  { month: "long", day: "numeric", year: "numeric" }
+                )}
+              </time>
+              <span className="text-sm text-gray-400">
+                · {post.readingTime}
+              </span>
+              {post.frontmatter.weatherTriggered && (
+                <span className="text-sm text-brand-accent">
+                  {post.frontmatter.weatherMode === "post-event"
+                    ? "Post-Storm Report"
+                    : post.frontmatter.weatherMode === "combined"
+                      ? "Weather Advisory"
+                      : "Weather Forecast"}: {post.frontmatter.weatherWeek}
+                </span>
+              )}
             </div>
-          )}
-        </article>
-      </section>
 
-      {/* CTA Banner — matches Viking site CTA sections */}
-      <section className="section-navy py-14 text-center">
-        <div className="max-w-3xl mx-auto px-4">
-          <h2 className="text-2xl md:text-3xl font-bold text-white mb-3">
-            Need HVAC Service in {siteConfig.primaryCity}?
-          </h2>
-          <div className="divider-red" />
-          <p className="text-white/70 mt-4 mb-6 text-lg">
-            {siteConfig.companyName} is available 24/7 for emergency service.
-            Call us today — {siteConfig.tagline.toLowerCase()}.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href={`tel:${siteConfig.phoneRaw}`} className="cta-button text-lg">
-              Call {siteConfig.phone}
-            </a>
-            <a
-              href={siteConfig.keyPages.contact}
-              className="cta-button-outline"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Schedule Online
-            </a>
+            {/* Title */}
+            <h1 className="text-3xl lg:text-4xl font-bold leading-tight">
+              {post.frontmatter.title}
+            </h1>
+          </div>
+        </header>
+
+        {/* Post content */}
+        <div className="max-w-4xl mx-auto px-4 py-10">
+          <div className="lg:flex lg:gap-12">
+            {/* Main content */}
+            <div className="lg:flex-1 min-w-0">
+              <div className="prose prose-lg max-w-none">
+                <ReactMarkdown
+                  remarkPlugins={[remarkGfm]}
+                  rehypePlugins={[rehypeRaw, rehypeSlug]}
+                >
+                  {post.content}
+                </ReactMarkdown>
+              </div>
+
+              {/* Service Area Geo-Link Footer */}
+              {post.frontmatter.serviceAreaFooterLinks?.length > 0 && (
+                <ServiceAreaFooter
+                  links={post.frontmatter.serviceAreaFooterLinks}
+                />
+              )}
+
+              {/* FAQ section */}
+              {post.frontmatter.schema?.faqItems?.length > 0 && (
+                <section className="mt-12 pt-8 border-t border-gray-200">
+                  <h2 className="text-2xl font-bold text-brand-dark mb-6">
+                    Frequently Asked Questions
+                  </h2>
+                  <div className="faq-section space-y-1">
+                    {post.frontmatter.schema.faqItems.map((faq, index) => (
+                      <details key={index}>
+                        <summary className="py-4 text-base">
+                          {faq.question}
+                        </summary>
+                        <p className="pb-4 text-brand-text-secondary leading-relaxed">
+                          {faq.answer}
+                        </p>
+                      </details>
+                    ))}
+                  </div>
+                </section>
+              )}
+
+              {/* CTA */}
+              <div className="mt-12 bg-brand-accent-light rounded-lg p-8 text-center">
+                <h3 className="text-xl font-bold text-brand-dark mb-2">
+                  Need HVAC Service in {siteConfig.primaryCity}?
+                </h3>
+                <p className="text-brand-text-secondary mb-4">
+                  Contact {siteConfig.companyName} today for{" "}
+                  {post.frontmatter.category.replace(/-/g, " ")} services in{" "}
+                  {siteConfig.primaryCity}, {siteConfig.primaryState}.
+                </p>
+                <div className="flex flex-col sm:flex-row gap-3 justify-center">
+                  <a
+                    href={siteConfig.keyPages.contact}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn-primary"
+                  >
+                    Schedule Service
+                  </a>
+                  <a
+                    href={`tel:${siteConfig.phoneRaw}`}
+                    className="btn-secondary"
+                  >
+                    Call {siteConfig.phone}
+                  </a>
+                </div>
+              </div>
+
+              {/* Tags */}
+              {post.frontmatter.tags?.length > 0 && (
+                <div className="mt-8 flex flex-wrap gap-2">
+                  {post.frontmatter.tags.map((tag) => (
+                    <span
+                      key={tag}
+                      className="text-xs bg-gray-100 text-gray-600 px-3 py-1 rounded-full"
+                    >
+                      #{tag}
+                    </span>
+                  ))}
+                </div>
+              )}
+            </div>
+
+            {/* Sidebar */}
+            <aside className="lg:w-72 shrink-0 mt-12 lg:mt-0">
+              <div className="sticky top-24 space-y-8">
+                {/* Contact card */}
+                <div className="bg-brand-dark text-white rounded-lg p-6">
+                  <h3 className="font-bold text-brand-accent mb-3">
+                    Need Help?
+                  </h3>
+                  <p className="text-sm text-gray-300 mb-4">
+                    Call us 24/7 for emergency HVAC service.
+                  </p>
+                  <a
+                    href={`tel:${siteConfig.phoneRaw}`}
+                    className="block text-center btn-primary text-sm w-full"
+                  >
+                    {siteConfig.phone}
+                  </a>
+                </div>
+
+                {/* Services list */}
+                <div className="bg-gray-50 rounded-lg p-6">
+                  <h3 className="font-bold text-brand-dark mb-3">
+                    Our Services
+                  </h3>
+                  <ul className="space-y-2">
+                    {siteConfig.services.slice(0, 8).map((service) => (
+                      <li key={service.url}>
+                        <a
+                          href={service.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-sm text-brand-text-secondary hover:text-brand-accent transition-colors"
+                        >
+                          &rarr; {service.name}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            </aside>
           </div>
         </div>
-      </section>
+      </article>
+
+      {/* Related posts */}
+      {recentPosts.length > 0 && (
+        <section className="bg-gray-50 py-12">
+          <div className="max-w-7xl mx-auto px-4">
+            <h2 className="text-2xl font-bold text-brand-dark mb-8">
+              More From Our Blog
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {recentPosts.map((p) => (
+                <PostCard key={p.slug} post={p} />
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
     </>
   );
 }

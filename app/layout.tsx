@@ -2,26 +2,29 @@ import type { Metadata } from "next";
 import "@/styles/globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import SchemaMarkup from "@/components/SchemaMarkup";
 import { siteConfig } from "@/lib/site-config";
 
 export const metadata: Metadata = {
   title: {
-    default: `${siteConfig.shortName} Blog | HVAC Tips for ${siteConfig.primaryCity} & the Greater Phoenix Area`,
+    default: `Blog | ${siteConfig.shortName}`,
     template: `%s | ${siteConfig.shortName} Blog`,
   },
   description: siteConfig.description,
   metadataBase: new URL(siteConfig.blogUrl),
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     type: "website",
     locale: "en_US",
     url: siteConfig.blogUrl,
     siteName: `${siteConfig.shortName} Blog`,
-    title: `${siteConfig.shortName} Blog`,
+    title: `Blog | ${siteConfig.shortName}`,
     description: siteConfig.description,
   },
-  alternates: {
-    canonical: siteConfig.blogUrl,
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 
@@ -32,12 +35,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
-        <SchemaMarkup pageType="home" />
-      </head>
-      <body className="min-h-screen flex flex-col bg-white">
+      <head />
+      <body className="min-h-screen flex flex-col">
         <Header />
-        <main className="flex-grow">{children}</main>
+        <main className="flex-1">{children}</main>
         <Footer />
       </body>
     </html>
