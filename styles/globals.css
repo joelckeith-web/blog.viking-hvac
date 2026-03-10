@@ -1,11 +1,12 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
 @theme {
   --color-brand-dark: #004281;
   --color-brand-dark-secondary: #002147;
   --color-brand-accent: #eb1c23;
   --color-brand-accent-hover: #c41018;
-  --color-brand-accent-light: #fef2f2;
+  --color-brand-accent-light: rgba(235, 28, 35, 0.08);
   --color-brand-text: #333333;
   --color-brand-text-secondary: #555555;
 }
@@ -17,38 +18,26 @@
 }
 
 body {
-  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif;
   color: var(--color-brand-text);
   background: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-/* ─── Key Takeaway callout blocks — matches SOP requirement ─── */
-.key-takeaway {
-  margin: 2rem 0;
-  border-radius: 0.5rem;
-  border-left: 4px solid var(--color-brand-accent);
-  background: var(--color-brand-accent-light);
-  padding: 1.5rem;
-}
-
-.key-takeaway strong:first-child {
-  display: block;
-  margin-bottom: 0.5rem;
-  color: var(--color-brand-dark);
-  font-size: 1.125rem;
-}
-
-/* ─── Blog prose overrides ─── */
-.prose h2 {
-  color: var(--color-brand-dark);
-  margin-top: 2.5rem;
-  margin-bottom: 1rem;
-}
-
-.prose h3 {
-  color: var(--color-brand-dark-secondary);
-  margin-top: 2rem;
-  margin-bottom: 0.75rem;
+/* ─── Typography plugin overrides — match brand colors ─── */
+.prose {
+  --tw-prose-body: var(--color-brand-text);
+  --tw-prose-headings: var(--color-brand-dark);
+  --tw-prose-links: var(--color-brand-accent);
+  --tw-prose-bold: var(--color-brand-dark);
+  --tw-prose-quotes: var(--color-brand-text);
+  --tw-prose-quote-borders: var(--color-brand-accent);
+  --tw-prose-counters: var(--color-brand-text-secondary);
+  --tw-prose-bullets: var(--color-brand-accent);
+  --tw-prose-captions: var(--color-brand-text-secondary);
+  max-width: none;
 }
 
 .prose a {
@@ -63,10 +52,10 @@ body {
 }
 
 .prose blockquote {
-  border-left: 4px solid var(--color-brand-accent);
+  border-left-color: var(--color-brand-accent);
   background: #f8f9fa;
   padding: 0.25rem 1rem;
-  font-style: italic;
+  border-radius: 0 0.375rem 0.375rem 0;
 }
 
 /* AI Summary Box — first blockquote styled distinctly for AEO */
@@ -90,6 +79,22 @@ body {
 .prose img {
   border-radius: 0.5rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* ─── Key Takeaway callout blocks — matches SOP requirement ─── */
+.key-takeaway {
+  margin: 2rem 0;
+  border-radius: 0.5rem;
+  border-left: 4px solid var(--color-brand-accent);
+  background: var(--color-brand-accent-light);
+  padding: 1.5rem;
+}
+
+.key-takeaway strong:first-child {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--color-brand-dark);
+  font-size: 1.125rem;
 }
 
 /* ─── FAQ section styling ─── */

@@ -1,13 +1,90 @@
 import { siteConfig } from "@/lib/site-config";
-import type { BlogPost } from "@/lib/types";
+import type { BlogPost, FaqItem } from "@/lib/types";
 
-interface SchemaMarkupProps {
-  post?: BlogPost;
-  pageType?: "home" | "blog" | "post";
+/**
+ * JSON-LD structured data components for SEO.
+ * Implements Article, FAQPage, HVACBusiness (with sameAs Entity Bridge),
+ * BreadcrumbList, and WebSite schemas.
+ */
+
+/** Article schema for blog posts */
+export function ArticleSchema({ post }: { post: BlogPost }) {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: post.frontmatter.title,
+    description: post.frontmatter.metaDescription,
+    datePublished: post.frontmatter.publishDate,
+    dateModified: post.frontmatter.publishDate,
+    author: {
+      "@type": "Organization",
+      name: siteConfig.companyName,
+      url: siteConfig.mainSiteUrl,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: siteConfig.companyName,
+      url: siteConfig.mainSiteUrl,
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `${siteConfig.blogUrl}/blog/${post.slug}`,
+    },
+    about: {
+      "@type": "Thing",
+      name: post.frontmatter.category,
+    },
+    keywords: post.frontmatter.tags.join(", "),
+    wordCount: post.content.split(/\s+/).length,
+    articleSection: post.frontmatter.category,
+    ...(post.frontmatter.featuredImage
+      ? { image: post.frontmatter.featuredImage }
+      : {}),
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
 }
 
-export default function SchemaMarkup({ post, pageType = "home" }: SchemaMarkupProps) {
-  const localBusiness = {
+/** FAQPage schema from blog post FAQ items */
+export function FaqSchema({ items }: { items: FaqItem[] }) {
+  if (!items || items.length === 0) return null;
+
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: items.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.answer,
+      },
+    })),
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
+/**
+ * HVACBusiness schema — included on every page.
+ *
+ * ENTITY BRIDGE: The `sameAs` array links this blog subdomain to the
+ * verified business profiles (Google Maps CID, Facebook, LinkedIn, etc.).
+ * This tells Google "this subdomain IS Viking HVAC" and transfers
+ * entity authority to the blog.
+ */
+export function LocalBusinessSchema() {
+  const schema = {
     "@context": "https://schema.org",
     "@type": "HVACBusiness",
     name: siteConfig.companyName,
@@ -32,7 +109,6 @@ export default function SchemaMarkup({ post, pageType = "home" }: SchemaMarkupPr
       longitude: -111.8404,
     },
     openingHoursSpecification: siteConfig.openingHoursSpecification,
-    sameAs: siteConfig.sameAs,
     areaServed: siteConfig.serviceAreas.map((city) => ({
       "@type": "City",
       name: city,
@@ -50,59 +126,45 @@ export default function SchemaMarkup({ post, pageType = "home" }: SchemaMarkupPr
         url: service.url,
       })),
     },
+    sameAs: siteConfig.sameAs,
   };
 
-  const blogPosting =
-    post && post.frontmatter
-      ? {
-          "@context": "https://schema.org",
-          "@type": "BlogPosting",
-          headline: post.frontmatter.title,
-          description: post.frontmatter.metaDescription,
-          datePublished: post.frontmatter.publishDate,
-          dateModified: post.frontmatter.publishDate,
-          author: {
-            "@type": "Organization",
-            name: siteConfig.companyName,
-            url: siteConfig.mainSiteUrl,
-          },
-          publisher: {
-            "@type": "Organization",
-            name: siteConfig.companyName,
-            url: siteConfig.mainSiteUrl,
-          },
-          mainEntityOfPage: {
-            "@type": "WebPage",
-            "@id": `${siteConfig.blogUrl}/blog/${post.slug}`,
-          },
-          about: {
-            "@type": "Thing",
-            name: post.frontmatter.category,
-          },
-          keywords: post.frontmatter.tags.join(", "),
-          wordCount: post.content.split(/\s+/).length,
-          articleSection: post.frontmatter.category,
-        }
-      : null;
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
 
-  // FAQPage schema from frontmatter
-  const faqPage =
-    post?.frontmatter?.schema?.faqItems?.length
-      ? {
-          "@context": "https://schema.org",
-          "@type": "FAQPage",
-          mainEntity: post.frontmatter.schema.faqItems.map((faq) => ({
-            "@type": "Question",
-            name: faq.question,
-            acceptedAnswer: {
-              "@type": "Answer",
-              text: faq.answer,
-            },
-          })),
-        }
-      : null;
+/** BreadcrumbList schema */
+export function BreadcrumbSchema({
+  items,
+}: {
+  items: { name: string; url: string }[];
+}) {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: items.map((item, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: item.name,
+      item: item.url,
+    })),
+  };
 
-  const website = {
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
+/** WebSite schema with search action */
+export function WebSiteSchema() {
+  const schema = {
     "@context": "https://schema.org",
     "@type": "WebSite",
     name: `${siteConfig.shortName} Blog`,
@@ -115,26 +177,51 @@ export default function SchemaMarkup({ post, pageType = "home" }: SchemaMarkupPr
   };
 
   return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
+/**
+ * Default export — backward-compatible wrapper that renders
+ * the appropriate schemas based on pageType.
+ */
+export default function SchemaMarkup({
+  post,
+  pageType = "home",
+}: {
+  post?: BlogPost;
+  pageType?: "home" | "blog" | "post";
+}) {
+  return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusiness) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(website) }}
-      />
-      {blogPosting && (
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPosting) }}
+      <LocalBusinessSchema />
+      <WebSiteSchema />
+      {pageType === "home" && (
+        <BreadcrumbSchema
+          items={[
+            { name: "Home", url: siteConfig.mainSiteUrl },
+            { name: "Blog", url: siteConfig.blogUrl },
+          ]}
         />
       )}
-      {faqPage && (
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqPage) }}
-        />
+      {post && pageType === "post" && (
+        <>
+          <ArticleSchema post={post} />
+          <FaqSchema items={post.frontmatter.schema?.faqItems || []} />
+          <BreadcrumbSchema
+            items={[
+              { name: "Home", url: siteConfig.mainSiteUrl },
+              { name: "Blog", url: siteConfig.blogUrl },
+              {
+                name: post.frontmatter.title,
+                url: `${siteConfig.blogUrl}/blog/${post.slug}`,
+              },
+            ]}
+          />
+        </>
       )}
     </>
   );

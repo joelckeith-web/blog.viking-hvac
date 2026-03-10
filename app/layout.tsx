@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "@/styles/globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { LocalBusinessSchema, WebSiteSchema } from "@/components/SchemaMarkup";
 import { siteConfig } from "@/lib/site-config";
 
 export const metadata: Metadata = {
@@ -35,7 +36,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head />
+      <head>
+        <LocalBusinessSchema />
+        <WebSiteSchema />
+      </head>
       <body className="min-h-screen flex flex-col">
         <Header />
         <main className="flex-1">{children}</main>

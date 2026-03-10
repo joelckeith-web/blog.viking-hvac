@@ -7,7 +7,11 @@ import remarkGfm from "remark-gfm";
 import { getPostBySlug, getAllPostSlugs, getRecentPosts } from "@/lib/posts";
 import PostCard from "@/components/PostCard";
 import ServiceAreaFooter from "@/components/ServiceAreaFooter";
-import SchemaMarkup from "@/components/SchemaMarkup";
+import {
+  ArticleSchema,
+  FaqSchema,
+  BreadcrumbSchema,
+} from "@/components/SchemaMarkup";
 import { siteConfig } from "@/lib/site-config";
 import Link from "next/link";
 
@@ -54,7 +58,19 @@ export default async function BlogPostPage({ params }: PageProps) {
 
   return (
     <>
-      <SchemaMarkup post={post} pageType="post" />
+      {/* Schema markup */}
+      <ArticleSchema post={post} />
+      <FaqSchema items={post.frontmatter.schema?.faqItems || []} />
+      <BreadcrumbSchema
+        items={[
+          { name: "Home", url: siteConfig.mainSiteUrl },
+          { name: "Blog", url: siteConfig.blogUrl },
+          {
+            name: post.frontmatter.title,
+            url: `${siteConfig.blogUrl}/blog/${post.slug}`,
+          },
+        ]}
+      />
 
       <article>
         {/* Post header */}

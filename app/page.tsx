@@ -1,14 +1,25 @@
 import { getAllPosts } from "@/lib/posts";
 import PostCard from "@/components/PostCard";
-import SchemaMarkup from "@/components/SchemaMarkup";
+import { BreadcrumbSchema } from "@/components/SchemaMarkup";
 import { siteConfig } from "@/lib/site-config";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: `HVAC Blog | ${siteConfig.shortName}`,
+  description: `Expert tips on heating, cooling, air quality, and HVAC maintenance in ${siteConfig.primaryCity}, AZ. Weather-informed advice from ${siteConfig.companyName}.`,
+};
 
 export default async function HomePage() {
   const posts = await getAllPosts();
 
   return (
     <>
-      <SchemaMarkup pageType="home" />
+      <BreadcrumbSchema
+        items={[
+          { name: "Home", url: siteConfig.mainSiteUrl },
+          { name: "Blog", url: siteConfig.blogUrl },
+        ]}
+      />
 
       {/* Hero section */}
       <section className="bg-brand-dark text-white">
