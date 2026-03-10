@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { siteConfig } from "@/lib/site-config";
 
 export default function Header() {
@@ -30,15 +31,18 @@ export default function Header() {
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex justify-between items-center h-20">
             {/* Logo / Brand */}
-            <Link href="/" className="flex items-center shrink-0">
-              <div className="flex flex-col">
-                <span className="text-xl font-bold tracking-tight text-brand-dark">
-                  VIKING <span className="text-brand-accent">HVAC</span>
-                </span>
-                <span className="text-[0.6rem] text-brand-text-secondary tracking-widest uppercase">
-                  Blog
-                </span>
-              </div>
+            <Link
+              href={siteConfig.mainSiteUrl}
+              className="flex items-center shrink-0"
+            >
+              <Image
+                src="https://static.wixstatic.com/media/55fcb2_b3884c6dd8534735962c38183c0da45a~mv2.png/v1/fill/w_141,h_57,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/VIKING%20W.png"
+                alt="Viking Heating and Air Conditioning"
+                width={141}
+                height={57}
+                className="h-12 w-auto"
+                priority
+              />
             </Link>
 
             {/* Desktop nav */}
