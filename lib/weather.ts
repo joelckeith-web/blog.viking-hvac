@@ -10,14 +10,23 @@ import type {
 } from "./types";
 
 /**
- * Chandler, AZ coordinates for NWS API.
- * Lat/Lon for Chandler city center.
+ * Phoenix East Valley coordinates for NWS API.
+ * Primary point: Chandler city center (used for forecast grid).
  */
-const CHANDLER_LAT = 33.3062;
-const CHANDLER_LON = -111.8413;
+const PRIMARY_LAT = 33.3062;
+const PRIMARY_LON = -111.8413;
 
-/** KCHD — Chandler Municipal Airport, closest NWS station */
-const CHANDLER_STATION = "KCHD";
+/**
+ * NWS observation stations across the Phoenix East Valley.
+ * Pulling from multiple stations gives a broader weather picture
+ * covering all of Viking HVAC's primary service areas.
+ */
+const VALLEY_STATIONS = [
+  { id: "KCHD", name: "Chandler" },
+  { id: "KFFZ", name: "Mesa (Falcon Field)" },
+  { id: "KIWA", name: "Gilbert (Phoenix-Mesa Gateway)" },
+  { id: "KPHX", name: "Phoenix (Sky Harbor)" },
+];
 
 const NWS_USER_AGENT = "VikingHVACBlog/1.0 (info@viking-hvac.com)";
 
@@ -94,30 +103,118 @@ export { fetchWeeklyForecast };
 //  HISTORICAL OBSERVATIONS (past 48 hours from KCHD)
 // ═══════════════════════════════════════════════════════════
 
+/**
+ * Fetch historical observations from ALL Valley stations in parallel,
+ * then merge into a single HistoricalWeather summary. This captures
+ * weather events across Chandler, Mesa, Gilbert, and Phoenix.
+ */
 async function fetchHistoricalObservations(): Promise<HistoricalWeather> {
   const headers: Record<string, string> = {
     "User-Agent": NWS_USER_AGENT,
     Accept: "application/geo+json",
   };
 
+  // Fetch all stations in parallel
+  const stationResults = await Promise.allSettled(
+    VALLEY_STATIONS.map((station) =>
+      fetchStationObservations(station.id, station.name, headers)
+    )
+  );
+
+  // Merge observations from all successful fetches
+  const allObservations: WeatherObservation[] = [];
+  const stationsReporting: string[] = [];
+
+  for (let i = 0; i < stationResults.length; i++) {
+    const result = stationResults[i];
+    if (result.status === "fulfilled" && result.value.length > 0) {
+      allObservations.push(...result.value);
+      stationsReporting.push(VALLEY_STATIONS[i].name);
+    }
+  }
+
+  if (allObservations.length === 0) {
+    console.warn("No observations from any Valley station. Using empty historical.");
+    return emptyHistorical();
+  }
+
+  console.log(`[WEATHER] Stations reporting: ${stationsReporting.join(", ")}`);
+
+  // Aggregate across all stations — use worst-case values
+  let totalPrecip = 0;
+  let peakGust = 0;
+  let peakTemp = 0;
+  const severeEvents: string[] = [];
+
+  for (const obs of allObservations) {
+    if (obs.precipitationLastHour && obs.precipitationLastHour > 0) {
+      totalPrecip += obs.precipitationLastHour;
+    }
+    if (obs.windGust && obs.windGust > peakGust) {
+      peakGust = obs.windGust;
+    }
+    if (obs.temperature && obs.temperature > peakTemp) {
+      peakTemp = obs.temperature;
+    }
+    const desc = obs.description.toLowerCase();
+    for (const kw of SEVERE_KEYWORDS) {
+      if (desc.includes(kw) && !severeEvents.includes(kw)) {
+        severeEvents.push(kw);
+      }
+    }
+  }
+
+  // Average precip across stations to avoid over-counting
+  const stationCount = stationsReporting.length;
+  const avgPrecip = stationCount > 0 ? totalPrecip / stationCount : 0;
+
+  // Arizona-specific: extreme heat (110°F+) counts as severe
+  const hadSevere =
+    severeEvents.length > 0 ||
+    peakGust > 50 ||
+    avgPrecip > 1 ||
+    peakTemp > 110;
+
+  return {
+    totalPrecipitation: Math.round(avgPrecip * 100) / 100,
+    peakWindGust: Math.round(peakGust),
+    hadSevereWeather: hadSevere,
+    severeEvents,
+    summary: buildHistoricalSummaryText(
+      avgPrecip,
+      peakGust,
+      peakTemp,
+      hadSevere,
+      severeEvents,
+      allObservations
+    ),
+  };
+}
+
+/**
+ * Fetch observations from a single NWS station.
+ */
+async function fetchStationObservations(
+  stationId: string,
+  stationName: string,
+  headers: Record<string, string>
+): Promise<WeatherObservation[]> {
   try {
     const res = await fetch(
-      `https://api.weather.gov/stations/${CHANDLER_STATION}/observations?limit=96`,
+      `https://api.weather.gov/stations/${stationId}/observations?limit=96`,
       { headers }
     );
 
     if (!res.ok) {
-      console.warn(
-        `NWS Observations API error: ${res.status}. Falling back to empty historical.`
-      );
-      return emptyHistorical();
+      console.warn(`NWS station ${stationId} (${stationName}): ${res.status}`);
+      return [];
     }
 
     const data = await res.json();
     const features: Array<{ properties: Record<string, unknown> }> =
       data.features || [];
 
-    const observations: WeatherObservation[] = features
+    return features
       .map((f) => {
         const p = f.properties;
         return {
@@ -130,54 +227,9 @@ async function fetchHistoricalObservations(): Promise<HistoricalWeather> {
         };
       })
       .filter((o) => o.timestamp);
-
-    let totalPrecip = 0;
-    let peakGust = 0;
-    let peakTemp = 0;
-    const severeEvents: string[] = [];
-
-    for (const obs of observations) {
-      if (obs.precipitationLastHour && obs.precipitationLastHour > 0) {
-        totalPrecip += obs.precipitationLastHour;
-      }
-      if (obs.windGust && obs.windGust > peakGust) {
-        peakGust = obs.windGust;
-      }
-      if (obs.temperature && obs.temperature > peakTemp) {
-        peakTemp = obs.temperature;
-      }
-      const desc = obs.description.toLowerCase();
-      for (const kw of SEVERE_KEYWORDS) {
-        if (desc.includes(kw) && !severeEvents.includes(kw)) {
-          severeEvents.push(kw);
-        }
-      }
-    }
-
-    // Arizona-specific: extreme heat (110°F+) counts as severe
-    const hadSevere =
-      severeEvents.length > 0 ||
-      peakGust > 50 ||
-      totalPrecip > 1 ||
-      peakTemp > 110;
-
-    return {
-      totalPrecipitation: Math.round(totalPrecip * 100) / 100,
-      peakWindGust: Math.round(peakGust),
-      hadSevereWeather: hadSevere,
-      severeEvents,
-      summary: buildHistoricalSummaryText(
-        totalPrecip,
-        peakGust,
-        peakTemp,
-        hadSevere,
-        severeEvents,
-        observations
-      ),
-    };
   } catch (err) {
-    console.warn("Failed to fetch historical observations:", err);
-    return emptyHistorical();
+    console.warn(`Failed to fetch ${stationId} (${stationName}):`, err);
+    return [];
   }
 }
 
@@ -188,7 +240,7 @@ function emptyHistorical(): HistoricalWeather {
     hadSevereWeather: false,
     severeEvents: [],
     summary:
-      "No significant weather events in the past 48 hours in the Chandler area.",
+      "No significant weather events in the past 48 hours across the Phoenix East Valley (Chandler, Mesa, Gilbert, Phoenix).",
   };
 }
 
@@ -230,7 +282,7 @@ function buildHistoricalSummaryText(
 
   if (severe && events.length > 0) {
     parts.push(
-      `Significant weather hit the Chandler area in the past 48 hours: ${events.join(", ")}.`
+      `Significant weather hit the Phoenix East Valley in the past 48 hours: ${events.join(", ")}.`
     );
   }
 
@@ -253,7 +305,7 @@ function buildHistoricalSummaryText(
       .filter(Boolean);
     const unique = [...new Set(recentDescs)];
     parts.push(
-      `Recent conditions in Chandler: ${unique.join(", ") || "clear skies"}.`
+      `Recent conditions across the Phoenix East Valley: ${unique.join(", ") || "clear skies"}.`
     );
   }
 
@@ -347,7 +399,7 @@ function buildHistoricalSummary(historical: HistoricalWeather): string {
     historical.peakWindGust === 0 &&
     !historical.hadSevereWeather
   ) {
-    return "No significant weather events have occurred in the Chandler area over the past 48 hours.";
+    return "No significant weather events have occurred across the Phoenix East Valley over the past 48 hours.";
   }
   return historical.summary;
 }
@@ -363,7 +415,7 @@ async function fetchWeeklyForecast(): Promise<WeeklyForecast> {
   };
 
   const pointsRes = await fetch(
-    `https://api.weather.gov/points/${CHANDLER_LAT},${CHANDLER_LON}`,
+    `https://api.weather.gov/points/${PRIMARY_LAT},${PRIMARY_LON}`,
     { headers }
   );
 
@@ -399,7 +451,7 @@ async function fetchWeeklyForecast(): Promise<WeeklyForecast> {
   const summary = analyzeWeather(periods, alerts);
 
   return {
-    location: "Chandler, AZ",
+    location: "Chandler, Mesa, Gilbert & Phoenix East Valley, AZ",
     fetchedAt: now.toISOString(),
     weekRange,
     periods,
