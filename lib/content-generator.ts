@@ -8,9 +8,11 @@ import type {
 } from "./types";
 import { siteConfig } from "./site-config";
 
-const anthropic = new Anthropic({
-  apiKey: process.env.ANTHROPIC_API_KEY,
-});
+function getAnthropicClient() {
+  return new Anthropic({
+    apiKey: process.env.ANTHROPIC_API_KEY,
+  });
+}
 
 /**
  * Generate a weather-triggered blog post from the full weather context.
@@ -32,7 +34,7 @@ export async function generateBlogPost(
   const systemPrompt = buildSystemPrompt(context.mode);
   const userPrompt = buildUserPrompt(context, internalLinks, geoFooterLinks);
 
-  const response = await anthropic.messages.create({
+  const response = await getAnthropicClient().messages.create({
     model: "claude-sonnet-4-20250514",
     max_tokens: 8000,
     system: systemPrompt,
