@@ -248,13 +248,13 @@ For each new client, update these files:
 - [ ] Update NWS User-Agent email
 - [ ] Tip: Find coords at https://www.latlong.net
 
-### 7.3 `styles/globals.css` — Brand Colors & Styles (Tailwind CSS 4)
-- [ ] Update `@theme` block with client brand colors (primary, secondary, dark, light, accent)
-- [ ] Update `.cta-button` background color
-- [ ] Update `.cta-button:hover` color
-- [ ] Update `.prose h2` border color
-- [ ] Update `.weather-badge` background color
-- [ ] Note: **No `tailwind.config.ts` needed** — Tailwind 4 uses CSS-based `@theme` configuration
+### 7.3 `tailwind.config.ts` & `styles/globals.css` — Brand Colors & Styles (Tailwind CSS 3)
+- [ ] Update `tailwind.config.ts` → `theme.extend.colors.brand` with client brand colors
+- [ ] Update `tailwind.config.ts` → `theme.extend.typography.DEFAULT.css` with brand colors for prose
+- [ ] Update `globals.css` → `.btn-primary` uses `bg-brand-accent` (verify accent color)
+- [ ] Update `globals.css` → `.btn-secondary` border/text uses `brand-accent`
+- [ ] Update `globals.css` → `.prose blockquote` border uses `brand-accent`
+- [ ] Note: **Always use TW3 with `tailwind.config.ts`** — do NOT use TW4 (see issue 11.4)
 
 ### 7.5 `components/Header.tsx` — Navigation
 - [ ] Logo (replace PP placeholder with client logo)
@@ -477,33 +477,90 @@ git config user.email "your@email.com"
 
 **Note:** Do NOT use `--global` flag unless you want this identity for all repos on the machine.
 
-### 11.4 Tailwind CSS 4 — PostCSS Configuration
+### 11.4 Tailwind CSS — Use v3, NOT v4
 
-**Problem:** Tailwind CSS 4 uses `@tailwindcss/postcss` instead of the old `tailwindcss` PostCSS plugin. Using the wrong config causes styles to not compile.
+**Problem:** The initial Viking HVAC build used Tailwind CSS v4 with `@tailwindcss/postcss`, `@import "tailwindcss"`, and `@theme` blocks for color configuration. While TW4 compiled without errors, the deployed site had **visibly wrong colors and missing prose styling** compared to the Property Pros template (which uses TW3). The root causes:
 
-**Fix:** Use this exact `postcss.config.mjs`:
+1. **TW4 generates CSS differently** — colors use `var()` indirection and can convert to `oklch()`, producing subtly different rendered colors than the hex values specified.
+2. **TW4's `@theme` approach** doesn't integrate with `@tailwindcss/typography` the same way TW3's `tailwind.config.ts` does — typography customizations (heading colors, link colors, blockquote borders) were weaker or missing.
+3. **TW4's `@plugin` syntax** loads plugins but doesn't provide the same deep configuration as TW3's `plugins: [require("@tailwindcss/typography")]` with `typography` theme overrides.
+
+**Fix:** Use **Tailwind CSS v3** with `tailwind.config.ts` to exactly match the Property Pros template:
+
+```bash
+# Install TW3 stack (NOT TW4)
+npm install -D tailwindcss@3 autoprefixer @tailwindcss/typography@0.5
+```
+
+Use this `postcss.config.mjs`:
 ```js
 const config = {
   plugins: {
-    "@tailwindcss/postcss": {},
+    tailwindcss: {},
+    autoprefixer: {},
   },
 };
 export default config;
 ```
 
-And in `styles/globals.css`, use `@import "tailwindcss"` instead of the old `@tailwind` directives. Brand colors go in a `@theme` block:
+Use this `globals.css`:
 ```css
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-@theme {
-  --color-primary: #004281;
-  --color-secondary: #eb1c23;
-  --color-dark: #000000;
-  --color-light: #f5f5f5;
+@layer base {
+  html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+  body { @apply bg-white text-brand-text; }
+}
+
+@layer components {
+  .btn-primary { @apply inline-block bg-brand-accent text-white font-semibold px-6 py-3 rounded-md hover:bg-brand-accent-hover transition-colors; }
+  .btn-secondary { @apply inline-block border-2 border-brand-accent text-brand-accent font-semibold px-6 py-3 rounded-md hover:bg-brand-accent hover:text-white transition-colors; }
+  /* ... additional component classes */
 }
 ```
 
-**No `tailwind.config.ts` needed** — Tailwind 4 uses CSS-based configuration via `@theme`.
+Create `tailwind.config.ts` with brand colors in `theme.extend.colors.brand`:
+```ts
+import type { Config } from "tailwindcss";
+const config: Config = {
+  content: ["./app/**/*.{js,ts,jsx,tsx,mdx}", "./components/**/*.{js,ts,jsx,tsx,mdx}"],
+  theme: {
+    extend: {
+      colors: {
+        brand: {
+          dark: "#CLIENT_PRIMARY",
+          "dark-secondary": "#CLIENT_DARKER",
+          accent: "#CLIENT_ACCENT",
+          "accent-hover": "#CLIENT_ACCENT_DARKER",
+          "accent-light": "rgba(R, G, B, 0.08)",
+          text: "#333333",
+          "text-secondary": "#555555",
+        },
+      },
+      typography: {
+        DEFAULT: {
+          css: {
+            maxWidth: "none",
+            color: "#333333",
+            a: { color: "#CLIENT_ACCENT", "&:hover": { color: "#CLIENT_ACCENT_DARKER" } },
+            h1: { color: "#CLIENT_PRIMARY" },
+            h2: { color: "#CLIENT_PRIMARY" },
+            h3: { color: "#CLIENT_DARKER" },
+            strong: { color: "#CLIENT_DARKER" },
+            blockquote: { borderLeftColor: "#CLIENT_ACCENT" },
+          },
+        },
+      },
+    },
+  },
+  plugins: [require("@tailwindcss/typography")],
+};
+export default config;
+```
+
+**Template rule:** Always use TW3 + `tailwind.config.ts` + `@tailwindcss/typography`. Do NOT use TW4 `@theme`/`@plugin`/`@tailwindcss/postcss` — it produces different output.
 
 ### 11.5 Package.json — Required Dependencies
 
@@ -512,7 +569,7 @@ And in `styles/globals.css`, use `@import "tailwindcss"` instead of the old `@ta
 ```json
 {
   "dependencies": {
-    "next": "15.5.12",
+    "next": "^15.5.12",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "gray-matter": "^4.0.3",
@@ -530,14 +587,17 @@ And in `styles/globals.css`, use `@import "tailwindcss"` instead of the old `@ta
     "@types/react-dom": "^19.0.0",
     "typescript": "^5.7.0",
     "tsx": "^4.19.0",
-    "tailwindcss": "^4.0.0",
-    "@tailwindcss/postcss": "^4.0.0",
+    "tailwindcss": "^3.4.0",
+    "@tailwindcss/typography": "^0.5.15",
+    "autoprefixer": "^10.4.0",
     "postcss": "^8.5.0",
     "eslint": "^9.0.0",
-    "eslint-config-next": "15.5.12"
+    "eslint-config-next": "^15.5.12"
   }
 }
 ```
+
+**Critical:** Use `tailwindcss@3` (NOT v4). See issue 11.4 for why.
 
 ### 11.6 Wix-Based Client Sites — Brand Color Extraction
 
@@ -595,6 +655,114 @@ npm install
 
 **Arizona stations:** KCHD (Chandler), KPHX (Phoenix Sky Harbor), KSDL (Scottsdale), KFFZ (Mesa/Falcon Field)
 
+### 11.11 Missing `@tailwindcss/typography` Plugin — Unstyled Blog Content
+
+**Problem:** The blog post page used `prose` and `prose-lg` CSS classes to style markdown content (headings, paragraphs, links, lists, blockquotes). Without the `@tailwindcss/typography` plugin installed, these classes do absolutely nothing — all blog text renders as unstyled, same-size, same-color text. This is the single biggest quality difference between a polished and an amateur-looking blog.
+
+**Fix:** Always install the typography plugin:
+```bash
+npm install -D @tailwindcss/typography@0.5
+```
+
+And add it to `tailwind.config.ts`:
+```ts
+plugins: [require("@tailwindcss/typography")],
+```
+
+Customize prose colors in `theme.extend.typography.DEFAULT.css` to match the client's brand (headings, links, blockquotes — see 11.4 for the full config pattern).
+
+**How to verify:** After building, check the deployed blog post page. Headings should be larger and colored, links should be the accent color, blockquotes should have a colored left border. If everything looks like plain unstyled text, the typography plugin is missing.
+
+### 11.12 Links Opening in New Tabs — `target="_blank"` Overuse
+
+**Problem:** During initial development, all external links (to the client's main site services, contact page, about page, etc.) were given `target="_blank" rel="noopener noreferrer"`. This caused every navigation link to the main site to open a new browser tab, creating a frustrating user experience. The blog and main site should feel like one connected site, not separate destinations.
+
+**Fix:** Remove `target="_blank"` from ALL links pointing to the client's main site domain. Links should open in the same tab for seamless navigation.
+
+**Rule:** Only use `target="_blank"` for links to truly external third-party sites (e.g., social media profiles in the footer). Links to `client-site.com/*` from `blog.client-site.com` should NEVER use `target="_blank"`.
+
+**Files to check:** `Header.tsx`, `Footer.tsx`, `ServiceAreaFooter.tsx`, `app/page.tsx`, `app/blog/[slug]/page.tsx`, `app/not-found.tsx` — search for `target="_blank"` and remove from any main-site link.
+
+### 11.13 Client Logo — Use Image, Not Text
+
+**Problem:** The initial header used a text-based logo (`VIKING HVAC` in styled spans). This looks generic and doesn't match the client's actual branding. Every client has a logo image that should be used.
+
+**Fix:** Use Next.js `Image` component with the client's logo URL. For Wix-hosted clients, the logo is typically available as a static asset on `static.wixstatic.com`:
+
+```tsx
+import Image from "next/image";
+
+<Link href={siteConfig.mainSiteUrl} className="flex items-center shrink-0">
+  <Image
+    src="CLIENT_LOGO_URL"
+    alt="Client Name"
+    width={200}
+    height={50}
+    className="h-12 w-auto"
+    priority
+  />
+</Link>
+```
+
+**Important:** Add the image host domain to `next.config.ts`:
+```ts
+images: {
+  domains: ["blog.clientsite.com", "static.wixstatic.com"],
+},
+```
+
+**Where to find logos:**
+- **Wix sites:** View page source → search for `.png` or `.svg` URLs on `static.wixstatic.com`
+- **WordPress sites:** Usually at `/wp-content/uploads/` — check header source
+- **Ask the client** for a high-res PNG/SVG version
+
+### 11.14 Blog Structure Must Match Property Pros Template Exactly
+
+**Problem:** The Viking HVAC blog was initially built with a different component structure than the Property Pros template — featured post layout, different card design, missing sidebar, no breadcrumbs, no FAQ section, no related posts. Even though both were "blogs," the Viking version looked significantly lower quality.
+
+**Fix:** Every new client blog must match the Property Pros architecture 1:1. Required structural elements:
+
+**Homepage (`app/page.tsx`):**
+- Left-aligned hero section with `max-w-3xl` inner container
+- Service category pills/tags in the hero
+- Simple 3-column grid of BlogCards (no featured post variant)
+- Light-background CTA section at bottom
+- "Blog Coming Soon" empty state with SVG icon
+
+**Blog Post Page (`app/blog/[slug]/page.tsx`):**
+- Dark header with breadcrumb navigation (Home / Blog / Category)
+- Category badge + date + reading time + weather indicator
+- Main content + sidebar layout (`lg:flex lg:gap-12`)
+- Sidebar: sticky contact card + services list
+- Service Area geo-footer links below content
+- Expandable FAQ section (using `<details>` elements)
+- In-post CTA with dual buttons
+- Tags as rounded pills
+- "More From Our Blog" related posts section (3-column grid)
+
+**BlogCard/PostCard (`components/PostCard.tsx`):**
+- Gradient image placeholder (dark-to-darker)
+- Weather icon for weather-triggered posts
+- Per-category colored badges (not all the same color)
+- Title links to post, hover color change
+- Reading time + weather week in footer
+
+**Header (`components/Header.tsx`):**
+- Dark utility bar (phone + license info)
+- White sticky nav bar with logo image
+- Services dropdown on hover
+- "Schedule Service" CTA button
+
+**Footer (`components/Footer.tsx`):**
+- 4-column grid: About (with social SVG icons), Services, Service Areas, Contact (with SVG icons)
+- Accent-colored section headings
+- Bottom bar with copyright + links
+
+**Additional required components:**
+- `ServiceAreaFooter.tsx` — geo-link footer for blog posts
+- `SchemaMarkup.tsx` — separate named exports: `LocalBusinessSchema`, `WebSiteSchema`, `ArticleSchema`, `FaqSchema`, `BreadcrumbSchema`
+- `app/not-found.tsx` — branded 404 page
+
 ---
 
 ## 12. New Client Setup — Quick Start Checklist
@@ -615,8 +783,15 @@ Use this checklist when duplicating for a new client. It incorporates all lesson
 - [ ] Clone locally
 - [ ] Initialize with Next.js **15.5.x+** (not 15.2.3!)
 - [ ] Include `"framework": "nextjs"` in `vercel.json`
-- [ ] Use `@tailwindcss/postcss` in postcss.config.mjs (Tailwind 4)
-- [ ] Use `@theme` block in globals.css for brand colors (no tailwind.config.ts)
+- [ ] Use **Tailwind v3** with `tailwind.config.ts` (NOT TW4 — see 11.4)
+- [ ] Install `@tailwindcss/typography@0.5` (critical for prose styling — see 11.11)
+- [ ] Use `postcss.config.mjs` with `tailwindcss: {}` and `autoprefixer: {}`
+- [ ] Use `@tailwind base/components/utilities` and `@layer` in globals.css
+- [ ] Configure brand colors in `tailwind.config.ts` `theme.extend.colors.brand`
+- [ ] Use client's actual logo image in Header (not text — see 11.13)
+- [ ] Add logo image domain to `next.config.ts` `images.domains`
+- [ ] Remove `target="_blank"` from all main-site links (see 11.12)
+- [ ] Match Property Pros component structure exactly (see 11.14)
 - [ ] Set git user.name and user.email before first commit
 - [ ] Customize all files per Section 7 checklist
 - [ ] Verify build passes locally: `npx next build`
