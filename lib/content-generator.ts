@@ -77,6 +77,13 @@ KEY ARIZONA HVAC FACTS (use naturally in content):
 CONTENT MODE: ${mode.toUpperCase()}
 ${modeInstructions}
 
+WEATHER SOURCE ATTRIBUTION (REQUIRED for weather-triggered posts):
+- When referencing forecast data, link to the NWS Phoenix forecast page: [National Weather Service Phoenix](https://forecast.weather.gov/MapClick.php?lat=33.3062&lon=-111.8413)
+- When referencing historical observations or storm events, link to: [NWS Phoenix Station Data](https://www.weather.gov/psr/)
+- This external link counts toward your 2+ external authority link requirement
+- Place the link naturally near the first mention of specific weather data (temperatures, precipitation chances, alerts)
+- This adds E-E-A-T credibility by citing the primary source of the weather information used in the post
+
 STRICT CONTENT RULES (Core Content Creation SOP):
 1. Write exactly 1,500–2,200 words of verified, substantive content. No filler.
 2. Include the primary keyword in the H1 title and within the first 100 words.
