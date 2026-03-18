@@ -10,7 +10,7 @@ metaDescription: "Extreme Heat Warning issued for Chandler, AZ March 18-24. Temp
 weatherTriggered: true
 weatherMode: "pre-event"
 weatherWeek: "March 18–March 24, 2026"
-featuredImage: ""
+featuredImage: "https://images.pexels.com/photos/11256510/pexels-photo-11256510.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
 serviceAreaFooterLinks:
   - label: "Air Conditioning in Downtown Chandler"
     url: "https://www.viking-hvac.com/air-conditioning"

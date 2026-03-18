@@ -10,7 +10,7 @@ metaDescription: "Expert HVAC tips, maintenance guides, and weather-triggered in
 weatherTriggered: false
 weatherMode: "pre-event"
 weatherWeek: ""
-featuredImage: ""
+featuredImage: "https://images.pexels.com/photos/29452977/pexels-photo-29452977.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
 serviceAreaFooterLinks: []
 schema:
   type: "Article"

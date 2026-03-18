@@ -10,7 +10,7 @@ metaDescription: "Extreme heat watch issued for Chandler March 16-22 with temps 
 weatherTriggered: true
 weatherMode: "pre-event"
 weatherWeek: "March 16–March 22, 2026"
-featuredImage: ""
+featuredImage: "https://images.pexels.com/photos/24828656/pexels-photo-24828656.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
 serviceAreaFooterLinks:
   - label: "Air Conditioning in Downtown Chandler"
     url: "https://www.viking-hvac.com/air-conditioning"

@@ -10,7 +10,7 @@ metaDescription: "Blowing dust hit Chandler with 34 mph winds this week. Check y
 weatherTriggered: true
 weatherMode: "post-event"
 weatherWeek: "March 10–March 16, 2026"
-featuredImage: ""
+featuredImage: "https://images.pexels.com/photos/33693530/pexels-photo-33693530.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
 serviceAreaFooterLinks:
   - label: "Air Quality in Downtown Chandler"
     url: "https://www.viking-hvac.com/air-quality"
