@@ -223,11 +223,11 @@ export default function CareersPage() {
               'Paid Time Off', 'Paid Holidays', 'Fuel Card', 'Take-Home Truck',
               'Tool Credit Account', 'iPad Provided', 'Ongoing Training', 'Referral Bonuses',
             ].map((benefit) => (
-              <div key={benefit} className="flex items-center gap-3 bg-white/20 rounded-lg p-4">
-                <svg className="w-5 h-5 text-white flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div key={benefit} className="flex items-center gap-3 bg-white rounded-lg p-4">
+                <svg className="w-5 h-5 text-[#eb1c23] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
                 </svg>
-                <span className="text-base font-semibold text-white">{benefit}</span>
+                <span className="text-base font-bold text-[#002147]">{benefit}</span>
               </div>
             ))}
           </div>
