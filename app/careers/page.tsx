@@ -111,9 +111,6 @@ export default function CareersPage() {
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img src={IMAGES.truckFleet} alt="Viking HVAC truck fleet" className="w-full h-[420px] md:h-[540px] object-cover" />
-              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-8">
-                <p className="text-white font-bold text-xl">Your truck. Your tools. Your career.</p>
-              </div>
             </div>
           </div>
         </div>
