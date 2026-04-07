@@ -50,7 +50,7 @@ export async function POST(request: Request) {
     const recipients = recipientEmail.split(',').map((e) => e.trim());
 
     await resend.emails.send({
-      from: 'Viking HVAC Careers <careers@blog.viking-hvac.com>',
+      from: 'Viking HVAC Careers <onboarding@resend.dev>',
       to: recipients,
       replyTo: data.email,
       subject: `New Application — ${data.position} — ${data.name}`,
