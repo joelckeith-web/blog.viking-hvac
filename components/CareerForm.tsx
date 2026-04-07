@@ -71,7 +71,7 @@ export default function CareerForm() {
           name="name"
           required
           placeholder="John Smith"
-          className="w-full rounded-lg border border-gray-300 px-4 py-3 text-gray-900 placeholder-gray-400 focus:border-[var(--color-brand-accent)] focus:ring-2 focus:ring-[var(--color-brand-accent)] focus:ring-opacity-30 outline-none transition"
+          className="w-full rounded-lg border border-gray-300 px-4 py-3 text-gray-900 placeholder-gray-400 focus:border-[#eb1c23] focus:ring-2 focus:ring-[#eb1c23] focus:ring-opacity-30 outline-none transition"
         />
       </div>
 
@@ -86,7 +86,7 @@ export default function CareerForm() {
           name="phone"
           required
           placeholder="(480) 555-1234"
-          className="w-full rounded-lg border border-gray-300 px-4 py-3 text-gray-900 placeholder-gray-400 focus:border-[var(--color-brand-accent)] focus:ring-2 focus:ring-[var(--color-brand-accent)] focus:ring-opacity-30 outline-none transition"
+          className="w-full rounded-lg border border-gray-300 px-4 py-3 text-gray-900 placeholder-gray-400 focus:border-[#eb1c23] focus:ring-2 focus:ring-[#eb1c23] focus:ring-opacity-30 outline-none transition"
         />
       </div>
 
@@ -101,7 +101,7 @@ export default function CareerForm() {
           name="email"
           required
           placeholder="john@example.com"
-          className="w-full rounded-lg border border-gray-300 px-4 py-3 text-gray-900 placeholder-gray-400 focus:border-[var(--color-brand-accent)] focus:ring-2 focus:ring-[var(--color-brand-accent)] focus:ring-opacity-30 outline-none transition"
+          className="w-full rounded-lg border border-gray-300 px-4 py-3 text-gray-900 placeholder-gray-400 focus:border-[#eb1c23] focus:ring-2 focus:ring-[#eb1c23] focus:ring-opacity-30 outline-none transition"
         />
       </div>
 
@@ -115,7 +115,7 @@ export default function CareerForm() {
           name="position"
           required
           defaultValue=""
-          className="w-full rounded-lg border border-gray-300 px-4 py-3 text-gray-900 focus:border-[var(--color-brand-accent)] focus:ring-2 focus:ring-[var(--color-brand-accent)] focus:ring-opacity-30 outline-none transition bg-white"
+          className="w-full rounded-lg border border-gray-300 px-4 py-3 text-gray-900 focus:border-[#eb1c23] focus:ring-2 focus:ring-[#eb1c23] focus:ring-opacity-30 outline-none transition bg-white"
         >
           <option value="" disabled>Select a position</option>
           {POSITIONS.map((pos) => (
@@ -134,7 +134,7 @@ export default function CareerForm() {
           name="experience"
           required
           defaultValue=""
-          className="w-full rounded-lg border border-gray-300 px-4 py-3 text-gray-900 focus:border-[var(--color-brand-accent)] focus:ring-2 focus:ring-[var(--color-brand-accent)] focus:ring-opacity-30 outline-none transition bg-white"
+          className="w-full rounded-lg border border-gray-300 px-4 py-3 text-gray-900 focus:border-[#eb1c23] focus:ring-2 focus:ring-[#eb1c23] focus:ring-opacity-30 outline-none transition bg-white"
         >
           <option value="" disabled>Select experience level</option>
           {EXPERIENCE_LEVELS.map((level) => (
@@ -153,7 +153,7 @@ export default function CareerForm() {
           name="epaCertified"
           required
           defaultValue=""
-          className="w-full rounded-lg border border-gray-300 px-4 py-3 text-gray-900 focus:border-[var(--color-brand-accent)] focus:ring-2 focus:ring-[var(--color-brand-accent)] focus:ring-opacity-30 outline-none transition bg-white"
+          className="w-full rounded-lg border border-gray-300 px-4 py-3 text-gray-900 focus:border-[#eb1c23] focus:ring-2 focus:ring-[#eb1c23] focus:ring-opacity-30 outline-none transition bg-white"
         >
           <option value="" disabled>Select</option>
           <option value="Yes">Yes</option>
@@ -171,7 +171,7 @@ export default function CareerForm() {
           name="driversLicense"
           required
           defaultValue=""
-          className="w-full rounded-lg border border-gray-300 px-4 py-3 text-gray-900 focus:border-[var(--color-brand-accent)] focus:ring-2 focus:ring-[var(--color-brand-accent)] focus:ring-opacity-30 outline-none transition bg-white"
+          className="w-full rounded-lg border border-gray-300 px-4 py-3 text-gray-900 focus:border-[#eb1c23] focus:ring-2 focus:ring-[#eb1c23] focus:ring-opacity-30 outline-none transition bg-white"
         >
           <option value="" disabled>Select</option>
           <option value="Yes">Yes</option>
@@ -189,7 +189,7 @@ export default function CareerForm() {
           name="message"
           rows={3}
           placeholder="Tell us about your experience, certifications, or why you want to join Viking..."
-          className="w-full rounded-lg border border-gray-300 px-4 py-3 text-gray-900 placeholder-gray-400 focus:border-[var(--color-brand-accent)] focus:ring-2 focus:ring-[var(--color-brand-accent)] focus:ring-opacity-30 outline-none transition resize-y"
+          className="w-full rounded-lg border border-gray-300 px-4 py-3 text-gray-900 placeholder-gray-400 focus:border-[#eb1c23] focus:ring-2 focus:ring-[#eb1c23] focus:ring-opacity-30 outline-none transition resize-y"
         />
       </div>
 
@@ -200,7 +200,7 @@ export default function CareerForm() {
       <button
         type="submit"
         disabled={submitting}
-        className="w-full bg-[var(--color-brand-accent)] hover:bg-[var(--color-brand-accent-hover)] text-white font-bold py-4 px-6 rounded-lg transition-colors text-lg disabled:opacity-60 disabled:cursor-not-allowed"
+        className="w-full bg-[#eb1c23] hover:bg-[#c41018] text-white font-bold py-4 px-6 rounded-lg transition-colors text-lg disabled:opacity-60 disabled:cursor-not-allowed"
       >
         {submitting ? (
           <span className="flex items-center justify-center gap-2">
