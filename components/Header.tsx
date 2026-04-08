@@ -36,7 +36,7 @@ export default function Header() {
               className="flex items-center shrink-0"
             >
               <Image
-                src="https://static.wixstatic.com/media/55fcb2_b3884c6dd8534735962c38183c0da45a~mv2.png/v1/fill/w_141,h_57,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/VIKING%20W.png"
+                src="https://static.wixstatic.com/media/55fcb2_4552799dcc6f448da9e345eeec2e9320~mv2.png/v1/fill/w_200,h_89,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/VIKING.png"
                 alt="Viking Heating and Air Conditioning"
                 width={141}
                 height={57}
