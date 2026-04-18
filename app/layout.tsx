@@ -1,9 +1,14 @@
 import type { Metadata } from "next";
 import Script from "next/script";
+import { headers } from "next/headers";
 import "@/styles/globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { LocalBusinessSchema, WebSiteSchema } from "@/components/SchemaMarkup";
+import {
+  GoogleTagManagerHead,
+  GoogleTagManagerNoScript,
+} from "@/components/global/GoogleTagManager";
 import { siteConfig } from "@/lib/site-config";
 
 const META_PIXEL_ID = process.env.NEXT_PUBLIC_META_PIXEL_ID;
@@ -32,17 +37,22 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+  const h = await headers();
+  const host = h.get("host") || "";
+  const isLp = host.startsWith("lp.");
+
   return (
     <html lang="en">
       <head>
         <LocalBusinessSchema />
         <WebSiteSchema />
-        {META_PIXEL_ID && (
+        {isLp && <GoogleTagManagerHead />}
+        {!isLp && META_PIXEL_ID && (
           <Script id="meta-pixel" strategy="afterInteractive">
             {`
               !function(f,b,e,v,n,t,s)
@@ -58,7 +68,7 @@ export default function RootLayout({
             `}
           </Script>
         )}
-        {META_PIXEL_ID && (
+        {!isLp && META_PIXEL_ID && (
           <noscript>
             <img
               height="1"
@@ -71,9 +81,10 @@ export default function RootLayout({
         )}
       </head>
       <body className="min-h-screen flex flex-col">
-        <Header />
+        {isLp && <GoogleTagManagerNoScript />}
+        {!isLp && <Header />}
         <main className="flex-1">{children}</main>
-        <Footer />
+        {!isLp && <Footer />}
       </body>
     </html>
   );
