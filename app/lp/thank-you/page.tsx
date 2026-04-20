@@ -40,7 +40,7 @@ export default function ThankYouPage() {
             href={`tel:${siteConfig.phoneRaw}`}
             className="inline-flex items-center gap-2 font-extrabold text-2xl md:text-3xl text-[#eb1c23] hover:text-[#c41018] transition-colors"
           >
-            📞 {siteConfig.phone}
+            {siteConfig.phone}
           </a>
           <p className="text-xs text-gray-600 mt-3">
             24/7 emergency service. Family-owned. Serving 29+ Phoenix-area cities.

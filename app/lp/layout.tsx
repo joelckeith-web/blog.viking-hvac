@@ -4,7 +4,7 @@ import { siteConfig } from '@/lib/site-config';
 export const metadata: Metadata = {
   title: 'Free Quote — Viking Heating and Air Conditioning',
   description:
-    'Get a fast, free HVAC quote from Viking Heating and Air Conditioning — Chandler, AZ. Family-owned. 240+ 5-star reviews. 24/7 emergency service.',
+    'Get a fast, free HVAC quote from Viking Heating and Air Conditioning — Chandler, AZ. Family-owned. 350+ 5-star reviews. 24/7 emergency service.',
   metadataBase: new URL('https://lp.viking-hvac.com'),
   alternates: { canonical: '/' },
   robots: { index: false, follow: false },

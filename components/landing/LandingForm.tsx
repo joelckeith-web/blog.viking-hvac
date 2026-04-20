@@ -1,7 +1,6 @@
 'use client';
 
 import { Suspense, useState } from 'react';
-import { useRouter } from 'next/navigation';
 import { useForm } from 'react-hook-form';
 import { siteConfig } from '@/lib/site-config';
 import { useUTMParams } from '@/lib/useUTMParams';
@@ -63,7 +62,6 @@ function SmtpLandingFormInner({
   messagePlaceholder = 'Briefly describe your situation (optional)',
   leadSource,
 }: LandingFormProps) {
-  const router = useRouter();
   const [submitError, setSubmitError] = useState<string | null>(null);
   const [recaptchaToken, setRecaptchaToken] = useState<string | null>(null);
   const [recaptchaError, setRecaptchaError] = useState<string | null>(null);
@@ -115,7 +113,8 @@ function SmtpLandingFormInner({
         form_service: serviceLabel,
       });
 
-      router.push('/thank-you');
+      // Redirect to Viking main-site thank-you for Google Ads conversion tracking.
+      window.location.href = 'https://viking-hvac.com/thank-you';
     } catch {
       setSubmitError(
         'Something went wrong. Please try again or call us directly.'
@@ -151,7 +150,7 @@ function SmtpLandingFormInner({
           <input
             type="text"
             {...register('name', { required: 'Name is required' })}
-            className="w-full px-4 py-3 border border-gray-200 rounded-lg text-base focus:outline-none focus:ring-2 focus:ring-[#eb1c23] focus:border-transparent placeholder:text-gray-400"
+            className="w-full px-4 py-3 border border-gray-200 rounded-lg text-base text-gray-900 bg-white focus:outline-none focus:ring-2 focus:ring-[#eb1c23] focus:border-transparent placeholder:text-gray-400"
             placeholder="Full Name *"
           />
           {errors.name && (
@@ -163,7 +162,7 @@ function SmtpLandingFormInner({
           <input
             type="tel"
             {...register('phone', { required: 'Phone is required' })}
-            className="w-full px-4 py-3 border border-gray-200 rounded-lg text-base focus:outline-none focus:ring-2 focus:ring-[#eb1c23] focus:border-transparent placeholder:text-gray-400"
+            className="w-full px-4 py-3 border border-gray-200 rounded-lg text-base text-gray-900 bg-white focus:outline-none focus:ring-2 focus:ring-[#eb1c23] focus:border-transparent placeholder:text-gray-400"
             placeholder="Phone Number *"
           />
           {errors.phone && (
@@ -181,7 +180,7 @@ function SmtpLandingFormInner({
                 message: 'Enter a valid email',
               },
             })}
-            className="w-full px-4 py-3 border border-gray-200 rounded-lg text-base focus:outline-none focus:ring-2 focus:ring-[#eb1c23] focus:border-transparent placeholder:text-gray-400"
+            className="w-full px-4 py-3 border border-gray-200 rounded-lg text-base text-gray-900 bg-white focus:outline-none focus:ring-2 focus:ring-[#eb1c23] focus:border-transparent placeholder:text-gray-400"
             placeholder="Email Address *"
           />
           {errors.email && (
@@ -193,7 +192,7 @@ function SmtpLandingFormInner({
           <input
             type="text"
             {...register('zipCode', { required: 'ZIP code is required' })}
-            className="w-full px-4 py-3 border border-gray-200 rounded-lg text-base focus:outline-none focus:ring-2 focus:ring-[#eb1c23] focus:border-transparent placeholder:text-gray-400"
+            className="w-full px-4 py-3 border border-gray-200 rounded-lg text-base text-gray-900 bg-white focus:outline-none focus:ring-2 focus:ring-[#eb1c23] focus:border-transparent placeholder:text-gray-400"
             placeholder="ZIP Code *"
           />
           {errors.zipCode && (
@@ -207,7 +206,7 @@ function SmtpLandingFormInner({
           <textarea
             rows={3}
             {...register('message')}
-            className="w-full px-4 py-3 border border-gray-200 rounded-lg text-base focus:outline-none focus:ring-2 focus:ring-[#eb1c23] focus:border-transparent resize-none placeholder:text-gray-400"
+            className="w-full px-4 py-3 border border-gray-200 rounded-lg text-base text-gray-900 bg-white focus:outline-none focus:ring-2 focus:ring-[#eb1c23] focus:border-transparent resize-none placeholder:text-gray-400"
             placeholder={messagePlaceholder}
           />
         </div>
@@ -277,7 +276,7 @@ function SmtpLandingFormInner({
           href={`tel:${siteConfig.phoneRaw}`}
           className="flex items-center justify-center gap-2 text-gray-600 hover:text-[#eb1c23] text-sm pt-2 border-t border-gray-100"
         >
-          📞 Or call {siteConfig.phone}
+          Or call {siteConfig.phone}
         </a>
       </form>
     </div>

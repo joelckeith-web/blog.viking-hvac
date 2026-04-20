@@ -2,19 +2,26 @@ import type { Metadata } from 'next';
 import { siteConfig } from '@/lib/site-config';
 import { LandingForm } from '@/components/landing/LandingForm';
 import { FAQAccordion } from '@/components/sections/FAQAccordion';
+import { vikingImages } from '@/lib/viking-images';
 
 export const metadata: Metadata = {
   title: 'AC Repair in Chandler & Phoenix, AZ | Same-Day Service | Viking HVAC',
   description:
-    'Fast, honest AC repair across the Greater Phoenix area. Same-day service when possible. Family-owned, 240+ 5-star reviews, AZ ROC #316534. Free quote.',
+    'Fast, honest AC repair across the Greater Phoenix area. Same-day service when possible. Family-owned, 350+ 5-star reviews, AZ ROC #316534. Free quote.',
   robots: { index: false, follow: false },
 };
 
 const trustStats = [
-  { value: '240+', label: '5-Star Reviews' },
+  { value: '350+', label: '5-Star Reviews' },
   { value: 'Same-Day', label: 'Service Available' },
   { value: '24/7', label: 'Emergency Repair' },
   { value: '29+', label: 'Cities Served' },
+];
+
+const certifications = [
+  { name: 'Champion', label: 'Authorized Dealer' },
+  { name: 'Mitsubishi', label: 'Authorized Dealer' },
+  { name: 'Mitsubishi', label: 'Diamond Contractor' },
 ];
 
 const repairBenefits = [
@@ -31,7 +38,7 @@ const repairBenefits = [
   {
     title: 'All Brands, All Systems',
     description:
-      'Trane, Carrier, Lennox, Goodman, Rheem, Mitsubishi — our techs are trained on every major residential AC brand and refrigerant type.',
+      'Champion, Mitsubishi, Carrier, Lennox, Goodman, Rheem — our techs are trained on every major residential AC brand and refrigerant type. Champion Authorized Dealer and Mitsubishi Diamond Contractor.',
   },
   {
     title: 'Built for Arizona Heat',
@@ -117,7 +124,7 @@ const faqs = [
   {
     question: 'Do you service all AC brands?',
     answer:
-      'Yes — Trane, Carrier, Lennox, Goodman, Rheem, Mitsubishi, Bryant, Amana, Daikin, and more. Our techs are trained on every major residential brand. We also handle commercial systems.',
+      'Yes — Champion, Mitsubishi, Carrier, Lennox, Goodman, Rheem, Bryant, Amana, Daikin, and more. We\'re a Champion Authorized Dealer and Mitsubishi Diamond Contractor, and our techs are trained on every major residential brand. We also handle commercial systems.',
   },
   {
     question: 'What areas do you serve?',
@@ -141,7 +148,14 @@ export default function ACRepairLP() {
     <>
       {/* ============ HERO ============ */}
       <section id="top-form" className="relative bg-[#001530] text-white overflow-hidden scroll-mt-20">
-        <div className="absolute inset-0 bg-gradient-to-r from-[#001530] via-[#001530]/95 to-[#002147]/80" />
+        {/* Viking truck fleet as hero backdrop */}
+        <img
+          src={vikingImages.truckFleet}
+          alt=""
+          aria-hidden="true"
+          className="absolute inset-0 w-full h-full object-cover opacity-40"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#001530] via-[#001530]/95 to-[#002147]/75" />
 
         <div className="relative max-w-6xl mx-auto px-6 pt-16 pb-12 md:pt-24 md:pb-20">
           <div className="grid lg:grid-cols-2 gap-10 lg:gap-14 items-start">
@@ -159,19 +173,31 @@ export default function ACRepairLP() {
               </h1>
 
               <p className="text-lg md:text-xl text-gray-300 leading-relaxed mb-8 max-w-lg">
-                Honest, family-owned HVAC repair across Chandler, Gilbert, Mesa, Phoenix, and 25+ other East Valley cities. 240+ 5-star reviews. No falsified repairs. Just real diagnostics and fair pricing.
+                Honest, family-owned HVAC repair across Chandler, Gilbert, Mesa, Phoenix, and 25+ other East Valley cities. 350+ 5-star reviews. No falsified repairs. Just real diagnostics and fair pricing.
               </p>
 
-              <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 mb-8">
+              <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 mb-6">
                 <a
                   href={`tel:${siteConfig.phoneRaw}`}
                   className="inline-flex items-center gap-2 bg-[#eb1c23] hover:bg-[#c41018] transition-colors rounded-xl px-6 py-3.5 text-white font-bold text-lg"
                 >
-                  📞 {siteConfig.phone}
+                  Call {siteConfig.phone}
                 </a>
-                <span className="text-gray-400 text-sm">
+                <span className="text-gray-300 text-sm">
                   Or fill out the form for a callback
                 </span>
+              </div>
+
+              <div className="flex flex-wrap items-center gap-x-4 gap-y-2 mb-8">
+                {certifications.map((c, i) => (
+                  <span
+                    key={`${c.name}-${c.label}-${i}`}
+                    className="inline-flex items-center gap-1.5 bg-white/10 border border-white/15 rounded-full px-3 py-1 text-xs text-white/90"
+                  >
+                    <span className="font-bold text-white">{c.name}</span>
+                    <span className="text-white/70">{c.label}</span>
+                  </span>
+                ))}
               </div>
 
               <div className="hidden md:grid grid-cols-4 gap-4 pt-6 border-t border-white/10">
@@ -253,29 +279,36 @@ export default function ACRepairLP() {
               </div>
             </div>
 
-            <div className="bg-[#002147] text-white rounded-2xl p-8 md:p-10">
-              <h3 className="text-2xl font-extrabold mb-3">Why Wait?</h3>
-              <p className="text-white/80 mb-6 leading-relaxed">
-                A small AC issue can become a full system failure in 24-48 hours during 110°+ heat. Catching it early saves you money and a sweltering night without AC.
-              </p>
-              <div className="space-y-4 mb-8">
-                {[
-                  { stat: '90%', label: 'of AC failures show warning signs first' },
-                  { stat: '$1,200+', label: 'average savings vs. emergency replacement' },
-                  { stat: '<24h', label: 'typical Viking response time' },
-                ].map((item) => (
-                  <div key={item.label} className="border-b border-white/10 pb-3 last:border-b-0">
-                    <p className="text-3xl font-extrabold text-[#eb1c23]">{item.stat}</p>
-                    <p className="text-white/80 text-sm mt-1">{item.label}</p>
-                  </div>
-                ))}
+            <div className="bg-[#002147] text-white rounded-2xl overflow-hidden">
+              <img
+                src={vikingImages.techAtWork}
+                alt="Viking HVAC technician at work"
+                className="w-full h-52 md:h-56 object-cover"
+              />
+              <div className="p-8 md:p-10">
+                <h3 className="text-2xl font-extrabold mb-3">Why Wait?</h3>
+                <p className="text-white/80 mb-6 leading-relaxed">
+                  A small AC issue can become a full system failure in 24-48 hours during 110°+ heat. Catching it early saves you money and a sweltering night without AC.
+                </p>
+                <div className="space-y-4 mb-8">
+                  {[
+                    { stat: '90%', label: 'of AC failures show warning signs first' },
+                    { stat: '$1,200+', label: 'average savings vs. emergency replacement' },
+                    { stat: '<24h', label: 'typical Viking response time' },
+                  ].map((item) => (
+                    <div key={item.label} className="border-b border-white/10 pb-3 last:border-b-0">
+                      <p className="text-3xl font-extrabold text-[#eb1c23]">{item.stat}</p>
+                      <p className="text-white/80 text-sm mt-1">{item.label}</p>
+                    </div>
+                  ))}
+                </div>
+                <a
+                  href={`tel:${siteConfig.phoneRaw}`}
+                  className="block w-full bg-[#eb1c23] hover:bg-[#c41018] text-white font-bold py-4 rounded-lg text-center text-lg transition-colors"
+                >
+                  Call {siteConfig.phone}
+                </a>
               </div>
-              <a
-                href={`tel:${siteConfig.phoneRaw}`}
-                className="block w-full bg-[#eb1c23] hover:bg-[#c41018] text-white font-bold py-4 rounded-lg text-center text-lg transition-colors"
-              >
-                📞 Call {siteConfig.phone}
-              </a>
             </div>
           </div>
         </div>
@@ -312,6 +345,26 @@ export default function ACRepairLP() {
                 </p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ============ TEAM IMAGE BAND ============ */}
+      <section className="relative h-64 md:h-80 overflow-hidden">
+        <img
+          src={vikingImages.teamGroup}
+          alt="The Viking HVAC team"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#002147]/80 via-[#002147]/40 to-transparent" />
+        <div className="relative max-w-6xl mx-auto h-full flex items-center px-6">
+          <div className="max-w-md">
+            <p className="text-[#4CC9F0] font-bold text-sm uppercase tracking-widest mb-2">
+              Meet the Viking Team
+            </p>
+            <h3 className="text-white text-2xl md:text-3xl font-extrabold leading-tight">
+              Phoenix-based, family-owned since 2016.
+            </h3>
           </div>
         </div>
       </section>
@@ -385,7 +438,7 @@ export default function ACRepairLP() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-10">
             <p className="text-[#eb1c23] font-bold text-sm uppercase tracking-widest mb-3">
-              240+ 5-Star Reviews
+              350+ 5-Star Reviews
             </p>
             <h2 className="text-3xl md:text-4xl font-extrabold text-[#002147]">
               Real Phoenix Homeowners. Real Repairs.
@@ -439,7 +492,7 @@ export default function ACRepairLP() {
               href={`tel:${siteConfig.phoneRaw}`}
               className="inline-flex items-center gap-2 border-2 border-white text-white font-bold py-4 px-8 rounded-lg text-lg hover:bg-white hover:text-[#eb1c23] transition-colors"
             >
-              📞 Call {siteConfig.phone}
+              Call {siteConfig.phone}
             </a>
           </div>
         </div>

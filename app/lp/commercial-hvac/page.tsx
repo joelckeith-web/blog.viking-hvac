@@ -2,6 +2,13 @@ import type { Metadata } from 'next';
 import { siteConfig } from '@/lib/site-config';
 import { LandingForm } from '@/components/landing/LandingForm';
 import { FAQAccordion } from '@/components/sections/FAQAccordion';
+import { vikingImages } from '@/lib/viking-images';
+
+const certifications = [
+  { name: 'Champion', label: 'Authorized Dealer' },
+  { name: 'Mitsubishi', label: 'Authorized Dealer' },
+  { name: 'Mitsubishi', label: 'Diamond Contractor' },
+];
 
 export const metadata: Metadata = {
   title: 'Commercial HVAC in Phoenix, AZ | Service & Install | Viking HVAC',
@@ -169,7 +176,13 @@ export default function CommercialHVACLP() {
     <>
       {/* ============ HERO ============ */}
       <section id="top-form" className="relative bg-[#001530] text-white overflow-hidden scroll-mt-20">
-        <div className="absolute inset-0 bg-gradient-to-r from-[#001530] via-[#001530]/95 to-[#002147]/80" />
+        <img
+          src={vikingImages.truckFleet}
+          alt=""
+          aria-hidden="true"
+          className="absolute inset-0 w-full h-full object-cover opacity-40"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#001530] via-[#001530]/95 to-[#002147]/75" />
 
         <div className="relative max-w-6xl mx-auto px-6 pt-16 pb-12 md:pt-24 md:pb-20">
           <div className="grid lg:grid-cols-2 gap-10 lg:gap-14 items-start">
@@ -189,16 +202,28 @@ export default function CommercialHVACLP() {
                 Service, repair, retrofits, and installation for Phoenix-area restaurants, retail, healthcare, and manufacturing. Family-owned. Industry-specific expertise. Free on-site assessment.
               </p>
 
-              <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 mb-8">
+              <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 mb-6">
                 <a
                   href={`tel:${siteConfig.phoneRaw}`}
                   className="inline-flex items-center gap-2 bg-[#eb1c23] hover:bg-[#c41018] transition-colors rounded-xl px-6 py-3.5 text-white font-bold text-lg"
                 >
-                  📞 {siteConfig.phone}
+                  Call {siteConfig.phone}
                 </a>
-                <span className="text-gray-400 text-sm">
+                <span className="text-gray-300 text-sm">
                   Or fill out the form for a callback
                 </span>
+              </div>
+
+              <div className="flex flex-wrap items-center gap-x-4 gap-y-2 mb-8">
+                {certifications.map((c, i) => (
+                  <span
+                    key={`${c.name}-${c.label}-${i}`}
+                    className="inline-flex items-center gap-1.5 bg-white/10 border border-white/15 rounded-full px-3 py-1 text-xs text-white/90"
+                  >
+                    <span className="font-bold text-white">{c.name}</span>
+                    <span className="text-white/70">{c.label}</span>
+                  </span>
+                ))}
               </div>
 
               <div className="hidden md:grid grid-cols-4 gap-4 pt-6 border-t border-white/10">
@@ -312,29 +337,36 @@ export default function CommercialHVACLP() {
               </div>
             </div>
 
-            <div className="bg-[#002147] text-white rounded-2xl p-8 md:p-10">
-              <h3 className="text-2xl font-extrabold mb-3">Cut HVAC Energy Costs by 20-40%</h3>
-              <p className="text-white/80 mb-6 leading-relaxed">
-                Most commercial systems are running 10-20% inefficiently due to neglected maintenance, oversized equipment, or outdated controls. Our energy assessments identify the fixes that pay back fastest.
-              </p>
-              <div className="space-y-4 mb-8">
-                {[
-                  { stat: '40-60%', label: 'of commercial energy bills are HVAC' },
-                  { stat: '1-3 yr', label: 'typical payback on efficiency retrofits' },
-                  { stat: '90 days', label: 'recommended PM cycle for commercial RTUs' },
-                ].map((item) => (
-                  <div key={item.label} className="border-b border-white/10 pb-3 last:border-b-0">
-                    <p className="text-3xl font-extrabold text-[#eb1c23]">{item.stat}</p>
-                    <p className="text-white/80 text-sm mt-1">{item.label}</p>
-                  </div>
-                ))}
+            <div className="bg-[#002147] text-white rounded-2xl overflow-hidden">
+              <img
+                src={vikingImages.techAtWork}
+                alt="Viking HVAC commercial technician"
+                className="w-full h-52 md:h-56 object-cover"
+              />
+              <div className="p-8 md:p-10">
+                <h3 className="text-2xl font-extrabold mb-3">Cut HVAC Energy Costs by 20-40%</h3>
+                <p className="text-white/80 mb-6 leading-relaxed">
+                  Most commercial systems are running 10-20% inefficiently due to neglected maintenance, oversized equipment, or outdated controls. Our energy assessments identify the fixes that pay back fastest.
+                </p>
+                <div className="space-y-4 mb-8">
+                  {[
+                    { stat: '40-60%', label: 'of commercial energy bills are HVAC' },
+                    { stat: '1-3 yr', label: 'typical payback on efficiency retrofits' },
+                    { stat: '90 days', label: 'recommended PM cycle for commercial RTUs' },
+                  ].map((item) => (
+                    <div key={item.label} className="border-b border-white/10 pb-3 last:border-b-0">
+                      <p className="text-3xl font-extrabold text-[#eb1c23]">{item.stat}</p>
+                      <p className="text-white/80 text-sm mt-1">{item.label}</p>
+                    </div>
+                  ))}
+                </div>
+                <a
+                  href={`tel:${siteConfig.phoneRaw}`}
+                  className="block w-full bg-[#eb1c23] hover:bg-[#c41018] text-white font-bold py-4 rounded-lg text-center text-lg transition-colors"
+                >
+                  Call {siteConfig.phone}
+                </a>
               </div>
-              <a
-                href={`tel:${siteConfig.phoneRaw}`}
-                className="block w-full bg-[#eb1c23] hover:bg-[#c41018] text-white font-bold py-4 rounded-lg text-center text-lg transition-colors"
-              >
-                📞 Call {siteConfig.phone}
-              </a>
             </div>
           </div>
         </div>
@@ -371,6 +403,26 @@ export default function CommercialHVACLP() {
                 </p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ============ TEAM IMAGE BAND ============ */}
+      <section className="relative h-64 md:h-80 overflow-hidden">
+        <img
+          src={vikingImages.teamGroup}
+          alt="The Viking HVAC commercial team"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#002147]/80 via-[#002147]/40 to-transparent" />
+        <div className="relative max-w-6xl mx-auto h-full flex items-center px-6">
+          <div className="max-w-md">
+            <p className="text-[#4CC9F0] font-bold text-sm uppercase tracking-widest mb-2">
+              Phoenix-Based Commercial Team
+            </p>
+            <h3 className="text-white text-2xl md:text-3xl font-extrabold leading-tight">
+              Licensed, bonded, and ready to respond.
+            </h3>
           </div>
         </div>
       </section>
@@ -473,7 +525,7 @@ export default function CommercialHVACLP() {
               href={`tel:${siteConfig.phoneRaw}`}
               className="inline-flex items-center gap-2 border-2 border-white text-white font-bold py-4 px-8 rounded-lg text-lg hover:bg-white hover:text-[#eb1c23] transition-colors"
             >
-              📞 Call {siteConfig.phone}
+              Call {siteConfig.phone}
             </a>
           </div>
         </div>
