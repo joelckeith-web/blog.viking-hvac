@@ -3,7 +3,7 @@
 import { Suspense, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { siteConfig } from '@/lib/site-config';
-import { useUTMParams } from '@/lib/useUTMParams';
+import { useAttribution } from '@/lib/useAttribution';
 import { RecaptchaWidget } from '@/components/forms/RecaptchaWidget';
 import { HCPFormEmbed } from '@/components/landing/HCPFormEmbed';
 
@@ -17,6 +17,7 @@ interface LandingFormData {
   name: string;
   phone: string;
   email: string;
+  address: string;
   zipCode: string;
   message: string;
   marketingConsent: boolean;
@@ -65,7 +66,7 @@ function SmtpLandingFormInner({
   const [submitError, setSubmitError] = useState<string | null>(null);
   const [recaptchaToken, setRecaptchaToken] = useState<string | null>(null);
   const [recaptchaError, setRecaptchaError] = useState<string | null>(null);
-  const utmParams = useUTMParams();
+  const attribution = useAttribution();
   const {
     register,
     handleSubmit,
@@ -94,11 +95,24 @@ function SmtpLandingFormInner({
           service: serviceLabel,
           leadSource,
           recaptchaToken,
-          utmSource: utmParams.utm_source,
-          utmMedium: utmParams.utm_medium,
-          utmCampaign: utmParams.utm_campaign,
-          utmTerm: utmParams.utm_term,
-          utmContent: utmParams.utm_content,
+          // Campaign parameters
+          utmSource: attribution.utm_source,
+          utmMedium: attribution.utm_medium,
+          utmCampaign: attribution.utm_campaign,
+          utmTerm: attribution.utm_term,
+          utmContent: attribution.utm_content,
+          // Ad-platform click IDs (for Ads / Meta / etc. conversion attribution)
+          gclid: attribution.gclid,
+          gbraid: attribution.gbraid,
+          wbraid: attribution.wbraid,
+          fbclid: attribution.fbclid,
+          msclkid: attribution.msclkid,
+          liFatId: attribution.li_fat_id,
+          ttclid: attribution.ttclid,
+          // First-touch context
+          landingPage: attribution.landing_page,
+          referrer: attribution.referrer,
+          firstTouchTs: attribution.first_touch_ts,
         }),
       });
 
@@ -113,8 +127,9 @@ function SmtpLandingFormInner({
         form_service: serviceLabel,
       });
 
-      // Redirect to Viking main-site thank-you for Google Ads conversion tracking.
-      window.location.href = 'https://viking-hvac.com/thank-you';
+      // Redirect to the in-repo thank-you page (stays on lp.viking-hvac.com).
+      // Conversion tags for Google Ads / Meta must fire on /lp/thank-you.
+      window.location.href = '/lp/thank-you';
     } catch {
       setSubmitError(
         'Something went wrong. Please try again or call us directly.'
@@ -135,6 +150,26 @@ function SmtpLandingFormInner({
 
       <form onSubmit={handleSubmit(onSubmit)} className="p-6 space-y-4">
         <input type="hidden" value={leadSource} name="leadSource" />
+
+        {/* Attribution hidden fields — populated on mount by useAttribution.
+            These mirror what we POST in the JSON body so the data is visible
+            in the rendered DOM as well (useful for GTM, diagnostics, and
+            any server-side form scrapers). */}
+        <input type="hidden" name="utm_source"    value={attribution.utm_source    ?? ''} readOnly />
+        <input type="hidden" name="utm_medium"    value={attribution.utm_medium    ?? ''} readOnly />
+        <input type="hidden" name="utm_campaign"  value={attribution.utm_campaign  ?? ''} readOnly />
+        <input type="hidden" name="utm_term"      value={attribution.utm_term      ?? ''} readOnly />
+        <input type="hidden" name="utm_content"   value={attribution.utm_content   ?? ''} readOnly />
+        <input type="hidden" name="gclid"         value={attribution.gclid         ?? ''} readOnly />
+        <input type="hidden" name="gbraid"        value={attribution.gbraid        ?? ''} readOnly />
+        <input type="hidden" name="wbraid"        value={attribution.wbraid        ?? ''} readOnly />
+        <input type="hidden" name="fbclid"        value={attribution.fbclid        ?? ''} readOnly />
+        <input type="hidden" name="msclkid"       value={attribution.msclkid       ?? ''} readOnly />
+        <input type="hidden" name="li_fat_id"     value={attribution.li_fat_id     ?? ''} readOnly />
+        <input type="hidden" name="ttclid"        value={attribution.ttclid        ?? ''} readOnly />
+        <input type="hidden" name="landing_page"  value={attribution.landing_page  ?? ''} readOnly />
+        <input type="hidden" name="referrer"      value={attribution.referrer      ?? ''} readOnly />
+        <input type="hidden" name="first_touch_ts" value={attribution.first_touch_ts ?? ''} readOnly />
 
         {/* Honeypot — bots fill it, humans don't see it */}
         <input
@@ -191,9 +226,26 @@ function SmtpLandingFormInner({
         <div>
           <input
             type="text"
+            {...register('address', { required: 'Service address is required' })}
+            className="w-full px-4 py-3 border border-gray-200 rounded-lg text-base text-gray-900 bg-white focus:outline-none focus:ring-2 focus:ring-[#eb1c23] focus:border-transparent placeholder:text-gray-400"
+            placeholder="Service Address *"
+            autoComplete="street-address"
+          />
+          {errors.address && (
+            <p className="text-red-500 text-xs mt-1">
+              {errors.address.message}
+            </p>
+          )}
+        </div>
+
+        <div>
+          <input
+            type="text"
             {...register('zipCode', { required: 'ZIP code is required' })}
             className="w-full px-4 py-3 border border-gray-200 rounded-lg text-base text-gray-900 bg-white focus:outline-none focus:ring-2 focus:ring-[#eb1c23] focus:border-transparent placeholder:text-gray-400"
             placeholder="ZIP Code *"
+            autoComplete="postal-code"
+            inputMode="numeric"
           />
           {errors.zipCode && (
             <p className="text-red-500 text-xs mt-1">

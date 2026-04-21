@@ -13,11 +13,24 @@ interface LeadFormBody {
   leadSource: string;
   marketingConsent?: boolean;
   recaptchaToken?: string;
+  // Campaign params
   utmSource?: string;
   utmMedium?: string;
   utmCampaign?: string;
   utmTerm?: string;
   utmContent?: string;
+  // Ad-platform click IDs
+  gclid?: string;
+  gbraid?: string;
+  wbraid?: string;
+  fbclid?: string;
+  msclkid?: string;
+  liFatId?: string;
+  ttclid?: string;
+  // First-touch context
+  landingPage?: string;
+  referrer?: string;
+  firstTouchTs?: string;
   _hp?: string; // honeypot — must be empty
 }
 
@@ -77,7 +90,6 @@ export async function POST(request: NextRequest) {
     }
 
     const { name, phone, email, address, zipCode, message, service, leadSource } = body;
-    const location = address || zipCode || '';
 
     if (!name || !phone || !email) {
       return NextResponse.json(
@@ -119,7 +131,8 @@ export async function POST(request: NextRequest) {
     const cleanName = sanitize(name);
     const cleanPhone = sanitize(phone);
     const cleanEmail = sanitize(email);
-    const cleanLocation = sanitize(location);
+    const cleanAddress = address ? sanitize(address) : '';
+    const cleanZip = zipCode ? sanitize(zipCode) : '';
     const cleanMessage = message ? sanitize(message) : '';
     const cleanService = sanitize(service);
     const cleanLeadSource = sanitize(leadSource);
@@ -132,41 +145,59 @@ export async function POST(request: NextRequest) {
       },
     });
 
-    const utmSection =
-      body.utmSource || body.utmMedium || body.utmCampaign
-        ? `
-── Campaign Info ──────────────────────────
-Source:   ${sanitize(body.utmSource || '(not set)')}
-Medium:   ${sanitize(body.utmMedium || '(not set)')}
-Campaign: ${sanitize(body.utmCampaign || '(not set)')}
-Term:     ${sanitize(body.utmTerm || '(not set)')}
-Content:  ${sanitize(body.utmContent || '(not set)')}
-`
+    // ── Attribution block — bottom of the email ───────────────
+    // Contains everything the in-house team doesn't need to dispatch the
+    // job but ASP needs for lead-source reporting and ad-platform ROI.
+    const field = (label: string, value?: string) =>
+      value && value.trim()
+        ? `${label.padEnd(14)}${sanitize(value)}\n`
         : '';
+
+    const attributionBlock = [
+      field('Source:',       body.utmSource),
+      field('Medium:',       body.utmMedium),
+      field('Campaign:',     body.utmCampaign),
+      field('Term:',         body.utmTerm),
+      field('Content:',      body.utmContent),
+      field('gclid:',        body.gclid),
+      field('gbraid:',       body.gbraid),
+      field('wbraid:',       body.wbraid),
+      field('fbclid:',       body.fbclid),
+      field('msclkid:',      body.msclkid),
+      field('li_fat_id:',    body.liFatId),
+      field('ttclid:',       body.ttclid),
+      field('Landing Page:', body.landingPage),
+      field('Referrer:',     body.referrer),
+      field('First Touch:',  body.firstTouchTs),
+    ].join('');
+
+    const attributionSection = attributionBlock
+      ? `\n── Attribution ────────────────────────────\n${attributionBlock}`
+      : '';
 
     const consentSection = `
 ── Marketing Consent ──────────────────────
 Consent:    YES (email + SMS marketing)
-Timestamp:  ${new Date().toISOString()}
+Submitted:  ${new Date().toISOString()}
 IP Address: ${ip}
 `;
 
+    // Email body: critical info first (what the in-house team needs to
+    // dispatch the job), secondary info next, attribution at the bottom.
     const emailBody = `New lead from the Viking HVAC landing pages!
 
-── Contact Details ────────────────────────
-Name:    ${cleanName}
-Phone:   ${cleanPhone}
-Email:   ${cleanEmail}
-ZIP:     ${cleanLocation}
+── Lead Details ───────────────────────────
+Name:     ${cleanName}
+Phone:    ${cleanPhone}
+Address:  ${cleanAddress || '(not provided)'}
+Service:  ${cleanService}
 
-── Service Request ────────────────────────
-Service: ${cleanService}
-Source:  ${cleanLeadSource}
-${cleanMessage ? `Message: ${cleanMessage}` : ''}
-${utmSection}${consentSection}
+── Additional Info ────────────────────────
+Email:    ${cleanEmail}
+ZIP:      ${cleanZip || '(not provided)'}
+${cleanMessage ? `Message:  ${cleanMessage}\n` : ''}${consentSection}${attributionSection}
 ──────────────────────────────────────────
-Sent from: ${cleanLeadSource}
-IP: ${ip}
+Landing page: ${cleanLeadSource}
 `;
 
     const toEmails = splitEmails(process.env.LP_LEAD_TO);
@@ -185,7 +216,7 @@ IP: ${ip}
       to: toList,
       cc: ccList,
       replyTo: cleanEmail,
-      subject: `New Lead: ${cleanService} — ${cleanName} (${cleanLocation})`,
+      subject: `New Lead: ${cleanService} — ${cleanName}${cleanZip ? ` (${cleanZip})` : ''}`,
       text: emailBody,
     });
 
