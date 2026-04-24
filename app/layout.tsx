@@ -68,6 +68,11 @@ export default async function RootLayout({
             `}
           </Script>
         )}
+        <Script
+          id="crazy-egg"
+          src="//script.crazyegg.com/pages/scripts/0114/6671.js"
+          strategy="lazyOnload"
+        />
         {!isLp && META_PIXEL_ID && (
           <noscript>
             <img
