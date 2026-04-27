@@ -1,0 +1,59 @@
+name: Weekly Weather Blog Post
+
+on:
+  schedule:
+    # Sunday 5 PM MST (22 UTC) — preserves historical Viking cadence; post lands Monday morning Phoenix time.
+    - cron: '0 22 * * 0'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Generate locally only (no push)'
+        required: false
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+jobs:
+  generate-weather-post:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm install --legacy-peer-deps
+
+      - name: Generate weather blog post
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_OWNER: joelckeith-web
+          GITHUB_REPO: blog.viking-hvac
+          GITHUB_BRANCH: main
+        run: |
+          DRY_RUN="${{ inputs.dry_run }}"
+          CMD="npx tsx scripts/generate-blog.ts"
+          if [ "$DRY_RUN" != "true" ]; then
+            CMD="$CMD --push"
+          fi
+          echo "Running: $CMD"
+          eval $CMD
+
+      - name: Log result
+        if: success()
+        run: |
+          echo "Weather blog post generated and published"
+          echo "Posts in repo:"
+          ls -la content/posts/ | tail -5
