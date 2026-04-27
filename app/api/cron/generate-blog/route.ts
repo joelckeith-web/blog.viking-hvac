@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
+import { runPreflight } from "@/lib/preflight";
 import { buildWeatherContext } from "@/lib/weather";
 import { generateBlogPost } from "@/lib/content-generator";
 import { pushPostToGitHub } from "@/lib/github";
@@ -13,6 +14,10 @@ export async function GET(request: NextRequest) {
 
   try {
     console.log("[CRON] Starting weather-triggered blog generation...");
+
+    // Validate Anthropic + GitHub access BEFORE the expensive Claude call.
+    // Surfaces "rotate the key" instead of a generic SDK auth error after 30s.
+    await runPreflight();
 
     // Step 1: Build full weather context (historical + forecast + mode)
     const context = await buildWeatherContext();

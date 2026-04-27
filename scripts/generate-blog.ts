@@ -2,6 +2,7 @@ import dotenv from "dotenv";
 dotenv.config({ path: ".env.local" });
 import fs from "fs";
 import path from "path";
+import { runPreflight } from "../lib/preflight";
 import { buildWeatherContext } from "../lib/weather";
 import { generateBlogPost } from "../lib/content-generator";
 import { pushPostToGitHub } from "../lib/github";
@@ -10,6 +11,11 @@ const shouldPush = process.argv.includes("--push");
 
 async function main() {
   console.log("=== Viking HVAC Weather-Triggered Blog Generator ===\n");
+
+  // Validate every external dependency BEFORE the expensive Claude call.
+  // If a key is dead or rate-limited, fail fast with a remediation message
+  // instead of burning a full generation cycle to discover it deep in the SDK.
+  await runPreflight();
 
   // Step 1: Build weather context
   console.log("Fetching weather data for Chandler, AZ...");
