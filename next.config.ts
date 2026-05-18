@@ -41,18 +41,18 @@ const securityHeaders = [
     key: "Content-Security-Policy",
     value: [
       "default-src 'self'",
-      // Scripts: self + Next.js inline/eval requirements
-      "script-src 'self' 'unsafe-inline' 'unsafe-eval'",
+      // Scripts: self + Next.js inline/eval + Meta Pixel loader
+      "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://connect.facebook.net",
       // Styles: self + inline (Tailwind)
       "style-src 'self' 'unsafe-inline'",
       // Images: self + the CDNs/hosts the Viking blog references.
       // lh3/*.googleusercontent.com: Google Drive-hosted post images
       // (~49 per page) — MUST be allowed or hero/inline images break.
-      "img-src 'self' data: https://images.pexels.com https://static.wixstatic.com https://www.viking-hvac.com https://blog.viking-hvac.com https://lp.viking-hvac.com https://lh3.googleusercontent.com https://*.googleusercontent.com https://drive.google.com",
+      "img-src 'self' data: https://images.pexels.com https://static.wixstatic.com https://www.viking-hvac.com https://blog.viking-hvac.com https://lp.viking-hvac.com https://lh3.googleusercontent.com https://*.googleusercontent.com https://drive.google.com https://www.facebook.com",
       // Fonts: self + Google Fonts (defense in depth if next/font emits them)
       "font-src 'self' https://fonts.gstatic.com https://fonts.googleapis.com",
-      // Connect: self
-      "connect-src 'self'",
+      // Connect: self + Meta Pixel event beacons
+      "connect-src 'self' https://www.facebook.com https://connect.facebook.net",
       // Object embeds: none
       "object-src 'none'",
       // Frame ancestors: none (same as X-Frame-Options DENY)
