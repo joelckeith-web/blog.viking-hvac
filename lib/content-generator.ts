@@ -36,7 +36,8 @@ export async function generateBlogPost(
   const userPrompt = buildUserPrompt(context, internalLinks, geoFooterLinks);
 
   const response = await getAnthropicClient().messages.create({
-    model: "claude-sonnet-4-20250514",
+    model: "claude-sonnet-5",
+    thinking: { type: "disabled" },
     max_tokens: 8000,
     system: systemPrompt,
     messages: [{ role: "user", content: userPrompt }],
