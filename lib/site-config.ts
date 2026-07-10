@@ -164,7 +164,7 @@ export const siteConfig = {
     {
       name: "Heating Services",
       slug: "heating-services",
-      url: "https://www.viking-hvac.com/heating-services",
+      url: "https://viking-hvac.com/residential/heating-repair/",
       subpages: [
         {
           name: "Heating Repair",
@@ -186,7 +186,7 @@ export const siteConfig = {
     {
       name: "Repairs & Services",
       slug: "repairs-and-services",
-      url: "https://www.viking-hvac.com/repairs-and-services",
+      url: "https://viking-hvac.com/residential/",
       subpages: [
         {
           name: "Emergency HVAC Repair",
@@ -213,18 +213,18 @@ export const siteConfig = {
       subpages: [
         {
           name: "Commercial Ventilation & Air Quality",
-          url: "https://www.viking-hvac.com/services/commercial-ventilation-air-quality",
+          url: "https://viking-hvac.com/commercial/ventilation/",
         },
       ],
     },
     {
       name: "Commercial HVAC",
       slug: "commercial-hvac",
-      url: "https://www.viking-hvac.com/commercial-hvac-services",
+      url: "https://viking-hvac.com/commercial/",
       subpages: [
         {
           name: "Commercial Retrofits & Upgrades",
-          url: "https://www.viking-hvac.com/services/commercial-hvac-retrofits-and-upgrades",
+          url: "https://viking-hvac.com/commercial/hvac-retrofits-and-upgrades/",
         },
       ],
     },
@@ -243,69 +243,56 @@ export const siteConfig = {
   ],
 
   // Industry pages (for internal linking)
-  industryPages: [
-    {
-      name: "Healthcare HVAC",
-      url: "https://www.viking-hvac.com/industries/healthcare-hvac-services",
-    },
-    {
-      name: "Retail HVAC",
-      url: "https://www.viking-hvac.com/industries/retail-hvac-services",
-    },
-    {
-      name: "Manufacturing HVAC",
-      url: "https://www.viking-hvac.com/industries/manufacturing-hvac-services",
-    },
-    {
-      name: "Restaurant HVAC",
-      url: "https://www.viking-hvac.com/industries/restaurant-hvac-services",
-    },
-  ],
+  // The /industries/* pages were removed in the 2026 site restructure — no
+  // equivalents exist on the new site. Keep empty until Viking publishes new ones.
+  industryPages: [] as { name: string; url: string }[],
 
   // Location pages (for internal linking)
   locationPages: {
+    // The 2026 site restructure replaced the per-service city pages with
+    // unified /locations/<city>/ pages covering residential + commercial.
     residential: [
       {
         city: "Mesa",
-        url: "https://www.viking-hvac.com/locations/mesa-hvac-services",
+        url: "https://viking-hvac.com/locations/mesa/",
       },
       {
         city: "Phoenix",
-        url: "https://www.viking-hvac.com/locations/phoenix-hvac-services",
+        url: "https://viking-hvac.com/locations/phoenix/",
       },
       {
         city: "Chandler",
-        url: "https://www.viking-hvac.com/locations/chandler-hvac-services",
+        url: "https://viking-hvac.com/locations/chandler/",
       },
       {
         city: "Apache Junction",
-        url: "https://www.viking-hvac.com/locations/apache-junction-hvac-services",
+        url: "https://viking-hvac.com/locations/apache-junction/",
       },
       {
         city: "Gilbert",
-        url: "https://www.viking-hvac.com/locations/gilbert-hvac-services",
+        url: "https://viking-hvac.com/locations/gilbert/",
       },
     ],
     commercial: [
       {
         city: "Mesa",
-        url: "https://www.viking-hvac.com/location/commercial-hvac-services-mesa-az",
+        url: "https://viking-hvac.com/locations/mesa/",
       },
       {
         city: "Phoenix",
-        url: "https://www.viking-hvac.com/location/commercial-hvac-services-phoenix-az",
+        url: "https://viking-hvac.com/locations/phoenix/",
       },
       {
         city: "Ahwatukee",
-        url: "https://www.viking-hvac.com/location/commercial-hvac-services-ahwatukee-az",
+        url: "https://viking-hvac.com/locations/ahwatukee/",
       },
       {
         city: "Gilbert",
-        url: "https://www.viking-hvac.com/location/commercial-hvac-services-gilbert-az",
+        url: "https://viking-hvac.com/locations/gilbert/",
       },
       {
         city: "Chandler",
-        url: "https://www.viking-hvac.com/location/commercial-hvac-services-chandler-az",
+        url: "https://viking-hvac.com/locations/chandler/",
       },
     ],
   },
@@ -317,7 +304,7 @@ export const siteConfig = {
     financing: "https://www.viking-hvac.com/financing",
     pricing: "https://www.viking-hvac.com/pricing-and-coupons",
     repairOrReplace: "https://www.viking-hvac.com/repair-or-replace-hvac-guide",
-    blog: "https://www.viking-hvac.com/blog",
+    blog: "https://blog.viking-hvac.com",
   },
 
   // Weather-to-Service Mapping

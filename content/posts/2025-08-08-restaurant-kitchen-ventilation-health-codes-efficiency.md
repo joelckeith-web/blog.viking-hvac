@@ -13,19 +13,19 @@ weatherWeek: ""
 featuredImage: "https://lh3.googleusercontent.com/d/1hsaJ5DJ6zY17BY6BiVaGFHWSJn0ru5PR=w940"
 serviceAreaFooterLinks:
   - label: "HVAC Services in Chandler"
-    url: "https://www.viking-hvac.com/repairs-and-services"
+    url: "https://viking-hvac.com/locations/chandler/"
   - label: "HVAC Services in Gilbert"
-    url: "https://www.viking-hvac.com/repairs-and-services"
+    url: "https://viking-hvac.com/locations/gilbert/"
   - label: "HVAC Services in Mesa"
-    url: "https://www.viking-hvac.com/repairs-and-services"
+    url: "https://viking-hvac.com/locations/mesa/"
   - label: "HVAC Services in Phoenix"
-    url: "https://www.viking-hvac.com/repairs-and-services"
+    url: "https://viking-hvac.com/locations/phoenix/"
   - label: "HVAC Services in Scottsdale"
-    url: "https://www.viking-hvac.com/repairs-and-services"
+    url: "https://viking-hvac.com/locations/scottsdale/"
   - label: "HVAC Services in Queen Creek"
-    url: "https://www.viking-hvac.com/repairs-and-services"
+    url: "https://viking-hvac.com/locations/queen-creek-partly-in-pinal/"
   - label: "HVAC Services in Tempe"
-    url: "https://www.viking-hvac.com/repairs-and-services"
+    url: "https://viking-hvac.com/locations/tempe/"
 schema:
   type: "Article"
   faqItems:
@@ -274,7 +274,7 @@ Expert guide to restaurant kitchen ventilation in Phoenix, AZ. Health codes, eff
   "dateModified": "2025-02-01",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://www.viking-hvac.com/blog/restaurant-kitchen-ventilation"
+    "@id": "https://blog.viking-hvac.com/restaurant-kitchen-ventilation"
   },
   "articleSection": "Commercial Restaurant HVAC",
   "keywords": [

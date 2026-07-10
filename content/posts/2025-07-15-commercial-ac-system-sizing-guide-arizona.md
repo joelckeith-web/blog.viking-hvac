@@ -13,19 +13,19 @@ weatherWeek: ""
 featuredImage: "https://lh3.googleusercontent.com/d/1joPeox1GlUwcjAYnjnuNv3FzC_kPQhiA=w940"
 serviceAreaFooterLinks:
   - label: "HVAC Services in Chandler"
-    url: "https://www.viking-hvac.com/repairs-and-services"
+    url: "https://viking-hvac.com/locations/chandler/"
   - label: "HVAC Services in Gilbert"
-    url: "https://www.viking-hvac.com/repairs-and-services"
+    url: "https://viking-hvac.com/locations/gilbert/"
   - label: "HVAC Services in Mesa"
-    url: "https://www.viking-hvac.com/repairs-and-services"
+    url: "https://viking-hvac.com/locations/mesa/"
   - label: "HVAC Services in Phoenix"
-    url: "https://www.viking-hvac.com/repairs-and-services"
+    url: "https://viking-hvac.com/locations/phoenix/"
   - label: "HVAC Services in Scottsdale"
-    url: "https://www.viking-hvac.com/repairs-and-services"
+    url: "https://viking-hvac.com/locations/scottsdale/"
   - label: "HVAC Services in Queen Creek"
-    url: "https://www.viking-hvac.com/repairs-and-services"
+    url: "https://viking-hvac.com/locations/queen-creek-partly-in-pinal/"
   - label: "HVAC Services in Tempe"
-    url: "https://www.viking-hvac.com/repairs-and-services"
+    url: "https://viking-hvac.com/locations/tempe/"
 schema:
   type: "Article"
   faqItems:
@@ -136,7 +136,7 @@ Chilled water systems suit larger commercial applications where centralized cool
 
 Heat pump systems provide both heating and cooling capacity in a single system, offering efficiency advantages for businesses with year-round comfort needs. In Arizona's mild winter climate, heat pumps often provide excellent efficiency for the limited heating requirements while serving as the primary cooling system.
 
-Our [commercial HVAC services](https://www.viking-hvac.com/commercial-hvac-services) include detailed equipment selection analysis that considers both sizing requirements and operational characteristics. We evaluate first costs, operating costs, maintenance requirements, and expected service life to recommend systems that provide the best value for each application.
+Our [commercial HVAC services](https://viking-hvac.com/commercial/) include detailed equipment selection analysis that considers both sizing requirements and operational characteristics. We evaluate first costs, operating costs, maintenance requirements, and expected service life to recommend systems that provide the best value for each application.
 
 Smart controls and building automation systems increasingly influence sizing decisions by allowing systems to operate more efficiently and respond to changing conditions. Variable capacity systems with smart controls can often be sized smaller than traditional systems while providing superior comfort and efficiency.
 

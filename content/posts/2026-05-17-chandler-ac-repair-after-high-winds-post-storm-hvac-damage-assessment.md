@@ -13,25 +13,25 @@ weatherWeek: "May 17–May 23, 2026"
 featuredImage: ""
 serviceAreaFooterLinks:
   - label: "HVAC Services in Downtown Chandler"
-    url: "https://www.viking-hvac.com"
+    url: "https://viking-hvac.com/locations/"
   - label: "HVAC Services in Ocotillo"
-    url: "https://www.viking-hvac.com"
+    url: "https://viking-hvac.com/locations/"
   - label: "HVAC Services in Sun Lakes"
-    url: "https://www.viking-hvac.com"
+    url: "https://viking-hvac.com/locations/"
   - label: "HVAC Services in Andersen Springs"
-    url: "https://www.viking-hvac.com"
+    url: "https://viking-hvac.com/locations/"
   - label: "HVAC Services in Cooper Commons"
-    url: "https://www.viking-hvac.com"
+    url: "https://viking-hvac.com/locations/"
   - label: "HVAC Services in Clemente Ranch"
-    url: "https://www.viking-hvac.com"
+    url: "https://viking-hvac.com/locations/"
   - label: "HVAC Services in Chandler Heights"
-    url: "https://www.viking-hvac.com"
+    url: "https://viking-hvac.com/locations/"
   - label: "HVAC Services in Riggs Ranch"
-    url: "https://www.viking-hvac.com"
+    url: "https://viking-hvac.com/locations/"
   - label: "HVAC Services in Circle G"
-    url: "https://www.viking-hvac.com"
+    url: "https://viking-hvac.com/locations/"
   - label: "HVAC Services in Fulton Ranch"
-    url: "https://www.viking-hvac.com"
+    url: "https://viking-hvac.com/locations/"
 schema:
   type: "Article"
   faqItems:
@@ -79,7 +79,7 @@ Inspect refrigerant lines running between the outdoor and indoor units for any s
 
 ## When Professional Inspection Becomes Essential
 
-While homeowners can identify obvious damage, professional [HVAC inspection and repair services](https://www.viking-hvac.com/repairs-and-services) are essential for comprehensive post-storm assessment. Trained technicians have specialized tools and knowledge to evaluate components that aren't visible during basic visual inspection.
+While homeowners can identify obvious damage, professional [HVAC inspection and repair services](https://viking-hvac.com/residential/) are essential for comprehensive post-storm assessment. Trained technicians have specialized tools and knowledge to evaluate components that aren't visible during basic visual inspection.
 
 Professional assessment includes checking electrical connections that may have loosened during high winds but don't show obvious external signs of damage. Loose connections can create dangerous arcing conditions and intermittent system operation that becomes worse over time if left unaddressed.
 

@@ -131,7 +131,7 @@ The [Air Conditioning Contractors of America (ACCA)](https://www.acca.org) recom
 
 Chandler businesses — retail stores, restaurants, medical offices, and manufacturing facilities — face identical risk during this Extreme Heat Warning, often with higher stakes given occupancy loads and equipment sensitivity. Commercial systems working overtime during 114°F days are just as prone to failure as residential units, sometimes more so given continuous operating hours.
 
-If you manage a commercial property in Chandler, Gilbert, or Mesa, it's worth having your system checked through our [Commercial HVAC Services](https://www.viking-hvac.com/commercial-hvac-services) team before a failure disrupts business operations during the warning period. Industry-specific considerations also matter — [Restaurant HVAC](https://www.viking-hvac.com/industries/restaurant-hvac-services) systems face added heat load from kitchen equipment, while [Healthcare HVAC](https://www.viking-hvac.com/industries/healthcare-hvac-services) facilities have stricter temperature and air quality requirements that leave even less room for error.
+If you manage a commercial property in Chandler, Gilbert, or Mesa, it's worth having your system checked through our [Commercial HVAC Services](https://viking-hvac.com/commercial/) team before a failure disrupts business operations during the warning period. Industry-specific considerations also matter — [Restaurant HVAC](https://viking-hvac.com/commercial/) systems face added heat load from kitchen equipment, while [Healthcare HVAC](https://viking-hvac.com/commercial/) facilities have stricter temperature and air quality requirements that leave even less room for error.
 
 ## Don't Wait Until the Breakdown Happens
 

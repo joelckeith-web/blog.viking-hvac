@@ -13,19 +13,19 @@ weatherWeek: ""
 featuredImage: "https://lh3.googleusercontent.com/d/1HtB2F3pLB2Mz0Cl2aoTb1cVP8E0V0B9k=w940"
 serviceAreaFooterLinks:
   - label: "HVAC Services in Chandler"
-    url: "https://www.viking-hvac.com/repairs-and-services"
+    url: "https://viking-hvac.com/locations/chandler/"
   - label: "HVAC Services in Gilbert"
-    url: "https://www.viking-hvac.com/repairs-and-services"
+    url: "https://viking-hvac.com/locations/gilbert/"
   - label: "HVAC Services in Mesa"
-    url: "https://www.viking-hvac.com/repairs-and-services"
+    url: "https://viking-hvac.com/locations/mesa/"
   - label: "HVAC Services in Phoenix"
-    url: "https://www.viking-hvac.com/repairs-and-services"
+    url: "https://viking-hvac.com/locations/phoenix/"
   - label: "HVAC Services in Scottsdale"
-    url: "https://www.viking-hvac.com/repairs-and-services"
+    url: "https://viking-hvac.com/locations/scottsdale/"
   - label: "HVAC Services in Queen Creek"
-    url: "https://www.viking-hvac.com/repairs-and-services"
+    url: "https://viking-hvac.com/locations/queen-creek-partly-in-pinal/"
   - label: "HVAC Services in Tempe"
-    url: "https://www.viking-hvac.com/repairs-and-services"
+    url: "https://viking-hvac.com/locations/tempe/"
 schema:
   type: "Article"
   faqItems:
@@ -107,7 +107,7 @@ High-efficiency equipment selection becomes particularly important in healthcare
 
 Building automation systems optimize healthcare HVAC performance by continuously monitoring and adjusting system operation based on current conditions and requirements. Advanced control systems can balance energy efficiency with regulatory compliance requirements while providing the documentation needed for facility management and regulatory reporting.
 
-At Viking HVAC, we specialize in helping healthcare facilities optimize energy efficiency without compromising patient care or regulatory compliance. Our [commercial HVAC services](https://www.viking-hvac.com/location/commercial-hvac-services-phoenix-az) include energy audits and efficiency upgrades specifically designed for healthcare applications in Arizona's climate.
+At Viking HVAC, we specialize in helping healthcare facilities optimize energy efficiency without compromising patient care or regulatory compliance. Our [commercial HVAC services](https://viking-hvac.com/locations/phoenix/) include energy audits and efficiency upgrades specifically designed for healthcare applications in Arizona's climate.
 
 ## **Specialized Medical Equipment Integration**
 

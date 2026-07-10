@@ -13,19 +13,19 @@ weatherWeek: ""
 featuredImage: "https://lh3.googleusercontent.com/d/1OgDANYqPIehlPJQ02anlz0lputqL2pKb=w940"
 serviceAreaFooterLinks:
   - label: "HVAC Services in Chandler"
-    url: "https://www.viking-hvac.com/repairs-and-services"
+    url: "https://viking-hvac.com/locations/chandler/"
   - label: "HVAC Services in Gilbert"
-    url: "https://www.viking-hvac.com/repairs-and-services"
+    url: "https://viking-hvac.com/locations/gilbert/"
   - label: "HVAC Services in Mesa"
-    url: "https://www.viking-hvac.com/repairs-and-services"
+    url: "https://viking-hvac.com/locations/mesa/"
   - label: "HVAC Services in Phoenix"
-    url: "https://www.viking-hvac.com/repairs-and-services"
+    url: "https://viking-hvac.com/locations/phoenix/"
   - label: "HVAC Services in Scottsdale"
-    url: "https://www.viking-hvac.com/repairs-and-services"
+    url: "https://viking-hvac.com/locations/scottsdale/"
   - label: "HVAC Services in Queen Creek"
-    url: "https://www.viking-hvac.com/repairs-and-services"
+    url: "https://viking-hvac.com/locations/queen-creek-partly-in-pinal/"
   - label: "HVAC Services in Tempe"
-    url: "https://www.viking-hvac.com/repairs-and-services"
+    url: "https://viking-hvac.com/locations/tempe/"
 schema:
   type: "Article"
   faqItems:
@@ -50,7 +50,7 @@ According to the \<a href="https://www.energy.gov/eere/buildings/commercial-refr
 
 These environmental factors significantly impact how often maintenance should be performed compared to cooler climates. What might be annual maintenance elsewhere becomes quarterly or even monthly attention in Arizona. The good news is that with proper care, commercial refrigeration systems can operate efficiently and reliably, even in our challenging environment.
 
-At Viking HVAC, we've seen firsthand how businesses that invest in regular maintenance save thousands of dollars in emergency repairs and energy costs. Our family-owned company has been serving the Phoenix Metro Valley since 2016, and we understand that every business has unique refrigeration needs based on their industry, location, and operating schedule. Our \<a href="https://www.viking-hvac.com/location/commercial-hvac-services-phoenix-az"\>commercial HVAC services in Phoenix\</a\> include comprehensive refrigeration maintenance programs designed specifically for Arizona's challenging environment.
+At Viking HVAC, we've seen firsthand how businesses that invest in regular maintenance save thousands of dollars in emergency repairs and energy costs. Our family-owned company has been serving the Phoenix Metro Valley since 2016, and we understand that every business has unique refrigeration needs based on their industry, location, and operating schedule. Our \<a href="https://viking-hvac.com/locations/phoenix/"\>commercial HVAC services in Phoenix\</a\> include comprehensive refrigeration maintenance programs designed specifically for Arizona's challenging environment.
 
 ## **Essential Monthly Maintenance Tasks**
 

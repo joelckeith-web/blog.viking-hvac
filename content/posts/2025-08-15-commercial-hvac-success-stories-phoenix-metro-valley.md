@@ -13,19 +13,19 @@ weatherWeek: ""
 featuredImage: "https://lh3.googleusercontent.com/d/1i60hsKIDHC8MFbVhJYzlq7lhiK3dP7aK=w940"
 serviceAreaFooterLinks:
   - label: "HVAC Services in Chandler"
-    url: "https://www.viking-hvac.com/repairs-and-services"
+    url: "https://viking-hvac.com/locations/chandler/"
   - label: "HVAC Services in Gilbert"
-    url: "https://www.viking-hvac.com/repairs-and-services"
+    url: "https://viking-hvac.com/locations/gilbert/"
   - label: "HVAC Services in Mesa"
-    url: "https://www.viking-hvac.com/repairs-and-services"
+    url: "https://viking-hvac.com/locations/mesa/"
   - label: "HVAC Services in Phoenix"
-    url: "https://www.viking-hvac.com/repairs-and-services"
+    url: "https://viking-hvac.com/locations/phoenix/"
   - label: "HVAC Services in Scottsdale"
-    url: "https://www.viking-hvac.com/repairs-and-services"
+    url: "https://viking-hvac.com/locations/scottsdale/"
   - label: "HVAC Services in Queen Creek"
-    url: "https://www.viking-hvac.com/repairs-and-services"
+    url: "https://viking-hvac.com/locations/queen-creek-partly-in-pinal/"
   - label: "HVAC Services in Tempe"
-    url: "https://www.viking-hvac.com/repairs-and-services"
+    url: "https://viking-hvac.com/locations/tempe/"
 schema:
   type: "Article"
   faqItems:
@@ -371,7 +371,7 @@ For immediate emergency assistance, call (480) 689-5167 now. Our 24/7 emergency 
             *"@type": "ListItem",*  
             *"position": 2,*  
             *"name": "Blog",*  
-            *"item": "https://www.viking-hvac.com/blog"*  
+            *"item": "https://blog.viking-hvac.com"*  
           *},*  
           *{*  
             *"@type": "ListItem",*  

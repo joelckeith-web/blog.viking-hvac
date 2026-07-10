@@ -13,19 +13,19 @@ weatherWeek: ""
 featuredImage: "https://lh3.googleusercontent.com/d/1awPu5EQxQEP1Ub-qlpLGitBBgwEQ-njr=w940"
 serviceAreaFooterLinks:
   - label: "HVAC Services in Chandler"
-    url: "https://www.viking-hvac.com/repairs-and-services"
+    url: "https://viking-hvac.com/locations/chandler/"
   - label: "HVAC Services in Gilbert"
-    url: "https://www.viking-hvac.com/repairs-and-services"
+    url: "https://viking-hvac.com/locations/gilbert/"
   - label: "HVAC Services in Mesa"
-    url: "https://www.viking-hvac.com/repairs-and-services"
+    url: "https://viking-hvac.com/locations/mesa/"
   - label: "HVAC Services in Phoenix"
-    url: "https://www.viking-hvac.com/repairs-and-services"
+    url: "https://viking-hvac.com/locations/phoenix/"
   - label: "HVAC Services in Scottsdale"
-    url: "https://www.viking-hvac.com/repairs-and-services"
+    url: "https://viking-hvac.com/locations/scottsdale/"
   - label: "HVAC Services in Queen Creek"
-    url: "https://www.viking-hvac.com/repairs-and-services"
+    url: "https://viking-hvac.com/locations/queen-creek-partly-in-pinal/"
   - label: "HVAC Services in Tempe"
-    url: "https://www.viking-hvac.com/repairs-and-services"
+    url: "https://viking-hvac.com/locations/tempe/"
 schema:
   type: "Article"
   faqItems:
@@ -44,7 +44,7 @@ status: "published"
 
 Running a business in the Phoenix Metro Valley means dealing with some of the most extreme temperatures in the country. When summer temperatures soar above 115°F, your commercial HVAC system becomes the largest energy consumer in your building, often accounting for 40-60% of your total electricity costs. For Chandler businesses and companies throughout Arizona, understanding how to maximize energy efficient commercial HVAC performance isn't just about comfort—it's about protecting your bottom line.
 
-At Viking HVAC, we've worked with hundreds of Phoenix area businesses since 2016, helping them reduce energy costs while maintaining comfortable environments for employees and customers. Through our experience servicing [commercial HVAC systems](https://www.viking-hvac.com/commercial-hvac-services) across Chandler, Gilbert, Mesa, and Phoenix, we've seen firsthand how the right energy efficiency strategies can transform a business's operating expenses.
+At Viking HVAC, we've worked with hundreds of Phoenix area businesses since 2016, helping them reduce energy costs while maintaining comfortable environments for employees and customers. Through our experience servicing [commercial HVAC systems](https://viking-hvac.com/commercial/) across Chandler, Gilbert, Mesa, and Phoenix, we've seen firsthand how the right energy efficiency strategies can transform a business's operating expenses.
 
 The reality is stark: inefficient commercial HVAC systems can cost Arizona businesses thousands of dollars annually in wasted energy. However, with proper planning, maintenance, and upgrades, these same businesses can achieve business energy savings HVAC solutions that reduce costs by 20-40% while improving comfort and indoor air quality.
 

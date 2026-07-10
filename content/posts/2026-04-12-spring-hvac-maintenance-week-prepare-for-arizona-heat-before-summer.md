@@ -13,25 +13,25 @@ weatherWeek: "April 12–April 18, 2026"
 featuredImage: "https://images.pexels.com/photos/29452977/pexels-photo-29452977.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
 serviceAreaFooterLinks:
   - label: "HVAC Services in Downtown Chandler"
-    url: "https://www.viking-hvac.com"
+    url: "https://viking-hvac.com/locations/"
   - label: "HVAC Services in Ocotillo"
-    url: "https://www.viking-hvac.com"
+    url: "https://viking-hvac.com/locations/"
   - label: "HVAC Services in Sun Lakes"
-    url: "https://www.viking-hvac.com"
+    url: "https://viking-hvac.com/locations/"
   - label: "HVAC Services in Andersen Springs"
-    url: "https://www.viking-hvac.com"
+    url: "https://viking-hvac.com/locations/"
   - label: "HVAC Services in Cooper Commons"
-    url: "https://www.viking-hvac.com"
+    url: "https://viking-hvac.com/locations/"
   - label: "HVAC Services in Clemente Ranch"
-    url: "https://www.viking-hvac.com"
+    url: "https://viking-hvac.com/locations/"
   - label: "HVAC Services in Chandler Heights"
-    url: "https://www.viking-hvac.com"
+    url: "https://viking-hvac.com/locations/"
   - label: "HVAC Services in Riggs Ranch"
-    url: "https://www.viking-hvac.com"
+    url: "https://viking-hvac.com/locations/"
   - label: "HVAC Services in Circle G"
-    url: "https://www.viking-hvac.com"
+    url: "https://viking-hvac.com/locations/"
   - label: "HVAC Services in Fulton Ranch"
-    url: "https://www.viking-hvac.com"
+    url: "https://viking-hvac.com/locations/"
 schema:
   type: "Article"
   faqItems:
@@ -135,7 +135,7 @@ UV air purification systems eliminate biological contaminants that thrive in dar
 
 ## Commercial Considerations
 
-Business owners throughout Chandler and the East Valley should prioritize [commercial HVAC](https://www.viking-hvac.com/commercial-hvac-services) maintenance during this favorable weather window. Commercial systems face even greater demands during Arizona summers, operating continuously to maintain comfortable environments for customers and employees.
+Business owners throughout Chandler and the East Valley should prioritize [commercial HVAC](https://viking-hvac.com/commercial/) maintenance during this favorable weather window. Commercial systems face even greater demands during Arizona summers, operating continuously to maintain comfortable environments for customers and employees.
 
 Planned maintenance prevents business interruptions that can result from emergency system failures during peak summer heat. The cost of lost business due to uncomfortable indoor conditions far exceeds preventive maintenance expenses.
 
