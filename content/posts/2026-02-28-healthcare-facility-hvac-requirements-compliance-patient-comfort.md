@@ -107,7 +107,7 @@ High-efficiency equipment selection becomes particularly important in healthcare
 
 Building automation systems optimize healthcare HVAC performance by continuously monitoring and adjusting system operation based on current conditions and requirements. Advanced control systems can balance energy efficiency with regulatory compliance requirements while providing the documentation needed for facility management and regulatory reporting.
 
-At Viking HVAC, we specialize in helping healthcare facilities optimize energy efficiency without compromising patient care or regulatory compliance. Our [commercial HVAC services](https://www.viking-hvac.com/location/commercial-hvac-services-phoenix-az) include energy audits and efficiency upgrades specifically designed for healthcare applications in Arizona's climate.
+At Viking HVAC, we specialize in helping healthcare facilities optimize energy efficiency without compromising patient care or regulatory compliance. Our [commercial HVAC services](https://viking-hvac.com/locations/phoenix/) include energy audits and efficiency upgrades specifically designed for healthcare applications in Arizona's climate.
 
 ## **Specialized Medical Equipment Integration**
 

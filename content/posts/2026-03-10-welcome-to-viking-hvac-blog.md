@@ -32,9 +32,9 @@ What makes our blog unique? We use real-time weather data from the National Weat
 
 ### Expert HVAC Advice
 
-With over 40 years of combined experience, owners Kelly and Nicole Bridge and the Viking HVAC team share practical knowledge on [air conditioning](https://www.viking-hvac.com/air-conditioning) repair, maintenance, and replacement guidance for Arizona's brutal summers, [heating services](https://www.viking-hvac.com/heating-services) to keep your home warm during desert winter nights, [air quality](https://www.viking-hvac.com/air-quality) solutions to protect your family from dust, allergens, and pollutants, and [preventative maintenance](https://www.viking-hvac.com/preventative-maintenance) to save money and extend your system's life.
+With over 40 years of combined experience, owners Kelly and Nicole Bridge and the Viking HVAC team share practical knowledge on [air conditioning](https://www.viking-hvac.com/air-conditioning) repair, maintenance, and replacement guidance for Arizona's brutal summers, [heating services](https://viking-hvac.com/residential/heating-repair/) to keep your home warm during desert winter nights, [air quality](https://www.viking-hvac.com/air-quality) solutions to protect your family from dust, allergens, and pollutants, and [preventative maintenance](https://www.viking-hvac.com/preventative-maintenance) to save money and extend your system's life.
 
-We also serve businesses across the East Valley with our [commercial HVAC services](https://www.viking-hvac.com/commercial-hvac-services), including healthcare, retail, manufacturing, and restaurant facilities.
+We also serve businesses across the East Valley with our [commercial HVAC services](https://viking-hvac.com/commercial/), including healthcare, retail, manufacturing, and restaurant facilities.
 
 ## Serving the Phoenix East Valley
 
@@ -42,13 +42,13 @@ We proudly serve homeowners and businesses in Chandler, Gilbert, Mesa, Phoenix, 
 
 ### Serving Chandler & the Phoenix East Valley
 
-- [HVAC Services in Downtown Chandler](https://www.viking-hvac.com/locations/chandler-hvac-services)
-- [HVAC Services in Ocotillo](https://www.viking-hvac.com/locations/chandler-hvac-services)
-- [HVAC Services in Sun Lakes](https://www.viking-hvac.com/locations/chandler-hvac-services)
-- [HVAC Services in Gilbert](https://www.viking-hvac.com/locations/gilbert-hvac-services)
-- [HVAC Services in Mesa](https://www.viking-hvac.com/locations/mesa-hvac-services)
-- [HVAC Services in Phoenix](https://www.viking-hvac.com/locations/phoenix-hvac-services)
-- [HVAC Services in Apache Junction](https://www.viking-hvac.com/locations/apache-junction-hvac-services)
+- [HVAC Services in Downtown Chandler](https://viking-hvac.com/locations/chandler/)
+- [HVAC Services in Ocotillo](https://viking-hvac.com/locations/chandler/)
+- [HVAC Services in Sun Lakes](https://viking-hvac.com/locations/chandler/)
+- [HVAC Services in Gilbert](https://viking-hvac.com/locations/gilbert/)
+- [HVAC Services in Mesa](https://viking-hvac.com/locations/mesa/)
+- [HVAC Services in Phoenix](https://viking-hvac.com/locations/phoenix/)
+- [HVAC Services in Apache Junction](https://viking-hvac.com/locations/apache-junction/)
 
 ## Need HVAC Service Now?
 

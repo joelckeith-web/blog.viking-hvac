@@ -371,7 +371,7 @@ For immediate emergency assistance, call (480) 689-5167 now. Our 24/7 emergency 
             *"@type": "ListItem",*  
             *"position": 2,*  
             *"name": "Blog",*  
-            *"item": "https://www.viking-hvac.com/blog"*  
+            *"item": "https://blog.viking-hvac.com"*  
           *},*  
           *{*  
             *"@type": "ListItem",*  

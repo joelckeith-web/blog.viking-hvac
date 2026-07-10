@@ -103,7 +103,7 @@ Our [air quality services](https://www.viking-hvac.com/air-quality) include humi
 
 Business owners in Chandler face unique challenges during storm events. Commercial HVAC systems typically operate on different schedules than residential equipment, and their larger scale means potential storm damage can be correspondingly more expensive and disruptive to operations.
 
-Schedule a pre-storm inspection of your [commercial HVAC system](https://www.viking-hvac.com/commercial-hvac-services) focusing on rooftop units that are particularly vulnerable to wind and hail damage. Ensure all access panels and electrical enclosures are properly sealed, and verify that your building's lightning protection system includes your HVAC equipment.
+Schedule a pre-storm inspection of your [commercial HVAC system](https://viking-hvac.com/commercial/) focusing on rooftop units that are particularly vulnerable to wind and hail damage. Ensure all access panels and electrical enclosures are properly sealed, and verify that your building's lightning protection system includes your HVAC equipment.
 
 Review your emergency shutdown procedures with staff members. Unlike residential systems that homeowners can simply turn off at the breaker, commercial systems often require specific shutdown sequences to prevent damage to complex equipment like chillers, variable air volume systems, or building automation controls.
 

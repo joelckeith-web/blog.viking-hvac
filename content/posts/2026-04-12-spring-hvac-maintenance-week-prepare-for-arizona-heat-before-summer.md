@@ -135,7 +135,7 @@ UV air purification systems eliminate biological contaminants that thrive in dar
 
 ## Commercial Considerations
 
-Business owners throughout Chandler and the East Valley should prioritize [commercial HVAC](https://www.viking-hvac.com/commercial-hvac-services) maintenance during this favorable weather window. Commercial systems face even greater demands during Arizona summers, operating continuously to maintain comfortable environments for customers and employees.
+Business owners throughout Chandler and the East Valley should prioritize [commercial HVAC](https://viking-hvac.com/commercial/) maintenance during this favorable weather window. Commercial systems face even greater demands during Arizona summers, operating continuously to maintain comfortable environments for customers and employees.
 
 Planned maintenance prevents business interruptions that can result from emergency system failures during peak summer heat. The cost of lost business due to uncomfortable indoor conditions far exceeds preventive maintenance expenses.
 

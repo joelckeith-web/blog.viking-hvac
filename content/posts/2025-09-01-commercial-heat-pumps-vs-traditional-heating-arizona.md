@@ -106,7 +106,7 @@ Electric heating systems require substantial electrical service, often more than
 
 Space requirements vary between technologies, with implications for building design and renovation projects. Heat pumps split components between indoor and outdoor units, potentially offering more flexibility in tight spaces. Traditional systems may require larger indoor equipment rooms but eliminate the need for outdoor condensing units.
 
-At Viking HVAC, we evaluate each building's infrastructure carefully before recommending heating solutions. Our experience with commercial installations throughout the Phoenix Metro Valley helps identify potential installation challenges early and develop cost-effective solutions that work within existing building constraints. Our \<a href="https://www.viking-hvac.com/location/commercial-hvac-services-phoenix-az"\>commercial HVAC services\</a\> include detailed facility assessments to determine the most suitable heating technology for each unique business application.
+At Viking HVAC, we evaluate each building's infrastructure carefully before recommending heating solutions. Our experience with commercial installations throughout the Phoenix Metro Valley helps identify potential installation challenges early and develop cost-effective solutions that work within existing building constraints. Our \<a href="https://viking-hvac.com/locations/phoenix/"\>commercial HVAC services\</a\> include detailed facility assessments to determine the most suitable heating technology for each unique business application.
 
 ## **Maintenance Requirements and Long-Term Reliability**
 

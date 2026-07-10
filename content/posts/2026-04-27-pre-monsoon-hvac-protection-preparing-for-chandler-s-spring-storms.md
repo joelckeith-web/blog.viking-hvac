@@ -107,7 +107,7 @@ Your HVAC system's dehumidification capacity depends on proper refrigerant level
 
 Pre-storm [air quality](https://www.viking-hvac.com/air-quality) preparation should include filter replacement and duct inspection. Arizona's spring dust loads can overwhelm standard filters quickly, and storm humidity can cause clogged filters to support microbial growth. Consider upgrading to higher-efficiency filters or adding air purification systems before storm season begins.
 
-Commercial properties face additional humidity challenges during pre-monsoon periods. Large buildings with multiple HVAC zones require coordinated humidity control strategies. Our [commercial HVAC services](https://www.viking-hvac.com/commercial-hvac-services) team regularly helps businesses prepare for seasonal humidity fluctuations that can affect both occupant comfort and sensitive equipment.
+Commercial properties face additional humidity challenges during pre-monsoon periods. Large buildings with multiple HVAC zones require coordinated humidity control strategies. Our [commercial HVAC services](https://viking-hvac.com/commercial/) team regularly helps businesses prepare for seasonal humidity fluctuations that can affect both occupant comfort and sensitive equipment.
 
 ## Emergency Preparedness and System Recovery Planning
 

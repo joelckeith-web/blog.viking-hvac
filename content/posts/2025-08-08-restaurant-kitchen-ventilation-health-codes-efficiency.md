@@ -274,7 +274,7 @@ Expert guide to restaurant kitchen ventilation in Phoenix, AZ. Health codes, eff
   "dateModified": "2025-02-01",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://www.viking-hvac.com/blog/restaurant-kitchen-ventilation"
+    "@id": "https://blog.viking-hvac.com/restaurant-kitchen-ventilation"
   },
   "articleSection": "Commercial Restaurant HVAC",
   "keywords": [

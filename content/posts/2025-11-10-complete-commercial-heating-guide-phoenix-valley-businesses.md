@@ -331,7 +331,7 @@ Contact Viking Heating & Air Conditioning today at (480) 689-5167 or visit www.v
           "@type": "ListItem",
           "position": 2,
           "item": {
-            "@id": "https://www.viking-hvac.com/commercial-hvac-services",
+            "@id": "https://viking-hvac.com/commercial/",
             "name": "Commercial HVAC"
           }
         },

@@ -238,7 +238,7 @@ Learn what's worth paying for in commercial HVAC maintenance contracts in Phoeni
   "dateModified": "2025-02-01",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://www.viking-hvac.com/blog/commercial-hvac-maintenance-contracts"
+    "@id": "https://blog.viking-hvac.com/commercial-hvac-maintenance-contracts"
   },
   "articleSection": "Commercial HVAC",
   "keywords": [
