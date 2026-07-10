@@ -54,4 +54,4 @@ We proudly serve homeowners and businesses in Chandler, Gilbert, Mesa, Phoenix, 
 
 Don't wait — call Viking Heating and Air Conditioning at **(480) 689-5167** for 24/7 emergency service. We're licensed (AZ ROC #316534), bonded, insured, and committed to being "The Bridge Between You and Comfort."
 
-[Contact Us](https://www.viking-hvac.com/contact-us) | [View Our Services](https://www.viking-hvac.com/repairs-and-services) | [Financing Available](https://www.viking-hvac.com/financing)
+[Contact Us](https://www.viking-hvac.com/contact-us) | [View Our Services](https://viking-hvac.com/residential/) | [Financing Available](https://www.viking-hvac.com/financing)

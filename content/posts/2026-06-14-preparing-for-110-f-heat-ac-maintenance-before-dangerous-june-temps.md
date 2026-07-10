@@ -113,7 +113,7 @@ Local utility companies SRP and APS offer time-of-use rate structures that make 
 
 ## Professional Maintenance and Emergency Preparedness
 
-While homeowner preparation is essential, professional [repairs and services](https://www.viking-hvac.com/repairs-and-services) provide comprehensive system evaluation that identifies potential failures before they occur. Professional technicians can perform refrigerant level checks, electrical component testing, and airflow measurements that aren't possible with basic homeowner inspection.
+While homeowner preparation is essential, professional [repairs and services](https://viking-hvac.com/residential/) provide comprehensive system evaluation that identifies potential failures before they occur. Professional technicians can perform refrigerant level checks, electrical component testing, and airflow measurements that aren't possible with basic homeowner inspection.
 
 Schedule professional maintenance immediately if your system hasn't been serviced within the past year. During extreme heat preparation, technicians focus on components most likely to fail under stress: electrical connections, refrigerant levels, airflow optimization, and safety controls.
 

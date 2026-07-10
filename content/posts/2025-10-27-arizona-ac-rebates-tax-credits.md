@@ -1,205 +1,128 @@
 ---
-title: "Complete Guide to Arizona AC Rebates and Tax Credits"
+title: "Complete Guide to Arizona AC Rebates and Tax Credits (2026 Update)"
 slug: "arizona-ac-rebates-tax-credits"
-publishDate: "2025-10-27"
+publishDate: "2026-07-09"
 author: "Viking Heating and Air Conditioning"
 category: "general"
-tags: ["AC rebates", "tax credits", "Arizona incentives", "APS rebates", "SRP rebates", "energy savings"]
-metaTitle: "Arizona AC Rebates Tax Credits Guide | Viking HVAC"
-metaDescription: "Complete guide to Arizona AC rebates and tax credits. APS, SRP rebates, federal credits, and manufacturer incentives. Save $3,000+ on your new system."
+tags: ["AC rebates", "tax credits", "Arizona incentives", "SRP Cool Cash", "APS rebates", "energy savings"]
+metaTitle: "Arizona AC Rebates & Tax Credits 2026 | Viking HVAC"
+metaDescription: "What changed for Arizona AC rebates in 2026: the federal tax credit ended, APS ended its rebates, and SRP Cool Cash is still going. Here's the real picture."
 weatherTriggered: false
 weatherMode: "combined"
 weatherWeek: ""
 featuredImage: "https://lh3.googleusercontent.com/d/1pw0-QZjcwevzMaV11KdSdY7VUoNzr2Fe=w940"
 serviceAreaFooterLinks:
   - label: "HVAC Services in Chandler"
-    url: "https://www.viking-hvac.com/repairs-and-services"
+    url: "https://viking-hvac.com/locations/chandler/"
   - label: "HVAC Services in Gilbert"
-    url: "https://www.viking-hvac.com/repairs-and-services"
+    url: "https://viking-hvac.com/locations/gilbert/"
   - label: "HVAC Services in Mesa"
-    url: "https://www.viking-hvac.com/repairs-and-services"
+    url: "https://viking-hvac.com/locations/mesa/"
   - label: "HVAC Services in Phoenix"
-    url: "https://www.viking-hvac.com/repairs-and-services"
+    url: "https://viking-hvac.com/locations/phoenix/"
   - label: "HVAC Services in Scottsdale"
-    url: "https://www.viking-hvac.com/repairs-and-services"
+    url: "https://viking-hvac.com/locations/scottsdale/"
   - label: "HVAC Services in Queen Creek"
-    url: "https://www.viking-hvac.com/repairs-and-services"
+    url: "https://viking-hvac.com/locations/queen-creek-partly-in-pinal/"
   - label: "HVAC Services in Tempe"
-    url: "https://www.viking-hvac.com/repairs-and-services"
+    url: "https://viking-hvac.com/locations/tempe/"
 schema:
   type: "Article"
   faqItems:
-    []
+    - question: "Is the federal tax credit for new AC systems still available in 2026?"
+      answer: "No. The federal Energy Efficient Home Improvement Credit (Section 25C), which offered up to $2,000 for heat pumps and up to $600 for central air conditioners, ended for systems installed after December 31, 2025. If your system was installed during 2025, you can still claim the credit on your 2025 federal tax return."
+    - question: "Does APS still offer air conditioner rebates?"
+      answer: "No. Following an Arizona Corporation Commission decision, APS residential energy efficiency rebates — including AC, heat pump, and smart thermostat rebates — ended January 1, 2026. APS customers looking for help should check Arizona's income-qualified state rebate programs and ask about financing."
+    - question: "How does the SRP Cool Cash rebate work?"
+      answer: "SRP Cool Cash rebates are based on your new system's compressor type (single-stage, multi-stage, or variable-capacity) and its size in tons — not its SEER rating. The system must meet SRP's minimum efficiency requirement of 15.2 SEER2, be installed by an Arizona-licensed contractor, and your application must be submitted within 6 months of installation. Current rebate amounts are listed on SRP's air conditioner rebate page."
+    - question: "Do I need a special contractor to qualify for the SRP rebate?"
+      answer: "The installing contractor must be licensed in Arizona for residential air conditioning work and must certify proper sizing (a Manual J load calculation), airflow, and refrigerant charge on the application. Viking HVAC handles this paperwork for our customers as part of the installation."
+    - question: "How can I afford a new AC system now that the federal credit is gone?"
+      answer: "Three levers are still available in 2026: the SRP Cool Cash rebate if SRP is your utility, income-qualified rebates through Arizona's state-administered federal programs, and financing that spreads the cost into monthly payments. Manufacturer promotions on qualifying systems can also help, especially in spring and fall."
 status: "published"
 ---
 
-# Complete Guide to Arizona AC Rebates and Tax Credits
+# Complete Guide to Arizona AC Rebates and Tax Credits (2026 Update)
 
-Many Arizona homeowners face sticker shock when they receive their first AC replacement estimate. An $8,000 system replacement can feel overwhelming, especially when you're already dealing with high summer energy bills. However, what most homeowners don't realize is that with the right combination of rebates and tax credits, they could save $3,000 or more on their new system, bringing that cost down to a much more manageable $5,000 or less.
+**Updated July 2026.** The rebate landscape for Arizona homeowners changed dramatically this year, and most of what you'll read online about AC rebates is now out of date. The federal tax credit for high-efficiency systems ended December 31, 2025. APS ended its residential rebate program January 1, 2026. SRP's Cool Cash program is still running — but it works differently than most articles describe.
 
-Across the Phoenix Metro Valley, homeowners are missing out on thousands of dollars in available incentives simply because they don't know what programs exist or how to access them. With Arizona's extreme climate putting extra stress on AC systems, these financial incentives can make the difference between struggling with an unreliable old system and upgrading to efficient, dependable cooling.
+This guide covers what's real as of mid-2026: what ended, what's still available, and how to make a new system affordable without incentives that no longer exist.
 
-Recent federal legislation has made the landscape even more favorable for Arizona homeowners, expanding tax credits while extending their availability through 2032. However, these expanded benefits come with important timing considerations that could affect your savings if you wait too long to act.
+## The Federal Tax Credit Is Gone — Here's What That Means
 
-## Understanding Arizona's Unique Incentive Landscape
+For years, the federal Energy Efficient Home Improvement Credit (Section 25C) was the biggest single incentive for Arizona homeowners — up to $2,000 for a qualifying heat pump and up to $600 for a qualifying central air conditioner. That credit ended for systems installed after **December 31, 2025**, under federal legislation passed in July 2025. The IRS confirms the current status on its [Energy Efficient Home Improvement Credit page](https://www.irs.gov/credits-deductions/energy-efficient-home-improvement-credit).
 
-Arizona homeowners are fortunate to have access to some of the most generous AC rebate programs in the country. This isn't by accident—our state's extreme climate and extended cooling seasons create unique challenges that utilities and government agencies recognize need financial support.
+Two things matter now:
 
-The combination of utility company rebates, federal tax credits, and local programs can reduce your AC replacement costs by 20 to 40 percent or more. Unlike many other states where energy efficiency incentives are modest, Arizona's programs are designed to help residents cope with our desert climate while reducing strain on the electrical grid during peak demand periods.
+**If your system was installed in 2025**, you can still claim the credit on your 2025 federal tax return. Keep your invoice and your equipment's efficiency documentation, and talk to your tax preparer.
 
-Our experience serving families throughout Chandler, Gilbert, Mesa, Phoenix, Scottsdale, Queen Creek, and Tempe has shown us that most homeowners significantly underestimate the savings available to them. The key is understanding not just what programs exist, but how to combine them effectively and time your installation to maximize benefits.
+**If you're installing in 2026 or later**, there is no federal tax credit for a standard residential AC or heat pump installation. Any article, ad, or salesperson telling you otherwise is working from old information. We think it's better to hear that plainly than to budget around money that isn't coming.
 
-## The Federal Tax Credit Game-Changer
+## APS Ended Its Residential Rebates in 2026
 
-Recent federal legislation has transformed the energy efficiency tax credit landscape in ways that particularly benefit Arizona homeowners. The expanded credits now available represent some of the most significant energy efficiency incentives in decades, but they come with important timing considerations that smart homeowners need to understand.
+APS customers had access to utility rebates for years, but the Arizona Corporation Commission voted to discontinue APS residential energy efficiency rebate programs effective **January 1, 2026**. That includes the AC, heat pump, and smart thermostat rebates.
 
-For air source heat pumps, which are increasingly popular in Arizona due to their efficiency and dual heating-cooling capability, the federal tax credit has increased to $2,000—more than triple the previous amount. This increase recognizes that heat pumps are particularly valuable in climates like ours, where they can provide both efficient cooling and the occasional heating we need during winter months.
+If APS is your utility, your realistic options in 2026 are the state-administered programs below, manufacturer promotions, and financing. When APS introduces new programs, we'll update this guide.
 
-Traditional central air conditioning systems still qualify for up to $600 in federal tax credits, but the requirements have become more stringent. Systems must meet minimum 16 SEER efficiency ratings and carry ENERGY STAR certification. Given that Arizona's extreme conditions make efficiency improvements particularly valuable, these requirements align well with what homeowners should be choosing anyway.
+## SRP Cool Cash: Still Running, and Worth Understanding Correctly
 
-The critical timing factor that many people don't realize is that these expanded credits are currently scheduled to remain available through December 31, 2032. While this provides a generous window for planning, future legislative changes could potentially modify or eliminate these programs before that date. Our recommendation to clients is to plan installations within the next few years to ensure access to current incentive levels.
+If SRP is your electric utility, the **Cool Cash rebate program** is the one utility rebate still available for AC and heat pump replacement in the Valley — and it's frequently described wrong online, so here's how it works according to SRP's own program documents.
 
-## Arizona Public Service: Leading the Way in Rebates
+**Rebates are based on compressor type and tonnage — not SEER tiers.** SRP pays a set amount per ton depending on whether your new system uses a single-stage, multi-stage, or variable-capacity compressor (inverter-driven mini-splits qualify too). Variable-capacity systems earn the most per ton. For the current program year's exact amounts, see [SRP's air conditioner rebate page](https://www.srpnet.com/energy-savings-rebates/home/rebates/air-conditioner) or call SRP's Cool Cash answer line at (602) 264-3108.
 
-Arizona Public Service serves approximately 1.3 million customers across much of the Phoenix Metro Valley, and their rebate programs have consistently been among the most generous in the utility industry. Working with APS customers over the years, we've seen how their rebate structure can dramatically reduce the cost of high-efficiency AC systems.
+**The key program rules:**
 
-**APS Rebate Structure:**
+- The new system must meet SRP's minimum efficiency requirement of **15.2 SEER2** (the post-2025 federal efficiency standard).
+- The installing contractor must be **licensed in Arizona** and must certify proper sizing (ACCA Manual J), airflow, and refrigerant charge. For single-stage systems, the Manual J worksheet has to be submitted with the application.
+- Equipment must be listed in the **AHRI directory**, and on split systems both the indoor air handler and the outdoor condensing unit must be replaced.
+- Your application must be submitted within **6 months** of installation. Processing speed depends on how complete the paperwork is — clean applications can be paid quickly, while missing documents will get an application returned.
+- Window units don't qualify, new construction doesn't qualify, and SRP may inspect the installation before paying.
 
-- 16-17 SEER systems: $400-$600 rebate
-- 18-19 SEER systems: $800-$1,000 rebate
-- 20+ SEER systems: $1,000-$1,200 rebate
-- Smart thermostat installation: $75-$150 rebate
-- Ductwork sealing and repair: Up to $400 rebate
+A properly prepared application matters. At Viking HVAC we handle the Cool Cash paperwork for our SRP customers — sizing calculation, AHRI documentation, and the application itself — so the rebate doesn't get lost to a technicality.
 
-The beauty of APS rebates is their simplicity and immediate availability. Unlike tax credits that you receive when filing your taxes, APS rebates are direct cash payments that reduce your out-of-pocket costs at the time of installation. For a homeowner replacing a failing system during Arizona's brutal summer heat, this immediate financial relief can be the difference between affording a quality system or settling for a basic model.
+**SRP's smart thermostat program.** SRP also runs its Bring Your Own Thermostat (BYOT) program: enroll a qualifying smart thermostat and earn a **$50 bill credit per thermostat** (up to two), plus **$25 per thermostat each year** you stay enrolled. In exchange, SRP can briefly adjust your thermostat up to 4 degrees during summer peak events (May through October, no more than 15 events, typically under 2 hours). You can opt out of any event from your phone. Details are on [SRP's residential rebates page](https://www.srpnet.com/energy-savings-rebates/home/rebates/residential-rebates).
 
-What makes APS particularly homeowner-friendly is their comprehensive approach to whole-home efficiency. Beyond AC system rebates, they offer additional incentives for smart thermostats, ductwork sealing, and whole-house air sealing. When combined with an AC replacement, these additional rebates can add another $500 to $800 to your savings.
+## Income-Qualified Help: Arizona's Federally Funded Rebate Programs
 
-The application process with APS does require some planning. For larger rebates over $1,000, pre-approval is required before installation begins. This means you'll need to work with a participating contractor who can submit the necessary documentation and wait for approval before proceeding. The good news is that APS typically processes these applications within 7 to 14 days, so the delay is minimal.
+Separate from the utilities, Arizona administers federally funded home energy rebate programs through the Governor's Office of Resiliency. The **HEAR program** (Home Electrification and Appliance Rebates) offers substantial rebates on heat pump HVAC systems and other electric appliances for income-qualified households, and the **HOMES program** (based on measured whole-home energy savings) is expected to follow later in 2026.
 
-One consideration that catches some homeowners off guard is that APS rebates are available on a first-come, first-served basis within their annual budget. While they rarely run out of funding, applying early in the year provides the best assurance of availability. Some rebates also require participation in demand response programs, where APS can briefly cycle your AC during peak demand periods. Modern systems handle this seamlessly, and the additional savings make it worthwhile for most homeowners.
+Income limits, rebate amounts, and program timing are set by the state and can change, so check the [Arizona Clean Energy Hub](https://resilient.az.gov/clean-energy-hub/households/home-energy-upgrade-incentives) for current status before you plan around these programs. If your household qualifies, these rebates can be larger than anything the utilities ever offered — they're worth a serious look.
 
-## Salt River Project: Competitive Programs with Flexibility
+## Making a New System Affordable in 2026
 
-Salt River Project serves over 1 million customers in the Phoenix Metro Valley and takes a slightly different approach to rebates that can be advantageous for certain homeowners. While their efficiency requirements are sometimes lower than APS, their application process is often more straightforward, and their programs offer some unique benefits.
+With the federal credit gone and APS out of the rebate business, here's the honest math for a Valley homeowner replacing a system this year:
 
-**SRP Rebate Structure:**
+**Stack what's real.** An SRP customer installing a variable-capacity system still has a meaningful rebate available, and an income-qualified household may have much more through the state programs. Those two, plus a manufacturer promotion, are the legitimate stack in 2026.
 
-- 15-16 SEER systems: $300-$500 rebate
-- 17-18 SEER systems: $600-$800 rebate
-- 19+ SEER systems: $1,000-$1,200 rebate
-- Cool Cash program: Additional $200 for systems 10+ years old
-- Enhanced rebates for manufactured homes
-- Dual-fuel system bonus rebates
+**Use financing to spread the cost.** A failing AC in an Arizona summer rarely waits for savings to catch up. Financing turns a five-figure replacement into a predictable monthly payment — often with a soft credit check to see your options and no penalty for paying the balance off early. You can see how it works on our [financing page](https://viking-hvac.com/financing/).
 
-SRP's rebate structure starts at 15 SEER instead of APS's 16 SEER minimum, which can be helpful for homeowners with budget constraints or older homes where the highest efficiency systems might not be cost-effective. What sets SRP apart is their Cool Cash program, which provides additional rebates for specific situations. If you're replacing a system that's 10 years old or older, SRP adds an extra $200 to your rebate.
+**Right-size instead of over-buying.** The biggest savings mistake we see isn't a missed rebate — it's an oversized or wrong-type system chosen to chase an incentive. A correctly sized system (that Manual J calculation again) costs less to buy, less to run, and lasts longer in our climate.
 
-The SRP application process is generally more streamlined than APS, with no pre-approval required for most residential rebates. You simply complete the installation with an SRP-approved contractor and submit your application within 60 days. Processing typically takes 4 to 6 weeks, and the documentation requirements are straightforward.
+**Time it if you can.** Spring and fall installations usually mean better contractor availability and better equipment pricing than the middle of a 115° emergency. If your system is 12+ years old or limped through last summer, planning the replacement beats reacting to the breakdown.
 
-SRP's Cool Rewards program deserves special mention because it provides ongoing benefits beyond the initial rebate. By participating in this voluntary load management program, you receive additional annual credits of $25 to $50 while helping reduce peak demand on the electrical grid. The program allows SRP to briefly cycle your AC during peak demand periods, but with a properly sized system, most homeowners never notice any comfort impact.
+## A Note on Outdated Rebate Information
 
-## Maximizing Your Savings Through Strategic Combination
-
-The real magic happens when you understand how to combine different incentive programs for maximum benefit. We've worked with countless homeowners to stack rebates, tax credits, and other incentives in ways that reduce their costs by 30 to 40 percent or more.
-
-Consider a typical scenario: homeowners from Scottsdale who were SRP customers replacing their 15-year-old system with a premium heat pump. With a base system cost of $10,000, choosing a 19 SEER heat pump qualified them for a $1,200 SRP rebate. The federal tax credit for heat pumps provided an additional $2,000 in savings. Adding a smart thermostat with its $150 rebate brought total incentives to $3,350, reducing the net cost to $6,650—a 33 percent savings.
-
-The key to successful incentive stacking is understanding the eligibility requirements for each program and choosing equipment that maximizes your benefits. Sometimes spending slightly more on a higher-efficiency system results in larger rebates that more than offset the additional cost. Our team regularly runs these calculations for homeowners to identify the sweet spot where system cost and incentive benefits align for maximum value.
-
-Timing also plays a crucial role in maximizing savings. Utility rebate budgets typically reset in January, so applying early in the year provides the best availability. Federal tax credits must be claimed in the tax year the equipment was installed, so installation timing can affect your tax planning. For homeowners with limited tax liability, the ability to carry forward unused credits provides flexibility, but proper planning ensures you can use the credits when they're most beneficial.
-
-## The Application Process: Navigating Paperwork Successfully
-
-One of the biggest barriers to accessing available rebates is the application process itself. Many homeowners start strong but get discouraged by documentation requirements or processing delays. Having guided hundreds of families through these programs, we've learned that success depends on proper preparation and understanding what to expect.
-
-The key to success starts with contractor selection. Not all HVAC contractors participate in utility rebate programs, and even those who do vary significantly in their expertise and efficiency with applications. Choose a contractor who not only participates in your utility's program but has a proven track record of successful rebate processing. Ask about their experience with applications, typical processing times, and whether they handle the paperwork for you.
-
-Equipment selection is equally important. The rebate-eligible equipment list changes periodically, and model numbers must match exactly what's on file with the utility company. Your contractor should verify eligibility before ordering equipment and provide documentation showing that your chosen system meets all requirements. This includes not just efficiency ratings but also proper sizing based on Manual J calculations and ENERGY STAR certification.
-
-Documentation requirements can seem overwhelming, but they're designed to ensure program integrity and proper installations. Most programs require detailed equipment invoices showing model numbers, efficiency ratings, and installation costs. Installation photos are typically required, showing both the old equipment being removed and the new system properly installed. Your contractor should provide all necessary certifications and maintain copies of their license and insurance information.
-
-The inspection process varies by utility and rebate amount. Some programs require pre-installation inspections to verify existing conditions, while others conduct post-installation inspections to ensure proper installation. Large rebates are more likely to require inspections, so factor this into your timeline. Most inspections are straightforward and focus on verifying that the installed equipment matches the application and meets program requirements.
-
-## Special Programs for Specific Situations
-
-Arizona utilities recognize that some homeowners face unique challenges that standard rebate programs don't fully address. Enhanced programs for low-income households, seniors, and specific housing types provide additional support where it's needed most.
-
-Low-income weatherization programs through both APS and SRP offer substantially enhanced rebates for qualifying households. These programs recognize that families with limited financial resources often have the greatest need for efficient cooling systems but the least ability to afford upgrades. Income verification is required, but the enhanced rebates can cover a significant portion of system replacement costs.
-
-Senior citizen programs provide additional benefits for customers aged 65 and older, including enhanced rebates, simplified application processes, and priority processing. These programs recognize that seniors often live on fixed incomes and may face health risks from inadequate cooling. Some programs also offer extended warranty coverage and priority service for emergency repairs.
-
-Manufactured home installations often face unique challenges due to space constraints and structural considerations. Both APS and SRP offer enhanced rebates for manufactured home installations, recognizing that these installations often cost more and require specialized expertise. The enhanced rebates help offset the additional costs while improving comfort for this significant segment of Arizona's housing market.
-
-Commercial and small business programs extend similar benefits to business owners, with rebates that can reach $10,000 or more for larger systems. These programs recognize that businesses face the same extreme climate challenges as homeowners, often with even greater financial impact due to extended operating hours and larger cooling loads.
-
-## Timing Considerations and Strategic Planning
-
-Understanding when to apply for rebates and install your system can significantly impact your savings. Beyond the obvious considerations of contractor availability and equipment costs, several factors affect the optimal timing for your AC replacement.
-
-Annual budget cycles mean that utility rebate funding is typically most available early in the year. While utilities rarely run out of rebate funding completely, popular programs can become oversubscribed later in the year. Applying in January through March provides the best assurance of rebate availability and often means faster processing times.
-
-Federal tax credit timing requires coordination with your overall tax situation. Credits reduce your tax liability dollar-for-dollar, but they're only valuable if you owe federal taxes. For homeowners with limited tax liability, the ability to carry forward unused credits provides flexibility, but proper planning ensures maximum benefit. Consider timing your installation to align with years when you expect higher tax liability or coordinate with other tax planning strategies.
-
-Contractor availability and pricing follow predictable seasonal patterns in Arizona. Spring installations typically offer the best combination of contractor availability, competitive pricing, and moderate installation conditions. Summer installations often face premium pricing due to high demand and challenging working conditions. Fall can be an excellent time for non-emergency replacements, offering good contractor availability and the opportunity to test your new system before the next summer season.
-
-Equipment availability and pricing also follow seasonal patterns. Popular models and sizes can become scarce during peak summer months, potentially forcing you to settle for less optimal equipment or wait for restocking. Planning your installation for spring allows you to choose from full equipment availability and often benefit from manufacturer promotions.
-
-## Looking Ahead: Future Changes and Considerations
-
-The incentive landscape for energy efficiency continues to evolve, with potential changes that could affect future savings opportunities. Understanding these trends can help you make informed decisions about timing your AC replacement.
-
-Federal program stability remains strong through 2032, but political changes could potentially affect program availability or benefit levels. The current expanded credits represent a significant commitment to energy efficiency, but future legislation could modify these programs. Planning your installation within the next few years ensures access to current benefit levels.
-
-Utility program evolution tends to follow patterns of increasing efficiency requirements and enhanced integration with smart grid technologies. Future rebate programs are likely to place greater emphasis on demand response capabilities, energy storage integration, and advanced monitoring systems. Choosing systems with these capabilities now positions you well for future program enhancements.
-
-Technology advancement continues to improve the efficiency and capabilities of AC systems, potentially creating new rebate categories or enhanced incentives. Heat pump technology, in particular, is advancing rapidly and may see increased incentive support as utilities seek to reduce peak demand and improve grid stability.
-
-Market conditions for HVAC equipment and installation services will continue to affect the overall value proposition of rebate programs. Understanding these trends can help you time your installation for maximum benefit and avoid potential supply chain disruptions that have periodically affected the industry.
+The 2025–2026 changes made most online rebate guides wrong overnight — including, we'll admit, an earlier version of this one. Program rules are set by the utilities, the state, and the IRS, and they change without much notice. Before you count on any incentive, verify it at the source: [SRP's rebate pages](https://www.srpnet.com/energy-savings-rebates/home/rebates/air-conditioner), the [Arizona Clean Energy Hub](https://resilient.az.gov/clean-energy-hub/households/home-energy-upgrade-incentives), or the [IRS](https://www.irs.gov/credits-deductions/energy-efficient-home-improvement-credit) — or ask us and we'll point you to the current rules that apply to your address.
 
 ## Frequently Asked Questions
 
-**Q: Can I combine utility rebates with federal tax credits?**
-**A:** Absolutely, and this is where significant savings opportunities exist. Utility rebates reduce your upfront costs, while federal tax credits reduce your tax liability. These programs are designed to work together, and many homeowners save thousands of dollars by combining them effectively.
+**Q: Is the federal tax credit for new AC systems still available in 2026?**
+**A:** No. The federal Energy Efficient Home Improvement Credit (Section 25C), which offered up to $2,000 for heat pumps and up to $600 for central air conditioners, ended for systems installed after December 31, 2025. If your system was installed during 2025, you can still claim the credit on your 2025 federal tax return.
 
-**Q: How do recent federal legislation changes affect my AC replacement timing?**
-**A:** Recent legislation has expanded many tax credits through 2032, but future changes could affect availability. The expanded credits represent some of the most generous energy efficiency incentives in decades, making the next few years an excellent time to plan your installation.
+**Q: Does APS still offer air conditioner rebates?**
+**A:** No. Following an Arizona Corporation Commission decision, APS residential energy efficiency rebates — including AC, heat pump, and smart thermostat rebates — ended January 1, 2026. APS customers looking for help should check Arizona's income-qualified state rebate programs and ask about financing.
 
-**Q: What happens if I don't owe enough federal taxes to use the full credit?**
-**A:** Federal tax credits can be carried forward to future tax years if you don't owe enough taxes in the current year. This provides flexibility, but proper tax planning can help you maximize the benefit. Unlike deductions, credits reduce your tax liability dollar-for-dollar.
+**Q: How does the SRP Cool Cash rebate work?**
+**A:** SRP Cool Cash rebates are based on your new system's compressor type (single-stage, multi-stage, or variable-capacity) and its size in tons — not its SEER rating. The system must meet SRP's minimum efficiency requirement of 15.2 SEER2, be installed by an Arizona-licensed contractor, and your application must be submitted within 6 months of installation. Current rebate amounts are listed on SRP's air conditioner rebate page.
 
-**Q: Are there income restrictions for utility rebates?**
-**A:** Most standard utility rebates don't have income restrictions, making them available to all qualifying customers. However, enhanced rebates for low-income customers do require income verification. These enhanced programs often provide substantially larger rebates for qualifying households.
+**Q: Do I need a special contractor to qualify for the SRP rebate?**
+**A:** The installing contractor must be licensed in Arizona for residential air conditioning work and must certify proper sizing (a Manual J load calculation), airflow, and refrigerant charge on the application. Viking HVAC handles this paperwork for our customers as part of the installation.
 
-**Q: How long do I have to apply for rebates after installation?**
-**A:** Application deadlines vary by utility. APS typically requires applications within 90 days of installation, while SRP allows 60 days. Federal tax credits must be claimed in the tax year the equipment was installed. Your contractor should help you understand and meet all deadlines.
+**Q: How can I afford a new AC system now that the federal credit is gone?**
+**A:** Three levers are still available in 2026: the SRP Cool Cash rebate if SRP is your utility, income-qualified rebates through Arizona's state-administered federal programs, and financing that spreads the cost into monthly payments. Manufacturer promotions on qualifying systems can also help, especially in spring and fall.
 
-**Q: Should I wait for potentially better incentives or install now?**
-**A:** Current incentives are substantial and guaranteed through 2032. While future programs might offer different benefits, waiting involves the risk of program changes, equipment price increases, or system failure during Arizona's extreme heat. For most homeowners, securing current incentives is the smart financial choice.
+## The Bottom Line
 
-## Regional Variations and Local Programs
+The incentive landscape shrank in 2026, but it didn't disappear. SRP customers still have a real rebate. Income-qualified households may have access to the largest rebates Arizona has ever offered. And for everyone else, the path to an affordable replacement runs through right-sizing, smart timing, and financing rather than tax credits that no longer exist.
 
-Beyond the major utility programs, several communities in the Phoenix Metro Valley offer additional incentives that can further reduce your AC replacement costs. These local programs often target specific neighborhood needs or environmental goals.
-
-The City of Phoenix operates energy efficiency programs that sometimes include additional rebates for residents in specific areas. These programs often focus on older neighborhoods where housing stock might benefit from efficiency improvements. Phoenix residents should check with the city's environmental programs office to see if additional incentives are available.
-
-Scottsdale has historically offered utility rebates through their municipal utility system, often with different requirements and benefit levels than APS or SRP. Scottsdale residents may have access to unique programs that aren't available to customers of the major utilities.
-
-Mesa's sustainability initiatives sometimes include energy efficiency incentives for residents, particularly in conjunction with broader environmental programs. These local programs can provide additional savings opportunities for qualifying homeowners.
-
-Tempe's focus on sustainability and renewable energy has led to various programs that might include AC efficiency incentives. Like other municipalities, these programs often complement rather than replace utility rebates, providing additional savings opportunities.
-
-## Making Your Decision: The Bottom Line
-
-The combination of expanded federal tax credits, generous utility rebates, and local incentives creates an unprecedented opportunity for Arizona homeowners to upgrade their AC systems affordably. With proper planning and expert guidance, many homeowners can reduce their replacement costs by 30 to 40 percent or more.
-
-The key factors to remember are timing, equipment selection, and working with experienced contractors who understand the rebate landscape. Current incentive levels are guaranteed through 2032, but planning your installation within the next few years ensures access to these benefits before potential changes occur.
-
-Don't let the complexity of rebate programs prevent you from accessing thousands of dollars in available savings. The programs are designed to help Arizona residents cope with our extreme climate, and with proper guidance, the application process is straightforward and worthwhile.
-
-## Taking Action: Your Next Steps
-
-If you're considering an AC replacement, now is an excellent time to start planning your approach to maximize available incentives. Begin by determining which utility serves your home and researching their current rebate programs. Consider your tax situation and how federal credits might benefit your specific circumstances.
-
-Most importantly, choose a contractor with demonstrated experience in rebate program navigation. The right contractor will help you select equipment that maximizes your incentives, handle application paperwork efficiently, and ensure that your installation meets all program requirements.
-
-Remember that these programs are designed to help Arizona homeowners, and taking advantage of them benefits both your family and our state's energy grid. With proper planning and expert guidance, you can achieve significant savings while upgrading to more efficient, reliable cooling for your home.
+If you're weighing a replacement, we'll give you the straight numbers for your situation — which programs your address qualifies for, what the paperwork requires, and what the system should cost. [Request a free estimate](https://viking-hvac.com/free-estimate/) or call us at (480) 689-5167.
