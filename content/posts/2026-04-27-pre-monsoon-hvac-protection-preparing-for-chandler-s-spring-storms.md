@@ -79,7 +79,7 @@ Indoor air quality systems face unique challenges during pre-monsoon conditions.
 
 ## Power Surge Protection: Your HVAC System's First Line of Defense
 
-Thursday's thunderstorms present significant electrical threats to your HVAC investment. According to the [Energy Star program](https://www.energystar.gov), power surges cause over $26 billion in property damage annually, with HVAC systems representing a major portion of these losses. Arizona's grid infrastructure, while generally reliable, experiences unique stress during storm events that can affect entire neighborhoods simultaneously.
+Thursday's thunderstorms present significant electrical threats to your HVAC investment. Power surges from lightning and grid fluctuations can damage sensitive HVAC electronics, and monsoon storms are a common source of that risk. Arizona's grid infrastructure, while generally reliable, experiences unique stress during storm events that can affect entire neighborhoods simultaneously.
 
 Whole-home surge protection provides the most comprehensive defense for your HVAC system. These devices install at your main electrical panel and protect all connected equipment from external surges. However, dedicated HVAC surge protectors at your outdoor unit offer additional protection against localized strikes and grid fluctuations that whole-home units might miss.
 
@@ -139,7 +139,7 @@ Our licensed technicians understand Arizona's unique climate challenges and have
 
 Professional pre-storm inspections cost significantly less than emergency repairs during heat waves. Our comprehensive evaluation identifies vulnerabilities that homeowners typically miss, from minor electrical issues to refrigerant leaks that worsen under system stress. Investment in professional preparation pays dividends in avoided emergency calls and extended equipment life.
 
-Viking Heating and Air Conditioning's 240+ five-star reviews reflect our commitment to proactive customer service. We'd rather help you prevent problems than respond to emergencies, though our [emergency HVAC repair](https://www.viking-hvac.com/services/emergency-hvac-repair) service remains available 24/7 when needed. Our AZ ROC #316534 license, bonding, and insurance provide the credibility and protection you deserve.
+Viking Heating and Air Conditioning's 340+ five-star reviews reflect our commitment to proactive customer service. We'd rather help you prevent problems than respond to emergencies, though our [emergency HVAC repair](https://www.viking-hvac.com/services/emergency-hvac-repair) service remains available 24/7 when needed. Our AZ ROC #316534 license, bonding, and insurance provide the credibility and protection you deserve.
 
 **Key Takeaway:** Professional pre-storm services cost less than emergency repairs and provide expertise that homeowners cannot safely replicate, especially for electrical and refrigerant system issues.
 

@@ -44,7 +44,7 @@ schema:
     - question: "How often should I change my AC filter during Arizona summers?"
       answer: "In Arizona's dusty climate, change filters every 60-90 days during cooling season. During extreme heat periods like this week's forecast, check filters more frequently as your system will run continuously."
     - question: "Is it worth upgrading my old AC before this heat wave?"
-      answer: "If your system is over 12-15 years old and struggling, upgrading before extreme heat can prevent emergency situations. Newer systems are 30-50% more efficient and better equipped to handle 104°F temperatures consistently."
+      answer: "If your system is over 12-15 years old and struggling, upgrading before extreme heat can prevent emergency situations. Newer systems are meaningfully more efficient and better equipped to handle 104°F temperatures consistently."
     - question: "What should I do if my AC fails during 104°F weather?"
       answer: "Contact Viking HVAC immediately at (480) 689-5167 for emergency service. Move to the coolest part of your home, use fans, stay hydrated, and avoid heat-generating activities until professional help arrives."
 status: "published"
@@ -83,7 +83,7 @@ Inspect the condenser coils for dirt buildup. These coils need maximum airflow t
 
 With temperatures reaching 104°F, resist the temptation to drastically lower your thermostat setting. Setting your thermostat below 75°F when it's over 100°F outside forces your system to work beyond its design capacity, increasing the risk of breakdown.
 
-Consider upgrading to a smart thermostat if you haven't already. Modern programmable thermostats can reduce energy consumption by 20-30% through intelligent scheduling and adaptive learning. Viking's [thermostat installation services](https://www.viking-hvac.com/services/thermostat-installation) can have you set up with advanced controls before this heat wave peaks.
+Consider upgrading to a smart thermostat if you haven't already. Modern programmable thermostats can meaningfully reduce energy consumption through intelligent scheduling and adaptive learning. Viking's [thermostat installation services](https://www.viking-hvac.com/services/thermostat-installation) can have you set up with advanced controls before this heat wave peaks.
 
 ## Professional System Inspection Benefits
 
@@ -99,7 +99,7 @@ Extreme heat puts additional stress on electrical connections throughout your AC
 
 Our comprehensive [air conditioning service](https://www.viking-hvac.com/services/air-conditioning) includes thorough electrical inspection, tightening connections, and testing all safety controls that protect your system from damage during high-demand periods.
 
-**Key Takeaway**: Professional pre-season maintenance identifies and corrects issues before they become emergency failures. A $200 maintenance visit can prevent a $3,000+ emergency repair during extreme heat.
+**Key Takeaway**: Professional pre-season maintenance identifies and corrects issues before they become emergency failures. A modest maintenance visit now can prevent a far more expensive emergency repair during extreme heat.
 
 ## Warning Signs Your AC May Not Survive the Heat
 
@@ -115,7 +115,7 @@ Pay attention to how your system responds to current moderate temperatures. If y
 
 ### Energy Consumption Patterns
 
-Monitor your energy bills from recent months. If you've noticed increasing electricity costs without corresponding temperature increases, your system efficiency may be declining. During extreme heat events, inefficient systems can drive monthly cooling costs above $500, compared to $200-300 for well-maintained, efficient units.
+Monitor your energy bills from recent months. If you've noticed increasing electricity costs without corresponding temperature increases, your system efficiency may be declining. During extreme heat events, inefficient systems can drive monthly cooling costs significantly higher than well-maintained, efficient units.
 
 Systems operating at reduced efficiency during moderate weather will consume excessive energy and face higher failure rates when temperatures reach 104°F. Consider [HVAC installation](https://www.viking-hvac.com/install) of a modern, efficient system if your current unit shows signs of declining performance.
 
@@ -137,7 +137,7 @@ Don't wait until your system completely fails to call for help. If you notice de
 
 ### Load Management Strategies
 
-When temperatures reach 104°F, your AC system will likely run continuously from 10 AM through 8 PM. Understanding peak demand periods helps you manage energy costs and reduce system stress. Both SRP and APS implement time-of-use rates that charge premium prices during peak demand hours (typically 3 PM to 8 PM on weekdays).
+When temperatures reach 104°F, your AC system will likely run continuously from 10 AM through 8 PM. Understanding peak demand periods helps you manage energy costs and reduce system stress. Many Arizona utility providers implement time-of-use rates that charge premium prices during peak demand hours (typically afternoon into evening on weekdays) — check your provider's current rate plan for specifics.
 
 Pre-cool your home during off-peak morning hours when electricity rates are lower and outdoor temperatures are more manageable. Set your thermostat 2-3 degrees cooler than usual between 6 AM and 10 AM, then allow temperatures to rise slightly during peak hours.
 
@@ -145,7 +145,7 @@ Pre-cool your home during off-peak morning hours when electricity rates are lowe
 
 Extreme heat events highlight weaknesses in home insulation and air sealing. Gaps around windows, doors, and ductwork allow conditioned air to escape and hot air to enter, forcing your AC to work harder during 104°F weather.
 
-Consider scheduling ductwork inspection through our [ductwork services](https://www.viking-hvac.com/services/ductwork-services) to identify and seal leaks that waste energy and reduce cooling effectiveness. Properly sealed and insulated ductwork can improve system efficiency by 20-30%, crucial during extreme heat periods.
+Consider scheduling ductwork inspection through our [ductwork services](https://www.viking-hvac.com/services/ductwork-services) to identify and seal leaks that waste energy and reduce cooling effectiveness. Properly sealed and insulated ductwork can meaningfully improve system efficiency, which matters most during extreme heat periods.
 
 ## System Replacement Considerations
 
@@ -153,7 +153,7 @@ Consider scheduling ductwork inspection through our [ductwork services](https://
 
 If your AC system is approaching or exceeding 12-15 years of age, this week's extreme heat forecast should prompt serious consideration of replacement before the peak summer season. Older systems face exponentially higher failure rates during sustained high-temperature periods.
 
-Modern AC systems offer 30-50% better efficiency than units installed 15+ years ago. During extreme heat events like this week's 104°F forecast, the difference in energy consumption between old and new systems becomes dramatic. A new system might cost $200-250 per week to operate during extreme heat, while an older system could easily exceed $400-450.
+Modern AC systems offer substantially better efficiency than units installed 15+ years ago. During extreme heat events like this week's 104°F forecast, the difference in energy consumption between old and new systems becomes noticeable. Operating costs vary by system size, age, and condition, but an aging, inefficient unit will generally cost more to run than a well-maintained modern system.
 
 ### Capacity and Sizing Issues
 
@@ -194,4 +194,4 @@ Understanding your coverage helps you make informed decisions about repair versu
 - [Air Conditioning in West Chandler](https://www.viking-hvac.com/air-conditioning)
 - [Air Conditioning in North Chandler](https://www.viking-hvac.com/air-conditioning)
 
-Don't let this week's dangerous heat catch you unprepared. With temperatures climbing to 104°F and an Extreme Heat Warning in effect, now is the time to ensure your air conditioning system is ready for maximum demand. Viking Heating and Air Conditioning has been the bridge between Chandler families and comfort since 2016, providing reliable service backed by our AZ ROC #316534 license and 240+ five-star reviews. Whether you need immediate maintenance, emergency repairs, or system replacement consultation, our American Standard authorized technicians are ready to help. Call (480) 689-5167 today to schedule your pre-heat system inspection and protect your family from Arizona's most dangerous temperatures.
+Don't let this week's dangerous heat catch you unprepared. With temperatures climbing to 104°F and an Extreme Heat Warning in effect, now is the time to ensure your air conditioning system is ready for maximum demand. Viking Heating and Air Conditioning has been the bridge between Chandler families and comfort since 2016, providing reliable service backed by our AZ ROC #316534 license and 340+ five-star reviews. Whether you need immediate maintenance, emergency repairs, or system replacement consultation, our Champion Authorized Dealer and Mitsubishi Diamond Contractor technicians are ready to help. Call (480) 689-5167 today to schedule your pre-heat system inspection and protect your family from Arizona's most dangerous temperatures.

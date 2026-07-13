@@ -32,7 +32,7 @@ schema:
     - question: "Do I need to replace my R-410A air conditioner because of the refrigerant change?"
       answer: "No. Your existing R-410A system can continue operating indefinitely. The transition only affects newly manufactured equipment. However, R-410A will become progressively more expensive for recharges and repairs, so when your system eventually needs replacement, the new system will use R-454B."
     - question: "How much more does R-454B equipment cost compared to R-410A?"
-      answer: "As of 2026, pricing for R-454B equipment has largely equalized with former R-410A pricing. The initial premium that existed during the 2025 transition period has mostly disappeared as manufacturers scaled production. Any remaining price difference is typically offset by improved efficiency and available rebates."
+      answer: "As of 2026, pricing for R-454B equipment has largely equalized with former R-410A pricing. The initial premium that existed during the 2025 transition period has mostly disappeared as manufacturers scaled production."
     - question: "Is R-454B safe for my family since it's classified as mildly flammable?"
       answer: "Yes. R-454B's mild flammability rating (A2L) means it requires very specific conditions to ignite — conditions that don't occur during normal residential HVAC operation. All equipment designed for R-454B includes safety features exceeding UL standards, and the refrigerant charge in a residential system is well below any risk threshold."
     - question: "Can my existing ductwork work with a new R-454B system?"
@@ -52,7 +52,7 @@ Viking Heating & Air Conditioning has been guiding Arizona homeowners through th
 
 ### Why the Change Is Happening
 
-The shift from R-410A to R-454B is driven by the American Innovation and Manufacturing (AIM) Act, which mandates an **85% reduction** in hydrofluorocarbon (HFC) production and consumption over 15 years. R-410A, the refrigerant used in most residential AC systems installed between 2010 and 2024, has a Global Warming Potential (GWP) of 2,088. R-454B reduces this to a GWP of 466 — a **78% reduction** in climate impact.
+The shift from R-410A to R-454B is driven by the American Innovation and Manufacturing (AIM) Act, which mandates a substantial reduction in hydrofluorocarbon (HFC) production and consumption over time. R-410A, the refrigerant used in most residential AC systems installed between 2010 and 2024, has a much higher Global Warming Potential (GWP) than R-454B, which was developed specifically to lower the climate impact of residential cooling equipment.
 
 ### What R-454B Means for Performance
 
@@ -77,20 +77,19 @@ For Arizona homeowners, the practical performance difference between R-410A and 
 
 Your existing R-410A system will continue to function normally. The refrigerant transition does not require immediate system replacement. However, you should understand:
 
-- **Service costs will rise** — As R-410A production decreases, the refrigerant becomes more expensive. A recharge that costs $300-500 today may cost $600-1,000+ within a few years
+- **Service costs will rise** — As R-410A production decreases, the refrigerant becomes more expensive. Recharge costs vary by system size and refrigerant quantity, and they are expected to keep climbing over the next few years
 - **Parts availability remains strong** — Replacement components for R-410A systems will remain available for years
 - **No emergency action needed** — Your system is not being "banned." It simply uses a refrigerant that's becoming more expensive over time
 
 ### If Your System Uses R-22 (Installed Before 2010)
 
-If your AC still runs on R-22 (Freon), you face a more urgent situation. R-22 production ceased entirely in 2020, and remaining supplies are recycled stock at premium prices. A simple R-22 recharge can now cost **$100-200 per pound**, making even minor refrigerant leaks extremely expensive to repair.
+If your AC still runs on R-22 (Freon), you face a more urgent situation. R-22 production ceased entirely in 2020, and remaining supplies are recycled stock at premium prices. Even minor refrigerant leaks have become expensive to repair, and costs continue to climb as remaining R-22 supply shrinks.
 
 For R-22 system owners, replacement with a modern R-454B system provides:
-- Dramatically lower operating costs
+- Lower long-term operating costs compared to servicing an aging R-22 system
 - Improved cooling performance in Arizona heat
-- Access to current rebate and tax credit programs
 - Compliance with all current and future regulations
-- 15-20 years of reliable service with readily available refrigerant
+- Reliable service with readily available refrigerant
 
 ### If You're Buying a New System in 2026
 
@@ -109,19 +108,13 @@ The refrigerant transition adds a new factor to the classic repair-vs-replace ca
 | System Age | Refrigerant | Recommendation |
 |-----------|-------------|----------------|
 | 0-8 years | R-410A | Repair — system has significant life remaining |
-| 8-12 years | R-410A | Evaluate — consider replacement if repair costs exceed $2,000 |
+| 8-12 years | R-410A | Evaluate — consider replacement once repair costs become disproportionate to the system's remaining life |
 | 12+ years | R-410A | Replace — rising refrigerant costs + aging system = diminishing returns |
 | Any age | R-22 | Replace — repair costs will only increase as supply shrinks further |
 
-### Financial Incentives for Upgrading
+### Financial Considerations for Upgrading
 
-Arizona homeowners replacing older systems with high-efficiency R-454B equipment may qualify for:
-
-- **Federal tax credits** under the Inflation Reduction Act for qualifying heat pumps and high-efficiency AC systems
-- **APS and SRP utility rebates** for energy-efficient equipment upgrades
-- **Section 179 deduction** for qualifying equipment (applicable to home office or rental properties)
-- **Manufacturer rebates** offered periodically on specific equipment lines
-- **Viking HVAC financing** — 0% APR options to make upgrades affordable
+Savings programs for energy-efficient HVAC equipment change frequently, and availability depends on your provider and the equipment installed. For current, verified details, see our [Arizona AC savings programs guide](https://blog.viking-hvac.com/blog/arizona-ac-rebates-tax-credits). Financing options are also available to help spread out the cost of a replacement — ask Viking HVAC about what's currently offered.
 
 ## Safety Considerations with R-454B
 
@@ -141,7 +134,7 @@ Viking HVAC technicians are fully trained in A2L refrigerant safety protocols, e
 No. Your existing R-410A system can continue operating indefinitely. The transition only affects newly manufactured equipment. However, R-410A will become progressively more expensive for recharges and repairs, so when your system eventually needs replacement, the new system will use R-454B.
 
 ### How much more does R-454B equipment cost compared to R-410A?
-As of 2026, pricing for R-454B equipment has largely equalized with former R-410A pricing. The initial premium that existed during the 2025 transition period has mostly disappeared as manufacturers scaled production. Any remaining price difference is typically offset by improved efficiency and available rebates.
+As of 2026, pricing for R-454B equipment has largely equalized with former R-410A pricing. The initial premium that existed during the 2025 transition period has mostly disappeared as manufacturers scaled production.
 
 ### Is R-454B safe for my family since it's classified as mildly flammable?
 Yes. R-454B's mild flammability rating (A2L) means it requires very specific conditions to ignite — conditions that don't occur during normal residential HVAC operation. All equipment designed for R-454B includes safety features exceeding UL standards, and the refrigerant charge in a residential system is well below any risk threshold.

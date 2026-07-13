@@ -49,7 +49,7 @@ Businesses in high-traffic commercial areas like **Downtown Chandler** face addi
 
 ## **What Happens Without Regular HVAC Maintenance?**
 
-Neglecting commercial HVAC maintenance in Chandler's harsh climate creates a cascade of potentially costly consequences. First and foremost is the dramatic decrease in energy efficiency. According to the [U.S. Department of Energy](https://www.energy.gov/eere/buildings/building-energy-codes-program), dirty coils, clogged filters, and improperly lubricated parts force systems to work harder, consuming up to 30% more energy than well-maintained units. This inefficiency directly impacts your monthly utility bills and your annual operating costs.
+Neglecting commercial HVAC maintenance in Chandler's harsh climate creates a cascade of potentially costly consequences. First and foremost is the dramatic decrease in energy efficiency. According to the [U.S. Department of Energy](https://www.energy.gov/eere/buildings/building-energy-codes-program), dirty coils, clogged filters, and improperly lubricated parts force systems to work harder and consume noticeably more energy than well-maintained units. This inefficiency directly impacts your monthly utility bills and your annual operating costs.
 
 Beyond rising energy costs, unmaintained systems are significantly more prone to unexpected breakdowns—often during the most extreme weather conditions when you need them most. Imagine operating a restaurant in Chandler during July when temperatures exceed 110°F, and your air conditioning suddenly fails during the lunch rush. Beyond the immediate revenue loss, the damage to customer experience and employee morale can have lasting effects. To avoid these situations, consider reading our article on [How to Save Money with Energy-Efficient HVAC Upgrades](https://www.viking-hvac.com/install) which offers solutions that improve reliability while reducing operational costs.
 
@@ -109,7 +109,7 @@ If your system struggles to reach target temperatures during extreme weather, th
 
 ## **Why Chandler Businesses Trust Viking HVAC**
 
-Viking HVAC has established itself as Chandler's premier commercial HVAC service provider through over 40 years of combined experience serving the Phoenix Valley. As a locally owned and operated company, we understand the unique challenges that Chandler's climate presents for commercial HVAC systems and have developed specialized maintenance protocols to address these specific needs.
+Viking HVAC has established itself as Chandler's premier commercial HVAC service provider. As a family-owned and operated company, we understand the unique challenges that Chandler's climate presents for commercial HVAC systems and have developed specialized maintenance protocols to address these specific needs.
 
 Our technicians are fully licensed, bonded, and insured, providing businesses with confidence that their HVAC systems are in qualified hands. We maintain comprehensive training programs to ensure our team stays current with the latest commercial HVAC technologies and maintenance techniques relevant to desert environments.
 
@@ -117,7 +117,7 @@ For businesses that experience HVAC emergencies, Viking HVAC offers same-day eme
 
 Our local technicians have in-depth knowledge of **Chandler's zoning and commercial HVAC codes**, ensuring that maintained systems remain fully compliant with all local regulations. This local expertise is particularly valuable for businesses in specialized facilities or historic buildings with unique compliance requirements.
 
-The testimonials from local business owners highlight our commitment to exceptional service. As one Chandler restaurant owner noted, "Viking's maintenance program has eliminated the summer AC failures we used to experience regularly. Their proactive approach has saved us thousands in emergency repairs and lost business."
+Our commitment to exceptional service is reflected in our commercial maintenance programs, which are built around consistent, proactive scheduling designed to catch developing issues before they turn into costly summer breakdowns.
 
 ## **Schedule Your Commercial HVAC Maintenance in Chandler Today**
 

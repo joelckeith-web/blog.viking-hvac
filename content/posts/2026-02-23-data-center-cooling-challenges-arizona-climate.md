@@ -43,7 +43,7 @@ This comprehensive guide explores how data centers across the Phoenix Valley ove
 
 ## Understanding Arizona's Unique Cooling Demands for Data Centers
 
-Arizona's climate creates a challenging thermal environment unlike anywhere else data centers typically operate. The Phoenix Metro Valley experiences over 100 days annually with temperatures exceeding 100°F, and peak summer conditions can push thermometers past 115°F for extended periods. Data centers consume approximately 2% of total U.S. electricity usage, with cooling accounting for roughly 40% of that consumption. In Arizona, these cooling demands intensify significantly.
+Arizona's climate creates a challenging thermal environment unlike anywhere else data centers typically operate. The Phoenix Metro Valley experiences over 100 days annually with temperatures exceeding 100°F, and peak summer conditions can push thermometers past 115°F for extended periods. Data centers account for a substantial and growing share of total U.S. electricity usage, with cooling representing a large portion of that consumption. In Arizona, these cooling demands intensify significantly.
 
 The desert environment also presents secondary challenges including dust infiltration, low humidity levels, and intense solar radiation. Dust storms, locally known as haboobs, can reduce air quality dramatically and pose filtration challenges for facilities relying on outside air economization. The combination of extreme heat and airborne particulates means Arizona data centers must implement more robust filtration and cooling systems than their counterparts in temperate climates.
 
@@ -65,7 +65,7 @@ Liquid cooling solutions have gained traction in Arizona facilities managing hig
 
 ## Energy Efficiency Strategies in Desert Data Centers
 
-Energy efficiency represents both an environmental responsibility and a significant operational cost factor for Arizona data centers. With cooling consuming such a substantial portion of total facility energy, efficiency improvements yield meaningful returns. The Power Usage Effectiveness (PUE) metric—calculated by dividing total facility energy by IT equipment energy—serves as the industry standard for measuring data center efficiency. Leading facilities target PUE ratings below 1.4, meaning cooling and infrastructure consume less than 40% of the energy used by computing equipment.
+Energy efficiency represents both an environmental responsibility and a significant operational cost factor for Arizona data centers. With cooling consuming such a substantial portion of total facility energy, efficiency improvements yield meaningful returns. The Power Usage Effectiveness (PUE) metric—calculated by dividing total facility energy by IT equipment energy—serves as the industry standard for measuring data center efficiency. Leading facilities target low PUE ratings, meaning cooling and infrastructure consume a comparatively small share of the energy used by computing equipment.
 
 Evaporative cooling technologies leverage Arizona's low humidity to achieve remarkable efficiency gains. Unlike humid climates where evaporative approaches prove impractical, the desert environment enables facilities to use water evaporation for heat rejection at a fraction of the energy cost of mechanical refrigeration. Indirect evaporative cooling systems pre-cool outside air without introducing moisture into server environments, combining efficiency with the precise humidity control data centers require.
 
@@ -73,7 +73,7 @@ Comprehensive commercial HVAC energy efficiency strategies extend beyond cooling
 
 **Key Takeaways: Energy Efficiency**
 
-- PUE ratings below 1.4 indicate efficient facility operations with cooling infrastructure consuming less than 40% of total energy
+- Low PUE ratings indicate efficient facility operations, with cooling infrastructure consuming a comparatively small share of total energy
 - Arizona's low humidity enables highly efficient evaporative cooling approaches
 - Variable frequency drives and intelligent controls optimize real-time equipment performance
 
@@ -105,7 +105,7 @@ Humidity control presents another consideration unique to desert climates. While
 **A:** Data centers in Arizona should maintain server inlet temperatures between 64°F and 80°F per ASHRAE guidelines. Most facilities target the 68°F to 72°F range for optimal equipment performance and longevity. The extreme outside temperatures in Arizona don't change these internal requirements—they simply make achieving and maintaining these conditions more challenging and energy-intensive during peak summer months.
 
 **Q: How much energy does data center cooling consume in Phoenix?**
-**A:** Cooling typically accounts for 35-45% of total data center energy consumption in the Phoenix area, compared to 30-40% nationally. During peak summer conditions, this percentage can increase further. Efficient facilities achieve PUE ratings of 1.3 to 1.5, meaning infrastructure and cooling consume 30-50% of the energy used by IT equipment.
+**A:** Cooling typically accounts for a substantial share of total data center energy consumption in the Phoenix area, higher than in more temperate regions. During peak summer conditions, that share can increase further. Efficient facilities work to keep their PUE ratings low, meaning infrastructure and cooling consume as little of the energy used by IT equipment as possible.
 
 **Q: Can Arizona data centers use free cooling?**
 **A:** Yes, Arizona data centers can utilize free cooling during favorable conditions, though opportunities are more limited than in cooler climates. Free cooling using outside air becomes viable when ambient temperatures drop below approximately 55°F to 60°F, which primarily occurs during winter nights and mild season transitions. Indirect evaporative cooling extends the free cooling envelope by leveraging Arizona's low humidity for additional efficiency gains.

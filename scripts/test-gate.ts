@@ -109,39 +109,69 @@ function expectClean(label: string, markdown: string) {
   }
 }
 
-// ── 1. Known-bad live posts from the audit must FAIL ──
+// ── 1. The three worst posts from the audit were remediated 2026-07-13 —
+//       they must now be CLEAN in legacy mode. If a violation reappears in
+//       any of them, someone reintroduced fabricated content.
 const post = (name: string) =>
   fs.readFileSync(path.join(process.cwd(), "content/posts", name), "utf8");
 
-expectViolations(
-  "F15 extreme-heat post (misattributed Energy Star 20-30% stat)",
-  post("2026-07-06-extreme-heat-warning-hits-chandler-is-your-ac-ready-for-114-f.md"),
-  ["percent"]
-);
+function expectLegacyClean(label: string, markdown: string) {
+  const violations = runContentGate(asBlog(markdown), fakeContext, { legacy: true });
+  if (violations.length > 0) {
+    failures++;
+    console.error(`✗ ${label}: expected LEGACY-CLEAN, got ${violations.length} violation(s):`);
+    for (const v of violations) console.error(`    [${v.rule}] "${v.excerpt}"`);
+  } else {
+    console.log(`✓ ${label}: LEGACY-CLEAN`);
+  }
+}
 
-expectViolations(
-  "F3/F17 tax-incentives stub (Section 179 + scaffolding)",
-  post("2025-12-15-tax-incentives-commercial-hvac-upgrades-planning-year-end.md"),
-  ["program-terms", "scaffolding"]
+expectLegacyClean(
+  "F15 extreme-heat post (remediated — was misattributed Energy Star stat)",
+  post("2026-07-06-extreme-heat-warning-hits-chandler-is-your-ac-ready-for-114-f.md")
 );
-
-expectViolations(
-  "F1 high-efficiency post (invented APS/SRP rebate tables)",
-  post("2025-10-27-high-efficiency-ac-systems-arizona-worth-cost.md"),
-  ["currency", "program-terms", "utility-name"]
+expectLegacyClean(
+  "F3/F17 tax stub (rewritten — was stale tax advice + scaffolding)",
+  post("2025-12-15-tax-incentives-commercial-hvac-upgrades-planning-year-end.md")
+);
+expectLegacyClean(
+  "F1 high-efficiency post (remediated — was invented APS/SRP rebate tables)",
+  post("2025-10-27-high-efficiency-ac-systems-arizona-worth-cost.md")
 );
 
 // ── 2. Synthetic bad snippets — one per rule ──
 expectViolations("dollar figure", "A new AC unit costs $8,500 installed.", ["currency"]);
 expectViolations("unsourced attribution", "According to industry studies, most systems fail early.\n\nNext paragraph.", ["unsourced-attribution"]);
 expectViolations("customer story", "We recently helped a homeowner in Ocotillo restore cooling.", ["customer-story"]);
-expectViolations("review count", "With 240+ 5-star reviews, Viking is trusted valley-wide.", ["credential-reviews"]);
+expectViolations("stale review count", "With 240+ 5-star reviews, Viking is trusted valley-wide.", ["credential-reviews"]);
+expectViolations("wrong review count (five-star spelling)", "Backed by 500+ five-star reviews across the valley.", ["credential-reviews"]);
+expectViolations("American Standard dealer claim", "As an American Standard authorized dealer, Viking installs premium systems.", ["banned-phrase"]);
+expectViolations("Trane dealer claim", "Viking is an authorized Trane dealer serving Chandler.", ["banned-phrase"]);
+expectViolations("NASA claim", "Featuring NASA-approved Air Scrubber technology.", ["banned-phrase"]);
+expectViolations("swamp superlative", "As the only swamp cooler servicer in the valley, we know evaporative systems.", ["banned-phrase"]);
 expectViolations("experience years", "Our team brings 40 years of combined experience.", ["credential-experience"]);
 expectViolations("wrong founding year", "Serving Chandler since 2010, Viking knows the desert.", ["credential-founded"]);
 expectViolations("unpayload temperature", "Last week's 123°F scorcher stressed every system.", ["weather-number"]);
 expectViolations("unlisted internal URL", "See our [guide](https://viking-hvac.com/heating-services) today.", ["unlisted-internal-url"]);
 
 // ── 3. Clean content must PASS ──
+expectClean(
+  "verified review claim passes",
+  "Viking Heating and Air Conditioning has earned 340+ five-star reviews at a 4.9-star rating from East Valley homeowners."
+);
+expectClean(
+  "servicing Trane equipment (not dealer claim) passes",
+  "Our technicians service all brands, including Trane, Carrier, and Lennox systems."
+);
+expectClean(
+  "canonical guide title as anchor text passes",
+  "Availability changes often — see our [Arizona AC Rebates and Tax Credits](https://blog.viking-hvac.com/blog/arizona-ac-rebates-tax-credits) guide for verified details."
+);
+expectViolations(
+  "same words in plain prose still fail",
+  "Ask us about Arizona AC rebates and tax credits when you call.",
+  ["program-terms"]
+);
 expectClean(
   "clean post (payload temps, allowed claims, pool URLs)",
   `With highs near 114°F forecast this week ([National Weather Service Phoenix](https://forecast.weather.gov/MapClick.php?lat=33.3062&lon=-111.8413)), Chandler homeowners should check their cooling before the heat peaks. Viking Heating and Air Conditioning, a family-owned company serving the East Valley since 2016, offers 24/7 emergency service backed by a 100% satisfaction guarantee.

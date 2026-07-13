@@ -32,13 +32,13 @@ schema:
     - question: "How quickly can Viking HVAC respond to emergency AC calls in Chandler?"
       answer: "Viking HVAC provides same-day emergency response throughout Chandler and the Phoenix Metro Valley. During peak summer months, we prioritize emergency calls based on safety urgency. Complete system failures during extreme heat receive the highest priority to protect families from dangerous conditions."
     - question: "How much does emergency AC repair cost in Chandler?"
-      answer: "Emergency repair costs depend on the specific problem, parts required, and time needed. Common repairs range from $150-800 for issues like capacitor replacement, refrigerant recharge, or drain line clearing. Major repairs like compressor replacement range from $1,500-3,000+. Viking HVAC provides a transparent estimate before beginning any work — you always know the cost before authorizing repairs."
+      answer: "Emergency repair costs depend on the specific problem, parts required, and time needed. Smaller fixes like capacitor replacement, refrigerant recharge, or drain line clearing typically cost far less than major component work like compressor replacement. Viking HVAC provides a transparent estimate before beginning any work — you always know the cost before authorizing repairs."
     - question: "Should I turn off my AC if it's making strange noises?"
       answer: "Yes. Turn off your system if you hear grinding, screeching, banging, or other unusual sounds. Continuing to run a malfunctioning system can cause secondary damage that significantly increases repair costs. Call for professional diagnosis before restarting."
     - question: "Can I prevent AC emergencies in Chandler's extreme heat?"
       answer: "Regular professional maintenance is the most effective prevention strategy. Annual tune-ups catch developing problems before they cause failures. Additionally, changing your air filter every 30-60 days during summer, keeping the outdoor unit clear of obstructions, and monitoring system performance for changes helps prevent emergency breakdowns."
     - question: "Is it worth repairing my AC or should I replace it during an emergency?"
-      answer: "If your system is under 10 years old and the repair is under $2,000, repair is usually the better choice. For systems over 12 years old, especially if the repair involves major components like compressors, replacement often makes more financial sense. Viking HVAC provides honest recommendations — we won't push replacement when repair is the right answer."
+      answer: "If your system is under 10 years old and the repair cost is relatively low, repair is usually the better choice. For systems over 12 years old, especially if the repair involves major components like compressors, replacement often makes more financial sense. Viking HVAC provides honest recommendations — we won't push replacement when repair is the right answer."
     - question: "What should I do if my AC breaks down on a weekend or holiday?"
       answer: "Call Viking HVAC at (480) 689-5167. We provide 24/7 emergency service including weekends and holidays. Arizona's heat doesn't take days off, and neither do we when your family's comfort and safety are at stake."
 status: "published"
@@ -143,7 +143,7 @@ If you're waiting for emergency service during extreme heat:
 Viking HVAC provides same-day emergency response throughout Chandler and the Phoenix Metro Valley. During peak summer months, we prioritize emergency calls based on safety urgency. Complete system failures during extreme heat receive the highest priority to protect families from dangerous conditions.
 
 ### How much does emergency AC repair cost in Chandler?
-Emergency repair costs depend on the specific problem, parts required, and time needed. Common repairs range from $150-800 for issues like capacitor replacement, refrigerant recharge, or drain line clearing. Major repairs like compressor replacement range from $1,500-3,000+. Viking HVAC provides a transparent estimate before beginning any work — you always know the cost before authorizing repairs.
+Emergency repair costs depend on the specific problem, parts required, and time needed. Smaller fixes like capacitor replacement, refrigerant recharge, or drain line clearing typically cost far less than major component work like compressor replacement. Viking HVAC provides a transparent estimate before beginning any work — you always know the cost before authorizing repairs.
 
 ### Should I turn off my AC if it's making strange noises?
 Yes. Turn off your system if you hear grinding, screeching, banging, or other unusual sounds. Continuing to run a malfunctioning system can cause secondary damage that significantly increases repair costs. Call for professional diagnosis before restarting.
@@ -152,7 +152,7 @@ Yes. Turn off your system if you hear grinding, screeching, banging, or other un
 Regular professional maintenance is the most effective prevention strategy. Annual tune-ups catch developing problems before they cause failures. Additionally, changing your air filter every 30-60 days during summer, keeping the outdoor unit clear of obstructions, and monitoring system performance for changes helps prevent emergency breakdowns.
 
 ### Is it worth repairing my AC or should I replace it during an emergency?
-If your system is under 10 years old and the repair is under $2,000, repair is usually the better choice. For systems over 12 years old, especially if the repair involves major components like compressors, replacement often makes more financial sense. Viking HVAC provides honest recommendations — we won't push replacement when repair is the right answer.
+If your system is under 10 years old and the repair cost is relatively low, repair is usually the better choice. For systems over 12 years old, especially if the repair involves major components like compressors, replacement often makes more financial sense. Viking HVAC provides honest recommendations — we won't push replacement when repair is the right answer.
 
 ### What should I do if my AC breaks down on a weekend or holiday?
 Call Viking HVAC at (480) 689-5167. We provide 24/7 emergency service including weekends and holidays. Arizona's heat doesn't take days off, and neither do we when your family's comfort and safety are at stake.

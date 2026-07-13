@@ -87,7 +87,7 @@ When facing compressor problems in Arizona, the repair vs. replace decision invo
 
 ### Understanding Compressor Replacement Costs
 
-Compressor replacement costs in Arizona typically range from $1,500 to $3,000, depending on your system size, refrigerant type, and accessibility. This cost includes the compressor itself, refrigerant, labor, and associated components that typically need replacement when a compressor fails.
+Compressor replacement costs in Arizona vary based on your system size, refrigerant type, and accessibility. Costs include the compressor itself, refrigerant, labor, and associated components that typically need replacement when a compressor fails.
 
 However, the true cost of compressor replacement extends beyond the immediate repair. Arizona's extreme conditions mean that other system components have likely experienced stress and may fail shortly after compressor replacement. It's common to see capacitor failures, electrical component problems, or refrigerant leaks develop within months of compressor replacement.
 
@@ -104,7 +104,7 @@ System age plays a more critical role in Arizona repair vs. replace decisions th
 
 ### The R-22 Refrigerant Challenge
 
-Arizona homeowners with systems using R-22 refrigerant (installed before 2010) face particularly challenging decisions. R-22 has been phased out of production, making it increasingly expensive and difficult to obtain. A compressor replacement requiring R-22 refrigerant can cost $2,000-$4,000 just for the refrigerant needed to recharge the system.
+Arizona homeowners with systems using R-22 refrigerant (installed before 2010) face particularly challenging decisions. R-22 has been phased out of production, making it increasingly expensive and difficult to obtain. Recharging an R-22 system can add significant cost to a compressor repair on top of the labor and parts already involved.
 
 For R-22 systems over 10 years old, compressor failure almost always justifies complete system replacement rather than repair. The combination of high refrigerant costs, aged system components, and the likelihood of future R-22 availability problems makes repair financially impractical.
 
@@ -136,11 +136,11 @@ Arizona's harsh climate shifts the repair vs. replace calculation toward replace
 
 Compressor failure rarely occurs in isolation in Arizona systems. If your compressor problem coincides with other system issues—electrical component failures, refrigerant leaks, ductwork problems, or declining efficiency—these multiple problems often indicate system-wide deterioration that makes replacement more cost-effective.
 
-When evaluating multiple problems, consider the total cost of addressing all issues rather than just the compressor. A $2,000 compressor repair might seem reasonable, but if it's accompanied by $800 in electrical work and $500 in refrigerant leak repairs, the total $3,300 cost approaches system replacement territory.
+When evaluating multiple problems, consider the total cost of addressing all issues rather than just the compressor. A compressor repair might seem reasonable on its own, but once you add electrical work and refrigerant leak repairs on top of it, the combined total can approach system replacement territory.
 
 ### Efficiency and Operating Cost Considerations
 
-Arizona homeowners spend 60-70% more on cooling costs than the national average, making efficiency improvements particularly valuable. If your failing compressor is part of a system with 12 SEER efficiency or lower, replacement with a modern 16-18 SEER system can provide substantial energy savings that help offset replacement costs.
+Arizona's extreme summer heat drives cooling costs well above what homeowners in milder climates pay, making efficiency improvements particularly valuable. If your failing compressor is part of an older, lower-efficiency system, replacement with a modern high-efficiency system can provide meaningful energy savings that help offset replacement costs.
 
 **Modern System Benefits:**
 
@@ -162,7 +162,7 @@ The compressor repair vs. replace decision depends on your specific situation, b
 
 ### Financial Analysis Framework
 
-Start by calculating the total cost of repair, including not just the compressor but any associated work needed to restore full system function. Compare this to the cost of replacement, factoring in available rebates from APS or SRP, federal tax credits, and financing options.
+Start by calculating the total cost of repair, including not just the compressor but any associated work needed to restore full system function. Compare this to the cost of replacement, and ask about financing options. Available savings programs for HVAC replacement change frequently — see our [guide to current Arizona AC savings and credit options](https://blog.viking-hvac.com/blog/arizona-ac-rebates-tax-credits) for verified, up-to-date information.
 
 Consider the potential for future repairs over the next 3-5 years. If your system is over 8 years old, budget for the likelihood of additional major repairs and factor these costs into your decision.
 

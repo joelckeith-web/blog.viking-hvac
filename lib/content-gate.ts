@@ -69,6 +69,8 @@ function collectAllowedUrls(): Set<string> {
 function normalizeUrl(u: string): string {
   return u
     .trim()
+    .replace(/\\#/g, "#") // markdown-escaped fragments
+    .replace(/#.*$/, "") // fragment anchors (e.g. /#organization) resolve to the page
     .replace(/^http:\/\//, "https://")
     .replace(/^https:\/\/www\./, "https://")
     .replace(/\/+$/, "")
@@ -86,53 +88,81 @@ function excerptAt(content: string, index: number, len: number): string {
   return content.slice(from, index + len + 30).replace(/\s+/g, " ").trim();
 }
 
+export interface GateOptions {
+  /** Legacy mode audits pre-gate posts: skips the weather-number rule (the
+   *  original NWS payload for an old post cannot be reconstructed). All
+   *  fabrication-class rules still apply. */
+  legacy?: boolean;
+}
+
 export function runContentGate(
   blog: GeneratedBlog,
-  context: WeatherContext
+  context: WeatherContext,
+  options: GateOptions = {}
 ): GateViolation[] {
   const content = blog.markdownContent; // includes frontmatter + FAQ answers
+  // Text-claim rules scan a copy with URLs masked, so a legitimate link like
+  // .../arizona-ac-rebates-tax-credits can't trip program-terms on its own
+  // href. The mask keeps an https:// stub so the attribution rule's
+  // "source link in paragraph" check still works. Rule 9 uses raw content.
+  const prose = content
+    // The canonical guide's TITLE as link anchor text is a reference, not an
+    // incentive claim — the one permitted way to name it. Same words in plain
+    // prose still violate.
+    .replace(/\[Arizona AC Rebates and Tax Credits\]\(/gi, "[masked-guide-anchor](")
+    .replace(/https?:\/\/[^\s)"'<\]]+/g, "https://masked.link")
+    // The slug is a URL component and must never change — don't let a legacy
+    // slug like "tax-incentives-..." trip the text rules.
+    .replace(/^slug:.*$/m, 'slug: "masked"');
   const violations: GateViolation[] = [];
   const allowedVerbatim = truth.allowedVerbatim.map((s) => s.toLowerCase());
+  const inAllowedVerbatim = (token: string) => {
+    const normalized = token.toLowerCase().replace(/\s+/g, " ").trim();
+    return allowedVerbatim.some((a) => a.includes(normalized) || normalized === a);
+  };
 
   // ── 1. Dollar amounts — banned outright (fabricated-pricing class, F1/F5-F10/F14)
-  for (const m of content.matchAll(/\$\s?\d[\d,]*(?:\.\d+)?/g)) {
+  for (const m of prose.matchAll(/\$\s?\d[\d,]*(?:\.\d+)?/g)) {
     violations.push({
       rule: "currency",
-      excerpt: excerptAt(content, m.index!, m[0].length),
+      excerpt: excerptAt(prose, m.index!, m[0].length),
       detail:
         "Dollar figures are banned on generated posts. Viking's price book is not available here; nothing may be quoted.",
     });
   }
 
-  // ── 2. Percentages — banned unless the figure is inside an allowedVerbatim claim
-  for (const m of content.matchAll(/\d+(?:\.\d+)?(?:\s*[-–]\s*\d+(?:\.\d+)?)?\s*%/g)) {
+  // ── 2. Percentages — banned unless the figure is an allowedVerbatim claim or a
+  //       weather probability present in the payload (e.g. "30% chance of storms").
+  const payloadNumbers = options.legacy ? null : collectAllowedNumbers(context);
+  for (const m of prose.matchAll(/(\d+(?:\.\d+)?)(?:\s*[-–]\s*\d+(?:\.\d+)?)?\s*%/g)) {
     const token = m[0].replace(/\s+/g, "").toLowerCase();
-    const ok = allowedVerbatim.some((a) => a.replace(/\s+/g, "").includes(token));
-    if (!ok) {
-      violations.push({
-        rule: "percent",
-        excerpt: excerptAt(content, m.index!, m[0].length),
-        detail:
-          "Percentage/statistic not in viking-truth.json allowedVerbatim (fabricated-statistic class, e.g. the misattributed Energy Star 20-30% claim).",
-      });
-    }
+    if (allowedVerbatim.some((a) => a.replace(/\s+/g, "").includes(token))) continue;
+    const nearby = prose.slice(Math.max(0, m.index! - 45), m.index! + m[0].length + 45);
+    const isWeatherPercent = /chance|probabilit|humidity|precipitation/i.test(nearby);
+    if (isWeatherPercent && (options.legacy || payloadNumbers?.has(m[1]))) continue;
+    violations.push({
+      rule: "percent",
+      excerpt: excerptAt(prose, m.index!, m[0].length),
+      detail:
+        "Percentage/statistic not in viking-truth.json allowedVerbatim (fabricated-statistic class, e.g. the misattributed Energy Star 20-30% claim).",
+    });
   }
 
   // ── 3. Incentive/utility program terms — banned (the SRP-incident class)
   const programTerms =
     /\b(rebates?|tax credits?|incentives?|cool cash|section 179d?|25c|inflation reduction act|bonus depreciation)\b/gi;
-  for (const m of content.matchAll(programTerms)) {
+  for (const m of prose.matchAll(programTerms)) {
     violations.push({
       rule: "program-terms",
-      excerpt: excerptAt(content, m.index!, m[0].length),
+      excerpt: excerptAt(prose, m.index!, m[0].length),
       detail:
         "Incentive/program content is banned on the blog; the main site's incentives page is the only permitted surface (truth.bannedTopics.incentives).",
     });
   }
-  for (const m of content.matchAll(/\b(SRP|APS)\b/g)) {
+  for (const m of prose.matchAll(/\b(SRP|APS)\b/g)) {
     violations.push({
       rule: "utility-name",
-      excerpt: excerptAt(content, m.index!, m[0].length),
+      excerpt: excerptAt(prose, m.index!, m[0].length),
       detail: "Utility names are banned in generated content (truth.bannedTopics.utilities).",
     });
   }
@@ -140,12 +170,12 @@ export function runContentGate(
   // ── 4. Attribution without a source link (fabricated-attribution class, F13/F15)
   const attribution =
     /(according to|studies show|research (?:shows|indicates)|industry (?:data|studies|research)|experts (?:say|recommend|agree))/gi;
-  for (const m of content.matchAll(attribution)) {
-    const para = paragraphContaining(content, m.index!);
+  for (const m of prose.matchAll(attribution)) {
+    const para = paragraphContaining(prose, m.index!);
     if (!/https?:\/\//.test(para)) {
       violations.push({
         rule: "unsourced-attribution",
-        excerpt: excerptAt(content, m.index!, m[0].length),
+        excerpt: excerptAt(prose, m.index!, m[0].length),
         detail: "Attribution phrase with no source URL in the same paragraph.",
       });
     }
@@ -159,66 +189,82 @@ export function runContentGate(
     /\bcase stud(?:y|ies)\b/gi,
   ];
   for (const re of stories) {
-    for (const m of content.matchAll(re)) {
+    for (const m of prose.matchAll(re)) {
       violations.push({
         rule: "customer-story",
-        excerpt: excerptAt(content, m.index!, m[0].length),
+        excerpt: excerptAt(prose, m.index!, m[0].length),
         detail: "Customer stories/case studies are banned — none can be verified from this repo.",
       });
     }
   }
 
   // ── 6. Credential figures (unverified-credential class: review counts, experience years)
-  for (const m of content.matchAll(/\b\d+\+?\s*(?:5-star\s+)?reviews?\b/gi)) {
+  for (const m of prose.matchAll(/\b\d+\+?\s*(?:(?:5|five)[- ]star\s+)?reviews?\b/gi)) {
+    if (inAllowedVerbatim(m[0])) continue; // "340+ five-star reviews" is verified (Joel 2026-07-13)
     violations.push({
       rule: "credential-reviews",
-      excerpt: excerptAt(content, m.index!, m[0].length),
-      detail: "Review-count claims are pendingVerification in viking-truth.json — banned until verified.",
+      excerpt: excerptAt(prose, m.index!, m[0].length),
+      detail: "Review-count claim does not match the verified figure in viking-truth.json allowedVerbatim.",
     });
   }
-  for (const m of content.matchAll(/\b\d+\+?\s*years?(?:\s+of)?(?:\s+combined)?\s+experience\b/gi)) {
+  for (const m of prose.matchAll(/\b\d+\+?\s*years?(?:\s+of)?(?:\s+combined)?\s+experience\b/gi)) {
     violations.push({
       rule: "credential-experience",
-      excerpt: excerptAt(content, m.index!, m[0].length),
+      excerpt: excerptAt(prose, m.index!, m[0].length),
       detail: "Years-of-experience claims are pendingVerification — banned until verified.",
     });
   }
-  for (const m of content.matchAll(/\bsince\s+(\d{4})\b/gi)) {
+  for (const m of prose.matchAll(/\bsince\s+(\d{4})\b/gi)) {
     if (Number(m[1]) !== truth.identity.foundedYear) {
       violations.push({
         rule: "credential-founded",
-        excerpt: excerptAt(content, m.index!, m[0].length),
+        excerpt: excerptAt(prose, m.index!, m[0].length),
         detail: `"since ${m[1]}" contradicts verified foundedYear ${truth.identity.foundedYear}.`,
       });
     }
   }
 
   // ── 7. Weather numbers must exist in the actual weather payload
-  const allowedNumbers = collectAllowedNumbers(context);
-  const weatherPatterns: Array<[RegExp, string]> = [
-    [/(\d{2,3})\s*(?:°|degrees)/g, "temperature"],
-    [/(\d{2,3})\s*mph\b/gi, "wind speed"],
-    [/(\d+(?:\.\d+)?)\s*inch(?:es)?\b/gi, "precipitation"],
-  ];
-  for (const [re, kind] of weatherPatterns) {
-    for (const m of content.matchAll(re)) {
-      if (!allowedNumbers.has(m[1])) {
-        violations.push({
-          rule: "weather-number",
-          excerpt: excerptAt(content, m.index!, m[0].length),
-          detail: `${kind} "${m[1]}" does not appear in the fetched NWS weather payload — unverifiable.`,
-        });
+  if (!options.legacy) {
+    const allowedNumbers = collectAllowedNumbers(context);
+    const weatherPatterns: Array<[RegExp, string]> = [
+      [/(\d{2,3})\s*(?:°|degrees)/g, "temperature"],
+      [/(\d{2,3})\s*mph\b/gi, "wind speed"],
+      [/(\d+(?:\.\d+)?)\s*inch(?:es)?\b/gi, "precipitation"],
+    ];
+    for (const [re, kind] of weatherPatterns) {
+      for (const m of prose.matchAll(re)) {
+        if (!allowedNumbers.has(m[1])) {
+          violations.push({
+            rule: "weather-number",
+            excerpt: excerptAt(prose, m.index!, m[0].length),
+            detail: `${kind} "${m[1]}" does not appear in the fetched NWS weather payload — unverifiable.`,
+          });
+        }
       }
+    }
+  }
+
+  // ── 7b. Banned phrases from the TRUTH doc (stale dealer claims, NASA-approved,
+  //        Wisetack, the retired 240+ review count, unsubstantiated superlatives)
+  for (const pattern of truth.bannedPhrases.patterns) {
+    const re = new RegExp(pattern, "gi");
+    for (const m of prose.matchAll(re)) {
+      violations.push({
+        rule: "banned-phrase",
+        excerpt: excerptAt(prose, m.index!, m[0].length),
+        detail: `Matches TRUTH-doc NEVER rule (viking-truth.json bannedPhrases: /${pattern}/i).`,
+      });
     }
   }
 
   // ── 8. Generator scaffolding leaking into content (F17 class)
   const scaffolding =
     /===\w+===|\[Full FAQ content|\[Write a \d+|LINKS FOUND IN CONTENT|already AEO-formatted/g;
-  for (const m of content.matchAll(scaffolding)) {
+  for (const m of prose.matchAll(scaffolding)) {
     violations.push({
       rule: "scaffolding",
-      excerpt: excerptAt(content, m.index!, m[0].length),
+      excerpt: excerptAt(prose, m.index!, m[0].length),
       detail: "Generator scaffolding/template text leaked into the post body.",
     });
   }
@@ -228,6 +274,8 @@ export function runContentGate(
   for (const m of content.matchAll(/https?:\/\/[^\s)"'<\]]+/g)) {
     const url = m[0];
     if (!/viking-hvac\.com/i.test(url)) continue; // external authority links checked by verify layer
+    if (/blog\.viking-hvac\.com/i.test(url)) continue; // cross-links between our own posts are fine
+    if (/\.(png|jpe?g|svg|webp|ico)(\?|$)/i.test(url)) continue; // static assets in schema/frontmatter
     if (!allowedUrls.has(normalizeUrl(url))) {
       violations.push({
         rule: "unlisted-internal-url",

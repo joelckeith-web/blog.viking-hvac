@@ -38,7 +38,7 @@ schema:
     - question: "How often should I change my AC filter during Arizona's hot season?"
       answer: "In Arizona's dusty environment, change your AC filter every 60-90 days during the cooling season. During peak summer months when your system runs constantly, monthly changes may be necessary for optimal performance."
     - question: "What thermostat setting saves the most energy when it's 104°F outside?"
-      answer: "Set your thermostat to 78°F when home and 85°F when away during 104°F weather. Smart thermostats can automatically adjust settings and save 20-30% on cooling costs through optimized scheduling."
+      answer: "Set your thermostat to 78°F when home and 85°F when away during 104°F weather. Smart thermostats can automatically adjust settings and reduce cooling costs through optimized scheduling."
     - question: "Should I have my AC serviced before temperatures reach 104°F?"
       answer: "Yes, absolutely. Pre-season maintenance before extreme heat prevents emergency breakdowns when your system is working hardest. Viking HVAC recommends annual tune-ups in March or April before peak summer demand."
     - question: "How can I tell if my AC is struggling with 104°F temperatures?"
@@ -79,9 +79,9 @@ The condenser coils may have accumulated dust and debris over the milder months.
 
 ### Thermostat Optimization
 
-Smart thermostats offer substantial benefits during extreme heat periods. These devices can learn your schedule, automatically adjust for optimal efficiency, and provide energy savings of 20-30% compared to manual thermostats. With cooling costs potentially exceeding $500 monthly during peak summer, these savings add up quickly.
+Smart thermostats offer substantial benefits during extreme heat periods. These devices can learn your schedule, automatically adjust for optimal efficiency, and meaningfully reduce cooling costs compared to manual thermostats. With cooling costs rising during peak summer, these savings add up quickly.
 
-For this week's heat, program your thermostat to 78°F when home and 85°F when away. Each degree above 78°F can reduce cooling costs by 6-8%. Viking Heating and Air Conditioning's [thermostat installation](https://www.viking-hvac.com/services/thermostat-installation) service includes programming and optimization for Arizona's unique climate demands.
+For this week's heat, program your thermostat to 78°F when home and 85°F when away. Each degree above 78°F further reduces cooling costs. Viking Heating and Air Conditioning's [thermostat installation](https://www.viking-hvac.com/services/thermostat-installation) service includes programming and optimization for Arizona's unique climate demands.
 
 **Key Takeaway:** Proper filter maintenance, outdoor unit clearance, and thermostat optimization are essential preparation steps that can prevent system failures and reduce energy costs during this week's 104°F heat.
 
@@ -103,7 +103,7 @@ Capacitors, which help start and run your system's motors, are particularly vuln
 
 Your home's ductwork significantly impacts system efficiency and comfort. Leaks in supply ducts waste cooled air, while return duct leaks draw hot attic air into your system. During 104°F outdoor conditions, these inefficiencies become magnified, leading to higher energy bills and reduced comfort.
 
-Viking Heating and Air Conditioning's [ductwork services](https://www.viking-hvac.com/services/ductwork-services) include leak detection and sealing, which can improve system efficiency by 15-20%. Proper duct insulation is equally important in Arizona, where attic temperatures can exceed 150°F during summer.
+Viking Heating and Air Conditioning's [ductwork services](https://www.viking-hvac.com/services/ductwork-services) include leak detection and sealing, which can meaningfully improve system efficiency. Proper duct insulation is equally important in Arizona, where attic temperatures can exceed 150°F during summer.
 
 **Key Takeaway:** Professional maintenance addresses critical issues like refrigerant levels, electrical connections, and ductwork integrity that directly impact your system's ability to handle 104°F temperatures effectively.
 
@@ -111,13 +111,13 @@ Viking Heating and Air Conditioning's [ductwork services](https://www.viking-hva
 
 ### Time-of-Use Rate Management
 
-Both SRP and APS, the primary utilities serving Chandler, use time-of-use rate structures that charge premium prices during peak demand hours (typically 3-8 PM). During this week's heat, strategic thermostat programming can significantly reduce costs.
+Most Chandler-area electric utilities use time-of-use rate structures that charge premium prices during peak demand hours (typically 3-8 PM). During this week's heat, strategic thermostat programming can significantly reduce costs.
 
 Pre-cool your home to 76°F during off-peak hours (before 3 PM), then allow the temperature to gradually rise to 80°F during peak hours. Your system's thermal mass and insulation will maintain reasonable comfort while avoiding the highest electricity rates. [Energy Star guidelines](https://www.energystar.gov/products/heating_cooling) support this strategy for Arizona climates.
 
 ### Supplemental Cooling Strategies
 
-Ceiling fans can make rooms feel 3-4 degrees cooler through improved air circulation, allowing higher thermostat settings without comfort loss. During 104°F weather, every degree of thermostat adjustment saves approximately 6-8% on cooling costs.
+Ceiling fans can make rooms feel cooler through improved air circulation, allowing higher thermostat settings without comfort loss. During 104°F weather, every degree of thermostat adjustment helps reduce cooling costs.
 
 Window coverings play a crucial role in reducing solar heat gain. Close blinds and curtains on sun-facing windows during the day, particularly west-facing exposures that receive intense afternoon sun when outdoor temperatures peak.
 
@@ -161,7 +161,7 @@ Mid-season maintenance in July can address issues that develop during heavy use 
 
 AC systems in Arizona typically last 12-15 years with regular maintenance, though exceptional care can extend lifespans to 18+ years. If your system is approaching 10 years old and struggles with this week's 104°F temperatures, begin planning for eventual replacement rather than facing emergency decisions during peak summer.
 
-Newer systems offer 30-50% better efficiency than older units, providing substantial long-term savings. [Department of Energy](https://www.energy.gov/energysaver/heat-and-cool/heat-pump-systems) efficiency standards continue improving, making system upgrades increasingly attractive for Arizona homeowners.
+Newer systems offer meaningfully better efficiency than older units, providing substantial long-term savings. [Department of Energy](https://www.energy.gov/energysaver/heat-and-cool/heat-pump-systems) efficiency standards continue improving, making system upgrades increasingly attractive for Arizona homeowners.
 
 ### Home Performance Integration
 
@@ -177,7 +177,7 @@ This week's forecast of 104°F temperatures serves as an important reminder that
 
 Viking Heating and Air Conditioning's [preventative maintenance](https://www.viking-hvac.com/preventative-maintenance) programs provide comprehensive system care designed specifically for Arizona's climate demands. Our licensed, bonded, and insured technicians understand the unique challenges of East Valley weather patterns and deliver reliable solutions before problems become emergencies.
 
-Don't wait until your air conditioning system fails during the most demanding weather of the year. Contact Viking Heating and Air Conditioning today at (480) 689-5167 to schedule your pre-summer maintenance and ensure your family's comfort throughout the challenging months ahead. As an authorized American Standard dealer serving Chandler and the greater Phoenix area with 240+ five-star reviews, we're your trusted bridge between you and comfort during Arizona's extreme weather conditions.
+Don't wait until your air conditioning system fails during the most demanding weather of the year. Contact Viking Heating and Air Conditioning today at (480) 689-5167 to schedule your pre-summer maintenance and ensure your family's comfort throughout the challenging months ahead. As a Champion Authorized Dealer and Mitsubishi Diamond Contractor serving Chandler and the greater Phoenix area with 340+ five-star reviews, we're your trusted bridge between you and comfort during Arizona's extreme weather conditions.
 
 ### Serving Chandler & the Phoenix East Valley
 - [Air Conditioning in Downtown Chandler](https://www.viking-hvac.com/air-conditioning)

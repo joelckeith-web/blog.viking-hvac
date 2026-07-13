@@ -93,7 +93,7 @@ Consider implementing a pre-cooling strategy: lower your thermostat by 2-3 degre
 
 **Electrical System Considerations**
 
-Extreme heat events often coincide with peak electrical demand periods. Both SRP and APS implement time-of-use rate structures that make cooling most expensive during peak hours (typically 3-8 PM). However, don't sacrifice safety for savings - maintain safe indoor temperatures and consider the long-term costs of system failure versus temporary energy savings.
+Extreme heat events often coincide with peak electrical demand periods, when cooling can become more expensive during certain hours of the day. However, don't sacrifice safety for savings - maintain safe indoor temperatures and consider the long-term costs of system failure versus temporary energy savings.
 
 Ensure your electrical panel and AC disconnect are in good condition. Electrical components expand and contract with temperature changes, and loose connections can fail during high-demand periods. If you notice any flickering lights when your AC starts, contact a professional immediately.
 
@@ -105,7 +105,7 @@ Arizona homes typically need one ton of cooling capacity for every 400-500 squar
 
 AC systems in Arizona typically last 12-15 years with proper maintenance, but can reach 18+ years with excellent care. Older systems become increasingly vulnerable during extreme heat events as components wear and efficiency degrades. If your system is over 10 years old and struggling during normal summer conditions, extreme heat warnings present serious failure risks.
 
-Newer systems are 30-50% more efficient than models from the early 2000s, making them better equipped to handle extreme conditions. If you're considering [HVAC installation](https://www.viking-hvac.com/install) or replacement, extreme heat events highlight the importance of proper sizing and high-efficiency equipment.
+Newer systems are substantially more efficient than models from the early 2000s, making them better equipped to handle extreme conditions. If you're considering [HVAC installation](https://www.viking-hvac.com/install) or replacement, extreme heat events highlight the importance of proper sizing and high-efficiency equipment.
 
 During this week's forecast, systems will face continuous operation from Sunday through at least Wednesday. Older or marginally performing systems may not survive this extended stress period without professional intervention.
 
@@ -135,9 +135,9 @@ This week's extreme heat warning represents Arizona's new normal rather than an 
 
 **Upgrade Considerations**
 
-Smart thermostats can provide 20-30% energy reduction while optimizing system performance during extreme conditions. These devices learn your schedule and adjust cooling patterns to minimize peak-demand operation while maintaining comfort.
+Smart thermostats can meaningfully reduce energy use while optimizing system performance during extreme conditions. These devices learn your schedule and adjust cooling patterns to minimize peak-demand operation while maintaining comfort.
 
-Consider upgrading to higher-efficiency equipment if your current system is over 8-10 years old. The combination of lower operating costs and improved reliability during extreme weather often justifies the investment, particularly with available rebates and financing options.
+Consider upgrading to higher-efficiency equipment if your current system is over 8-10 years old. The combination of lower operating costs and improved reliability during extreme weather often justifies the investment.
 
 Our [thermostat installation](https://www.viking-hvac.com/services/thermostat-installation) service can help you implement smart controls that optimize your system's performance during extreme heat events while reducing overall energy consumption.
 
@@ -151,11 +151,11 @@ Maintenance should occur twice annually in Arizona - once before the cooling sea
 
 ## Energy Management During Extreme Heat
 
-Summer cooling costs in Arizona can exceed $500 per month during peak periods, and extreme heat events can drive costs even higher. However, the health and safety considerations during 109°F weather outweigh short-term energy savings concerns.
+Summer cooling costs in Arizona rise significantly during peak periods, and extreme heat events can drive costs even higher. However, the health and safety considerations during 109°F weather outweigh short-term energy savings concerns.
 
 **Utility Rate Structure Awareness**
 
-Both SRP and APS implement time-of-use rates that charge premium prices during peak demand hours. During extreme heat warnings, these peak periods may extend longer than normal as grid demand remains high throughout the afternoon and early evening.
+Many Arizona utility providers charge premium prices during peak demand hours. During extreme heat warnings, these peak periods may extend longer than normal as grid demand remains high throughout the afternoon and early evening.
 
 Plan your energy usage accordingly, but prioritize system reliability and personal safety. Pre-cooling your home during off-peak hours can reduce peak-period demand while maintaining comfort during the most dangerous temperature periods.
 
@@ -181,7 +181,7 @@ We understand the specific challenges that Arizona's extreme heat presents to HV
 
 When extreme heat warnings are issued, don't wait until your system fails completely. Early intervention can often prevent total system failure and restore cooling capacity more quickly than emergency repairs performed under extreme conditions.
 
-At Viking Heating and Air Conditioning, we've built our reputation on being "The Bridge Between You and Comfort" through more than 240+ five-star reviews from satisfied East Valley customers. Our American Standard authorized dealer status and commitment to servicing ALL brands means we're prepared to help regardless of your system type or age.
+At Viking Heating and Air Conditioning, we've built our reputation on being "The Bridge Between You and Comfort" through 340+ five-star reviews from satisfied East Valley customers. Our status as a Champion Authorized Dealer and Mitsubishi Diamond Contractor, along with our commitment to servicing ALL brands, means we're prepared to help regardless of your system type or age.
 
 Don't let this extreme heat warning catch you unprepared. Contact Viking Heating and Air Conditioning at (480) 689-5167 today to schedule immediate pre-heat inspection and service. Our experienced technicians are ready to ensure your cooling system can handle the dangerous temperatures ahead, protecting your family's comfort and safety throughout this extreme weather event.
 

@@ -38,7 +38,7 @@ schema:
     - question: "Why do some HVAC quotes vary so much in price?"
       answer: "Legitimate price variation comes from different equipment brands, efficiency ratings, warranty levels, and installation approaches. However, if one quote is dramatically lower than others, the contractor may be using inferior equipment, planning to cut corners on installation, or planning to add charges after work begins. If one quote is dramatically higher, they may be overcharging."
     - question: "Should I always get a second opinion on HVAC repairs?"
-      answer: "For repairs under $300 from a trusted contractor, a second opinion usually isn't necessary. For any repair over $1,000, or any time a contractor recommends full system replacement, getting a second (or third) opinion is strongly recommended. The small investment in a second diagnostic fee can save thousands on unnecessary work."
+      answer: "For minor repairs from a trusted contractor, a second opinion usually isn't necessary. For any major repair, or any time a contractor recommends full system replacement, getting a second (or third) opinion is strongly recommended. A second diagnostic visit can save you from paying for unnecessary work."
     - question: "How can I find trustworthy HVAC contractors in the Chandler area?"
       answer: "Ask neighbors and friends for recommendations, check online reviews across multiple platforms, verify ROC licensing, and get multiple written quotes. Local community groups and neighborhood forums often have reliable contractor recommendations from verified residents."
 status: "published"
@@ -55,14 +55,14 @@ Viking Heating & Air Conditioning has served Chandler, Gilbert, Mesa, Phoenix, S
 **How it works:** A technician diagnoses a minor issue — a failed capacitor, low refrigerant, or dirty coils — but tells you the entire system needs replacement. They may claim the compressor is "about to fail" or the system is "too dangerous to operate."
 
 **How to protect yourself:**
-- Get a second opinion before approving any repair over $1,000
+- Get a second opinion before approving any major repair
 - Ask for specific diagnostic evidence (test readings, photos)
 - Request the written diagnosis before discussing replacement
 - A legitimate technician explains the problem clearly and offers repair as an option when appropriate
 
 ### The "Refrigerant Top-Off" Scam
 
-**How it works:** A technician adds refrigerant and charges $200-500 but doesn't fix the leak causing the loss. You'll need another expensive recharge within weeks or months.
+**How it works:** A technician adds refrigerant and charges for it but doesn't fix the leak causing the loss. You'll need another expensive recharge within weeks or months.
 
 **How to protect yourself:**
 - A proper refrigerant service includes leak detection and repair
@@ -87,7 +87,7 @@ Viking Heating & Air Conditioning has served Chandler, Gilbert, Mesa, Phoenix, S
 - Ask to see the problem (a legitimate technician is happy to show you)
 - Request photos or video of the issue
 - Get a second opinion on non-emergency "discoveries"
-- Be skeptical when a $150 tune-up turns into $2,000+ in recommended repairs
+- Be skeptical when a routine tune-up suddenly turns into a long list of expensive recommended repairs
 
 ### The Door-to-Door "Free Inspection" Scam
 
@@ -160,7 +160,7 @@ Occasionally, legitimate issues are discovered during maintenance. However, if a
 Legitimate price variation comes from different equipment brands, efficiency ratings, warranty levels, and installation approaches. However, if one quote is dramatically lower than others, the contractor may be using inferior equipment, planning to cut corners on installation, or planning to add charges after work begins. If one quote is dramatically higher, they may be overcharging.
 
 ### Should I always get a second opinion on HVAC repairs?
-For repairs under $300 from a trusted contractor, a second opinion usually isn't necessary. For any repair over $1,000, or any time a contractor recommends full system replacement, getting a second (or third) opinion is strongly recommended. The small investment in a second diagnostic fee can save thousands on unnecessary work.
+For minor repairs from a trusted contractor, a second opinion usually isn't necessary. For any major repair, or any time a contractor recommends full system replacement, getting a second (or third) opinion is strongly recommended. A second diagnostic visit can save you from paying for unnecessary work.
 
 ### How can I find trustworthy HVAC contractors in the Chandler area?
 Ask neighbors and friends for recommendations, check online reviews across multiple platforms, verify ROC licensing, and get multiple written quotes. Local community groups and neighborhood forums often have reliable contractor recommendations from verified residents.

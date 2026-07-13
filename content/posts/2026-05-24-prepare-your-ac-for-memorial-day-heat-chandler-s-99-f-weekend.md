@@ -73,7 +73,7 @@ Inspect your outdoor condenser unit for debris, vegetation growth, or obstructio
 
 Check all indoor vents and registers to ensure they're open and unobstructed by furniture, curtains, or other items. Arizona homes need proper airflow distribution to maintain comfortable temperatures throughout all rooms. Closed or blocked vents can create pressure imbalances that reduce overall system efficiency.
 
-Test your thermostat settings and consider upgrading to a programmable or smart thermostat if you haven't already. Modern thermostats can provide 20-30% energy reduction by automatically adjusting temperatures based on occupancy and time-of-use rate structures offered by SRP and APS.
+Test your thermostat settings and consider upgrading to a programmable or smart thermostat if you haven't already. Modern thermostats can meaningfully reduce energy use by automatically adjusting temperatures based on occupancy and time-of-use rate structures offered by your local utility.
 
 **Key Takeaway**: Pre-heat preparation focuses on maximizing airflow and system efficiency. Clean filters, clear outdoor units, and proper thermostat settings can prevent most common AC problems during peak demand periods.
 
@@ -83,7 +83,7 @@ Smart thermostat management becomes crucial when temperatures reach 99°F and be
 
 During Memorial Day weekend's 99°F heat, consider setting your thermostat to 78-80°F when home and 82-85°F when away for extended periods. Avoid drastic temperature changes that force your system to work overtime catching up. It's more efficient to maintain steady temperatures than to let your home heat up significantly and then try to cool it down quickly.
 
-For homes with [professional thermostat installation](https://www.viking-hvac.com/services/thermostat-installation), programmable features can automatically adjust temperatures based on your schedule. Set higher temperatures during peak utility rate periods (typically 3-8 PM for both SRP and APS customers) and lower temperatures during off-peak hours when electricity rates are reduced.
+For homes with [professional thermostat installation](https://www.viking-hvac.com/services/thermostat-installation), programmable features can automatically adjust temperatures based on your schedule. Set higher temperatures during your utility's peak rate periods and lower temperatures during off-peak hours when electricity rates are reduced. Check your utility bill or provider's website for your specific peak-hour window.
 
 Zone control systems work particularly well in larger Chandler homes, allowing you to cool only occupied areas during family gatherings. This targeted approach reduces overall energy consumption while maintaining comfort where needed most.
 
@@ -95,19 +95,19 @@ If your AC can't maintain indoor temperatures below 85°F when outdoor temperatu
 
 Listen for unusual sounds like grinding, squealing, or clicking that indicate mechanical problems. These issues often worsen under heat stress and can lead to complete system failure during peak demand periods. Strange odors, particularly musty or burning smells, require immediate professional attention.
 
-High energy bills compared to previous years suggest declining efficiency. Arizona cooling costs can exceed $500 per month during peak summer, but sudden increases often indicate maintenance needs or equipment problems that [comprehensive AC services](https://www.viking-hvac.com/air-conditioning) can address.
+High energy bills compared to previous years suggest declining efficiency. A sudden jump in your cooling costs often indicates maintenance needs or equipment problems that [comprehensive AC services](https://www.viking-hvac.com/air-conditioning) can address.
 
 **Key Takeaway**: Memorial Day weekend's heat will stress-test your AC system and reveal existing problems. Professional diagnosis and repair now can prevent emergency breakdowns during Arizona's hottest months.
 
 ## Energy Efficiency During Peak Demand Periods
 
-Managing energy costs becomes critical when temperatures reach 99°F and your AC runs continuously. Understanding time-of-use rate structures from local utilities SRP and APS helps you optimize cooling schedules for maximum savings.
+Managing energy costs becomes critical when temperatures reach 99°F and your AC runs continuously. Understanding your local utility's time-of-use rate structure helps you optimize cooling schedules for maximum savings.
 
 Pre-cooling strategies work effectively in Arizona's dry climate. Run your AC at lower temperatures during off-peak hours (typically before 3 PM and after 8 PM) to "charge" your home's thermal mass. Well-insulated homes can maintain comfortable temperatures for several hours with minimal AC operation during expensive peak rate periods.
 
 Ceiling fans provide significant comfort enhancement when combined with proper AC operation. Fans allow you to set thermostats 3-4 degrees higher while maintaining the same comfort level, reducing energy consumption. However, fans only cool people, not rooms, so turn them off in unoccupied areas.
 
-Consider upgrading to high-efficiency equipment if your system is over 10 years old. Modern AC systems are 30-50% more efficient than older models, and Arizona's extreme operating conditions accelerate the cost-effectiveness of [new HVAC installations](https://www.viking-hvac.com/install). AC systems in Arizona typically last 12-15 years, but proper maintenance can extend lifespan to 18+ years.
+Consider upgrading to high-efficiency equipment if your system is over 10 years old. Modern AC systems are substantially more efficient than older models, and Arizona's extreme operating conditions accelerate the cost-effectiveness of [new HVAC installations](https://www.viking-hvac.com/install). Proper, consistent maintenance can meaningfully extend a system's usable lifespan.
 
 ## Air Quality Considerations During Hot Weather
 
@@ -125,7 +125,7 @@ Consider portable air purifiers for rooms with high occupancy during Memorial Da
 
 Memorial Day weekend's 99°F temperatures provide a preview of Arizona's peak summer conditions, when temperatures regularly exceed 115°F from June through August. Use this opportunity to evaluate your cooling system's performance under stress and plan necessary improvements.
 
-Schedule [preventative maintenance](https://www.viking-hvac.com/preventative-maintenance) now if your system hasn't been professionally serviced within the past year. Regular maintenance can prevent 85% of common AC problems and ensures optimal efficiency when you need it most. Viking's comprehensive maintenance includes refrigerant level checks, electrical connection tightening, and component cleaning that keeps systems running reliably.
+Schedule [preventative maintenance](https://www.viking-hvac.com/preventative-maintenance) now if your system hasn't been professionally serviced within the past year. Regular maintenance catches many common AC problems before they become breakdowns and helps ensure optimal efficiency when you need it most. Viking's comprehensive maintenance includes refrigerant level checks, electrical connection tightening, and component cleaning that keeps systems running reliably.
 
 Evaluate your home's insulation and air sealing. Arizona's extreme temperature differentials put tremendous stress on building envelopes, and small air leaks become major efficiency problems when indoor/outdoor temperature differences exceed 30°F. Professional energy audits can identify improvement opportunities that pay for themselves through reduced cooling costs.
 
@@ -133,11 +133,11 @@ Consider backup cooling options for critical areas like bedrooms or home offices
 
 ## Professional HVAC Services for Chandler Residents
 
-Viking Heating and Air Conditioning provides comprehensive HVAC services specifically designed for Arizona's challenging climate conditions. As an American Standard authorized dealer, we service all major brands including Carrier, Trane, Lennox, Goodman, and Rheem with the expertise that comes from serving the Chandler area since 2016.
+Viking Heating and Air Conditioning provides comprehensive HVAC services specifically designed for Arizona's challenging climate conditions. As a Champion Authorized Dealer and Mitsubishi Diamond Contractor, we service all major brands including Carrier, Trane, American Standard, Lennox, Goodman, and Rheem with the expertise that comes from serving the Chandler area since 2016.
 
 Our [emergency repair services](https://www.viking-hvac.com/services/emergency-hvac-repair) are available 24/7 because we understand that AC failures don't wait for convenient times. When Memorial Day weekend temperatures reach 99°F, prompt professional service can mean the difference between minor repairs and major system replacement.
 
-Licensed (AZ ROC #316534), bonded, and insured, Viking provides the reliability and expertise that Chandler homeowners have trusted for years. Our 240+ five-star reviews reflect our commitment to quality service and customer satisfaction during both routine maintenance and emergency situations.
+Licensed (AZ ROC #316534), bonded, and insured, Viking provides the reliability and expertise that Chandler homeowners have trusted for years. Our 340+ five-star reviews reflect our commitment to quality service and customer satisfaction during both routine maintenance and emergency situations.
 
 ### Serving Chandler & the Phoenix East Valley
 - [Air Conditioning in Downtown Chandler](https://www.viking-hvac.com/air-conditioning)

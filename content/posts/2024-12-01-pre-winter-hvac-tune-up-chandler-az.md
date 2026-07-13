@@ -30,7 +30,7 @@ schema:
   type: "Article"
   faqItems:
     - question: "How much does a pre-winter HVAC tune-up cost in Chandler?"
-      answer: "Pre-winter heating tune-ups in Chandler typically cost $150-250 for a standard residential system. Maintenance program members receive discounted rates, priority scheduling, and additional benefits like repair discounts. The investment is minimal compared to the emergency repair costs and energy waste that preventive maintenance prevents."
+      answer: "Pre-winter tune-up costs vary by system size and complexity. Maintenance program members receive discounted rates, priority scheduling, and additional benefits like repair discounts. The investment is minimal compared to the emergency repair costs and energy waste that preventive maintenance prevents."
     - question: "When should I schedule my pre-winter tune-up in Chandler?"
       answer: "Schedule between early October and mid-November for optimal timing. This window provides comfortable working conditions for technicians, allows time for any follow-up repairs, and avoids the scheduling crunch that accompanies the first cold weather. Maintenance program members typically receive scheduling priority."
     - question: "What's the difference between a tune-up and a full inspection?"
@@ -46,7 +46,7 @@ status: "published"
 
 As Chandler's cooler weather arrives, scheduling a pre-winter HVAC tune-up might not seem urgent — after all, Arizona winters are mild compared to most of the country. But that's exactly why so many Phoenix Valley homeowners get caught off guard. Your heating system has sat idle for 6-7 months while your AC handled the heavy lifting. Dust, degraded lubricants, and dormant components create a recipe for failure precisely when you need heat most.
 
-Viking Heating & Air Conditioning has provided pre-winter HVAC maintenance throughout Chandler, Gilbert, Mesa, Phoenix, Scottsdale, Queen Creek, and Tempe since 2016. Our experience shows that homes with annual pre-winter tune-ups experience **80% fewer heating emergency calls** compared to homes without regular maintenance.
+Viking Heating & Air Conditioning has provided pre-winter HVAC maintenance throughout Chandler, Gilbert, Mesa, Phoenix, Scottsdale, Queen Creek, and Tempe since 2016. Our experience shows that homes with annual pre-winter tune-ups experience substantially fewer heating emergency calls compared to homes without regular maintenance.
 
 ## What a Pre-Winter Tune-Up Includes
 
@@ -103,25 +103,20 @@ Chandler's fall and winter weather requires your HVAC system to switch frequentl
 
 ### Emergency Repairs vs. Preventive Maintenance
 
-| Scenario | Typical Cost |
-|----------|-------------|
-| Pre-winter tune-up | $150-250 |
-| Emergency heating repair (off-hours) | $300-1,500+ |
-| Heat exchanger replacement | $1,500-3,500 |
-| Complete system replacement (emergency) | $6,000-15,000+ |
+A routine pre-winter tune-up is a modest, predictable expense. An emergency heating repair called in during a cold snap — especially one requiring off-hours service — typically costs more than the same repair scheduled in advance, simply because of rush timing and limited parts availability. Larger failures, like a cracked heat exchanger or a full system replacement forced by a breakdown in the middle of winter, cost substantially more than either option and come with the added stress of being without heat while repairs are arranged. Preventive maintenance is designed to catch the small, inexpensive issues before they become the large, expensive ones.
 
 ### Energy Waste
 
-Unmaintained heating systems consume 15-25% more energy than properly serviced systems. Over a winter season, this translates to $50-200 in wasted energy costs — potentially exceeding the cost of the tune-up itself.
+Unmaintained heating systems consume noticeably more energy than properly serviced systems. Over a winter season, that inefficiency adds up in wasted energy costs — costs that can exceed what the tune-up itself would have cost.
 
 ### Equipment Lifespan
 
-Systems that receive annual maintenance last an average of **3-5 years longer** than neglected systems. For equipment costing $5,000-15,000 to replace, this represents significant value preservation.
+Systems that receive annual maintenance tend to last longer than neglected systems, and replacing a full HVAC system is a significant investment. Routine maintenance is one of the most reliable ways to protect that investment and delay the need for replacement.
 
 ## Frequently Asked Questions
 
 ### How much does a pre-winter HVAC tune-up cost in Chandler?
-Pre-winter heating tune-ups in Chandler typically cost $150-250 for a standard residential system. Maintenance program members receive discounted rates, priority scheduling, and additional benefits like repair discounts. The investment is minimal compared to the emergency repair costs and energy waste that preventive maintenance prevents.
+Pre-winter tune-up costs vary by system size and complexity. Maintenance program members receive discounted rates, priority scheduling, and additional benefits like repair discounts. The investment is minimal compared to the emergency repair costs and energy waste that preventive maintenance prevents.
 
 ### When should I schedule my pre-winter tune-up in Chandler?
 Schedule between early October and mid-November for optimal timing. This window provides comfortable working conditions for technicians, allows time for any follow-up repairs, and avoids the scheduling crunch that accompanies the first cold weather. Maintenance program members typically receive scheduling priority.

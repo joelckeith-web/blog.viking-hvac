@@ -38,7 +38,7 @@ schema:
     - question: "How should I prepare my AC for 96°F temperatures in Chandler?"
       answer: "Check and replace your air filter, clean outdoor condenser coils, test thermostat programming, inspect ductwork for leaks, and schedule professional maintenance. These steps ensure your system runs efficiently during high-demand periods."
     - question: "What thermostat settings work best for 96°F weather in Arizona?"
-      answer: "Set your thermostat to 78-80°F when home and 82-85°F when away. Use programmable or smart thermostats to avoid overcooling and reduce energy costs during peak rate periods with SRP or APS utilities."
+      answer: "Set your thermostat to 78-80°F when home and 82-85°F when away. Use programmable or smart thermostats to avoid overcooling and reduce energy costs during utility peak rate periods."
     - question: "How often should I change my AC filter during Arizona's cooling season?"
       answer: "Replace filters every 60-90 days in Arizona due to dust conditions. During peak cooling months like April through October, check monthly and replace when dirty to maintain airflow and system efficiency."
     - question: "When should I schedule AC maintenance before summer heat arrives?"
@@ -46,7 +46,7 @@ schema:
     - question: "What are signs my AC isn't ready for extreme Arizona heat?"
       answer: "Watch for weak airflow, warm air from vents, unusual noises, frequent cycling, high humidity indoors, or rising energy bills. These indicate your system may struggle during 96°F+ temperatures and needs professional attention."
     - question: "How can I reduce cooling costs during 96°F weather in Chandler?"
-      answer: "Use ceiling fans to feel 3-4°F cooler, close blinds during peak sun hours, seal air leaks, maintain your AC system, and adjust thermostat settings during SRP or APS time-of-use peak periods (3-8 PM weekdays)."
+      answer: "Use ceiling fans to feel 3-4°F cooler, close blinds during peak sun hours, seal air leaks, maintain your AC system, and adjust thermostat settings during utility time-of-use peak periods (3-8 PM weekdays)."
 status: "published"
 ---
 
@@ -77,13 +77,13 @@ Check your filter now and replace it if it appears gray or clogged. For homes wi
 
 Your outdoor condenser unit needs proper airflow to reject heat effectively. Remove any debris, leaves, or vegetation within a two-foot radius of the unit. Gently rinse the condenser coils with a garden hose from the inside out to remove dust and dirt buildup that accumulates in Arizona's desert environment.
 
-Ensure that landscaping hasn't grown too close to the unit and that nothing is blocking the top discharge area. Poor airflow around the condenser can reduce efficiency by 10-15% and lead to premature component failure.
+Ensure that landscaping hasn't grown too close to the unit and that nothing is blocking the top discharge area. Poor airflow around the condenser can meaningfully reduce efficiency and lead to premature component failure.
 
 ### Thermostat Programming and Optimization
 
-With temperatures reaching 96°F, proper thermostat management becomes crucial for both comfort and cost control. Program your thermostat to 78-80°F when you're home and 82-85°F when away. Each degree higher can save 6-8% on cooling costs.
+With temperatures reaching 96°F, proper thermostat management becomes crucial for both comfort and cost control. Program your thermostat to 78-80°F when you're home and 82-85°F when away. Each degree higher you allow the setpoint to rise can meaningfully lower cooling costs.
 
-If you're still using a basic thermostat, consider upgrading to a programmable or smart model. [Thermostat installation](https://www.viking-hvac.com/services/thermostat-installation) by Viking's certified technicians can provide 20-30% energy reduction through optimized scheduling and advanced features like geofencing and utility rate integration.
+If you're still using a basic thermostat, consider upgrading to a programmable or smart model. [Thermostat installation](https://www.viking-hvac.com/services/thermostat-installation) by Viking's certified technicians can help lower energy use through optimized scheduling and advanced features like geofencing and utility rate integration.
 
 ## Professional System Inspection Before Peak Season
 
@@ -101,7 +101,7 @@ Capacitors are particularly vulnerable to heat-related failure. These components
 
 ### Ductwork Inspection and Sealing
 
-Leaky ductwork is especially problematic during high-demand periods. Even small leaks can result in 15-20% efficiency losses, forcing your system to work harder to maintain comfort. In Arizona homes, ductwork often runs through unconditioned attics where temperatures can exceed 140°F.
+Leaky ductwork is especially problematic during high-demand periods. Even small leaks can force your system to work substantially harder to maintain comfort. In Arizona homes, ductwork often runs through unconditioned attics where temperatures can exceed 140°F.
 
 Professional [ductwork services](https://www.viking-hvac.com/services/ductwork-services) include leak detection, sealing, and insulation assessment to ensure conditioned air reaches its intended destination efficiently.
 
@@ -111,7 +111,7 @@ Professional [ductwork services](https://www.viking-hvac.com/services/ductwork-s
 
 ### Understanding Time-of-Use Rates
 
-Both SRP and APS implement time-of-use rate structures that significantly increase electricity costs during peak demand periods (typically 3-8 PM on weekdays). During this week's high temperatures, smart energy management becomes crucial for controlling costs.
+Many Arizona utilities implement time-of-use rate structures that significantly increase electricity costs during peak demand periods (typically 3-8 PM on weekdays). During this week's high temperatures, smart energy management becomes crucial for controlling costs. Check with your utility provider for your specific rate schedule.
 
 Consider pre-cooling your home during off-peak morning hours when rates are lower, then allowing the temperature to rise slightly during peak periods. A well-insulated home can maintain comfortable temperatures for several hours with minimal AC operation.
 
@@ -125,7 +125,7 @@ Window treatments on south and west-facing windows are particularly effective du
 
 ### Efficiency Improvements
 
-If your AC system is over 10 years old, it may be operating at significantly reduced efficiency compared to modern equipment. Newer systems are 30-50% more efficient than older models, providing substantial savings during Arizona's extended cooling season.
+If your AC system is over 10 years old, it may be operating at significantly reduced efficiency compared to modern equipment. Newer systems are substantially more efficient than older models, providing meaningful savings during Arizona's extended cooling season.
 
 Modern variable-speed systems can better handle the temperature swings shown in this week's forecast, operating more efficiently during moderate conditions while providing full capacity when outdoor temperatures peak at 96°F.
 

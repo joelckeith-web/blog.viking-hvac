@@ -5,8 +5,8 @@ export const siteConfig = {
   shortName: "Viking HVAC",
   tagline: "The Bridge Between You and Comfort",
   description:
-    "Family-owned HVAC company serving the Greater Phoenix area with over 40 years of combined experience. 240+ 5-star reviews. 24/7 emergency service. Honest, affordable, and quality heating and air conditioning services for residential and commercial clients.",
-  reviews: "240+ 5-Star Reviews",
+    "Family-owned HVAC company serving the Greater Phoenix area. 340+ five-star reviews at a 4.9-star rating. 24/7 emergency service. Honest, affordable, and quality heating and air conditioning services for residential and commercial clients.",
+  reviews: "340+ Five-Star Reviews",
 
   // V.I.K.I.N.G. Promise — brand values
   brandPromise: {
@@ -27,7 +27,9 @@ export const siteConfig = {
   // now live in lib/viking-truth.json; unverified ones sit in its
   // pendingVerification block until Viking confirms each with a source.
   foundedYear: 2016,
-  owners: "Nicole & Kelly Bridge",
+  // Per the TRUTH doc (resolved 2026-05-05): Nikki Bridge = owner/founder;
+  // Kelly Bridge = Master Technician (technical byline for E-E-A-T).
+  owners: "Nikki Bridge (owner/founder)",
   license: "AZ ROC #316534",
   email: "info@viking-hvac.com",
 
@@ -265,6 +267,20 @@ export const siteConfig = {
         city: "Gilbert",
         url: "https://viking-hvac.com/locations/gilbert/",
       },
+      // Added 2026-07-13 — live 200s (site crawl), already used by the
+      // geo-footer in ~49 posts; absent here made the gate flag them.
+      {
+        city: "Tempe",
+        url: "https://viking-hvac.com/locations/tempe/",
+      },
+      {
+        city: "Scottsdale",
+        url: "https://viking-hvac.com/locations/scottsdale/",
+      },
+      {
+        city: "Queen Creek",
+        url: "https://viking-hvac.com/locations/queen-creek-partly-in-pinal/",
+      },
     ],
     commercial: [
       {
@@ -292,6 +308,7 @@ export const siteConfig = {
 
   // Key pages
   keyPages: {
+    locations: "https://viking-hvac.com/locations/",
     about: "https://www.viking-hvac.com/about-us",
     contact: "https://www.viking-hvac.com/contact-us",
     financing: "https://www.viking-hvac.com/financing",

@@ -71,7 +71,7 @@ status: "published"
 * ***MERV 5-8**: Medium-efficiency filters that trap smaller particles like mold spores*  
 * ***MERV 9-12**: High-efficiency filters that capture very fine particles*  
 * ***MERV 13-16**: Hospital-grade filters that can trap bacteria and some viruses*  
-* ***HEPA Filters**: True HEPA filters can capture 99.97% of particles as small as 0.3 microns [(EPA)](https://www.epa.gov/indoor-air-quality-iaq/what-hepa-filter)*
+* ***HEPA Filters**: True HEPA filters can capture the vast majority of very fine particles, including particles as small as 0.3 microns [(EPA)](https://www.epa.gov/indoor-air-quality-iaq/what-hepa-filter)*
 
 #### ***Advantages of Air Filters***
 
@@ -90,7 +90,7 @@ status: "published"
 
 ### ***Air Scrubbers: The Advanced Solution***
 
-*Air scrubbers take air purification to the next level. Unlike air filters, air scrubbers actively remove contaminants from the air and surfaces throughout your home. Viking HVAC installs Aerus Air Scrubbers that use ActivePure® Technology, which is proven to reduce up to 99.9% of contaminants.*
+*Air scrubbers take air purification to the next level. Unlike air filters, air scrubbers actively remove contaminants from the air and surfaces throughout your home. Viking HVAC installs Aerus Air Scrubbers that use ActivePure® Technology, which is designed to substantially reduce airborne and surface contaminants.*
 
 #### ***How Air Scrubbers Work***
 
@@ -128,8 +128,8 @@ status: "published"
 | *Maintenance* | *Regular replacement (1-3 months)* | *Annual service typically sufficient* |
 | *Odor Removal* | *Limited to none* | *Excellent odor elimination* |
 | *Surface Cleaning* | *None* | *Cleans air and surfaces* |
-| *Initial Cost* | *$10-$100 depending on quality* | *$1,500+ installed* |
-| *Operating Cost* | *Filter replacements ($40-$200 annually)* | *Minimal (slight increase in energy usage)* |
+| *Initial Cost* | *Lower upfront investment, varies by quality* | *Higher upfront investment, varies by system* |
+| *Operating Cost* | *Ongoing filter replacements* | *Minimal (slight increase in energy usage)* |
 | *Installation Complexity* | *Simple DIY* | *Professional installation recommended* |
 | *Effectiveness for Allergies* | *Good for larger allergens* | *Excellent for all allergen sizes* |
 | *Effectiveness for Asthma* | *Moderate improvement* | *Significant improvement* |
@@ -157,7 +157,7 @@ status: "published"
 * ***Cleaning chemicals** and other household VOCs*  
 * ***Mold spores** that can develop even in our dry climate, especially in bathrooms and kitchens*
 
-*The EPA notes that "common contaminants that can be found indoors include particulate matter (including PM2.5 \[fine\] and PM10 \[coarse\]), formaldehyde, mold, and pollen" and since "most people spend about 90% of their time indoors, mostly in their homes, much of their exposures to airborne pollutants will happen in the home" [(EPA, 2022\)](https://www.epa.gov/indoor-air-quality-iaq/guide-air-cleaners-home).*
+*The EPA notes that "common contaminants that can be found indoors include particulate matter (including PM2.5 \[fine\] and PM10 \[coarse\]), formaldehyde, mold, and pollen" and since most people spend the large majority of their time indoors, mostly in their homes, much of their exposure to airborne pollutants happens in the home [(EPA, 2022\)](https://www.epa.gov/indoor-air-quality-iaq/guide-air-cleaners-home).*
 
 *Poor indoor air quality can lead to both immediate and long-term health effects:*
 

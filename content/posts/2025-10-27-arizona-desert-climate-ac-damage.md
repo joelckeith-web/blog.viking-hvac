@@ -59,7 +59,7 @@ Arizona's summer temperatures regularly exceed 115°F, with some areas reaching 
 
 ### 2. UV Radiation and Solar Heat Damage
 
-Arizona receives some of the most intense solar radiation in the United States, with UV levels that can be 20-30% higher than northern states. This intense radiation doesn't just affect your skin—it systematically breaks down the materials in your outdoor AC unit.
+Arizona receives some of the most intense solar radiation in the United States, with UV levels substantially higher than northern states. This intense radiation doesn't just affect your skin—it systematically breaks down the materials in your outdoor AC unit.
 
 **UV Damage to AC Components:**
 
@@ -74,7 +74,7 @@ Arizona's famous dust storms, known as haboobs, can reduce visibility to near ze
 
 **How Dust Destroys Your AC System:**
 
-- **Coil Coating:** Fine desert dust coats both indoor and outdoor coils, reducing heat transfer efficiency by up to 30%. This forces your system to work harder to achieve the same cooling effect.
+- **Coil Coating:** Fine desert dust coats both indoor and outdoor coils, reducing heat transfer efficiency. This forces your system to work harder to achieve the same cooling effect.
 - **Filter Overload:** AC filters in Arizona homes need replacement 2-3 times more frequently than in other climates. When filters become clogged, your system struggles to move air, causing strain on the blower motor and reduced efficiency.
 - **Mechanical Wear:** Dust particles act like sandpaper on moving parts, accelerating wear on fan motors, belts, and other mechanical components.
 - **Electrical Problems:** Dust buildup on electrical connections can cause arcing, corrosion, and eventual failure of control systems.
@@ -163,7 +163,7 @@ While you can't change Arizona's climate, you can take steps to minimize its imp
 ### Protective Measures
 
 - **Shade Structures:** Installing shade over your outdoor unit can reduce operating temperatures by 10-15°F, significantly extending component life.
-- **Upgraded Electrical Components:** Using contractor-grade electrical components rated for high-temperature operation can reduce failure rates by 30-40%.
+- **Upgraded Electrical Components:** Using contractor-grade electrical components rated for high-temperature operation can meaningfully reduce failure rates.
 - **Air Filtration Upgrades:** High-efficiency filters and air purification systems can reduce dust infiltration and improve overall system performance.
 
 ## When to Consider Replacement vs. Continued Repairs
@@ -181,18 +181,13 @@ Understanding how Arizona's climate affects your system can help you make better
 
 **Cost-Benefit Analysis:**
 
-- Annual repair costs exceed 50% of replacement cost
-- Energy bills have increased 20% or more despite similar usage
+- Repair costs are climbing toward what replacement would cost
+- Energy bills have crept up noticeably despite similar usage
 - System can't maintain comfortable temperatures during peak heat
 
 ### Repair vs. Replace Decision Matrix
 
-| System Age | Minor Repairs ($0-$500) | Major Repairs ($500-$2000) | Critical Failures ($2000+) |
-|---|---|---|---|
-| 0-5 years | Repair | Repair | Repair (check warranty) |
-| 6-10 years | Repair | Consider replacement | Lean toward replacement |
-| 11-15 years | Repair | Replace | Replace |
-| 15+ years | Replace | Replace | Replace |
+Generally, the calculus shifts as a system ages: newer systems (under about 5 years old) are almost always worth repairing, especially if the repair may be covered under warranty. Systems in the 6-10 year range call for a case-by-case judgment—minor repairs are usually still worth it, but a major component failure is a good moment to get a second opinion on replacement. Once a system passes the 10-15 year mark, major repairs increasingly favor replacement, and systems beyond 15 years are typically better replaced than repaired regardless of the specific issue. Costs vary by system size, equipment type, and the scope of the repair, so it's worth getting a written estimate before deciding either way.
 
 ## The Financial Impact of Arizona's Climate
 
@@ -200,13 +195,13 @@ The harsh Arizona climate doesn't just affect your AC system's reliability—it 
 
 ### Higher Operating Costs
 
-- **Energy Consumption:** Arizona homes typically use 60-70% more energy for cooling than the national average.
-- **Maintenance Frequency:** Arizona AC systems require maintenance 2-3 times more frequently than systems in moderate climates, increasing annual service costs.
-- **Replacement Frequency:** With systems lasting 10-15 years instead of 15-20 years, Arizona homeowners face replacement costs 25-30% more frequently.
+- **Energy Consumption:** Arizona homes typically use significantly more energy for cooling than the national average, given the length and intensity of the cooling season.
+- **Maintenance Frequency:** Arizona AC systems require more frequent maintenance than systems in moderate climates, increasing annual service costs.
+- **Replacement Frequency:** With systems often running shorter lifespans than in milder climates, Arizona homeowners tend to face replacement costs more often over time.
 
-### Utility Company Support
+### Savings Programs
 
-Arizona's utility companies recognize the challenges residents face and offer programs to help. APS (Arizona Public Service) and SRP (Salt River Project) both offer rebates for high-efficiency systems and maintenance programs designed to help systems survive Arizona's climate.
+Utility and manufacturer savings programs for high-efficiency systems change frequently and vary by provider, so we don't list specific figures here. For current, verified information, see our [Arizona AC savings programs guide](https://blog.viking-hvac.com/blog/arizona-ac-rebates-tax-credits).
 
 ## Planning for Success in Arizona's Climate
 
@@ -238,10 +233,10 @@ While some maintenance tasks can be performed by homeowners, Arizona's extreme c
 **A:** Arizona's extreme heat, extended cooling season, and continuous operation requirements push AC systems well beyond their normal operating parameters. Systems designed for moderate climates struggle with the sustained high-temperature operation required in Arizona.
 
 **Q: How much more does it cost to operate an AC system in Arizona?**
-**A:** Arizona homeowners typically spend 60-70% more on cooling costs than the national average. A typical Arizona home might spend $150-300 per month on cooling during peak summer months.
+**A:** Arizona homeowners typically spend substantially more on cooling costs than the national average, since the cooling season runs longer and systems operate at higher loads. Costs vary by home size, system efficiency, and usage habits.
 
 **Q: Are there AC systems specifically designed for Arizona's climate?**
 **A:** While most manufacturers don't make Arizona-specific models, some systems are better suited for extreme climates. Look for systems with high-temperature ratings, robust electrical components, and enhanced corrosion protection.
 
 **Q: Can solar panels help offset the higher energy costs in Arizona?**
-**A:** Yes, Arizona's abundant sunshine makes solar panels particularly effective. Many homeowners find that solar installations can offset 50-80% of their cooling costs, making them an excellent long-term investment.
+**A:** Yes, Arizona's abundant sunshine makes solar panels particularly effective. Many homeowners find that solar installations meaningfully offset their cooling costs, making them worth considering as a long-term investment.
