@@ -32,7 +32,7 @@ What makes our blog unique? We use real-time weather data from the National Weat
 
 ### Expert HVAC Advice
 
-As a family-owned and operated company, founder Nikki Bridge, Master Technician Kelly Bridge, and the Viking HVAC team share practical knowledge on [air conditioning](https://www.viking-hvac.com/air-conditioning) repair, maintenance, and replacement guidance for Arizona's brutal summers, [heating services](https://viking-hvac.com/residential/heating-repair/) to keep your home warm during desert winter nights, [air quality](https://www.viking-hvac.com/air-quality) solutions to protect your family from dust, allergens, and pollutants, and [preventative maintenance](https://www.viking-hvac.com/preventative-maintenance) to save money and extend your system's life.
+As a family-owned and operated company, owners Nikki and Kelly Bridge and the Viking HVAC team share practical knowledge on [air conditioning](https://www.viking-hvac.com/air-conditioning) repair, maintenance, and replacement guidance for Arizona's brutal summers, [heating services](https://viking-hvac.com/residential/heating-repair/) to keep your home warm during desert winter nights, [air quality](https://www.viking-hvac.com/air-quality) solutions to protect your family from dust, allergens, and pollutants, and [preventative maintenance](https://www.viking-hvac.com/preventative-maintenance) to save money and extend your system's life.
 
 We also serve businesses across the East Valley with our [commercial HVAC services](https://viking-hvac.com/commercial/), including healthcare, retail, manufacturing, and restaurant facilities.
 

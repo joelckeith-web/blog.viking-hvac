@@ -27,9 +27,10 @@ export const siteConfig = {
   // now live in lib/viking-truth.json; unverified ones sit in its
   // pendingVerification block until Viking confirms each with a source.
   foundedYear: 2016,
-  // Per the TRUTH doc (resolved 2026-05-05): Nikki Bridge = owner/founder;
-  // Kelly Bridge = Master Technician (technical byline for E-E-A-T).
-  owners: "Nikki Bridge (owner/founder)",
+  // Per Joel (2026-07-13): Nikki & Kelly Bridge are husband-and-wife
+  // co-owners. Nikki = founder/primary decision-maker; Kelly = co-owner
+  // AND Master Technician (technical byline for E-E-A-T).
+  owners: "Nikki & Kelly Bridge",
   license: "AZ ROC #316534",
   email: "info@viking-hvac.com",
 
