@@ -59,7 +59,7 @@ Temperature and humidity requirements vary significantly based on facility type 
 
 Air quality standards for healthcare facilities exceed those required for typical commercial buildings. HEPA filtration may be required in certain areas, while minimum filtration levels must meet MERV 13 or higher throughout most healthcare spaces. These requirements significantly impact system design and energy consumption, particularly in Arizona's dusty environment.
 
-At Viking HVAC, our healthcare specialists understand the complex regulatory landscape governing medical facilities. Our [commercial ventilation and air quality services](https://www.viking-hvac.com/services/commercial-ventilation-air-quality) are designed to ensure healthcare facilities meet all applicable standards while optimizing performance for Arizona's unique climate conditions.
+At Viking HVAC, our healthcare specialists understand the complex regulatory landscape governing medical facilities. Our [commercial ventilation and air quality services](https://viking-hvac.com/commercial/ventilation/) are designed to ensure healthcare facilities meet all applicable standards while optimizing performance for Arizona's unique climate conditions.
 
 ## **Critical Environmental Control Requirements**
 
@@ -95,7 +95,7 @@ Emergency response capabilities become critical when HVAC systems supporting inf
 
 ## **Energy Efficiency in Healthcare HVAC Systems**
 
-Healthcare facilities face unique energy challenges due to their continuous operation requirements, stringent environmental standards, and complex system needs. In Arizona's extreme climate, energy efficiency becomes even more critical as cooling loads can represent 50% or more of total facility energy consumption.
+Healthcare facilities face unique energy challenges due to their continuous operation requirements, stringent environmental standards, and complex system needs. In Arizona's extreme climate, energy efficiency becomes even more critical as cooling loads can represent a large share of total facility energy consumption.
 
 Variable air volume (VAV) systems offer significant energy savings opportunities for healthcare facilities by adjusting airflow based on actual space needs rather than maintaining constant maximum flow rates. However, VAV systems in healthcare applications must be carefully designed to maintain required minimum air change rates and pressure relationships under all operating conditions.
 
@@ -203,7 +203,7 @@ For professional healthcare HVAC solutions in Chandler, Phoenix, Gilbert, Mesa, 
   "dateModified": "2025-08-22",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://www.viking-hvac.com/healthcare-facility-hvac-requirements-compliance-patient-comfort"
+    "@id": "https://blog.viking-hvac.com/blog/healthcare-facility-hvac-requirements-compliance-patient-comfort"
   },
   "keywords": "healthcare facility HVAC, hospital air quality systems, medical office HVAC requirements, Arizona healthcare HVAC",
   "about": {

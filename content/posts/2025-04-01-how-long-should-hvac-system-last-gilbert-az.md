@@ -40,7 +40,7 @@ schema:
     - question: "How can I tell how old my HVAC system is?"
       answer: "Check the data plate on your outdoor unit — it displays the manufacture date or a serial number containing the manufacture date (format varies by manufacturer). Viking HVAC can identify your system's age during a free consultation or maintenance visit."
     - question: "Is it better to repair or replace a 10-year-old system in Arizona?"
-      answer: "It depends on the repair cost and system condition. For repairs under $1,500 on a well-maintained system, repair is usually worthwhile. For repairs over $2,000, especially on systems showing other age-related symptoms, replacement provides better long-term value. Viking HVAC provides honest repair-vs-replace recommendations based on your specific situation."
+      answer: "It depends on the repair cost and system condition. A minor repair on a well-maintained system is usually worthwhile. When a repair is a significant expense, especially on systems showing other age-related symptoms, replacement provides better long-term value. Viking HVAC provides honest repair-vs-replace recommendations based on your specific situation."
 status: "published"
 ---
 
@@ -95,14 +95,14 @@ Phoenix Valley's dramatic day-night temperature swings (sometimes 40-50 degrees 
 
 ### Cost Indicators
 
-- **Rising energy bills** — 20-30%+ increase without usage changes indicates declining efficiency
-- **Frequent repairs** — More than $1,000-1,500 in repairs annually signals escalating failure
-- **Expensive refrigerant** — R-22 systems face $100-200+/pound for recharges; R-410A costs are rising as it's phased down
+- **Rising energy bills** — A noticeable increase without usage changes indicates declining efficiency
+- **Frequent repairs** — A pattern of repairs piling up year after year signals escalating failure
+- **Expensive refrigerant** — R-22 systems face steep costs for recharges since the refrigerant is being phased out; R-410A costs are rising as it's phased down too
 
 ### Age-Based Guidelines for Gilbert
 
 - **0-8 years:** System should perform well with annual maintenance. Repair is almost always the right choice.
-- **8-12 years:** Monitor closely. Major repairs over $2,000 may warrant replacement consideration.
+- **8-12 years:** Monitor closely. A major, costly repair may warrant replacement consideration.
 - **12-15 years:** Actively plan for replacement. Schedule during spring for optimal timing and pricing.
 - **15+ years:** Replace proactively if still operational. The risk of failure during extreme heat outweighs the remaining value.
 
@@ -126,7 +126,7 @@ Rinse your outdoor unit's condenser coils with a garden hose every 2-3 months du
 
 ### Address Repairs Promptly
 
-Small problems become expensive failures when ignored. A $200 capacitor replacement today prevents the $2,000 compressor failure it could cause if left unaddressed. Prompt attention to unusual sounds, reduced performance, or error codes protects your investment.
+Small problems become expensive failures when ignored. A minor component replacement today, like a failing capacitor, can prevent a major compressor failure down the road. Prompt attention to unusual sounds, reduced performance, or error codes protects your investment.
 
 ### Protect from Elements
 
@@ -138,7 +138,7 @@ Ensure your outdoor unit's wiring and insulation are intact. Consider adding a U
 
 The optimal replacement timing balances remaining system life against escalating costs:
 
-- **Repair costs approaching 50% of replacement cost** — Replace
+- **Repair costs approaching a large share of replacement cost** — Replace
 - **System over 12 years AND needing major repair** — Replace
 - **R-22 system needing refrigerant** — Replace (rising costs make continued operation increasingly expensive)
 - **System over 15 years even if functioning** — Plan proactive replacement during optimal timing
@@ -165,4 +165,4 @@ Higher-quality systems with better components generally last longer, but install
 Check the data plate on your outdoor unit — it displays the manufacture date or a serial number containing the manufacture date (format varies by manufacturer). Viking HVAC can identify your system's age during a free consultation or maintenance visit.
 
 ### Is it better to repair or replace a 10-year-old system in Arizona?
-It depends on the repair cost and system condition. For repairs under $1,500 on a well-maintained system, repair is usually worthwhile. For repairs over $2,000, especially on systems showing other age-related symptoms, replacement provides better long-term value. Viking HVAC provides honest repair-vs-replace recommendations based on your specific situation.
+It depends on the repair cost and system condition. A minor repair on a well-maintained system is usually worthwhile. When a repair is a significant expense, especially on systems showing other age-related symptoms, replacement provides better long-term value. Viking HVAC provides honest repair-vs-replace recommendations based on your specific situation.

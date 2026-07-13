@@ -90,7 +90,7 @@ Beyond visual inspections, monitoring your system's performance provides insight
 
 Monitor how long your system runs to achieve temperature settings. Gradually increasing run times often indicate declining efficiency or developing problems. Track this information monthly to identify trends that suggest system deterioration.
 
-**Energy Usage Monitoring:** Compare current energy bills to previous years' usage during similar weather conditions. Arizona's extreme climate means that small efficiency losses translate to significant cost increases. A 10% efficiency decline might increase cooling costs by $30-50 monthly during peak summer.
+**Energy Usage Monitoring:** Compare current energy bills to previous years' usage during similar weather conditions. Arizona's extreme climate means that even small efficiency losses can translate to noticeably higher cooling costs during peak summer.
 
 Many Arizona utilities provide detailed energy usage data that can help identify system problems. Look for patterns of increasing usage despite similar weather conditions, which often indicate declining system health.
 
@@ -164,7 +164,7 @@ Don't wait for complete system failure during peak summer. If your system shows 
 
 Arizona's unique climate creates specific health challenges that don't exist in moderate climates. Understanding these factors helps homeowners assess their systems more accurately.
 
-**Dust Storm Impact Assessment:** After significant dust storms, inspect your system for dust infiltration and reduced performance. Heavy dust coating on coils can reduce efficiency by 15-30%, making post-storm cleaning essential for maintaining system health.
+**Dust Storm Impact Assessment:** After significant dust storms, inspect your system for dust infiltration and reduced performance. Heavy dust coating on coils can meaningfully reduce efficiency, making post-storm cleaning essential for maintaining system health.
 
 Monitor system performance for several days after dust storms, as dust infiltration can cause gradual performance degradation. Systems that show declining performance after storms may need professional cleaning or component replacement.
 
@@ -180,7 +180,7 @@ Monitor system performance for several days after dust storms, as dust infiltrat
 **A:** Arizona systems should be professionally inspected at least twice yearly—spring startup and fall maintenance. Systems over 8 years old or those showing performance issues may benefit from quarterly inspections during peak cooling season.
 
 **Q: What's considered normal energy usage for Arizona AC systems?**
-**A:** Arizona homes typically spend $150-350 monthly on cooling during peak summer. Usage depends on home size, insulation, and efficiency ratings. Gradual increases over time often indicate declining system health requiring attention.
+**A:** Cooling costs for Arizona homes during peak summer vary widely based on home size, insulation, and system efficiency ratings. Gradual increases over time often indicate declining system health requiring attention.
 
 **Q: How can I tell if my system is properly sized for Arizona's extreme heat?**
 **A:** Properly sized systems should maintain indoor temperatures within 2-3°F of settings even when outdoor temperatures exceed 115°F. Systems that struggle during extreme heat may be undersized or experiencing efficiency problems.
@@ -226,9 +226,9 @@ Arizona's extended cooling season requires a different maintenance schedule than
 
 Understanding the financial implications of neglecting system health helps motivate regular assessment and maintenance. Arizona's extreme climate makes the costs of neglect particularly high.
 
-**Emergency Repair Costs:** System failures during peak summer often cost 50-100% more than planned repairs due to emergency service premiums and limited contractor availability. A $500 repair during spring might cost $1,000-1,500 during peak summer.
+**Emergency Repair Costs:** System failures during peak summer often cost substantially more than planned repairs due to emergency service premiums and limited contractor availability. The same repair performed proactively in spring is typically far less expensive than the same fix handled as an emergency during peak summer.
 
-**Efficiency Losses:** Neglected systems often lose 10-20% efficiency over time, translating to $200-500 annually in increased energy costs for typical Arizona homes. These losses compound over time, making early intervention financially beneficial.
+**Efficiency Losses:** Neglected systems often lose meaningful efficiency over time, which shows up as higher energy costs for typical Arizona homes. These losses compound over time, making early intervention financially beneficial.
 
 **Premature Replacement:** Systems that don't receive proper assessment and maintenance often fail 2-3 years earlier than well-maintained equipment. In Arizona's extreme climate, this can mean replacing systems at 8-10 years instead of 12-15 years, representing thousands in premature replacement costs.
 

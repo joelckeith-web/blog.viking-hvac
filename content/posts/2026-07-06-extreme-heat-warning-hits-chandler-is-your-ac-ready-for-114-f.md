@@ -46,13 +46,13 @@ schema:
     - question: "What should I do if my AC breaks down during an Extreme Heat Warning?"
       answer: "Contact a licensed HVAC contractor immediately for emergency service. Viking Heating and Air Conditioning offers 24/7 emergency HVAC repair throughout Chandler and the East Valley. Avoid waiting, as indoor temperatures can climb to dangerous levels within hours when highs are near 114°F."
     - question: "How can I lower my cooling costs during this heat wave?"
-      answer: "Set your smart thermostat to a consistent temperature rather than adjusting it frequently, close blinds during peak sun hours, ensure ductwork is sealed, and schedule maintenance to confirm the system is operating at full efficiency. SRP and APS time-of-use plans also reward shifting heavy usage outside peak hours."
+      answer: "Set your smart thermostat to a consistent temperature rather than adjusting it frequently, close blinds during peak sun hours, ensure ductwork is sealed, and schedule maintenance to confirm the system is operating at full efficiency. Many utility plans also reward shifting heavy usage outside peak demand hours — check with your provider for current plan details."
     - question: "Is my aging AC system at higher risk during this heat wave?"
       answer: "Yes. Systems older than 12-15 years are more likely to fail under sustained extreme heat because components degrade over time. If your system is approaching this age range, a professional inspection now can help you decide whether repair or replacement is the smarter move before peak stress hits."
 status: "published"
 ---
 
-A National Weather Service Extreme Heat Warning is in effect for the Phoenix metro area, including Chandler, from July 6 at 12:15 AM through July 9 at 8:00 PM MST, with daytime highs forecast to reach 112°F to 114°F through the middle of the week. Viking Heating and Air Conditioning, a family-owned HVAC company serving Chandler and the Greater Phoenix area since 2016, is urging homeowners to act now — before the heat peaks — rather than waiting for an AC breakdown in triple-digit temperatures. With over 240 five-star reviews and a license through the Arizona Registrar of Contractors (ROC #316534), Viking has seen firsthand how quickly a marginal AC system fails once extreme heat pushes it past its limits.
+A National Weather Service Extreme Heat Warning is in effect for the Phoenix metro area, including Chandler, from July 6 at 12:15 AM through July 9 at 8:00 PM MST, with daytime highs forecast to reach 112°F to 114°F through the middle of the week. Viking Heating and Air Conditioning, a family-owned HVAC company serving Chandler and the Greater Phoenix area since 2016, is urging homeowners to act now — before the heat peaks — rather than waiting for an AC breakdown in triple-digit temperatures. With 340+ five-star reviews and a license through the Arizona Registrar of Contractors (ROC #316534), Viking has seen firsthand how quickly a marginal AC system fails once extreme heat pushes it past its limits.
 
 > **Immediate Action Summary for Chandler Homeowners**
 > Chandler, AZ is under an NWS Extreme Heat Warning from July 6 through July 9, 2026, with highs near 112-114°F. Viking Heating and Air Conditioning recommends homeowners inspect their air filter, check thermostat settings, and schedule a professional AC tune-up before the peak heat arrives. Systems that are undersized, poorly maintained, or over 12 years old face the highest risk of failure this week. Acting proactively avoids emergency repair delays during the most dangerous heat days of the year.
@@ -103,7 +103,7 @@ In Arizona's dusty environment, filters should be changed every 60-90 days — b
 Unusual noises, weak airflow from vents, or a system that runs constantly without reaching your set temperature are all signs your AC is struggling. Don't wait for a full breakdown — these are early warnings worth addressing through [AC Repair & Service](https://www.viking-hvac.com/services/air-conditioning).
 
 ### 3. Verify Your Thermostat Settings
-A properly programmed or smart thermostat can reduce energy use by 20-30%, according to [Energy Star](https://www.energystar.gov). If you're still using a basic manual thermostat, this is a good week to consider a [Thermostat Installation](https://www.viking-hvac.com/services/thermostat-installation) upgrade before costs climb further with SRP or APS time-of-use rates.
+A properly programmed or smart thermostat can meaningfully reduce energy use, according to [Energy Star](https://www.energystar.gov). If you're still using a basic manual thermostat, this is a good week to consider a [Thermostat Installation](https://www.viking-hvac.com/services/thermostat-installation) upgrade before the peak-demand hours of this heat wave arrive.
 
 ### 4. Schedule a Professional Tune-Up
 A licensed technician can check refrigerant levels, electrical connections, condenser coil cleanliness, and overall system performance before the heat exposes a weak point. Viking's [Preventative Maintenance](https://www.viking-hvac.com/preventative-maintenance) service is designed specifically for this kind of pre-event preparation.
@@ -115,13 +115,13 @@ If your unit is approaching or past the 12-15 year mark, this heat wave is a goo
 
 ## Cooling Costs During Extreme Heat Weeks
 
-During peak summer stretches like this one, cooling costs in the Phoenix area can exceed $500 per month for larger homes running inefficient systems. With highs of 112-114°F sustained across nearly the entire week, your system will be drawing more power than almost any other time of year.
+During peak summer stretches like this one, cooling costs for larger homes running inefficient systems can climb significantly. With highs of 112-114°F sustained across nearly the entire week, your system will be drawing more power than almost any other time of year.
 
 A few cost-management strategies worth applying immediately:
 
-- **Shift heavy usage outside SRP or APS peak hours** where your plan allows, since time-of-use rate structures often charge significantly more during late afternoon and early evening peak demand windows — exactly when this week's highs will occur.
+- **Shift heavy usage outside peak demand hours** where your utility plan allows, since time-of-use rate structures often charge more during late afternoon and early evening peak windows — exactly when this week's highs will occur. Check with your utility provider for current plan details.
 - **Seal and inspect ductwork.** Leaky ducts waste conditioned air before it reaches your living space, forcing your system to run longer to compensate. Our [Ductwork Services](https://www.viking-hvac.com/services/ductwork-services) team can identify leaks that are quietly inflating your bill.
-- **Consider a system efficiency check.** Newer systems are 30-50% more efficient than units installed a decade or more ago. If your current AC is aging and struggling, it may be costing you far more in energy bills than the monthly payment on a new, properly sized system through [HVAC Installation](https://www.viking-hvac.com/install).
+- **Consider a system efficiency check.** Newer systems are substantially more efficient than units installed a decade or more ago. If your current AC is aging and struggling, it may be costing you far more in energy bills than an aging system's repairs are worth — worth discussing through [HVAC Installation](https://www.viking-hvac.com/install).
 
 The [Air Conditioning Contractors of America (ACCA)](https://www.acca.org) recommends professional load calculations when replacing a system to ensure proper sizing — an oversized or undersized unit both waste energy and shorten equipment life, a critical consideration if you're weighing replacement this summer.
 
@@ -135,7 +135,7 @@ If you manage a commercial property in Chandler, Gilbert, or Mesa, it's worth ha
 
 ## Don't Wait Until the Breakdown Happens
 
-An Extreme Heat Warning through July 9 means this week isn't the time to gamble on an aging or already-struggling AC system. Viking Heating and Air Conditioning serves Chandler, Gilbert, Mesa, Phoenix, Tempe, Queen Creek, Apache Junction, and the entire East Valley with same-week inspections, tune-ups, and — when necessary — 24/7 [Emergency HVAC Repair](https://www.viking-hvac.com/services/emergency-hvac-repair). As an American Standard Authorized Dealer that services all major brands including Carrier, Trane, Lennox, Goodman, and Rheem, our licensed technicians can diagnose and resolve issues regardless of what system you currently have installed.
+An Extreme Heat Warning through July 9 means this week isn't the time to gamble on an aging or already-struggling AC system. Viking Heating and Air Conditioning serves Chandler, Gilbert, Mesa, Phoenix, Tempe, Queen Creek, Apache Junction, and the entire East Valley with same-week inspections, tune-ups, and — when necessary — 24/7 [Emergency HVAC Repair](https://www.viking-hvac.com/services/emergency-hvac-repair). As a Champion Authorized Dealer and Mitsubishi Diamond Contractor that services all major brands including Carrier, Trane, American Standard, Lennox, Goodman, and Rheem, our licensed technicians can diagnose and resolve issues regardless of what system you currently have installed.
 
 Don't wait until your AC breaks down in 114°F heat. Call Viking Heating and Air Conditioning today at **(480) 689-5167** to schedule a pre-heat-wave inspection, or visit our [Contact Us](https://www.viking-hvac.com/contact-us) page to book online. We also offer [Financing](https://www.viking-hvac.com/financing) options and current [Pricing & Coupons](https://www.viking-hvac.com/pricing-and-coupons) for homeowners considering a system upgrade before the next heat event arrives.
 

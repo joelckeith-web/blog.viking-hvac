@@ -5,7 +5,10 @@ import path from "path";
 import { runPreflight } from "../lib/preflight";
 import { buildWeatherContext } from "../lib/weather";
 import { generateBlogPost } from "../lib/content-generator";
+import { runContentGate, ContentGateError } from "../lib/content-gate";
+import { verifyContent, ContentVerifyError } from "../lib/content-verify";
 import { pushPostToGitHub } from "../lib/github";
+import type { GeneratedBlog } from "../lib/types";
 
 const shouldPush = process.argv.includes("--push");
 
@@ -35,7 +38,28 @@ async function main() {
   console.log(`Tags: ${blog.frontmatter.tags.join(", ")}`);
   console.log(`FAQs: ${blog.frontmatter.schema.faqItems.length} items\n`);
 
-  // Step 3: Save locally
+  // Step 3: CONTENT GATE — deterministic validation. A failed gate means the
+  // post never exists rather than existing wrong. (Prompt guardrails alone
+  // produced the July 2026 SRP incident; this is the enforcement layer.)
+  console.log("Running deterministic content gate...");
+  const gateViolations = runContentGate(blog, context);
+  if (gateViolations.length > 0) {
+    saveRejectedDraft(blog, "gate", gateViolations);
+    throw new ContentGateError(gateViolations);
+  }
+  console.log("Gate: PASS");
+
+  // Step 4: VERIFICATION AGENT — independent model checks the draft against
+  // viking-truth.json + the actual weather payload. Fails closed.
+  console.log("Running verification agent...");
+  const verdict = await verifyContent(blog, context);
+  if (!verdict.pass) {
+    saveRejectedDraft(blog, "verify", verdict.violations);
+    throw new ContentVerifyError(verdict.violations);
+  }
+  console.log("Verify: PASS");
+
+  // Step 5: Save locally
   const postsDir = path.join(process.cwd(), "content/posts");
   if (!fs.existsSync(postsDir)) {
     fs.mkdirSync(postsDir, { recursive: true });
@@ -45,7 +69,7 @@ async function main() {
   fs.writeFileSync(filePath, blog.markdownContent);
   console.log(`Saved locally: ${filePath}`);
 
-  // Step 4: Push to GitHub if --push flag
+  // Step 6: Push to GitHub if --push flag
   if (shouldPush) {
     console.log("\nPushing to GitHub...");
     const githubUrl = await pushPostToGitHub(blog);
@@ -53,6 +77,24 @@ async function main() {
   }
 
   console.log("\nDone!");
+}
+
+/** Preserve a blocked draft + its violations for human review — the workflow
+ *  uploads rejected/ as an artifact, so a blocked run loses nothing. */
+function saveRejectedDraft(
+  blog: GeneratedBlog,
+  stage: "gate" | "verify",
+  violations: unknown
+) {
+  const dir = path.join(process.cwd(), "rejected");
+  if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
+  const base = path.basename(blog.filePath, ".md");
+  fs.writeFileSync(path.join(dir, `${base}.md`), blog.markdownContent);
+  fs.writeFileSync(
+    path.join(dir, `${base}.${stage}-violations.json`),
+    JSON.stringify(violations, null, 2)
+  );
+  console.error(`Rejected draft preserved: rejected/${base}.md`);
 }
 
 main().catch((error) => {

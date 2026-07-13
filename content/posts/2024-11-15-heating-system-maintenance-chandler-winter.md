@@ -32,7 +32,7 @@ schema:
     - question: "How often should I service my heating system in Chandler?"
       answer: "Annual professional maintenance before heating season is the minimum recommendation. Schedule service in October or early November for optimal timing. Homes with older systems (10+ years) or family members with health sensitivities may benefit from semi-annual service."
     - question: "What does a heating tune-up cost in Chandler, AZ?"
-      answer: "Professional heating tune-ups in Chandler typically cost $150-250, depending on system type and complexity. Maintenance program members often receive discounted rates and priority scheduling. The cost is minimal compared to the emergency repair bills that preventive maintenance avoids."
+      answer: "Professional heating tune-up costs vary depending on system type and complexity. Maintenance program members often receive discounted rates and priority scheduling. The cost is minimal compared to the emergency repair bills that preventive maintenance avoids."
     - question: "Can I maintain my heating system myself?"
       answer: "You can handle filter replacement, vent cleaning, thermostat battery changes, and visual inspections. However, heating equipment inspection, combustion testing, electrical evaluation, and refrigerant verification require professional training and equipment. Gas-fired systems especially require professional service for safety."
     - question: "What temperature should I set my thermostat in winter in Chandler?"
@@ -54,7 +54,7 @@ Even in Arizona's mild winter climate, heating system failures create immediate 
 
 - **Operates safely** — Heat exchanger inspections prevent carbon monoxide leaks in gas-fired systems
 - **Runs efficiently** — Clean components and proper calibration minimize energy waste
-- **Lasts longer** — Regular maintenance extends equipment lifespan by 3-5 years on average
+- **Lasts longer** — Regular maintenance helps equipment reach its full expected lifespan
 - **Prevents breakdowns** — Catching developing problems before they cause failures saves emergency repair costs
 
 ## Essential Winter Maintenance Steps
@@ -91,7 +91,7 @@ Proper thermostat management balances comfort and efficiency:
 
 ### Step 4: Inspect and Seal Ductwork
 
-Leaky ducts waste up to 30% of heated air before it reaches living spaces. During winter:
+Leaky ducts waste a significant share of heated air before it reaches living spaces. During winter:
 
 - Check visible ductwork for disconnections or damage
 - Feel for air leaks at duct connections and joints
@@ -121,9 +121,9 @@ For homes with gas-fired heating:
 
 If your heating system is over 10 years old, evaluate whether upgrade makes sense:
 
-- Newer systems deliver 15-30% better efficiency
+- Newer systems deliver meaningfully better efficiency than older equipment
 - Modern equipment includes smart features and quieter operation
-- Federal tax credits and utility rebates reduce upgrade costs
+- Savings programs for energy-efficient equipment change frequently — see our [Arizona AC savings programs guide](https://blog.viking-hvac.com/blog/arizona-ac-rebates-tax-credits) for current, verified information
 - Improved reliability eliminates ongoing repair expenses
 
 ## Frequently Asked Questions
@@ -132,7 +132,7 @@ If your heating system is over 10 years old, evaluate whether upgrade makes sens
 Annual professional maintenance before heating season is the minimum recommendation. Schedule service in October or early November for optimal timing. Homes with older systems (10+ years) or family members with health sensitivities may benefit from semi-annual service.
 
 ### What does a heating tune-up cost in Chandler, AZ?
-Professional heating tune-ups in Chandler typically cost $150-250, depending on system type and complexity. Maintenance program members often receive discounted rates and priority scheduling. The cost is minimal compared to the emergency repair bills that preventive maintenance avoids.
+Professional heating tune-up costs vary depending on system type and complexity. Maintenance program members often receive discounted rates and priority scheduling. The cost is minimal compared to the emergency repair bills that preventive maintenance avoids.
 
 ### Can I maintain my heating system myself?
 You can handle filter replacement, vent cleaning, thermostat battery changes, and visual inspections. However, heating equipment inspection, combustion testing, electrical evaluation, and refrigerant verification require professional training and equipment. Gas-fired systems especially require professional service for safety.

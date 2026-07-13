@@ -106,7 +106,7 @@ For families with allergy sufferers, asthma, or heightened health concerns, air 
 
 - **Air scrubbers** — Attach to your HVAC system and use ionization technology to neutralize airborne bacteria, viruses, mold, and allergens on both air and surfaces
 - **UV-C germicidal lights** — Install inside your HVAC system to kill biological contaminants as air passes through
-- **HEPA filtration systems** — Whole-home units that capture 99.97% of particles 0.3 microns and larger
+- **HEPA filtration systems** — Whole-home units that capture the vast majority of fine airborne particles, including dust, pollen, and many allergens
 - **Whole-home humidifiers/dehumidifiers** — Maintain optimal 30-50% humidity levels year-round, especially important during monsoon season
 
 ### 5. Maintain a Clean Indoor Environment

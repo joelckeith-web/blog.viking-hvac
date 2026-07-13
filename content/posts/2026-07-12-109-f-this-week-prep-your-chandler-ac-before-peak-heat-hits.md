@@ -44,9 +44,9 @@ schema:
     - question: "How can I tell if my AC won't make it through the summer?"
       answer: "Warning signs include weak airflow, warm air blowing from vents, unusual noises, frequent short cycling, rising utility bills, or a system older than 12-15 years. If you're noticing these signs before this week's 109°F stretch, it's worth scheduling a professional inspection through our repair or replace guide before the system fails during peak heat."
     - question: "Is it worth replacing my AC before summer's hottest weeks?"
-      answer: "If your system is over 12 years old, needs frequent repairs, or can't keep your home comfortable at 109°F, replacement may save money long-term. Newer systems are 30-50% more efficient than older units, according to Energy.gov, which can significantly reduce cooling costs during Arizona's 9-month cooling season."
+      answer: "If your system is over 12 years old, needs frequent repairs, or can't keep your home comfortable at 109°F, replacement may save money long-term. Newer systems are substantially more efficient than older units, which can significantly reduce cooling costs across Arizona's long cooling season."
     - question: "What temperature should I set my thermostat during a 109°F heat wave?"
-      answer: "Energy Star recommends 78°F when home during summer to balance comfort and efficiency. A smart thermostat can automatically adjust temperatures when you're away, potentially reducing energy use by 20-30% while still keeping your home safe and comfortable during extreme heat events."
+      answer: "Energy Star recommends 78°F when home during summer to balance comfort and efficiency. A smart thermostat can automatically adjust temperatures when you're away, which can meaningfully reduce energy use while still keeping your home safe and comfortable during extreme heat events."
     - question: "Do I need emergency AC service if my system fails during this heat wave?"
       answer: "Yes. With highs near 109°F, an AC failure isn't just uncomfortable, it can become dangerous, especially for children, elderly residents, or pets. Viking Heating and Air Conditioning offers 24/7 emergency HVAC repair throughout Chandler and the East Valley to restore cooling as quickly as possible."
 status: "published"
@@ -63,7 +63,7 @@ The week of July 12-18, 2026 brings some of the most demanding conditions Chandl
 
 This combination matters more than it might seem. Extreme heat pushes your AC to run almost continuously during peak afternoon hours, often from noon until well after sunset. Meanwhile, monsoon thunderstorms bring gusty outflow winds, humidity spikes, and occasional power fluctuations that can affect sensitive electrical components in your outdoor condenser unit. Your system isn't just fighting heat this week, it's fighting heat and storm stress simultaneously.
 
-For homeowners across Chandler, Gilbert, Mesa, and the greater [Chandler HVAC service area](https://viking-hvac.com/locations/chandler/), this is exactly the kind of week where a system with a minor, unresolved issue turns into a full breakdown. A slightly low refrigerant charge that was fine in April becomes a major performance problem at 109°F. A dirty condenser coil that reduced efficiency by 10% in May can push a system into total failure this week.
+For homeowners across Chandler, Gilbert, Mesa, and the greater [Chandler HVAC service area](https://viking-hvac.com/locations/chandler/), this is exactly the kind of week where a system with a minor, unresolved issue turns into a full breakdown. A slightly low refrigerant charge that was fine in April becomes a major performance problem at 109°F. A dirty condenser coil that quietly sapped efficiency in May can push a system into total failure this week.
 
 > **Key Takeaway:** Chandler will hit 108-109°F multiple days this week with daily storm chances. This is peak stress season for AC systems, and it's the ideal window to catch small problems before they become no-cooling emergencies.
 
@@ -75,7 +75,7 @@ This is where aging or poorly maintained systems reveal their weaknesses. A unit
 
 Homeowners should also consider whether their system was properly sized for their home. The general rule of thumb is 1 ton of cooling capacity per 400-500 square feet, but homes with poor insulation, older ductwork, or additions built without HVAC recalculations often have systems fighting an uphill battle even before the thermostat hits triple digits. If you're unsure whether your system is a good match for your home's demands, our [repair or replace guide](https://www.viking-hvac.com/repair-or-replace-hvac-guide) walks through the key questions to ask before this heat wave peaks.
 
-Before Wednesday's forecasted 109°F high arrives, it's worth doing a basic self-check: Is your system keeping up with the thermostat setting? Are you hearing unusual noises? Has your SRP or APS bill crept up faster than the temperature has? These are the early warning signs that a professional inspection now could prevent an emergency call later this week.
+Before Wednesday's forecasted 109°F high arrives, it's worth doing a basic self-check: Is your system keeping up with the thermostat setting? Are you hearing unusual noises? Has your electric bill crept up faster than the temperature has? These are the early warning signs that a professional inspection now could prevent an emergency call later this week.
 
 > **Key Takeaway:** AC systems operating near their lifespan limit or already showing minor symptoms are far more likely to fail during sustained 108-109°F heat than during milder spring weather. Catching issues now is significantly cheaper and less disruptive than an emergency repair mid-heat wave.
 
@@ -95,7 +95,7 @@ With 109°F forecasted for Tuesday and Wednesday, homeowners have a short window
 
 **Air filters.** In Arizona's dusty conditions, filters should be changed every 60-90 days, but during high-usage weeks like this one, checking monthly is smart. A clogged filter forces your blower motor to work harder and reduces airflow across the evaporator coil, both of which increase strain and reduce cooling capacity precisely when you need full performance.
 
-**Thermostat settings and calibration.** [ENERGY STAR](https://www.energystar.gov) recommends 78°F as an efficient baseline when the home is occupied during summer. If your thermostat isn't holding this setting accurately or if you're still using an older, non-programmable model, upgrading to a smart thermostat can reduce energy use by 20-30% while automatically adjusting for the extreme heat this week. Our [thermostat installation](https://www.viking-hvac.com/services/thermostat-installation) service can have a new system in place quickly.
+**Thermostat settings and calibration.** [ENERGY STAR](https://www.energystar.gov) recommends 78°F as an efficient baseline when the home is occupied during summer. If your thermostat isn't holding this setting accurately or if you're still using an older, non-programmable model, upgrading to a smart thermostat can meaningfully reduce energy use while automatically adjusting for the extreme heat this week. Our [thermostat installation](https://www.viking-hvac.com/services/thermostat-installation) service can have a new system in place quickly.
 
 **Refrigerant levels and coil condition.** Low refrigerant is one of the most common causes of reduced cooling capacity during extreme heat weeks. A licensed technician can check charge levels and coil cleanliness, both of which directly affect how well your system performs at 108-109°F.
 
@@ -109,9 +109,9 @@ According to the [Air Conditioning Contractors of America (ACCA)](https://www.ac
 
 ## Don't Wait Until Your AC Fails at 109°F
 
-The instinct for many homeowners is to wait until something actually breaks before calling for service. But during a week forecasted to hit 108-109°F with storms rolling through almost daily, that approach carries real risk, both financial and physical. Summer cooling costs in Arizona can already exceed $500 per month during peak weather, and a system straining to keep up will only push that number higher while providing less comfort.
+The instinct for many homeowners is to wait until something actually breaks before calling for service. But during a week forecasted to hit 108-109°F with storms rolling through almost daily, that approach carries real risk, both financial and physical. Summer cooling costs in Arizona hit their annual peak in weeks like this, and a system straining to keep up will only push that number higher while providing less comfort.
 
-Viking Heating and Air Conditioning services all major brands, including Carrier, Trane, Lennox, Goodman, and Rheem, in addition to being an authorized American Standard dealer. Whether your system needs a simple filter change, a refrigerant check, or a full replacement conversation, our licensed team (AZ ROC #316534) is ready to help homeowners throughout Chandler, Gilbert, Mesa, Phoenix, and the broader East Valley get through this heat wave safely.
+Viking Heating and Air Conditioning is a Champion Authorized Dealer and Mitsubishi Diamond Contractor, and the team services all major brands, including Carrier, Lennox, Goodman, Rheem, Trane, and American Standard. Whether your system needs a simple filter change, a refrigerant check, or a full replacement conversation, our licensed team (AZ ROC #316534) is ready to help homeowners throughout Chandler, Gilbert, Mesa, Phoenix, and the broader East Valley get through this heat wave safely.
 
 If your system is already showing signs of strain, don't wait for Wednesday's 109°F peak to test it further. Our [emergency HVAC repair](https://www.viking-hvac.com/services/emergency-hvac-repair) team is available 24/7, and for homeowners considering whether it's time to upgrade rather than repair, we offer [financing options](https://www.viking-hvac.com/financing) and current [pricing and coupons](https://www.viking-hvac.com/pricing-and-coupons) to make that decision easier.
 
@@ -149,10 +149,10 @@ With showers and thunderstorms likely several days this week, brief power fluctu
 Warning signs include weak airflow, warm air blowing from vents, unusual noises, frequent short cycling, rising utility bills, or a system older than 12-15 years. If you're noticing these signs before this week's 109°F stretch, it's worth scheduling a professional inspection through our repair or replace guide before the system fails during peak heat.
 
 **Is it worth replacing my AC before summer's hottest weeks?**
-If your system is over 12 years old, needs frequent repairs, or can't keep your home comfortable at 109°F, replacement may save money long-term. Newer systems are 30-50% more efficient than older units, according to Energy.gov, which can significantly reduce cooling costs during Arizona's 9-month cooling season.
+If your system is over 12 years old, needs frequent repairs, or can't keep your home comfortable at 109°F, replacement may save money long-term. Newer systems are substantially more efficient than older units, which can significantly reduce cooling costs across Arizona's long cooling season.
 
 **What temperature should I set my thermostat during a 109°F heat wave?**
-Energy Star recommends 78°F when home during summer to balance comfort and efficiency. A smart thermostat can automatically adjust temperatures when you're away, potentially reducing energy use by 20-30% while still keeping your home safe and comfortable during extreme heat events.
+Energy Star recommends 78°F when home during summer to balance comfort and efficiency. A smart thermostat can automatically adjust temperatures when you're away, which can meaningfully reduce energy use while still keeping your home safe and comfortable during extreme heat events.
 
 **Do I need emergency AC service if my system fails during this heat wave?**
 Yes. With highs near 109°F, an AC failure isn't just uncomfortable, it can become dangerous, especially for children, elderly residents, or pets. Viking Heating and Air Conditioning offers 24/7 emergency HVAC repair throughout Chandler and the East Valley to restore cooling as quickly as possible.

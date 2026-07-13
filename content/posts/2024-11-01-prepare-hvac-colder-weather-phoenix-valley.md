@@ -36,7 +36,7 @@ schema:
     - question: "Do I need both heating and cooling maintenance in Arizona?"
       answer: "Yes. While Arizona's cooling demands are more intense, heating systems require annual maintenance before winter operation. Components that sit idle for 6-7 months accumulate dust, lubricants degrade, and connections can loosen. Pre-winter maintenance ensures safe, efficient operation when you need heat."
     - question: "What's the most cost-effective winter preparation step?"
-      answer: "Replacing your air filter and testing heating mode cost nothing beyond the filter price ($10-30) and take 15 minutes. These two steps catch the majority of common issues before they become emergency problems. Professional maintenance ($150-250) provides the most comprehensive protection for your investment."
+      answer: "Replacing your air filter and testing heating mode cost little beyond the price of a filter and take about 15 minutes. These two steps catch the majority of common issues before they become emergency problems. Professional maintenance provides the most comprehensive protection for your investment, and costs vary by system size and condition."
     - question: "Should I close vents in unused rooms during winter?"
       answer: "No. Closing vents creates pressure imbalances in your duct system that can reduce efficiency, strain your blower motor, and cause duct leaks. Instead, keep all vents open and use your thermostat's programming to manage temperatures efficiently throughout your entire home."
     - question: "How cold does it actually get in the Phoenix Valley?"
@@ -94,7 +94,7 @@ Don't wait for the first cold night to discover your heat doesn't work. In Octob
 
 ### Step 4: Inspect and Seal Ductwork
 
-The U.S. Department of Energy reports that duct leaks waste **20-30% of conditioned air** in typical homes. Before heating season:
+Duct leaks can waste a substantial share of conditioned air in typical homes. Before heating season:
 
 - Inspect accessible ductwork for disconnections, holes, and deteriorated tape
 - Check duct insulation, especially in attics where Arizona's extreme summer heat degrades materials
@@ -153,7 +153,7 @@ Test your heating in October by switching to heat mode and verifying warm air fr
 Yes. While Arizona's cooling demands are more intense, heating systems require annual maintenance before winter operation. Components that sit idle for 6-7 months accumulate dust, lubricants degrade, and connections can loosen. Pre-winter maintenance ensures safe, efficient operation when you need heat.
 
 ### What's the most cost-effective winter preparation step?
-Replacing your air filter and testing heating mode cost nothing beyond the filter price ($10-30) and take 15 minutes. These two steps catch the majority of common issues before they become emergency problems. Professional maintenance ($150-250) provides the most comprehensive protection for your investment.
+Replacing your air filter and testing heating mode cost little beyond the price of a filter and take about 15 minutes. These two steps catch the majority of common issues before they become emergency problems. Professional maintenance provides the most comprehensive protection for your investment, and costs vary by system size and condition.
 
 ### Should I close vents in unused rooms during winter?
 No. Closing vents creates pressure imbalances in your duct system that can reduce efficiency, strain your blower motor, and cause duct leaks. Instead, keep all vents open and use your thermostat's programming to manage temperatures efficiently throughout your entire home.

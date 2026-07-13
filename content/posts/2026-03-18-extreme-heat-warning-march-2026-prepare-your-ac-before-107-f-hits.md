@@ -42,9 +42,9 @@ schema:
     - question: "What are signs my AC might fail during the March 2026 heat wave?"
       answer: "Warning signs include warm air from vents, unusual noises, frequent cycling on/off, ice formation on the unit, rising energy bills, or the system struggling to maintain temperature. These issues require immediate professional attention before the heat wave intensifies."
     - question: "Should I replace my AC system before this extreme heat event?"
-      answer: "If your AC is over 12-15 years old, requires frequent repairs, or struggles during normal Arizona heat, consider emergency replacement before temperatures hit 107°F. Modern systems are 30-50% more efficient and better equipped to handle extreme conditions."
+      answer: "If your AC is over 12-15 years old, requires frequent repairs, or struggles during normal Arizona heat, consider emergency replacement before temperatures hit 107°F. Newer systems are substantially more efficient and better equipped to handle extreme conditions."
     - question: "How can I reduce cooling costs during the March heat wave?"
-      answer: "Use ceiling fans to circulate air, close blinds during peak sun hours, avoid using heat-generating appliances during the day, set thermostats to 78°F when home, and consider time-of-use rate schedules from SRP or APS to avoid peak pricing during extreme heat."
+      answer: "Use ceiling fans to circulate air, close blinds during peak sun hours, avoid using heat-generating appliances during the day, set thermostats to 78°F when home, and check whether your utility offers time-of-use rate schedules to help you avoid peak pricing during extreme heat."
     - question: "What emergency AC services are available during the Extreme Heat Warning?"
       answer: "Viking Heating and Air Conditioning provides 24/7 emergency AC repair throughout the Phoenix East Valley during extreme heat events. Call (480) 689-5167 for immediate service. Emergency services include system repairs, refrigerant recharging, and same-day AC replacement when necessary."
 status: "published"
@@ -73,13 +73,13 @@ Examine your air filter immediately. In Arizona's dusty environment, filters sho
 
 Inspect all supply vents throughout your home, ensuring furniture, curtains, or other items aren't blocking airflow. During extreme heat, every vent needs to deliver maximum cooling capacity. Blocked vents force your system to work harder and can create hot spots that make your home uncomfortable even with the AC running continuously.
 
-> **Key Takeaway**: Visual inspections reveal 80% of common AC problems before they cause system failures during extreme heat events. Addressing these issues now prevents emergency breakdowns when temperatures reach 107°F.
+> **Key Takeaway**: Visual inspections reveal many common AC problems before they cause system failures during extreme heat events. Addressing these issues now prevents emergency breakdowns when temperatures reach 107°F.
 
 ### Thermostat and Control System Verification
 
 Test your thermostat's accuracy using a separate thermometer placed near the thermostat location. During extreme heat, even a 2-3 degree calibration error can mean the difference between comfort and system overwork. If your thermostat reads incorrectly, your AC may cycle improperly during the heat wave.
 
-Consider upgrading to a smart thermostat before the extreme heat arrives. Modern programmable thermostats can provide 20-30% energy reduction during peak cooling periods, which translates to significant savings when summer cooling costs can exceed $500+ per month during Arizona's peak season.
+Consider upgrading to a smart thermostat before the extreme heat arrives. Modern programmable thermostats can meaningfully reduce energy use during peak cooling periods, which translates to real savings given how much of a typical Arizona summer utility bill goes toward cooling.
 
 [Thermostat installation](https://www.viking-hvac.com/services/thermostat-installation) services from Viking Heating and Air Conditioning include proper calibration and programming for Arizona's unique climate challenges, ensuring optimal performance during extreme heat events.
 
@@ -95,7 +95,7 @@ Electrical connections also require professional inspection before extreme heat 
 
 ### Ductwork and Airflow Optimization
 
-Arizona homes lose an average of 20-30% of cooled air through ductwork problems. During extreme heat, these losses become expensive and potentially dangerous. Leaky ducts force your system to work harder, increase energy costs, and may prevent adequate cooling during the most critical temperatures.
+Many Arizona homes lose a meaningful share of cooled air through ductwork problems. During extreme heat, these losses become expensive and potentially dangerous. Leaky ducts force your system to work harder, increase energy costs, and may prevent adequate cooling during the most critical temperatures.
 
 Professional [ductwork services](https://www.viking-hvac.com/services/ductwork-services) include sealing leaks, insulation inspection, and airflow testing to ensure maximum cooling delivery during extreme heat events. Properly sealed and insulated ductwork is essential when your AC system will be running 18-20 hours per day.
 
@@ -107,7 +107,7 @@ Professional [ductwork services](https://www.viking-hvac.com/services/ductwork-s
 
 If your AC system is approaching 15+ years old or has required multiple repairs in recent years, the upcoming extreme heat wave may be the final stress that causes complete failure. Replacing an aging system before the heat arrives ensures reliable cooling throughout the dangerous temperature period.
 
-Modern AC systems are 30-50% more efficient than units installed 10-15 years ago, providing better cooling performance while reducing energy costs during extreme heat. The efficiency gains become particularly valuable when systems run continuously during 107°F temperatures.
+Modern AC systems are substantially more efficient than units installed 10-15 years ago, providing better cooling performance while reducing energy costs during extreme heat. The efficiency gains become particularly valuable when systems run continuously during 107°F temperatures.
 
 Viking Heating and Air Conditioning offers emergency [HVAC installation](https://www.viking-hvac.com/install) services, but pre-planning system replacement provides more options and better scheduling than waiting for emergency failure during the heat wave.
 
@@ -121,9 +121,9 @@ Professional cooling load calculations consider insulation levels, window types,
 
 ### Utility Rate Considerations
 
-Both SRP and APS implement time-of-use rate structures that significantly increase electricity costs during peak demand periods. During extreme heat events, peak rates often apply from 3-8 PM when temperatures are highest and AC systems work hardest.
+Many Arizona utilities implement time-of-use rate structures that significantly increase electricity costs during peak demand periods. During extreme heat events, peak rates often apply from 3-8 PM when temperatures are highest and AC systems work hardest. Check with your utility provider to understand your specific rate structure.
 
-Strategic energy management during the heat wave includes pre-cooling homes during off-peak hours, using ceiling fans to improve comfort at higher thermostat settings, and avoiding heat-generating activities during peak rate periods. These strategies can reduce cooling costs by 15-25% even during extreme heat.
+Strategic energy management during the heat wave includes pre-cooling homes during off-peak hours, using ceiling fans to improve comfort at higher thermostat settings, and avoiding heat-generating activities during peak rate periods. These strategies can meaningfully reduce cooling costs even during extreme heat.
 
 Smart thermostats can automatically adjust cooling schedules to minimize peak-rate electricity usage while maintaining comfort during dangerous temperatures. The investment in smart controls often pays for itself during a single extreme heat event through reduced energy costs.
 
@@ -133,7 +133,7 @@ Simple efficiency improvements become critically important during extreme heat. 
 
 Sealing air leaks around windows, doors, and other openings prevents hot air infiltration during extreme heat events. Even small leaks become significant when outside temperatures reach 107°F and indoor temperatures should remain around 75-78°F.
 
-> **Key Takeaway**: Energy management strategies implemented before extreme heat events can reduce cooling costs by 20-30% while improving system performance during the most challenging temperatures.
+> **Key Takeaway**: Energy management strategies implemented before extreme heat events can meaningfully reduce cooling costs while improving system performance during the most challenging temperatures.
 
 ## Health and Safety During Extreme Heat
 

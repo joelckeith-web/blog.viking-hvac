@@ -121,7 +121,7 @@ Schema Markup (JSON-LD):
   "dateModified": "2025-08-22",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://www.viking-hvac.com/data-center-cooling-solutions-arizona-climate"
+    "@id": "https://blog.viking-hvac.com/data-center-cooling-solutions-arizona-climate"
   },
   "keywords": "data center cooling solutions, server room air conditioning, commercial precision cooling, Arizona HVAC",
   "about": {

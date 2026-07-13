@@ -32,7 +32,7 @@ schema:
     - question: "How many quotes should I get for AC installation in Mesa?"
       answer: "Get at least 3 quotes from licensed contractors for meaningful comparison. This allows you to evaluate pricing, equipment recommendations, professionalism, and communication style. Be wary of outliers — if one quote is dramatically lower or higher than others, investigate why before deciding."
     - question: "What's the average cost of AC installation in Mesa, AZ?"
-      answer: "AC installation in Mesa typically ranges from $5,000-15,000 depending on system size, efficiency rating, and installation complexity. Mid-range systems (SEER2 16-17) in the $7,000-10,000 range provide the best value for most Mesa homes. Be cautious of quotes significantly below $5,000, which may indicate inferior equipment or cut corners."
+      answer: "AC installation costs in Mesa vary widely depending on system size, efficiency rating, and installation complexity. Getting multiple written quotes is the best way to understand fair pricing for your specific home. Be cautious of quotes that are dramatically lower than others, which may indicate inferior equipment or cut corners."
     - question: "How do I verify an HVAC contractor's license in Arizona?"
       answer: "Visit the Arizona Registrar of Contractors website (roc.az.gov) and search by company name or license number. The database shows license status, classification, insurance status, and any complaints or disciplinary actions. All HVAC contractors in Arizona must hold a valid ROC license to operate legally."
     - question: "Should I choose the cheapest AC installation quote?"
@@ -98,9 +98,9 @@ Winter is the off-season for AC installation. Contractors have more flexibility 
 ### Potential Cost Savings
 
 - Equipment manufacturers often run winter promotions
-- Contractors may offer off-season pricing incentives
+- Contractors may offer off-season pricing
 - You have time to shop multiple quotes without emergency pressure
-- Utility rebate programs reset with full funding available
+- Savings program availability for HVAC upgrades changes frequently — see our [Arizona AC savings programs guide](https://blog.viking-hvac.com/blog/arizona-ac-rebates-tax-credits) for the current, verified picture
 
 ### Time to Research and Compare
 
@@ -134,7 +134,7 @@ Planning in winter positions you for spring installation (March-April) — the o
 Get at least 3 quotes from licensed contractors for meaningful comparison. This allows you to evaluate pricing, equipment recommendations, professionalism, and communication style. Be wary of outliers — if one quote is dramatically lower or higher than others, investigate why before deciding.
 
 ### What's the average cost of AC installation in Mesa, AZ?
-AC installation in Mesa typically ranges from $5,000-15,000 depending on system size, efficiency rating, and installation complexity. Mid-range systems (SEER2 16-17) in the $7,000-10,000 range provide the best value for most Mesa homes. Be cautious of quotes significantly below $5,000, which may indicate inferior equipment or cut corners.
+AC installation costs in Mesa vary widely depending on system size, efficiency rating, and installation complexity. Getting multiple written quotes is the best way to understand fair pricing for your specific home. Be cautious of quotes that are dramatically lower than others, which may indicate inferior equipment or cut corners.
 
 ### How do I verify an HVAC contractor's license in Arizona?
 Visit the Arizona Registrar of Contractors website (roc.az.gov) and search by company name or license number. The database shows license status, classification, insurance status, and any complaints or disciplinary actions. All HVAC contractors in Arizona must hold a valid ROC license to operate legally.

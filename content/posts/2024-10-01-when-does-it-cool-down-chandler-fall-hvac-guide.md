@@ -94,7 +94,7 @@ Arizona's dusty environment loads filters faster than almost any other climate. 
 
 ### 3. Inspect and Seal Ductwork
 
-According to Energy Star, duct leaks waste **20-30% of conditioned air** in typical homes. Before heating season, check accessible ductwork for:
+Duct leaks can waste a significant share of conditioned air in typical homes. Before heating season, check accessible ductwork for:
 
 - Disconnected sections or visible gaps
 - Deteriorated tape or mastic sealing

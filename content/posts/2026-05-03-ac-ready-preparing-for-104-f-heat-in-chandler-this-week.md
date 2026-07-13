@@ -38,7 +38,7 @@ schema:
     - question: "How should I prepare my AC for 104°F temperatures in Chandler?"
       answer: "Before extreme heat arrives, change your air filter, clear debris from around your outdoor unit, check thermostat batteries, and schedule professional maintenance if you haven't had service in the past year. Consider upgrading to a programmable thermostat to manage cooling costs during peak temperatures."
     - question: "What temperature should I set my thermostat when it's 104°F outside?"
-      answer: "Set your thermostat to 78-80°F when home and 82-85°F when away. Avoid drastic temperature changes that force your system to work harder. Each degree lower can increase energy costs by 6-8% during extreme heat."
+      answer: "Set your thermostat to 78-80°F when home and 82-85°F when away. Avoid drastic temperature changes that force your system to work harder. Each degree lower can noticeably increase energy costs during extreme heat."
     - question: "How often should I change my AC filter during Arizona's cooling season?"
       answer: "In Arizona's dusty environment, change standard filters every 60-90 days during cooling season (April through October). During extreme heat periods like 104°F days, check filters monthly as your system runs continuously."
     - question: "Why is my AC struggling when temperatures reach the triple digits?"
@@ -71,9 +71,9 @@ With Saturday's 104°F forecast approaching, homeowners have a narrow window to 
 
 Begin with your air filter – the most critical and often neglected component. In Arizona's dusty environment, filters should be changed every 60-90 days during cooling season, but check monthly during extreme heat periods. A dirty filter restricts airflow, forcing your system to work harder and potentially causing the evaporator coil to freeze even in 100°F+ weather.
 
-Next, inspect your outdoor unit. Clear all debris, vegetation, and obstacles from within three feet of the condenser. Arizona's intense sun and periodic dust storms can quickly accumulate dirt on the condenser coils, reducing heat exchange efficiency by up to 30%. While you shouldn't attempt to clean the coils yourself, ensuring clear airflow around the unit is essential.
+Next, inspect your outdoor unit. Clear all debris, vegetation, and obstacles from within three feet of the condenser. Arizona's intense sun and periodic dust storms can quickly accumulate dirt on the condenser coils, reducing heat exchange efficiency. While you shouldn't attempt to clean the coils yourself, ensuring clear airflow around the unit is essential.
 
-Check your thermostat batteries and settings. If you're still using an old manual thermostat, this week's temperature climb is the perfect reason to consider upgrading to a programmable or smart model. Smart thermostats can reduce energy consumption by 20-30% – significant savings when cooling costs can exceed $500 per month during Arizona's peak summer.
+Check your thermostat batteries and settings. If you're still using an old manual thermostat, this week's temperature climb is the perfect reason to consider upgrading to a programmable or smart model. Smart thermostats can meaningfully reduce energy consumption – valuable savings given how much cooling costs can add up during Arizona's peak summer.
 
 Professional [preventative maintenance](https://www.viking-hvac.com/preventative-maintenance) becomes crucial before extreme heat arrives. Our certified technicians perform comprehensive system inspections, including refrigerant level checks, electrical connection tightening, and motor lubrication. These services prevent the majority of emergency breakdowns that occur during Arizona's hottest days.
 
@@ -83,9 +83,9 @@ As temperatures climb toward 104°F this weekend, proper thermostat management b
 
 During this week's temperature progression, resist the urge to dramatically lower thermostat settings as outdoor temperatures rise. When it's 104°F outside, setting your thermostat to 72°F forces your system to run continuously without achieving the desired temperature, wasting energy and stressing components.
 
-Instead, use a gradual approach. Set your thermostat to 78-80°F when home and 82-85°F when away during the hottest part of the day. Each degree of difference can impact energy costs by 6-8%, which adds up quickly during Arizona's extended cooling season that runs from April through October.
+Instead, use a gradual approach. Set your thermostat to 78-80°F when home and 82-85°F when away during the hottest part of the day. Each degree of difference can noticeably impact energy costs, which adds up quickly during Arizona's extended cooling season that runs from April through October.
 
-Consider time-of-use utility rates from SRP and APS when programming your thermostat. Pre-cool your home during off-peak hours (typically before 3 PM) when electricity rates are lower, then raise the temperature slightly during peak demand periods when rates spike.
+Consider time-of-use electricity rates when programming your thermostat. Pre-cool your home during off-peak hours when electricity rates are lower, then raise the temperature slightly during peak demand periods when rates spike.
 
 Modern [thermostat installation](https://www.viking-hvac.com/services/thermostat-installation) provides features specifically valuable during extreme heat: adaptive recovery learns how long your system needs to reach desired temperatures, remote monitoring alerts you to potential problems, and geofencing automatically adjusts settings based on occupancy.
 
@@ -107,7 +107,7 @@ Rising energy bills without increased usage suggest declining efficiency. When y
 
 ## Energy Efficiency Strategies for Triple-Digit Temperatures
 
-With energy costs potentially exceeding $500 per month during Arizona summers, efficiency becomes crucial as temperatures reach 104°F. Modern systems are 30-50% more efficient than older units, but even aging systems can benefit from optimization strategies.
+Energy costs can climb significantly during Arizona summers, making efficiency crucial as temperatures reach 104°F. Modern systems are substantially more efficient than older units, but even aging systems can benefit from optimization strategies.
 
 Minimize heat gain during the day. Close blinds and curtains on south and west-facing windows before the afternoon sun hits. Use LED lighting instead of incandescent bulbs, which generate significant heat. Delay heat-producing activities like cooking, laundry, and dishwashing until evening when possible.
 
@@ -115,7 +115,7 @@ Optimize your home's thermal envelope. Arizona homes lose significant cooling th
 
 Consider [air quality](https://www.viking-hvac.com/air-quality) improvements that also boost efficiency. Arizona's dust reduces indoor air quality while forcing systems to work harder. High-efficiency filtration systems remove contaminants while improving airflow, but require professional sizing to avoid restricting system performance.
 
-Ductwork efficiency becomes critical during extreme heat. The [EPA estimates](https://www.epa.gov/energy/duct-sealing) that 20-30% of cooled air is lost through duct leaks in typical homes. Professional [ductwork services](https://www.viking-hvac.com/services/ductwork-services) can identify and seal these leaks, providing immediate efficiency improvements.
+Ductwork efficiency becomes critical during extreme heat. The [EPA notes](https://www.epa.gov/energy/duct-sealing) that a significant share of cooled air can be lost through duct leaks in typical homes. Professional [ductwork services](https://www.viking-hvac.com/services/ductwork-services) can identify and seal these leaks, providing immediate efficiency improvements.
 
 Landscape for cooling efficiency. Strategic shade trees on the south and west sides of your home reduce heat gain, while keeping vegetation away from outdoor AC units ensures proper airflow. Desert landscaping provides these benefits without increasing water usage.
 
@@ -127,7 +127,7 @@ As your system prepares for another season of 104°F+ temperatures, the decision
 
 Age and efficiency provide the clearest replacement indicators. If your system is over 12 years old and struggling with this week's temperature climb, replacement before peak summer often makes financial sense. Newer systems are dramatically more efficient – a 20+ year old system might have a SEER rating of 8-10, while modern units achieve SEER 16+ ratings, potentially cutting cooling costs in half.
 
-Repair frequency and costs matter significantly during Arizona's extended cooling season. If repair costs over the past two years exceed 50% of replacement cost, or if major components like compressors or heat exchangers need replacement, new [HVAC installation](https://www.viking-hvac.com/install) provides better long-term value.
+Repair frequency and costs matter significantly during Arizona's extended cooling season. If repair costs over the past two years are approaching what replacement would cost, or if major components like compressors or heat exchangers need replacement, new [HVAC installation](https://www.viking-hvac.com/install) provides better long-term value.
 
 Refrigerant type affects replacement decisions. Older systems using R-22 refrigerant face increasing repair costs as this refrigerant is phased out and becomes expensive. Converting to newer refrigerants often requires multiple component replacements, making full system replacement more economical.
 
@@ -147,13 +147,13 @@ Coil cleaning requires professional equipment and expertise. Arizona's dust accu
 
 Motor and bearing maintenance prevents the majority of mechanical failures. Professional lubrication and adjustment extend component life while ensuring quiet, efficient operation during continuous summer use.
 
-Our [emergency HVAC repair](https://www.viking-hvac.com/services/emergency-hvac-repair) service provides 24/7 availability, but prevention through maintenance avoids the stress, cost, and discomfort of system failures during extreme heat. Emergency repairs during 104°F+ weather often cost 50-100% more than scheduled maintenance.
+Our [emergency HVAC repair](https://www.viking-hvac.com/services/emergency-hvac-repair) service provides 24/7 availability, but prevention through maintenance avoids the stress, cost, and discomfort of system failures during extreme heat. Emergency repairs during 104°F+ weather often cost substantially more than scheduled maintenance.
 
 ## Preparing Your Home's Overall Cooling Strategy
 
 Beyond AC system preparation, your home's overall cooling strategy affects comfort and costs during 104°F+ weather. Arizona homes face unique challenges that require comprehensive approaches.
 
-Window treatments become critical during extreme heat. Reflective films and cellular shades can reduce heat gain by up to 77% on west-facing windows. Close all blinds and curtains before the afternoon sun hits, particularly on south and west exposures where Arizona's intense sun generates the most heat.
+Window treatments become critical during extreme heat. Reflective films and cellular shades can meaningfully reduce heat gain on west-facing windows. Close all blinds and curtains before the afternoon sun hits, particularly on south and west exposures where Arizona's intense sun generates the most heat.
 
 Ceiling fans complement AC systems during extreme heat by improving air circulation and comfort at higher thermostat settings. Each fan allows you to raise thermostat settings by 3-4°F while maintaining comfort, providing significant energy savings during continuous operation periods.
 
@@ -167,7 +167,7 @@ Ready your home for potential power outages during extreme heat. Arizona's elect
 
 Don't let Saturday's 104°F forecast catch your cooling system unprepared. Viking Heating and Air Conditioning has served Chandler and the East Valley since 2016, providing the expertise and reliability Arizona homeowners trust during extreme weather. Our certified, licensed technicians understand the unique challenges of cooling homes in triple-digit temperatures and offer comprehensive solutions from emergency repairs to complete system replacements.
 
-As Arizona's temperatures climb and your cooling system faces its biggest challenges, trust the professionals who know how to keep you comfortable. Call Viking Heating and Air Conditioning at (480) 689-5167 for immediate service, maintenance scheduling, or expert consultation on system upgrades. With our 240+ five-star reviews and commitment to excellence, we're the bridge between you and comfort – especially when you need it most.
+As Arizona's temperatures climb and your cooling system faces its biggest challenges, trust the professionals who know how to keep you comfortable. Call Viking Heating and Air Conditioning at (480) 689-5167 for immediate service, maintenance scheduling, or expert consultation on system upgrades. With our 340+ five-star reviews and commitment to excellence, we're the bridge between you and comfort – especially when you need it most.
 
 ### Serving Chandler & the Phoenix East Valley
 - [Air Conditioning in Downtown Chandler](https://www.viking-hvac.com/air-conditioning)

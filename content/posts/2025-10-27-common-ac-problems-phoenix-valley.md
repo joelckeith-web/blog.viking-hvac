@@ -55,7 +55,7 @@ The continuous operation during summer months eliminates recovery periods that h
 
 ## Compressor Problems: The Heart of Phoenix Valley AC Issues
 
-Compressor problems represent the most expensive and critical failures Phoenix Valley homeowners face. Our extreme climate creates conditions that stress compressors beyond their design limits, leading to failure rates 40-60% higher than national averages.
+Compressor problems represent the most expensive and critical failures Phoenix Valley homeowners face. Our extreme climate creates conditions that stress compressors beyond their design limits, leading to compressor failure rates that are substantially higher than in moderate climates.
 
 **Heat-Related Compressor Stress:** When outdoor temperatures exceed 110°F in Phoenix or Scottsdale, compressors struggle to reject heat effectively. The reduced temperature difference between hot refrigerant and ambient air makes heat rejection extremely inefficient, forcing compressors to work harder and longer to achieve the same cooling effect.
 
@@ -66,9 +66,9 @@ Compressor problems represent the most expensive and critical failures Phoenix V
 - **Mechanical Wear:** Continuous operation causes internal bearing and valve failures
 - **Refrigerant Contamination:** System leaks allow moisture and contaminants to damage internal components
 
-**Repair vs. Replacement for Compressor Problems:** For systems under 7 years old in Chandler, Gilbert, or Mesa, compressor repair often makes sense if the cost is less than 25% of total system replacement. However, for systems over 10 years old, compressor failure usually justifies complete system replacement due to the likelihood of additional problems.
+**Repair vs. Replacement for Compressor Problems:** For newer systems in Chandler, Gilbert, or Mesa, compressor repair often makes sense when the repair cost is modest relative to full system replacement. However, for older systems, compressor failure usually justifies complete system replacement due to the likelihood of additional problems.
 
-In Phoenix Valley's extreme climate, repaired compressors typically last 3-5 years, while new systems provide 10-15 years of reliable service. Factor in utility rebates available from APS and SRP, and replacement often becomes the more economical choice.
+In Phoenix Valley's extreme climate, repaired compressors typically have a shorter remaining service life than a new system would provide, which is worth weighing when deciding between repair and replacement.
 
 ## Refrigerant Leaks: Phoenix Valley's Temperature Cycling Problem
 
@@ -81,9 +81,9 @@ Refrigerant leaks occur more frequently in Phoenix Valley than anywhere else in 
 - **Condenser Coils:** Outdoor coils suffer from environmental damage and temperature stress
 - **Service Valves:** Seals deteriorate under extreme temperature conditions
 
-**The R-22 Challenge in Phoenix Valley:** Many homes in Chandler, Gilbert, and Mesa installed before 2010 use R-22 refrigerant, which is no longer produced and increasingly expensive. A typical refrigerant leak repair that might cost $300 in other climates can cost $1,500-2,500 in Phoenix Valley due to R-22 scarcity.
+**The R-22 Challenge in Phoenix Valley:** Many homes in Chandler, Gilbert, and Mesa installed before 2010 use R-22 refrigerant, which is no longer produced and increasingly expensive. A typical refrigerant leak repair costs considerably more in Phoenix Valley than in other climates due to R-22 scarcity — costs vary by system and leak location.
 
-For R-22 systems over 10 years old, refrigerant leaks almost always justify system replacement rather than repair. The combination of high refrigerant costs and the likelihood of additional leaks makes repair financially impractical.
+For older R-22 systems, refrigerant leaks almost always justify system replacement rather than repair. The combination of high refrigerant costs and the likelihood of additional leaks makes repair financially impractical.
 
 **R-410A System Considerations:** Newer systems using R-410A refrigerant (installed after 2009) are less expensive to repair, but Phoenix Valley's extreme conditions still make multiple leaks common. Small, accessible leaks are worth repairing, but multiple leak locations or large leaks often indicate system-wide problems that warrant replacement.
 
@@ -100,7 +100,7 @@ Phoenix Valley's extreme heat particularly stresses electrical components, which
 
 **Capacitor Problems in Phoenix Valley:** Capacitors are among the most common failures in Chandler, Gilbert, and Mesa homes. These components store electrical energy needed to start compressors and fan motors, but extreme heat causes them to fail much more frequently than in moderate climates.
 
-Signs of capacitor failure include difficulty starting, humming noises without system operation, and complete system failure. Capacitor replacement typically costs $150-300 and can often be completed the same day, making it one of the more straightforward repairs.
+Signs of capacitor failure include difficulty starting, humming noises without system operation, and complete system failure. Capacitor replacement is a relatively low-cost repair and can often be completed the same day, making it one of the more straightforward repairs.
 
 **Contactor Issues:** Contactors control electrical flow to major system components and often fail due to the high current demands of Phoenix Valley systems. When contactors fail, they may stick closed (causing continuous operation) or fail to close (preventing system startup).
 
@@ -115,7 +115,7 @@ Phoenix Valley's extreme attic temperatures create unique ductwork challenges th
 - **Seal Failures:** Duct sealing materials break down under extreme heat
 - **Insulation Degradation:** Duct insulation loses effectiveness in extreme attic temperatures
 
-**Energy Loss from Ductwork Problems:** Ductwork problems in Phoenix Valley can waste 20-30% of your cooling energy. When ducts leak in 150°F attics, you're essentially trying to cool your attic instead of your home. This makes ductwork repairs particularly valuable for homeowners in Chandler, Gilbert, and surrounding areas.
+**Energy Loss from Ductwork Problems:** Ductwork problems in Phoenix Valley can waste a significant share of your cooling energy. When ducts leak in 150°F attics, you're essentially trying to cool your attic instead of your home. This makes ductwork repairs particularly valuable for homeowners in Chandler, Gilbert, and surrounding areas.
 
 ## Air Quality and Filtration Issues
 
@@ -166,7 +166,7 @@ Many Phoenix Valley homes have AC systems that are improperly sized for our extr
 **A:** Complete system failure during extreme heat (100°F+) constitutes an emergency. Signs include no cooling, electrical burning smells, unusual noises, or inability to maintain safe indoor temperatures. Contact emergency service immediately in these situations.
 
 **Q: Are AC repairs more expensive in Phoenix Valley?**
-**A:** Yes, repairs often cost 20-40% more due to extreme working conditions, higher demand during peak season, and the stress our climate places on components. Emergency repairs during peak summer can cost 50-100% more than planned maintenance.
+**A:** Repairs can cost more here due to extreme working conditions, higher demand during peak season, and the stress our climate places on components. Emergency repairs during peak summer tend to cost more than planned maintenance scheduled in advance.
 
 **Q: Should I repair or replace my AC system if it's having multiple problems?**
 **A:** Multiple problems within a short time frame often indicate system-wide deterioration. For systems over 8-10 years old in Phoenix Valley, replacement usually makes more sense financially than continued repairs.
@@ -234,10 +234,10 @@ The best approach to AC problems in Phoenix Valley is prevention through proper 
 
 **Financial Planning:**
 
-- Budget for annual maintenance costs ($300-500)
-- Set aside funds for potential major repairs ($1,000-3,000)
+- Budget for annual maintenance costs, which vary by system size and service plan
+- Set aside funds for potential major repairs
 - Plan for eventual replacement (systems over 10 years old)
-- Consider utility rebates and financing options for replacements
+- Ask your contractor about current financing options for replacements
 
 **Emergency Preparedness:**
 

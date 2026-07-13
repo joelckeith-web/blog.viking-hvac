@@ -34,9 +34,9 @@ schema:
     - question: "What MERV filter rating should I use for better air quality?"
       answer: "MERV 11-13 provides the best balance of air quality improvement and HVAC system compatibility for most Chandler homes. Higher ratings (MERV 14+) capture finer particles but may restrict airflow in systems not designed for high-resistance filtration. Consult Viking HVAC to confirm the optimal filter for your specific system."
     - question: "How much does an air scrubber cost to install?"
-      answer: "Whole-home air scrubber installation typically costs $1,000-2,000 including the unit and professional installation. Viking HVAC offers discounts on air scrubbers when combined with HVAC maintenance or system upgrades. Given that air scrubbers address contaminants that filters cannot capture (viruses, VOCs, odors), they represent strong value for families prioritizing indoor air quality."
+      answer: "Whole-home air scrubber installation costs vary by system size and household needs. Viking HVAC offers discounts on air scrubbers when combined with HVAC maintenance or system upgrades. Given that air scrubbers address contaminants that filters cannot capture (viruses, VOCs, odors), they represent strong value for families prioritizing indoor air quality."
     - question: "Is duct cleaning worth the investment?"
-      answer: "Yes, particularly for homes that haven't had duct cleaning in 3+ years, homes with allergy or asthma sufferers, homes with pets, and homes where renovation or construction has occurred. Professional duct cleaning typically costs $300-500 for a standard Chandler home and provides immediate air quality improvement."
+      answer: "Yes, particularly for homes that haven't had duct cleaning in 3+ years, homes with allergy or asthma sufferers, homes with pets, and homes where renovation or construction has occurred. Professional duct cleaning costs vary by home size and duct condition, and it provides immediate air quality improvement."
     - question: "How does humidity affect indoor air quality in winter?"
       answer: "Low humidity (below 30%) dries mucous membranes that serve as your body's first defense against airborne pathogens, increasing susceptibility to respiratory illness. Dry air also keeps particles airborne longer rather than settling, increasing inhalation exposure. Maintaining 30-50% humidity through a whole-home humidifier addresses both comfort and health concerns."
     - question: "Can my HVAC system make my air quality worse?"
@@ -44,7 +44,7 @@ schema:
 status: "published"
 ---
 
-As Chandler's winter temperatures arrive, your family naturally spends more time indoors with windows sealed against the cold. While this keeps your home warm, it also traps indoor air pollutants that accumulate without the natural ventilation that occasional window-opening provides during milder months. The EPA reports that indoor air can be **2-5 times more polluted** than outdoor air — and that gap widens during winter when homes are sealed tight.
+As Chandler's winter temperatures arrive, your family naturally spends more time indoors with windows sealed against the cold. While this keeps your home warm, it also traps indoor air pollutants that accumulate without the natural ventilation that occasional window-opening provides during milder months. Indoor air can end up noticeably more polluted than outdoor air — and that gap widens during winter when homes are sealed tight.
 
 For families in Chandler, Gilbert, Mesa, and across the Phoenix Valley, winter indoor air quality management requires attention to your HVAC system, filtration, humidity, and daily habits. Viking Heating & Air Conditioning provides comprehensive air quality solutions to keep your family breathing clean, healthy air all season long.
 
@@ -142,10 +142,10 @@ Common indicators include persistent allergy symptoms that improve when you leav
 MERV 11-13 provides the best balance of air quality improvement and HVAC system compatibility for most Chandler homes. Higher ratings (MERV 14+) capture finer particles but may restrict airflow in systems not designed for high-resistance filtration. Consult Viking HVAC to confirm the optimal filter for your specific system.
 
 ### How much does an air scrubber cost to install?
-Whole-home air scrubber installation typically costs $1,000-2,000 including the unit and professional installation. Viking HVAC offers discounts on air scrubbers when combined with HVAC maintenance or system upgrades. Given that air scrubbers address contaminants that filters cannot capture (viruses, VOCs, odors), they represent strong value for families prioritizing indoor air quality.
+Whole-home air scrubber installation costs vary by system size and household needs. Viking HVAC offers discounts on air scrubbers when combined with HVAC maintenance or system upgrades. Given that air scrubbers address contaminants that filters cannot capture (viruses, VOCs, odors), they represent strong value for families prioritizing indoor air quality.
 
 ### Is duct cleaning worth the investment?
-Yes, particularly for homes that haven't had duct cleaning in 3+ years, homes with allergy or asthma sufferers, homes with pets, and homes where renovation or construction has occurred. Professional duct cleaning typically costs $300-500 for a standard Chandler home and provides immediate air quality improvement.
+Yes, particularly for homes that haven't had duct cleaning in 3+ years, homes with allergy or asthma sufferers, homes with pets, and homes where renovation or construction has occurred. Professional duct cleaning costs vary by home size and duct condition, and it provides immediate air quality improvement.
 
 ### How does humidity affect indoor air quality in winter?
 Low humidity (below 30%) dries mucous membranes that serve as your body's first defense against airborne pathogens, increasing susceptibility to respiratory illness. Dry air also keeps particles airborne longer rather than settling, increasing inhalation exposure. Maintaining 30-50% humidity through a whole-home humidifier addresses both comfort and health concerns.

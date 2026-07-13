@@ -57,3 +57,15 @@ jobs:
           echo "Weather blog post generated and published"
           echo "Posts in repo:"
           ls -la content/posts/ | tail -5
+
+      # The content gate / verification agent block bad posts by failing the
+      # run. Preserve the rejected draft + violation report for human review —
+      # a blocked post costs nothing but a download to inspect.
+      - name: Upload rejected draft (gate blocked publish)
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: rejected-draft
+          path: rejected/
+          if-no-files-found: ignore
+          retention-days: 30

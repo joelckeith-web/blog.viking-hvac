@@ -125,4 +125,4 @@ The 2025–2026 changes made most online rebate guides wrong overnight — inclu
 
 The incentive landscape shrank in 2026, but it didn't disappear. SRP customers still have a real rebate. Income-qualified households may have access to the largest rebates Arizona has ever offered. And for everyone else, the path to an affordable replacement runs through right-sizing, smart timing, and financing rather than tax credits that no longer exist.
 
-If you're weighing a replacement, we'll give you the straight numbers for your situation — which programs your address qualifies for, what the paperwork requires, and what the system should cost. [Request a free estimate](https://viking-hvac.com/free-estimate/) or call us at (480) 689-5167.
+If you're weighing a replacement, we'll give you the straight numbers for your situation — which programs your address qualifies for, what the paperwork requires, and what the system should cost. [Request a free estimate](https://www.viking-hvac.com/contact-us) or call us at (480) 689-5167.
