@@ -8,6 +8,7 @@ import type {
 } from "./types";
 import { siteConfig } from "./site-config";
 import { fetchFeaturedImage } from "./images";
+import truth from "./viking-truth.json";
 
 function getAnthropicClient() {
   return new Anthropic({
@@ -76,18 +77,22 @@ export async function generateBlogPost(
 function buildSystemPrompt(mode: WeatherMode): string {
   const modeInstructions = getModeInstructions(mode);
 
-  return `You are a professional SEO content writer for ${siteConfig.companyName}, a family-owned HVAC company in ${siteConfig.address.city}, ${siteConfig.address.stateAbbr} serving the Greater Phoenix area since ${siteConfig.foundedYear}. They have ${siteConfig.reviews} and are licensed (${siteConfig.license}), bonded, and insured. They are an American Standard authorized dealer and service ALL brands (Carrier, Trane, Lennox, Goodman, Rheem, etc.). Their tagline is "${siteConfig.tagline}." You write weather-triggered blog posts that connect real local weather conditions to HVAC service needs.
+  return `You are a professional SEO content writer for ${siteConfig.companyName}, a family-owned HVAC company in ${siteConfig.address.city}, ${siteConfig.address.stateAbbr} serving the Greater Phoenix area since ${truth.identity.foundedYear}. They are licensed (${truth.identity.license}), bonded, and insured. They are an American Standard authorized dealer and service ALL brands (Carrier, Trane, Lennox, Goodman, Rheem, etc.). Their tagline is "${siteConfig.tagline}." You write weather-triggered blog posts that connect real local weather conditions to HVAC service needs.
 
-KEY ARIZONA HVAC FACTS (use naturally in content):
-- Arizona summers can exceed ${siteConfig.keyFacts.arizonaSummersExceed}
-- AC systems last ${siteConfig.keyFacts.acLifespan} in Arizona
-- Homes need ${siteConfig.keyFacts.coolingPerSqFt} of cooling capacity
-- Change filters ${siteConfig.keyFacts.filterChangeInterval}
-- Newer systems are ${siteConfig.keyFacts.newerSystemEfficiency}
-- Smart thermostats save ${siteConfig.keyFacts.smartThermostatSavings}
-- Summer cooling costs can exceed ${siteConfig.keyFacts.summerCoolingCost}
-- Cooling season runs ${siteConfig.keyFacts.coolingSeasonLength}
-- Local utilities: SRP and APS (time-of-use rate structures)
+VERIFIED COMPANY FACTS — the ONLY specific claims you may make about the company (from viking-truth.json):
+- Founded ${truth.identity.foundedYear}, family-owned (owners: ${truth.identity.owners})
+- ${truth.identity.license}, licensed, bonded, and insured
+- 24/7 emergency service; American Standard authorized dealer; services all brands
+- 100% satisfaction guarantee
+
+HARD CONTENT BANS — a deterministic validation gate REJECTS the post (it will never publish) if it contains ANY of:
+- Dollar amounts or price ranges of any kind
+- Percentages or numeric statistics (no "20-30% savings", no "90% of failures")
+- Utility company names, rebates, tax credits, financing terms, or incentive programs of any kind
+- Review counts, years-of-experience figures, or any credential not in the verified list above
+- Customer stories or case studies, real or illustrative ("we recently helped a homeowner in...")
+- Any temperature, wind speed, or precipitation number that is not in the weather data provided below
+Write useful guidance WITHOUT these: qualitative statements ("significant savings", "most systems", "several times per cooling season") are fine; specific figures are not.
 
 CONTENT MODE: ${mode.toUpperCase()}
 ${modeInstructions}

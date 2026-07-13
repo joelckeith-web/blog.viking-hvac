@@ -21,18 +21,11 @@ export const siteConfig = {
   // Core promise: On time, Fair, Empathetic, Helpful, Diligent, Excellent
   corePromise: "We promise same-day repair when possible, no dishonesty, no hassle, no falsified repairs.",
 
-  // Key facts for content generation
-  keyFacts: {
-    arizonaSummersExceed: "115°F",
-    acLifespan: "12-15 years (18+ with maintenance)",
-    coolingPerSqFt: "1 ton per 400-500 sq ft",
-    filterChangeInterval: "every 60-90 days in Arizona dust",
-    newerSystemEfficiency: "30-50% more efficient",
-    smartThermostatSavings: "20-30% energy reduction",
-    summerCoolingCost: "$500+/month during peak summer",
-    coolingSeasonLength: "April through October (up to 9 months)",
-    utilityProviders: ["SRP (Salt River Project)", "APS (Arizona Public Service)"],
-  },
+  // keyFacts REMOVED 2026-07-13 — it injected unverified figures ("20-30%
+  // energy reduction", "$500+/month") into every generated post. The 2026-07
+  // fabrication audit traced 3 live false-claim posts to it. Verified facts
+  // now live in lib/viking-truth.json; unverified ones sit in its
+  // pendingVerification block until Viking confirms each with a source.
   foundedYear: 2016,
   owners: "Nicole & Kelly Bridge",
   license: "AZ ROC #316534",

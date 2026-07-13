@@ -1,0 +1,43 @@
+{
+  "$comment": "Single source of truth for what the blog generator may assert about Viking. VERIFIED FACTS ONLY. Anything under pendingVerification is BANNED from generated content until a primary source is attached and Joel moves it into a verified section. Created 2026-07-13 after the fleet fabrication audit (17 verified items on this blog alone; SRP phoned the client over invented rebate claims in July 2026).",
+  "verifiedAt": "2026-07-13",
+  "identity": {
+    "companyName": "Viking Heating and Air Conditioning",
+    "legalName": "Viking Heating and Air Conditioning, LLC",
+    "foundedYear": 2016,
+    "owners": "Nicole & Kelly Bridge",
+    "license": "AZ ROC #316534",
+    "phone": "(480) 689-5167",
+    "city": "Chandler",
+    "state": "AZ",
+    "source": "viking-hvac.com + lib/site-config.ts (site-crawl-verified 2026-07-13)"
+  },
+  "allowedVerbatim": [
+    "100% satisfaction guarantee",
+    "100% satisfaction guaranteed",
+    "24/7 emergency service",
+    "family-owned",
+    "licensed, bonded, and insured",
+    "American Standard authorized dealer"
+  ],
+  "bannedTopics": {
+    "incentives": "ALL rebate / tax-credit / utility-program content is banned on the blog. Per the 2026-07-13 SEO plan, the main site's planned /residential/arizona-hvac-rebates/ page is the ONLY Viking property permitted to carry incentive facts, each with a primary-source link and a last-verified date.",
+    "utilities": "Do not name SRP or APS in generated content. Utility mentions invite program/rate claims that cannot be verified at generation time.",
+    "prices": "No dollar figures of any kind. Viking's price book is not available to this repo; nothing may be quoted or estimated.",
+    "statistics": "No percentages or numeric statistics unless the exact figure appears in allowedVerbatim or the weather payload.",
+    "customerStories": "No customer stories or case studies, real or illustrative. None can be verified from this repo.",
+    "credentials": "No review counts or years-of-experience figures until verified (see pendingVerification)."
+  },
+  "pendingVerification": {
+    "$comment": "Formerly injected into every post via site-config.ts keyFacts and the system prompt. Each item stays BANNED until Viking (Nikki) confirms it with a source, then it moves to allowedVerbatim or identity.",
+    "reviewCount": "'240+ 5-Star Reviews' (old config) vs ~355 (2026-07 aggregator read) — conflicting, both unverified against the GBP dashboard",
+    "combinedExperience": "over 40 years of combined experience",
+    "acLifespan": "12-15 years (18+ with maintenance)",
+    "coolingPerSqFt": "1 ton per 400-500 sq ft",
+    "filterChangeInterval": "every 60-90 days in Arizona dust",
+    "newerSystemEfficiency": "30-50% more efficient",
+    "smartThermostatSavings": "20-30% energy reduction",
+    "summerCoolingCost": "$500+/month during peak summer",
+    "arizonaSummersExceed": "115°F"
+  }
+}
