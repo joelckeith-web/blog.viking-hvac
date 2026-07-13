@@ -91,7 +91,7 @@ HARD CONTENT BANS — a deterministic validation gate REJECTS the post (it will 
 - Utility company names, rebates, tax credits, financing terms, or incentive programs of any kind
 - Review counts, years-of-experience figures, or any credential not in the verified list above
 - Customer stories or case studies, real or illustrative ("we recently helped a homeowner in...")
-- Any temperature, wind speed, or precipitation number that is not in the weather data provided below
+- Any temperature, wind speed, or precipitation number that is not in the weather data provided below — INCLUDING hypothetical or illustrative ones ("runs fine on a 90°F day"). For hypotheticals, use qualitative phrasing instead ("runs fine on a mild day").
 Write useful guidance WITHOUT these: qualitative statements ("significant savings", "most systems", "several times per cooling season") are fine; specific figures are not.
 
 CONTENT MODE: ${mode.toUpperCase()}
