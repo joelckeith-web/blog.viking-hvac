@@ -113,7 +113,7 @@ Viking Heating and Air Conditioning's [ductwork services](https://www.viking-hva
 
 Most Chandler-area electric utilities use time-of-use rate structures that charge premium prices during peak demand hours (typically 3-8 PM). During this week's heat, strategic thermostat programming can significantly reduce costs.
 
-Pre-cool your home to 76°F during off-peak hours (before 3 PM), then allow the temperature to gradually rise to 80°F during peak hours. Your system's thermal mass and insulation will maintain reasonable comfort while avoiding the highest electricity rates. [Energy Star guidelines](https://www.energystar.gov/products/heating_cooling) support this strategy for Arizona climates.
+Pre-cool your home to 76°F during off-peak hours (before 3 PM), then allow the temperature to gradually rise to 80°F during peak hours. Your system's thermal mass and insulation will maintain reasonable comfort while avoiding the highest electricity rates. [Energy Star guidelines](https://www.energystar.gov/products) support this strategy for Arizona climates.
 
 ### Supplemental Cooling Strategies
 
@@ -161,7 +161,7 @@ Mid-season maintenance in July can address issues that develop during heavy use 
 
 AC systems in Arizona typically last 12-15 years with regular maintenance, though exceptional care can extend lifespans to 18+ years. If your system is approaching 10 years old and struggles with this week's 104°F temperatures, begin planning for eventual replacement rather than facing emergency decisions during peak summer.
 
-Newer systems offer meaningfully better efficiency than older units, providing substantial long-term savings. [Department of Energy](https://www.energy.gov/energysaver/heat-and-cool/heat-pump-systems) efficiency standards continue improving, making system upgrades increasingly attractive for Arizona homeowners.
+Newer systems offer meaningfully better efficiency than older units, providing substantial long-term savings. [Department of Energy](https://www.energy.gov/energysaver) efficiency standards continue improving, making system upgrades increasingly attractive for Arizona homeowners.
 
 ### Home Performance Integration
 

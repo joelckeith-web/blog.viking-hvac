@@ -99,7 +99,7 @@ Utilize ceiling fans to create air movement, allowing comfortable temperatures a
 
 Close blinds and curtains during peak sun hours to reduce solar heat gain. South and west-facing windows contribute significantly to indoor heat load, forcing your AC to work harder. Consider upgrading to energy-efficient window treatments or tinting.
 
-The [Department of Energy](https://www.energy.gov/energysaver/air-conditioning) notes that proper insulation and air sealing help reduce cooling costs. During extreme heat, every degree of temperature infiltration increases system workload and energy consumption.
+The [Department of Energy](https://www.energy.gov/energysaver) notes that proper insulation and air sealing help reduce cooling costs. During extreme heat, every degree of temperature infiltration increases system workload and energy consumption.
 
 Time-of-use rate structures from local utility providers make energy efficiency even more critical. Peak rates during afternoon hours can significantly raise electricity costs, making efficient system operation essential for reasonable utility bills.
 
@@ -145,7 +145,7 @@ Summer cooling costs rise noticeably during peak season for average homes with o
 
 System replacement during extreme heat emergencies limits equipment options and increases installation costs. Planning replacements during moderate weather provides better equipment selection and scheduling flexibility.
 
-The [Environmental Protection Agency](https://www.epa.gov/energy/energy-and-environment) notes that regular maintenance extends system life and reduces energy consumption. These savings become most significant during extreme heat operation.
+The [Environmental Protection Agency](https://www.epa.gov/energy) notes that regular maintenance extends system life and reduces energy consumption. These savings become most significant during extreme heat operation.
 
 Insurance claims for AC-related property damage increase during heat waves when systems fail and cause secondary problems. Preventive maintenance reduces failure risk and associated property damage claims.
 

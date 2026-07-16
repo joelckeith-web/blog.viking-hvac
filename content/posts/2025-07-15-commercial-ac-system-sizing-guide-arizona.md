@@ -161,7 +161,7 @@ Energy efficiency ratings become more important with proper sizing. A correctly 
 
 Demand charge management becomes important for larger commercial systems. Time-of-use electricity rates in Arizona can make peak demand very expensive. Properly sized systems with thermal storage or pre-cooling capabilities can shift energy use to lower-cost periods, reducing both energy and demand charges.
 
-[The Department of Energy's Better Buildings Initiative](https://betterbuildingsinitiative.energy.gov/) provides resources for commercial energy efficiency, including sizing guidance and efficiency improvement strategies for businesses looking to lower operating costs.
+[The Department of Energy's Better Buildings Initiative](https://betterbuildingssolutioncenter.energy.gov/) provides resources for commercial energy efficiency, including sizing guidance and efficiency improvement strategies for businesses looking to lower operating costs.
 
 Long-term cost analysis should include energy costs, maintenance expenses, equipment replacement timing, and productivity impacts. A slightly larger initial investment in proper sizing and high-efficiency equipment often provides substantial savings over 10-15 year system life.
 

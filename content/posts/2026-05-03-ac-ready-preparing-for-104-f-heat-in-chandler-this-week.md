@@ -79,7 +79,7 @@ Professional [preventative maintenance](https://www.viking-hvac.com/preventative
 
 ## Optimizing Thermostat Settings for Extreme Heat
 
-As temperatures climb toward 104°F this weekend, proper thermostat management becomes critical for both comfort and cost control. The [Department of Energy](https://www.energy.gov/energysaver/programmable-thermostats) recommends setting thermostats to 78°F when home during extreme heat, but Arizona's unique conditions require modified strategies.
+As temperatures climb toward 104°F this weekend, proper thermostat management becomes critical for both comfort and cost control. The [Department of Energy](https://www.energy.gov/energysaver) recommends setting thermostats to 78°F when home during extreme heat, but Arizona's unique conditions require modified strategies.
 
 During this week's temperature progression, resist the urge to dramatically lower thermostat settings as outdoor temperatures rise. When it's 104°F outside, setting your thermostat to 72°F forces your system to run continuously without achieving the desired temperature, wasting energy and stressing components.
 
@@ -115,7 +115,7 @@ Optimize your home's thermal envelope. Arizona homes lose significant cooling th
 
 Consider [air quality](https://www.viking-hvac.com/air-quality) improvements that also boost efficiency. Arizona's dust reduces indoor air quality while forcing systems to work harder. High-efficiency filtration systems remove contaminants while improving airflow, but require professional sizing to avoid restricting system performance.
 
-Ductwork efficiency becomes critical during extreme heat. The [EPA notes](https://www.epa.gov/energy/duct-sealing) that a significant share of cooled air can be lost through duct leaks in typical homes. Professional [ductwork services](https://www.viking-hvac.com/services/ductwork-services) can identify and seal these leaks, providing immediate efficiency improvements.
+Ductwork efficiency becomes critical during extreme heat. The [EPA notes](https://www.energy.gov/energysaver) that a significant share of cooled air can be lost through duct leaks in typical homes. Professional [ductwork services](https://www.viking-hvac.com/services/ductwork-services) can identify and seal these leaks, providing immediate efficiency improvements.
 
 Landscape for cooling efficiency. Strategic shade trees on the south and west sides of your home reduce heat gain, while keeping vegetation away from outdoor AC units ensures proper airflow. Desert landscaping provides these benefits without increasing water usage.
 

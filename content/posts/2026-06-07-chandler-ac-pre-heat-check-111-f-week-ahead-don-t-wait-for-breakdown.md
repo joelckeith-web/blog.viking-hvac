@@ -131,7 +131,7 @@ Homes with AC systems over 10 years old should consider efficiency upgrades befo
 
 Leaky or poorly insulated ductwork can waste a significant share of conditioned air, forcing systems to work harder during extreme heat. Professional [ductwork services](https://www.viking-hvac.com/services/ductwork-services) can identify and seal air leaks while ensuring proper insulation throughout your home's distribution system.
 
-The [Department of Energy](https://www.energy.gov/energysaver/air-conditioning) recommends maintaining indoor temperatures between 75-78°F during extreme heat events to balance comfort with energy efficiency. Every degree lower than 78°F adds to your system's energy use during peak conditions.
+The [Department of Energy](https://www.energy.gov/energysaver) recommends maintaining indoor temperatures between 75-78°F during extreme heat events to balance comfort with energy efficiency. Every degree lower than 78°F adds to your system's energy use during peak conditions.
 
 > **Key Takeaway:** Strategic energy efficiency measures implemented before extreme heat can meaningfully reduce cooling costs while maintaining comfort. Time-of-use rate optimization and thermal load reduction provide immediate savings without equipment investment.
 
@@ -155,7 +155,7 @@ Even well-maintained systems can experience unexpected failures during extreme h
 
 Viking HVAC maintains 24/7 emergency service availability during extreme heat events, with priority scheduling for safety-critical situations. Our technicians carry comprehensive parts inventory specifically for common extreme heat failures, enabling same-day repairs in most cases. Don't wait for complete system failure - contact us at the first sign of performance problems.
 
-The [Environmental Protection Agency](https://www.epa.gov/climate-change-human-health/climate-change-and-extreme-heat-what-you-can-do-prepare) emphasizes that extreme heat represents one of the most dangerous weather conditions for human health. Maintaining reliable air conditioning during heat events becomes a medical necessity for vulnerable populations including elderly residents, young children, and individuals with health conditions.
+The [Environmental Protection Agency](https://www.heat.gov) emphasizes that extreme heat represents one of the most dangerous weather conditions for human health. Maintaining reliable air conditioning during heat events becomes a medical necessity for vulnerable populations including elderly residents, young children, and individuals with health conditions.
 
 > **Key Takeaway:** System monitoring and emergency preparedness during extreme heat events can prevent dangerous situations. Professional emergency response availability ensures rapid resolution of AC failures during safety-critical temperatures.
 

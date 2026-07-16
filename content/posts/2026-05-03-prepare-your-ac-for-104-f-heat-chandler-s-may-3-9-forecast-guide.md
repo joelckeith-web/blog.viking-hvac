@@ -81,7 +81,7 @@ Inspect the refrigerant lines entering your home. The insulation on these lines 
 
 ### Thermostat Optimization
 
-With temperatures climbing to 104°F, thermostat strategy becomes crucial for both comfort and cost management. If you're still using a basic thermostat, this week presents an ideal opportunity to upgrade to a [programmable or smart model](https://www.energy.gov/energysaver/programmable-thermostats), which can meaningfully reduce energy consumption and translate to real savings during Arizona's extended cooling season from April through October.
+With temperatures climbing to 104°F, thermostat strategy becomes crucial for both comfort and cost management. If you're still using a basic thermostat, this week presents an ideal opportunity to upgrade to a [programmable or smart model](https://www.energy.gov/energysaver), which can meaningfully reduce energy consumption and translate to real savings during Arizona's extended cooling season from April through October.
 
 For the upcoming hot weather, program your thermostat to pre-cool your home before peak afternoon hours. Set it to reach your desired temperature by 2 PM, before the day's heat peak and before time-of-use electricity rates typically spike in the afternoon. A setting of 78-80°F when home and 82-85°F when away provides good comfort while managing energy costs.
 

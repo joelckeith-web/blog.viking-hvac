@@ -93,7 +93,7 @@ Indoor air quality becomes a critical concern after dust storm events. Standard 
 
 Professional [air quality solutions](https://www.viking-hvac.com/air-quality) include whole-house air purification systems that work in conjunction with your HVAC system. UV air purifiers eliminate biological contaminants that thrive in dust-laden environments, while high-efficiency particulate air (HEPA) systems capture particles as small as 0.3 microns. This is particularly important for Arizona residents with allergies or respiratory sensitivities.
 
-The [Department of Energy](https://www.energy.gov/energysaver/maintaining-your-air-conditioner) emphasizes that poor indoor air quality forces HVAC systems to work harder, as contaminated air doesn't transfer heat as efficiently as clean air. This creates a cycle where dust-compromised systems run longer, consume more energy, and continue to circulate poor-quality air throughout your home.
+The [Department of Energy](https://www.energy.gov/energysaver) emphasizes that poor indoor air quality forces HVAC systems to work harder, as contaminated air doesn't transfer heat as efficiently as clean air. This creates a cycle where dust-compromised systems run longer, consume more energy, and continue to circulate poor-quality air throughout your home.
 
 Smart home integration allows real-time monitoring of indoor air quality metrics. These systems automatically adjust ventilation rates, trigger air purification systems, and alert homeowners to filter replacement needs. During Arizona's extended cooling season, proactive air quality management prevents the accumulation of problems that manifest as major system failures.
 

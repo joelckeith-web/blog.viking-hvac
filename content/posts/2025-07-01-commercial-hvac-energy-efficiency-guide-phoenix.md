@@ -78,7 +78,7 @@ Occupancy-based controls are especially effective for Phoenix businesses. Many c
 
 Variable frequency drives (VFDs) on fan motors allow systems to adjust airflow based on demand rather than running at full capacity continuously. In Arizona's climate, where outdoor temperatures change significantly between day and night, VFDs can substantially reduce fan energy consumption while maintaining comfort.
 
-[Building automation systems](https://www.ashrae.org/technical-resources/building-automation) integrate HVAC controls with lighting, security, and other building systems for comprehensive energy management. These systems can pre-cool buildings during off-peak hours, adjust ventilation based on air quality sensors, and optimize equipment operation for both comfort and efficiency.
+[Building automation systems](https://www.ashrae.org/technical-resources) integrate HVAC controls with lighting, security, and other building systems for comprehensive energy management. These systems can pre-cool buildings during off-peak hours, adjust ventilation based on air quality sensors, and optimize equipment operation for both comfort and efficiency.
 
 ## **Equipment Selection and Sizing for Arizona Climate**
 

@@ -51,7 +51,7 @@ The complexity of healthcare HVAC requirements has increased significantly as me
 
 Healthcare facilities must comply with multiple layers of regulations that govern environmental conditions, air quality, and system performance. The Centers for Medicare & Medicaid Services (CMS), The Joint Commission, state health departments, and local building codes all impose requirements that affect HVAC system design and operation.
 
-According to the [Centers for Disease Control and Prevention (CDC) infection control guidelines](https://cdc.gov/infection-control/hcp/environmental-control/air.html), healthcare facilities must maintain specific air change rates, pressure relationships, and filtration levels to prevent the spread of airborne pathogens and protect vulnerable patients from healthcare-associated infections.
+According to the Centers for Disease Control and Prevention (CDC) infection control guidelines, healthcare facilities must maintain specific air change rates, pressure relationships, and filtration levels to prevent the spread of airborne pathogens and protect vulnerable patients from healthcare-associated infections.
 
 The American Institute of Architects (AIA) Guidelines for Design and Construction of Hospitals and Outpatient Facilities establish minimum standards for temperature, humidity, air changes per hour, and pressure relationships that vary by space type. Operating rooms, for example, require minimum air change rates of 20 per hour with specific pressure relationships to adjacent spaces.
 

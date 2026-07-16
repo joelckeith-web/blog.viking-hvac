@@ -89,7 +89,7 @@ Consider upgrading to a smart thermostat before the extreme heat arrives. Modern
 
 Refrigerant levels become critically important during extreme heat events. Low refrigerant forces your AC system to run longer and work harder to achieve the same cooling effect. During 107°F temperatures, a system with low refrigerant may run continuously without adequately cooling your home.
 
-Professional technicians can identify refrigerant leaks, verify proper levels, and ensure your system is charged correctly for maximum efficiency during the upcoming heat wave. The [Environmental Protection Agency](https://www.epa.gov/section608/stationary-refrigeration) regulates refrigerant handling, requiring certified technicians for any refrigerant work.
+Professional technicians can identify refrigerant leaks, verify proper levels, and ensure your system is charged correctly for maximum efficiency during the upcoming heat wave. The [Environmental Protection Agency](https://www.epa.gov/section608) regulates refrigerant handling, requiring certified technicians for any refrigerant work.
 
 Electrical connections also require professional inspection before extreme heat events. High temperatures increase electrical resistance, and loose connections can cause system failures or even fires during peak operation periods. Professional [preventative maintenance](https://www.viking-hvac.com/preventative-maintenance) includes comprehensive electrical system inspection and tightening.
 

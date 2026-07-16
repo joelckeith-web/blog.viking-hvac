@@ -83,7 +83,7 @@ Signs of refrigerant issues include ice formation on indoor coils, warm air from
 
 ## Ductwork and Airflow Optimization
 
-Your home's ductwork system becomes critically important during extreme heat events. According to the [U.S. Department of Energy](https://www.energy.gov/energysaver/ductwork), poorly sealed or insulated ducts can significantly reduce cooling efficiency—a loss that becomes catastrophic when your system is already operating at maximum capacity.
+Your home's ductwork system becomes critically important during extreme heat events. According to the [U.S. Department of Energy](https://www.energy.gov/energysaver), poorly sealed or insulated ducts can significantly reduce cooling efficiency—a loss that becomes catastrophic when your system is already operating at maximum capacity.
 
 Inspect accessible ductwork for obvious leaks, disconnected joints, or damaged insulation. Pay particular attention to ducts in unconditioned spaces like attics, where temperatures can exceed 130°F during extreme heat. Damaged duct insulation in these areas forces your system to work significantly harder to deliver cool air to living spaces.
 
@@ -103,7 +103,7 @@ Check your electrical panel for any signs of overheating around the breaker that
 
 ## Energy Efficiency and Cost Management
 
-During the forecasted extreme heat period, cooling costs can rise significantly for average-sized homes, making energy efficiency crucial for both comfort and budget management. The [Environmental Protection Agency's Energy Star program](https://www.energystar.gov/products/heating_cooling/smart_thermostats) indicates that proper system maintenance can meaningfully improve efficiency, translating to real savings during peak usage periods.
+During the forecasted extreme heat period, cooling costs can rise significantly for average-sized homes, making energy efficiency crucial for both comfort and budget management. The [Environmental Protection Agency's Energy Star program](https://www.energystar.gov/products/smart_thermostats) indicates that proper system maintenance can meaningfully improve efficiency, translating to real savings during peak usage periods.
 
 Consider your system's age and efficiency ratings. Air conditioning systems have a limited service life in Arizona's harsh climate, and with proper maintenance, some units can provide reliable service well beyond that. However, older systems may struggle with extreme heat and consume noticeably more energy than newer, high-efficiency models.
 

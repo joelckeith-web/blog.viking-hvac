@@ -91,7 +91,7 @@ After yesterday's blowing dust conditions, every HVAC system in the East Valley 
 
 When selecting replacement filters post-storm, consider upgrading to higher-efficiency options temporarily. MERV 8-11 filters provide enhanced dust capture while maintaining adequate airflow for residential systems. However, avoid jumping to MERV 13+ filters without consulting a professional, as these can restrict airflow in systems not designed for high-efficiency filtration.
 
-The [Environmental Protection Agency](https://www.epa.gov/indoor-air-quality-iaq/residential-air-cleaners) provides comprehensive guidance on indoor air quality management during dust events. Their recommendations emphasize the importance of maintaining proper filtration while avoiding system strain from over-filtration.
+The [Environmental Protection Agency](https://www.epa.gov/indoor-air-quality-iaq/air-cleaners-and-air-filters-home) provides comprehensive guidance on indoor air quality management during dust events. Their recommendations emphasize the importance of maintaining proper filtration while avoiding system strain from over-filtration.
 
 Emergency protocols should activate when you discover severely compromised filters or notice significant system performance degradation. Turn off your HVAC system immediately if you observe dust blowing from supply vents, hear grinding noises, or notice a complete loss of cooling capacity. Continued operation under these conditions can cause permanent damage to expensive components like compressors and heat exchangers.
 
@@ -121,7 +121,7 @@ Smart home technology can provide early warning of dust-related problems. Advanc
 
 Landscape modifications around your outdoor unit can significantly reduce dust accumulation during wind events. Creating windbreaks using appropriate desert vegetation or hardscaping can deflect wind-blown particles away from critical system components.
 
-Regular professional maintenance becomes even more critical in Arizona's dusty environment. Systems that receive consistent care, including seasonal coil cleaning and component inspection, demonstrate much better resilience to dust storm damage. The [Energy Star](https://www.energystar.gov/products/heating_cooling) program emphasizes that well-maintained systems operate substantially more efficiently than neglected equipment.
+Regular professional maintenance becomes even more critical in Arizona's dusty environment. Systems that receive consistent care, including seasonal coil cleaning and component inspection, demonstrate much better resilience to dust storm damage. The [Energy Star](https://www.energystar.gov/products) program emphasizes that well-maintained systems operate substantially more efficiently than neglected equipment.
 
 Consider upgrading to newer, more dust-resistant equipment if your current system is approaching the 12-15 year replacement point typical for Arizona installations. Modern systems include improved filtration integration and component protection that better withstands desert conditions.
 

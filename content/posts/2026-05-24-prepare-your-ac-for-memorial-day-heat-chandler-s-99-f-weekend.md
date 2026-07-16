@@ -79,7 +79,7 @@ Test your thermostat settings and consider upgrading to a programmable or smart 
 
 ## Optimal Thermostat Settings for Arizona Heat
 
-Smart thermostat management becomes crucial when temperatures reach 99°F and beyond. The [Department of Energy](https://www.energy.gov/energysaver/thermostats) recommends setting your thermostat to 78°F when home and raising it 7-10 degrees when away. However, Arizona's extreme heat requires modified strategies for optimal comfort and efficiency.
+Smart thermostat management becomes crucial when temperatures reach 99°F and beyond. The [Department of Energy](https://www.energy.gov/energysaver) recommends setting your thermostat to 78°F when home and raising it 7-10 degrees when away. However, Arizona's extreme heat requires modified strategies for optimal comfort and efficiency.
 
 During Memorial Day weekend's 99°F heat, consider setting your thermostat to 78-80°F when home and 82-85°F when away for extended periods. Avoid drastic temperature changes that force your system to work overtime catching up. It's more efficient to maintain steady temperatures than to let your home heat up significantly and then try to cool it down quickly.
 
