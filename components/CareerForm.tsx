@@ -7,6 +7,7 @@ const POSITIONS = [
   'Senior HVAC Service Technician',
   'HVAC Install Technician',
   'Sales Representative',
+  'HVAC Dispatcher',
 ] as const;
 
 const EXPERIENCE_LEVELS = [

@@ -153,7 +153,7 @@ export default function CareersPage() {
           <h2 className="text-3xl md:text-4xl font-extrabold text-[#002147] text-center mb-14">
             Open Positions
           </h2>
-          <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {/* Senior HVAC Service Tech */}
             <div className="rounded-xl border-2 border-[#eb1c23] shadow-lg p-7 relative bg-white">
               <div className="absolute -top-3 left-6 bg-[#eb1c23] text-white text-xs font-bold px-4 py-1 rounded-full uppercase tracking-wide">
@@ -197,6 +197,23 @@ export default function CareersPage() {
               <p className="text-[#002147] font-extrabold text-2xl mb-4">Competitive Pay</p>
               <ul className="text-base text-[#333] space-y-2.5 mb-6">
                 {['Full-time', 'Commission structure', 'HVAC knowledge a plus', 'Full benefits package', 'Chandler / Phoenix, AZ'].map((item) => (
+                  <li key={item} className="flex items-start gap-2.5">
+                    <svg className="w-5 h-5 text-[#004281] mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" /></svg>
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+              <a href="#apply" className="block w-full border-2 border-[#002147] hover:bg-[#002147] hover:text-white text-[#002147] font-bold py-3.5 rounded-lg text-center text-lg transition-colors">
+                Apply Now
+              </a>
+            </div>
+
+            {/* HVAC Dispatcher */}
+            <div className="rounded-xl border border-gray-200 shadow-sm p-7 bg-white">
+              <h3 className="text-xl font-bold text-[#002147] mb-2">HVAC Dispatcher</h3>
+              <p className="text-[#002147] font-extrabold text-2xl mb-4">$21 - $25/hr</p>
+              <ul className="text-base text-[#333] space-y-2.5 mb-6">
+                {['Full-time, in-person', '3+ years HVAC dispatching required', 'Runs the daily dispatch board', 'Full benefits package', 'Chandler / Phoenix, AZ'].map((item) => (
                   <li key={item} className="flex items-start gap-2.5">
                     <svg className="w-5 h-5 text-[#004281] mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" /></svg>
                     <span>{item}</span>
