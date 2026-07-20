@@ -39,7 +39,7 @@ export default function CareersPage() {
             <span className="text-[#eb1c23]">Viking HVAC</span>
           </h1>
           <p className="text-xl md:text-2xl text-white/90 max-w-2xl mx-auto mb-10 leading-relaxed font-medium">
-            Top performers earn $100K+/year with full benefits, a take-home truck, and a real career path. Family-oriented team in the East Valley.
+            Join a family-owned team that&apos;s growing across the East Valley — field, install, dispatch, and sales roles. Great pay, real benefits, and people who actually have your back.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="#apply" className="bg-[#eb1c23] hover:bg-[#c41018] text-white font-bold py-4 px-10 rounded-lg text-lg transition-colors">
@@ -82,17 +82,17 @@ export default function CareersPage() {
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-extrabold text-[#002147] mb-5">
-                Why Techs Choose Viking
+                Why People Love Working Here
               </h2>
               <p className="text-lg text-[#333] mb-10 leading-relaxed">
-                We&apos;re not corporate. We&apos;re not chaotic. We&apos;re building a high-performance team where your skills are valued and your growth matters.
+                We&apos;re not corporate. We&apos;re not chaotic. We&apos;re building a team where your work is valued and your growth matters — whatever role you&apos;re in.
               </p>
               <div className="space-y-7">
                 {[
-                  { title: '$100K+ Earning Potential', desc: 'Competitive hourly + commission + spiffs + monthly contests. Top performers here earn well over six figures.' },
-                  { title: 'Take-Home Truck & Tools', desc: 'Your own company truck, tool credit account, and iPad provided from day one.' },
-                  { title: 'Year-Round Work', desc: 'Full schedule every week, every season. We are not hiring for the summer only — this is a career.' },
-                  { title: 'Career Growth Path', desc: 'Clear path to Lead Tech and Field Supervisor. Ongoing training and professional development.' },
+                  { title: 'Great Pay & Bonuses', desc: 'Competitive pay in every role, plus spiffs, bonuses, and monthly contests. Our top performers earn well over six figures.' },
+                  { title: 'Family-Owned, Not Corporate', desc: 'Decisions made by people you actually know — Nikki and Kelly — not a call center in another state.' },
+                  { title: 'Year-Round Work', desc: 'A full, steady schedule every week, every season. Not a summer gig — a real career.' },
+                  { title: 'Room to Grow', desc: 'Clear paths into lead and management roles across the company, with ongoing training and support.' },
                 ].map((item) => (
                   <div key={item.title} className="flex gap-4">
                     <div className="flex-shrink-0 w-9 h-9 bg-[#eb1c23] rounded-full flex items-center justify-center mt-0.5">
@@ -120,17 +120,17 @@ export default function CareersPage() {
       <section className="py-20 md:py-28 bg-[#002147]">
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="text-3xl md:text-4xl font-extrabold text-white text-center mb-5">
-            What You&apos;ll Be Doing
+            Where You Could Fit
           </h2>
           <p className="text-lg text-white/80 text-center max-w-2xl mx-auto mb-14 leading-relaxed">
-            Residential and commercial HVAC service across the Greater Phoenix area, backed by a team that sets you up for success.
+            From the field to the front office, every role at Viking keeps Phoenix-area homes and businesses comfortable — backed by a team that sets you up to succeed.
           </p>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { title: 'Service & Repair', desc: 'Residential and commercial HVAC systems across the East Valley.', img: IMAGES.techService },
-              { title: 'Advanced Diagnostics', desc: 'Real troubleshooting — not just parts swapping.', img: IMAGES.acUnit },
-              { title: 'Customer Experience', desc: 'Communicate repair options clearly. No upselling junk.', img: IMAGES.techAtWork },
-              { title: 'Team Support', desc: 'Work alongside a team that actually has your back.', img: IMAGES.teamCulture },
+              { title: 'Field Service & Repair', desc: 'Diagnose and fix residential and commercial systems across the East Valley.', img: IMAGES.techService },
+              { title: 'Installation', desc: 'Install new systems start to finish with a crew that takes pride in the work.', img: IMAGES.acUnit },
+              { title: 'Dispatch & Office', desc: 'Run the board, coordinate the day, and keep customers taken care of from first call to finish.', img: IMAGES.teamCulture },
+              { title: 'Sales & Comfort Advising', desc: 'Help homeowners choose the right system with honest, no-pressure guidance.', img: IMAGES.techAtWork },
             ].map((item) => (
               <div key={item.title} className="group rounded-xl overflow-hidden bg-white/10">
                 <div className="h-48 overflow-hidden">
