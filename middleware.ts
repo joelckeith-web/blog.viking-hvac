@@ -15,6 +15,14 @@ export function middleware(request: NextRequest) {
     if (pathname === '/thank-you') {
       return NextResponse.rewrite(new URL('/careers/thank-you', request.url));
     }
+    if (pathname === '/senior-hvac-service-technician') {
+      return NextResponse.rewrite(new URL('/careers/senior-hvac-service-technician', request.url));
+    }
+    // Internal links use the /careers/ path so they also work on preview URLs;
+    // on the careers host, send them to the clean URL.
+    if (pathname === '/careers/senior-hvac-service-technician') {
+      return NextResponse.redirect(new URL('/senior-hvac-service-technician', request.url), 308);
+    }
     if (pathname.startsWith('/api/')) {
       return NextResponse.next();
     }

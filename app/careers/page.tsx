@@ -160,17 +160,17 @@ export default function CareersPage() {
                 Urgently Hiring
               </div>
               <h3 className="text-xl font-bold text-[#002147] mt-3 mb-2">Senior HVAC Service Technician</h3>
-              <p className="text-[#eb1c23] font-extrabold text-2xl mb-4">$75K - $200K/yr</p>
+              <p className="text-[#eb1c23] font-extrabold text-2xl mb-4">Base Pay + Commission + Spiffs</p>
               <ul className="text-base text-[#333] space-y-2.5 mb-6">
-                {['Full-time, year-round', 'Hourly + commission + spiffs', '3+ years experience required', 'EPA Certification required', 'Chandler / Phoenix, AZ'].map((item) => (
+                {['Full-time, year-round', 'Base pay + commission + spiffs', '5+ years experience required', 'EPA Certification required', 'Chandler / Phoenix, AZ'].map((item) => (
                   <li key={item} className="flex items-start gap-2.5">
                     <svg className="w-5 h-5 text-[#eb1c23] mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" /></svg>
                     <span>{item}</span>
                   </li>
                 ))}
               </ul>
-              <a href="#apply" className="block w-full bg-[#eb1c23] hover:bg-[#c41018] text-white font-bold py-3.5 rounded-lg text-center text-lg transition-colors">
-                Apply Now
+              <a href="/careers/senior-hvac-service-technician" className="block w-full bg-[#eb1c23] hover:bg-[#c41018] text-white font-bold py-3.5 rounded-lg text-center text-lg transition-colors">
+                View Role &amp; Apply
               </a>
             </div>
 

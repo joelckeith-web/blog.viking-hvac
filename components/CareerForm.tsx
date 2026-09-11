@@ -18,7 +18,8 @@ const EXPERIENCE_LEVELS = [
   '10+ years',
 ] as const;
 
-export default function CareerForm() {
+// Pass `position` on a single-role page to fix the role and hide the dropdown.
+export default function CareerForm({ position }: { position?: (typeof POSITIONS)[number] } = {}) {
   const router = useRouter();
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState('');
@@ -107,23 +108,27 @@ export default function CareerForm() {
       </div>
 
       {/* Position */}
-      <div>
-        <label htmlFor="position" className="block text-sm font-semibold text-gray-700 mb-1">
-          Position <span className="text-red-600">*</span>
-        </label>
-        <select
-          id="position"
-          name="position"
-          required
-          defaultValue=""
-          className="w-full rounded-lg border border-gray-300 px-4 py-3 text-gray-900 focus:border-[#eb1c23] focus:ring-2 focus:ring-[#eb1c23] focus:ring-opacity-30 outline-none transition bg-white"
-        >
-          <option value="" disabled>Select a position</option>
-          {POSITIONS.map((pos) => (
-            <option key={pos} value={pos}>{pos}</option>
-          ))}
-        </select>
-      </div>
+      {position ? (
+        <input type="hidden" name="position" value={position} />
+      ) : (
+        <div>
+          <label htmlFor="position" className="block text-sm font-semibold text-gray-700 mb-1">
+            Position <span className="text-red-600">*</span>
+          </label>
+          <select
+            id="position"
+            name="position"
+            required
+            defaultValue=""
+            className="w-full rounded-lg border border-gray-300 px-4 py-3 text-gray-900 focus:border-[#eb1c23] focus:ring-2 focus:ring-[#eb1c23] focus:ring-opacity-30 outline-none transition bg-white"
+          >
+            <option value="" disabled>Select a position</option>
+            {POSITIONS.map((pos) => (
+              <option key={pos} value={pos}>{pos}</option>
+            ))}
+          </select>
+        </div>
+      )}
 
       {/* Experience */}
       <div>
