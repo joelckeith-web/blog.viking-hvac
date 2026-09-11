@@ -52,7 +52,7 @@ export default async function RootLayout({
         <LocalBusinessSchema />
         <WebSiteSchema />
         {isLp && <GoogleTagManagerHead />}
-        {!isLp && META_PIXEL_ID && (
+        {META_PIXEL_ID && (
           <Script id="meta-pixel" strategy="afterInteractive">
             {`
               !function(f,b,e,v,n,t,s)
@@ -73,7 +73,7 @@ export default async function RootLayout({
           src="//script.crazyegg.com/pages/scripts/0114/6671.js"
           strategy="lazyOnload"
         />
-        {!isLp && META_PIXEL_ID && (
+        {META_PIXEL_ID && (
           <noscript>
             <img
               height="1"
