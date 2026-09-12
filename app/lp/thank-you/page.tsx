@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Script from 'next/script';
 import { siteConfig } from '@/lib/site-config';
 
 export const metadata: Metadata = {
@@ -10,8 +11,21 @@ export const metadata: Metadata = {
 };
 
 export default function ThankYouPage() {
+  const pixelId = process.env.NEXT_PUBLIC_META_PIXEL_ID;
+
   return (
     <main className="min-h-[70vh] bg-gray-50 flex items-center justify-center px-4 py-16">
+      {/* Meta Pixel Lead Event */}
+      {pixelId && (
+        <Script id="meta-pixel-lead" strategy="afterInteractive">
+          {`
+            if (typeof fbq === 'function') {
+              fbq('track', 'Lead');
+            }
+          `}
+        </Script>
+      )}
+
       <div className="bg-white rounded-2xl shadow-xl max-w-xl w-full p-8 md:p-12 text-center">
         <div className="w-20 h-20 mx-auto mb-6 rounded-full bg-green-100 flex items-center justify-center">
           <svg
