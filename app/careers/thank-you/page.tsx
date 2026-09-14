@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 };
 
 export default function ThankYouPage() {
-  const pixelId = process.env.NEXT_PUBLIC_META_PIXEL_ID;
+  const pixelId = process.env.NEXT_PUBLIC_META_PIXEL_ID?.trim();
 
   return (
     <div className="min-h-screen bg-[var(--color-brand-dark)] flex items-center justify-center px-4">

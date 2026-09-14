@@ -11,7 +11,9 @@ import {
 } from "@/components/global/GoogleTagManager";
 import { siteConfig } from "@/lib/site-config";
 
-const META_PIXEL_ID = process.env.NEXT_PUBLIC_META_PIXEL_ID;
+// Trimmed: the Vercel value once carried a trailing newline, which split the
+// string literal in fbq('init', ...) and killed the whole pixel script.
+const META_PIXEL_ID = process.env.NEXT_PUBLIC_META_PIXEL_ID?.trim();
 
 export const metadata: Metadata = {
   title: {
