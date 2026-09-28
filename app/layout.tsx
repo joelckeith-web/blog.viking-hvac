@@ -15,6 +15,11 @@ import { siteConfig } from "@/lib/site-config";
 // string literal in fbq('init', ...) and killed the whole pixel script.
 const META_PIXEL_ID = process.env.NEXT_PUBLIC_META_PIXEL_ID?.trim();
 
+// Viking's GA4 web stream (property 266245062). Loaded directly on blog. and
+// careers. so those hosts report into GA4 without pulling in the main-site GTM
+// container and its Ads tags. lp. keeps GTM instead.
+const GA4_MEASUREMENT_ID = "G-7MBYP18BD3";
+
 export const metadata: Metadata = {
   title: {
     default: `Blog | ${siteConfig.shortName}`,
@@ -54,6 +59,22 @@ export default async function RootLayout({
         <LocalBusinessSchema />
         <WebSiteSchema />
         {isLp && <GoogleTagManagerHead />}
+        {!isLp && (
+          <>
+            <Script
+              src={`https://www.googletagmanager.com/gtag/js?id=${GA4_MEASUREMENT_ID}`}
+              strategy="afterInteractive"
+            />
+            <Script id="ga4" strategy="afterInteractive">
+              {`
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', '${GA4_MEASUREMENT_ID}');
+              `}
+            </Script>
+          </>
+        )}
         {META_PIXEL_ID && (
           <Script id="meta-pixel" strategy="afterInteractive">
             {`
