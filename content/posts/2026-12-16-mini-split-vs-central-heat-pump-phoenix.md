@@ -82,7 +82,7 @@ The ducts have to be up to the job, though. ENERGY STAR's list of [signs of poor
 
 ### When a mini-split makes sense
 
-Mini-splits are [specifically designed for homes or sections of homes that do not have ductwork](https://www.energystar.gov/products/ductless_heating_cooling). They are increasingly being used in a garage, casita or addition where extending ductwork or heating and cooling capacity is difficult. They are also increasingly used in a room next to unconditioned space, such as a room over the garage, in rooms with hot or cold spots, and in older homes with no ductwork.
+Mini-splits are [specifically designed for homes or sections of homes that do not have ductwork](https://www.energystar.gov/products/ductless_heating_cooling). They are increasingly being used in a garage, casita or addition where extending ductwork or heating and cooling capacity is difficult. They are also increasingly used in a room next to unconditioned space, such as a room over the garage, in rooms with hot or cold spots, and in older homes with no ductwork. Our post on [where ductless mini-splits fit in a Phoenix home](https://blog.viking-hvac.com/blog/ductless-mini-splits-phoenix) goes room by room.
 
 **Key Takeaway:** A central heat pump fits a home with ducts in good condition when you want the whole house heated and cooled together. A mini-split fits spaces without ducts, such as a garage, casita or addition. Mini-splits are also increasingly used in rooms with hot or cold spots.
 

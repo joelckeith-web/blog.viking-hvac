@@ -96,7 +96,7 @@ Your furnace moves air across its heat exchanger, the part that passes heat from
 
 ## What the Owner's Manual Lets You Check
 
-If the furnace won't try to start at all, a [tripped breaker or a thermostat problem](https://www.carrier.com/us/en/residential/hvac-resources/furnaces/troubleshooting-a-furnace/) may be the reason. For a furnace that tries to run and then quits, the owner's manual is your guide to the safe steps. The user's manual mentioned above covers one gas furnace model, but it shows how a manual lays those steps out.
+If the furnace won't try to start at all, a [tripped breaker or a thermostat problem](https://www.carrier.com/us/en/residential/hvac-resources/furnaces/troubleshooting-a-furnace/) may be the reason. Our post on [safe checks when a furnace won't turn on](https://blog.viking-hvac.com/blog/furnace-wont-turn-on-phoenix) walks through those. For a furnace that tries to run and then quits, the owner's manual is your guide to the safe steps. The user's manual mentioned above covers one gas furnace model, but it shows how a manual lays those steps out.
 
 Start with the air filter. That Goodman manual tells owners, ["As a homeowner, it is your personal responsibility to keep air filters clean."](https://www.manualslib.com/manual/1264011/Goodman-Gmec96.html?page=7) A [clogged filter restricts airflow and can cause the system to shut down](https://www.carrier.com/us/en/residential/hvac-resources/furnaces/troubleshooting-a-furnace/), so clean or replace the filter if it looks dirty.
 
