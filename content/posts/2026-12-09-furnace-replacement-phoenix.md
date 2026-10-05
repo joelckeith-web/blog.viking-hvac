@@ -30,7 +30,7 @@ schema:
   type: "Article"
   faqItems:
     - question: "How do I know if my furnace needs to be replaced?"
-      answer: "Look at the pattern instead of one bad day. ENERGY STAR lists several signs that it may be time to replace heating equipment. They include frequent repairs combined with rising energy bills, rooms that are too hot or too cold, a noisy system and the age of the equipment. These are signs, not proof, so have a technician diagnose the furnace before you decide. A cracked heat exchanger is a safety issue, because it can cause the equipment to operate less safely."
+      answer: "Look at the pattern instead of one bad day. ENERGY STAR lists several signs that it may be time to replace heating equipment. They include frequent repairs combined with rising energy bills, rooms that are too hot or too cold, a noisy system and the age of the equipment. The factors our technicians weigh when you start thinking about replacement are whether the furnace is 15 years old or older, whether you're repairing it every heating season, any carbon monoxide concerns, and hot and cold spots. These are signs, not proof, so have a technician diagnose the furnace before you decide. A cracked heat exchanger is a safety issue, because it can cause the equipment to operate less safely."
     - question: "Is it better to repair or replace an old furnace?"
       answer: "It depends on what is wrong and how often it has gone wrong. A single failed part is not one of ENERGY STAR's replacement signs. Frequent repairs with rising energy bills are, and so are rooms that stay too hot or too cold. A problem with a safety part like the heat exchanger needs a technician's inspection before you decide, because a cracked heat exchanger can cause the equipment to operate less safely. It also helps to ask your technician what failed, whether it is likely to fail again, and whether the rest of the system is in good shape."
     - question: "What does a yellow flame in my furnace mean?"
@@ -56,7 +56,7 @@ Viking Heating & Air Conditioning is a family-owned Chandler company (Arizona RO
 
 ## What Are the Signs Your Furnace Is Failing?
 
-Because Valley winters are mild, a furnace can sit unused for months and then get asked to work hard on the first cold night. That makes it easy to miss slow changes. ENERGY STAR publishes a short list of [signs it may be time to replace heating and cooling equipment](https://www.energystar.gov/saveathome/heating-cooling/replace). Most of them apply directly to a furnace.
+Because Valley winters are mild, a furnace can sit unused for months and then get asked to work hard on the first cold night. That makes it easy to miss slow changes. ENERGY STAR publishes a short list of [signs it may be time to replace heating and cooling equipment](https://www.energystar.gov/saveathome/heating-cooling/replace). Most of them apply directly to a furnace. Our technicians weigh a similar set of factors when you start thinking about replacement: whether the furnace is 15 years old or older, whether you're repairing it every heating season, any carbon monoxide concerns, and hot and cold spots in the house.
 
 ### Repeat repairs and rising bills
 
@@ -134,7 +134,7 @@ There is no single right answer. The best choice depends on the age of your air 
 
 ### How do I know if my furnace needs to be replaced?
 
-Look at the pattern instead of one bad day. ENERGY STAR lists several signs that it may be time to replace heating equipment. They include frequent repairs combined with rising energy bills, rooms that are too hot or too cold, a noisy system and the age of the equipment. These are signs, not proof, so have a technician diagnose the furnace before you decide. A cracked heat exchanger is a safety issue, because it can cause the equipment to operate less safely.
+Look at the pattern instead of one bad day. ENERGY STAR lists several signs that it may be time to replace heating equipment. They include frequent repairs combined with rising energy bills, rooms that are too hot or too cold, a noisy system and the age of the equipment. The factors our technicians weigh when you start thinking about replacement are whether the furnace is 15 years old or older, whether you're repairing it every heating season, any carbon monoxide concerns, and hot and cold spots. These are signs, not proof, so have a technician diagnose the furnace before you decide. A cracked heat exchanger is a safety issue, because it can cause the equipment to operate less safely.
 
 ### Is it better to repair or replace an old furnace?
 

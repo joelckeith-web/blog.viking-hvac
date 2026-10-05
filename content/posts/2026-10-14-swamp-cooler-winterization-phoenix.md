@@ -34,7 +34,7 @@ schema:
     - question: "When should I shut down my swamp cooler for the season?"
       answer: "Shut it down once you have stopped using it for cooling and before you start running your heat. There is no single date that fits every home. If your cooler is centrally ducted, closing its dampers is part of the shutdown, so finish before heating season begins."
     - question: "How do I drain a swamp cooler?"
-      answer: "Turn off the power first, then close the valve that feeds the cooler's water line. Champion's owner's manual says to drain all of the water out of the cooler and the water supply line at the end of the season. It also says to keep the line disconnected from both the unit and the water supply. After that, empty the pan, let it dry completely and clean off mineral deposits, especially around the fan parts, the spray nozzles and the tray."
+      answer: "Turn off the power first, then close the valve that feeds the cooler's water line. Champion's owner's manual says to drain all of the water out of the cooler and the water supply line at the end of the season. It also says to keep the line disconnected from both the unit and the water supply. When our technicians winterize a cooler, we also blow out the supply line. After that, empty the pan, let it dry completely and clean off mineral deposits, especially around the fan parts, the spray nozzles and the tray."
     - question: "Should I cover my swamp cooler in the winter?"
       answer: "Yes. A winter cover keeps dirt and dust from getting inside the unit, and the Department of Energy recommends covering the entire cooler with a plastic or canvas cover. A cover also helps protect the life of the cabinet's finish during long periods when the cooler is not in use. Choose a cover made for your unit's size. If your cooler is mounted in a window, the Department of Energy says to remove it completely and store it elsewhere for the winter."
     - question: "Should I replace swamp cooler pads before winter?"
@@ -73,7 +73,7 @@ There are four practical reasons to shut the cooler down instead of switching it
 
 Start with the electricity. Make sure the power is off before any maintenance. For a long shutdown, unplug the motor and pump inside the cooler, as [Champion's owner's manual](https://www.manualslib.com/manual/4000870/Champion-5500dd.html?page=6) directs. The pump moves water from the pan up to the pads, and the motor drives the blower fan, so unplugging both means nothing can switch on while the cooler sits dry.
 
-Next, [shut off the water line](https://basc.pnnl.gov/resource-guides/evaporative-cooling-systems) for the winter. At the end of the season, [drain all the water out of the cooler and the supply line](https://www.manualslib.com/manual/4000870/Champion-5500dd.html?page=6). Then keep the line disconnected from both the unit and the water supply so it does not freeze. In practice, you close the shutoff valve that feeds the cooler, disconnect the small supply line at both ends, and let it drain empty.
+Next, [shut off the water line](https://basc.pnnl.gov/resource-guides/evaporative-cooling-systems) for the winter. At the end of the season, [drain all the water out of the cooler and the supply line](https://www.manualslib.com/manual/4000870/Champion-5500dd.html?page=6). Then keep the line disconnected from both the unit and the water supply so it does not freeze. In practice, you close the shutoff valve that feeds the cooler, disconnect the small supply line at both ends, and let it drain empty. When our technicians winterize a cooler, we also blow out the water supply line.
 
 If you can't find the valve that feeds your cooler, or the line won't come loose without force, stop there and have a technician take a look. If your cooler sits on the roof, think honestly about whether you're comfortable working up there. Every step in this guide can wait for a professional visit, and none of them is worth a risky climb.
 
@@ -99,7 +99,7 @@ While the cooler is open, take a few minutes to look over its working parts. You
 
 **Float.** The float is the part the cooler's [water line attaches to](https://www.manualslib.com/manual/4000870/Champion-5500dd.html?page=6). Make sure the [float operates properly](https://basc.pnnl.gov/resource-guides/evaporative-cooling-systems), and check that it moves freely and isn't crusted with scale.
 
-**Belt.** On coolers with a belt-driven blower, the belt should be [inspected for proper tension](https://basc.pnnl.gov/resource-guides/evaporative-cooling-systems) in the spring. At shutdown, note the belt's condition so you know what to have checked in spring.
+**Belt and bearing.** On coolers with a belt-driven blower, our technicians remove the blower belt and oil the bearing as part of the winter shutdown. Note the belt's condition when it comes off. When it goes back on in the spring, the belt should be [inspected for proper tension](https://basc.pnnl.gov/resource-guides/evaporative-cooling-systems).
 
 ## Cover the Cooler and Close the Damper
 
@@ -117,14 +117,14 @@ When warm weather returns, you'll reverse the winter steps by removing the cover
 
 - Clean the pump, which is necessary once a year at start-up.
 - Replace or clean the pads.
-- Check the belt tension and adjust it if needed.
-- Oil the blower bearings once a year, and the motor too if it has oil lines, using the oil type your manual names. Champion's manual also warns, "Do not over oil."
+- Put the blower belt back on if it was removed at shutdown, then check its tension and adjust it if needed.
+- Oil the blower bearings once a year, and the motor too if it has oil lines, using the oil type your manual names. If the bearings were oiled at shutdown, they don't need it again at start-up. Champion's manual also warns, "Do not over oil."
 - Make sure the bleed-off valve isn't clogged.
 - Clean the cabinet and inspect it for damage.
 
 For a closer look at in-season care and common repairs, see our guide to [swamp cooler maintenance and repairs in Gilbert](https://blog.viking-hvac.com/blog/swamp-cooler-maintenance-repairs-gilbert-az).
 
-**Key Takeaway:** Spring start-up covers the pump, the pads, the belt, oiling, the bleed-off valve and the cabinet, so the notes you make during your fall shutdown help you know what to have ready.
+**Key Takeaway:** Spring start-up covers the pump, the pads, the belt, oiling if it wasn't done at shutdown, the bleed-off valve and the cabinet, so the notes you make during your fall shutdown help you know what to have ready.
 
 ## Should You Winterize It Yourself or Call a Pro?
 
@@ -146,7 +146,7 @@ Shut it down once you have stopped using it for cooling and before you start run
 
 ### How do I drain a swamp cooler?
 
-Turn off the power first, then close the valve that feeds the cooler's water line. Champion's owner's manual says to drain all of the water out of the cooler and the water supply line at the end of the season. It also says to keep the line disconnected from both the unit and the water supply. After that, empty the pan, let it dry completely and clean off mineral deposits, especially around the fan parts, the spray nozzles and the tray.
+Turn off the power first, then close the valve that feeds the cooler's water line. Champion's owner's manual says to drain all of the water out of the cooler and the water supply line at the end of the season. It also says to keep the line disconnected from both the unit and the water supply. When our technicians winterize a cooler, we also blow out the supply line. After that, empty the pan, let it dry completely and clean off mineral deposits, especially around the fan parts, the spray nozzles and the tray.
 
 ### Should I cover my swamp cooler in the winter?
 

@@ -66,7 +66,7 @@ Defrost mode clears that frost and ice off the outdoor coil. An [automatic contr
 
 During defrost, [the outdoor fan stops](https://resource.bakerdist.com/is/content/Watscocom/Gemaire/rheem_rqpm-a024jk000_article_1369225428406_en_uci.pdf), so the steady fan noise goes away for a short time. The unit may make some strange hissing or gurgling noises. You may also hear [a whooshing sound as the system shifts modes](https://www.lennox.com/residential/lennox-life/consumer/heat-pump-defrost-cycle). These sounds are normal.
 
-Then comes the steam. While the heat pump is defrosting, a cloud of steam may rise from the outdoor unit for a short time, and that is normal and harmless. The steam is water vapor.
+Then comes the steam. Our technicians explain it this way: when a heat pump goes into defrost, it heats its frozen outdoor coil, and that is what causes the steam. The cloud may rise from the outdoor unit for a short time, and that is normal and harmless. The steam is water vapor.
 
 You may also see water running out from under the unit. That water is melted frost. It must drain away from the unit to prevent damage from ice buildup.
 

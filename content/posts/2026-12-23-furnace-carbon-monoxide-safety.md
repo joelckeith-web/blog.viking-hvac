@@ -38,7 +38,7 @@ schema:
     - question: "What should I do if my carbon monoxide alarm goes off?"
       answer: "Follow the CPSC's steps. Do not try to find the source of the CO. Immediately move outside to fresh air, then call your emergency services, fire department, or 911. After calling 911, do a head count to check that everyone is accounted for. Do not go back inside until the emergency responders have given you permission. If the source turns out to be a malfunctioning appliance, the CPSC says not to operate it until it has been properly serviced by trained personnel. If authorities allow you to return to your home and your alarm reactivates within a 24 hour period, the CPSC says to repeat the first three steps: move outside, call 911, do a head count, and stay out until the emergency responders give you permission. If that happens, the CPSC also says to call a qualified appliance technician to investigate for sources of CO from all fuel burning equipment and appliances, and inspect for proper operation of this equipment."
     - question: "What are the symptoms of carbon monoxide poisoning?"
-      answer: "The CDC lists the most common symptoms as headache, dizziness, weakness, upset stomach, vomiting, chest pain, and confusion. The CPSC notes that the first symptoms of low to moderate CO poisoning are similar to the flu, but without the fever. The CDC also warns that people who are sleeping, drunk, or under the influence of other substances can die from CO poisoning before they have symptoms. If you suspect CO poisoning, the CPSC says to get outside to fresh air immediately, and then call 911."
+      answer: "The CDC lists the most common symptoms as headache, dizziness, weakness, upset stomach, vomiting, chest pain, and confusion. The CPSC lists headache, fatigue, shortness of breath, nausea and dizziness as symptoms of low to moderate CO poisoning, and notes that the first symptoms are similar to the flu, but without the fever. The CDC also warns that people who are sleeping, drunk, or under the influence of other substances can die from CO poisoning before they have symptoms. If you suspect CO poisoning, the CPSC says to get outside to fresh air immediately, and then call 911."
     - question: "Is smelling gas the same as a carbon monoxide problem?"
       answer: "No. Carbon monoxide has no color or smell, so a gas odor is a separate warning with its own steps. The CPSC's advice is that if you smell gas or hear gas leaking, you should leave your home immediately and contact local gas authorities from outside the home. The CPSC also says not to operate any electronics, such as lights or phones, before leaving. A CO alarm means something different: get outside to fresh air immediately and then call 911. Both situations start with getting everyone out of the house."
     - question: "How often should a gas furnace be inspected?"
@@ -74,7 +74,7 @@ If you'd like a broader look at how the different home heating systems work, our
 
 One warning sign is a CO alarm. Since CO has no color or smell, an alarm is the tool built to notice it for you. As the CPSC says, never ignore an alarm when it sounds, and follow the steps in the section below.
 
-Your body can also give you clues. The CDC lists the most common symptoms of CO poisoning as headache, dizziness, weakness, upset stomach, vomiting, chest pain, and confusion. The CPSC adds that the first symptoms of low to moderate CO poisoning "are similar to the flu (but without the fever)." The CDC also notes that infants, the elderly, and people with chronic heart disease, anemia, or breathing problems are more likely to get sick from CO.
+Your body can also give you clues. The CDC lists the most common symptoms of CO poisoning as headache, dizziness, weakness, upset stomach, vomiting, chest pain, and confusion. The CPSC [lists headache, fatigue, shortness of breath, nausea and dizziness](https://www.cpsc.gov/Safety-Education/Safety-Education-Centers/Carbon-Monoxide-Information-Center/Carbon-Monoxide-Questions-and-Answers) as symptoms of low to moderate CO poisoning. It adds that the first symptoms of low to moderate CO poisoning "are similar to the flu (but without the fever)." The CDC also notes that infants, the elderly, and people with chronic heart disease, anemia, or breathing problems are more likely to get sick from CO.
 
 Symptoms aren't a reliable early warning for everyone. The CDC warns that "people who are sleeping, drunk, or under the influence of other substances can die from CO poisoning before they have symptoms." This is one more reason to keep working alarms outside the bedrooms, as the next section explains. If you suspect CO poisoning, the [CPSC](https://www.cpsc.gov/Safety-Education/Safety-Education-Centers/Carbon-Monoxide-Information-Center) says to "get outside to fresh air immediately, and then call 911."
 
@@ -84,7 +84,7 @@ The venting can have problems too. According to the CPSC, an inspector should ch
 
 ## Where Should CO Alarms Go, and How Do You Test Them?
 
-Alarm placement follows a simple pattern. Here is what the CPSC and the U.S. Fire Administration recommend:
+If your home has a gas furnace and no CO alarm, our technicians' advice is to get one. Alarm placement follows a simple pattern. Here is what the CPSC and the U.S. Fire Administration recommend:
 
 - Install battery-operated CO alarms or CO alarms with battery backup [on every level of the home and outside sleeping areas](https://www.cpsc.gov/Safety-Education/Safety-Education-Centers/Carbon-Monoxide-Information-Center/Carbon-Monoxide-Questions-and-Answers).
 - Place them in a central location outside each separate sleeping area.
@@ -122,7 +122,7 @@ The CPSC's instruction is: "If you smell gas or hear gas leaking, leave your hom
 
 The safety agencies agree on yearly checkups for gas heating equipment. The CDC says to have your heating system, water heater and any other gas, oil or coal burning appliances serviced by a qualified technician every year. The [CPSC](https://www.cpsc.gov/Safety-Education/Safety-Education-Centers/Carbon-Monoxide-Information-Center/Home-Heating-Equipment) agrees. It urges a yearly professional inspection of all fuel-burning home heating systems, including furnaces, boilers, fireplaces, wood stoves, water heaters, chimneys, flues and vents.
 
-A yearly check gives a technician the chance to look at the heat exchanger, the flue connections, and the vent. It also gives you a chance to ask questions about your alarms while someone is there.
+When our technicians inspect a gas furnace, we check for cracked or damaged heat exchangers, improper combustion, blocked or damaged venting, failed safety controls, gas leaks, and improper installation or operation. The visit also gives you a chance to ask questions about your alarms while someone is there.
 
 Our post on [heating system maintenance for Chandler winters](https://blog.viking-hvac.com/blog/heating-system-maintenance-chandler-winter) explains what a furnace tune-up usually involves. If your furnace hasn't had its [yearly inspection](https://viking-hvac.com/residential/preventative-maintenance/) yet, call us and we'll get you on the schedule.
 
@@ -148,7 +148,7 @@ Follow the CPSC's steps. Do not try to find the source of the CO. Immediately mo
 
 ### What are the symptoms of carbon monoxide poisoning?
 
-The CDC lists the most common symptoms as headache, dizziness, weakness, upset stomach, vomiting, chest pain, and confusion. The CPSC notes that the first symptoms of low to moderate CO poisoning are similar to the flu, but without the fever. The CDC also warns that people who are sleeping, drunk, or under the influence of other substances can die from CO poisoning before they have symptoms. If you suspect CO poisoning, the CPSC says to get outside to fresh air immediately, and then call 911.
+The CDC lists the most common symptoms as headache, dizziness, weakness, upset stomach, vomiting, chest pain, and confusion. The CPSC lists headache, fatigue, shortness of breath, nausea and dizziness as symptoms of low to moderate CO poisoning, and notes that the first symptoms are similar to the flu, but without the fever. The CDC also warns that people who are sleeping, drunk, or under the influence of other substances can die from CO poisoning before they have symptoms. If you suspect CO poisoning, the CPSC says to get outside to fresh air immediately, and then call 911.
 
 ### Is smelling gas the same as a carbon monoxide problem?
 

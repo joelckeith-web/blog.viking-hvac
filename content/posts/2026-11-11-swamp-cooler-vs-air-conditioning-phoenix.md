@@ -56,7 +56,7 @@ We work on both [swamp coolers](https://viking-hvac.com/swamp-cooler-services/) 
 
 ## How a Swamp Cooler Cools Your Home
 
-A swamp cooler is a fairly simple machine. The Department of Energy's [guide to evaporative coolers](https://basc.pnnl.gov/resource-guides/evaporative-cooling-systems) describes a direct evaporative cooler as a box-like housing that holds a large blower fan and thick, sponge-like pads. The fan pulls in outside air and pushes it through the wet pads. As the air flows through, some of the water evaporates, and that lowers the air's temperature before it enters your home.
+A swamp cooler is a fairly simple machine. The Department of Energy's [guide to evaporative coolers](https://basc.pnnl.gov/resource-guides/evaporative-cooling-systems) describes a direct evaporative cooler as a box-like housing that holds a large blower fan and thick, sponge-like pads. The fan pulls in outside air and pushes it through the wet pads. As the air flows through, some of the water evaporates, and that lowers the air's temperature before it enters your home. In our technicians' experience, a swamp cooler can cool the air passing through it by up to about 20 degrees Fahrenheit. Because it cools with water, it also adds humidity to that air.
 
 The biggest difference from air conditioning is where the air goes. Air from an evaporative cooler is not recirculated inside the house. Instead, it is blown through the house and needs a way to exit. Doors or windows must be opened to give it a path out, or ceiling exhaust vents can be installed instead.
 
@@ -110,7 +110,7 @@ Running both does mean looking after both. The swamp cooler still needs its wate
 
 No single answer is right for every house. These questions can help you work out which system, or which mix of the two, fits the way you live:
 
-- **How does your household handle the humid part of summer?** Refrigerated air removes humidity as it cools, while a swamp cooler works best when the air is dry.
+- **How does your household handle the humid part of summer?** Refrigerated air removes humidity as it cools. A swamp cooler adds humidity to the air it cools, and it works best when the air is dry.
 - **Are you comfortable keeping windows open or adding exhaust vents?** A swamp cooler needs a path for its air to leave the house.
 - **How do you feel about water use and hands-on upkeep?** A swamp cooler needs a water supply, care at the start and end of each season, and, where the local water is high in minerals, a way to limit mineral buildup.
 - **Do you like fresh outdoor air moving through the house?** A swamp cooler brings in a steady stream of it whenever it runs.
