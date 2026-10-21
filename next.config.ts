@@ -41,10 +41,12 @@ const securityHeaders = [
     key: "Content-Security-Policy",
     value: [
       "default-src 'self'",
-      // Scripts: self + Next.js inline/eval + Meta Pixel loader
-      "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://connect.facebook.net",
-      // Styles: self + inline (Tailwind)
-      "style-src 'self' 'unsafe-inline'",
+      // Scripts: self + Next.js inline/eval + Meta Pixel loader + Typeform embed SDK (lp. quote page)
+      "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://connect.facebook.net https://embed.typeform.com",
+      // Frames: the Typeform form iframe on the lp. quote page
+      "frame-src 'self' https://form.typeform.com",
+      // Styles: self + inline (Tailwind) + Typeform widget stylesheet
+      "style-src 'self' 'unsafe-inline' https://embed.typeform.com",
       // Images: self + the CDNs/hosts the Viking blog references.
       // lh3/*.googleusercontent.com: Google Drive-hosted post images
       // (~49 per page) — MUST be allowed or hero/inline images break.
