@@ -54,7 +54,11 @@ export function middleware(request: NextRequest) {
 
   // ── Default (blog.viking-hvac.com / www / apex) ────────────
   // Block /lp/* on non-lp subdomains so internal routes don't leak to SEO.
-  if (pathname.startsWith('/lp/') || pathname === '/lp') {
+  // Preview deployments are left open so LPs can be reviewed before merge.
+  if (
+    (process.env.VERCEL_ENV || process.env.NEXT_PUBLIC_VERCEL_ENV) !== 'preview' &&
+    (pathname.startsWith('/lp/') || pathname === '/lp')
+  ) {
     return NextResponse.rewrite(new URL('/', request.url));
   }
 
