@@ -15,7 +15,7 @@ const TYPEFORM_ID = 'F95ggz7H';
 
 export default function QuoteLP() {
   return (
-    <section className="relative bg-[#001530] text-white overflow-hidden">
+    <section className="relative flex-1 bg-[#001530] text-white overflow-hidden">
       <img
         src={vikingImages.truckFleet}
         alt=""

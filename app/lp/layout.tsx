@@ -18,8 +18,10 @@ export default function LandingPagesLayout({
   const currentYear = new Date().getFullYear();
 
   return (
-    <>
-      {children}
+    // Fill the viewport so short LPs (e.g. /quote) don't leave a white band
+    // under the footer.
+    <div className="min-h-screen flex flex-col bg-[#001530]">
+      <div className="flex-1 flex flex-col">{children}</div>
 
       <footer className="bg-[#001530] text-white border-t border-white/10">
         <div className="max-w-5xl mx-auto px-6 py-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
@@ -54,6 +56,6 @@ export default function LandingPagesLayout({
           </nav>
         </div>
       </footer>
-    </>
+    </div>
   );
 }
