@@ -51,7 +51,8 @@ export default async function RootLayout({
 }) {
   const h = await headers();
   const host = h.get("host") || "";
-  const isLp = host.startsWith("lp.");
+  // x-viking-lp is set by middleware for /lp routes opened on preview URLs.
+  const isLp = host.startsWith("lp.") || h.get("x-viking-lp") === "1";
 
   return (
     <html lang="en">

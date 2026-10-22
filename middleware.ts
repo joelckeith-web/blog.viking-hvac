@@ -62,6 +62,13 @@ export function middleware(request: NextRequest) {
     return NextResponse.rewrite(new URL('/', request.url));
   }
 
+  // Preview: render LPs with the same chrome they get on lp.
+  if (pathname.startsWith('/lp/') || pathname === '/lp') {
+    const requestHeaders = new Headers(request.headers);
+    requestHeaders.set('x-viking-lp', '1');
+    return NextResponse.next({ request: { headers: requestHeaders } });
+  }
+
   return NextResponse.next();
 }
 
