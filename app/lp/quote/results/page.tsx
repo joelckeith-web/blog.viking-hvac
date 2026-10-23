@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { Poppins } from 'next/font/google';
 import { siteConfig } from '@/lib/site-config';
 import { QuoteResultsReveal } from '@/components/landing/QuoteResultsReveal';
-import { FINANCING_DISCLAIMER, tierForTons } from '@/lib/quote-tiers';
+import { FINANCING_DISCLAIMER, categoryLabel, tierForTons } from '@/lib/quote-tiers';
 
 export const metadata: Metadata = {
   title: 'Your New System Estimate | Viking HVAC',
@@ -48,11 +48,11 @@ function PhoneIcon() {
 export default async function QuoteResults({
   searchParams,
 }: {
-  searchParams: Promise<{ size?: string; sqft?: string }>;
+  searchParams: Promise<{ category?: string; size?: string }>;
 }) {
-  const { size, sqft } = await searchParams;
+  const { category, size } = await searchParams;
   const tier = tierForTons(size);
-  const homeSqft = Number(sqft) > 0 ? Math.round(Number(sqft)).toLocaleString('en-US') : null;
+  const system = categoryLabel(category);
 
   return (
     <div className={`${poppins.className} flex-1 bg-white text-[#152350]`}>
@@ -165,13 +165,13 @@ export default async function QuoteResults({
             {tier ? (
               <>
                 <h2 className="text-center text-3xl sm:text-5xl font-black leading-tight mb-10">
-                  {homeSqft ? `For about ${homeSqft} sq ft` : 'For a home your size'}
+                  {system ? `Your new ${system.toLowerCase()}` : 'For a home your size'}
                 </h2>
                 <div className="grid overflow-hidden rounded-2xl border-2 border-[#E1243B] bg-white md:grid-cols-2">
                   <img src="/lp/quote/crane-lift-install.jpg" alt={`Viking crew installing a new AC system`} className="h-full min-h-64 w-full object-cover" />
                   <div className="p-8 sm:p-10">
                     <p className="text-sm font-extrabold text-[#EB2127]">RECOMMENDED SIZE</p>
-                    <h3 className="text-4xl font-black mb-1">{tier.tons}-ton system</h3>
+                    <h3 className="text-4xl font-black mb-1">{tier.tons}-ton {system ? system.toLowerCase() : 'system'}</h3>
                     <p className="mb-6">Sized for homes up to {tier.maxSqft.toLocaleString('en-US')} sq ft</p>
                     <div className="rounded-2xl bg-[#021735] text-white p-6 mb-6">
                       <div className="text-5xl font-black leading-none">

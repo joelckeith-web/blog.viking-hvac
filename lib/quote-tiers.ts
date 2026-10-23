@@ -34,6 +34,28 @@ export function tierForTons(tons: string | undefined): QuoteTier | null {
   return QUOTE_TIERS.find((t) => t.tons === tons) ?? null;
 }
 
+/** Typeform "How do you heat and cool your home?" choice refs → URL category. */
+export const SYSTEM_CATEGORIES: Record<string, { slug: string; label: string }> = {
+  'sys-heat-pump': { slug: 'heat-pump-system', label: 'Electric heat pump system' },
+  'sys-gas-furnace-ac': { slug: 'gas-furnace-ac', label: 'Gas furnace and AC' },
+  'sys-gas-package': { slug: 'gas-package', label: 'Gas package unit' },
+  'sys-heat-pump-package': { slug: 'heat-pump-package', label: 'Electric heat pump package unit' },
+};
+
+export function categoryLabel(slug: string | undefined): string | null {
+  return Object.values(SYSTEM_CATEGORIES).find((c) => c.slug === slug)?.label ?? null;
+}
+
+/** Typeform home-size choice refs → tier tons ("not sure" / over 2,500 have none). */
+export const HOME_SIZE_TONS: Record<string, string> = {
+  'size-1000': '2',
+  'size-1250': '2.5',
+  'size-1500': '3',
+  'size-1750': '3.5',
+  'size-2000': '4',
+  'size-2500': '5',
+};
+
 /** Approved financing disclaimer (Viking-approved marketing email, July 2026). */
 export const FINANCING_DISCLAIMER =
   'Approximate monthly payments shown for illustration, on approved credit through our financing partner (Synchrony). Your actual payment depends on the system you choose, loan term, and credit approval.';

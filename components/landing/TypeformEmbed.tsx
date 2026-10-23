@@ -73,10 +73,12 @@ export function TypeformEmbed({ formId, leadName, height = 620, fullPage = false
       if (resultsPath && responseId && !isSandbox) {
         fetch(`/api/lp/quote-result?rid=${encodeURIComponent(responseId)}`)
           .then((res) => (res.ok ? res.json() : null))
-          .then((data: { tier?: string | null; sqft?: number | null } | null) => {
-            if (!data?.tier) return;
+          .then((data: { results?: boolean; size?: string | null; category?: string | null } | null) => {
+            if (!data?.results) return;
             const base = window.location.pathname.replace(/\/$/, '');
-            const params = new URLSearchParams({ size: data.tier, sqft: String(data.sqft ?? '') });
+            const params = new URLSearchParams();
+            if (data.category) params.set('category', data.category);
+            if (data.size) params.set('size', data.size);
             window.location.assign(`${base}/${resultsPath}?${params}`);
           })
           .catch(() => {});
