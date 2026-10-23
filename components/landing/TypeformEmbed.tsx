@@ -17,8 +17,16 @@ interface TypeformEmbedProps {
   formId: string;
   /** Name sent with the Meta Lead event so these leads can be told apart. */
   leadName: string;
-  /** Widget height (px). */
+  /** Widget height (px). Ignored when fullPage is set. */
   height?: number;
+  /** Fill the parent's height with no card chrome (the quote funnel page). */
+  fullPage?: boolean;
+  /**
+   * Results page to send new-system leads to after submit (path relative to
+   * the current page, e.g. "results"). The answers are looked up server-side
+   * from the response id; anyone else stays on the Typeform ending.
+   */
+  resultsPath?: string;
 }
 
 /**
@@ -32,7 +40,7 @@ interface TypeformEmbedProps {
  * except production, and on production with ?test=1, so test runs never
  * land in Viking's responses.
  */
-export function TypeformEmbed({ formId, leadName, height = 620 }: TypeformEmbedProps) {
+export function TypeformEmbed({ formId, leadName, height = 620, fullPage = false, resultsPath }: TypeformEmbedProps) {
   // Decided after mount (needs the query string); the widget and the embed
   // script render only once it is set, so the script never sees a stale div.
   const [sandbox, setSandbox] = useState<boolean | null>(null);
@@ -60,17 +68,30 @@ export function TypeformEmbed({ formId, leadName, height = 620 }: TypeformEmbedP
       }
       window.dataLayer = window.dataLayer || [];
       window.dataLayer.push({ event: isSandbox ? 'typeform_test_submit' : 'typeform_submit', form_id: formId });
+
+      // Sandbox responses aren't saved, so there is nothing to look up.
+      if (resultsPath && responseId && !isSandbox) {
+        fetch(`/api/lp/quote-result?rid=${encodeURIComponent(responseId)}`)
+          .then((res) => (res.ok ? res.json() : null))
+          .then((data: { tier?: string | null; sqft?: number | null } | null) => {
+            if (!data?.tier) return;
+            const base = window.location.pathname.replace(/\/$/, '');
+            const params = new URLSearchParams({ size: data.tier, sqft: String(data.sqft ?? '') });
+            window.location.assign(`${base}/${resultsPath}?${params}`);
+          })
+          .catch(() => {});
+      }
     };
 
     return () => {
       delete window.vikingTypeformSubmit;
     };
-  }, [formId, leadName]);
+  }, [formId, leadName, resultsPath]);
 
-  // After submit the widget stays up so Typeform's ending is shown: new-system
-  // answers land on an ending with the size and monthly estimate.
+  // After submit the widget stays up so Typeform's ending shows while a
+  // new-system lead is routed on to the results page.
   return (
-    <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
+    <div className={fullPage ? 'h-full w-full' : 'bg-white rounded-2xl shadow-xl overflow-hidden'}>
       {sandbox !== null && (
         <>
           <div
@@ -81,7 +102,7 @@ export function TypeformEmbed({ formId, leadName, height = 620 }: TypeformEmbedP
             data-tf-iframe-props={`title=${siteConfig.shortName} Quote Request`}
             data-tf-medium="snippet"
             {...(sandbox ? { 'data-tf-enable-sandbox': true } : {})}
-            style={{ width: '100%', height }}
+            style={{ width: '100%', height: fullPage ? '100%' : height }}
           />
           <Script src="https://embed.typeform.com/next/embed.js" strategy="afterInteractive" />
         </>
