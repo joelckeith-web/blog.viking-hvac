@@ -73,12 +73,11 @@ export default async function QuoteResults({
         <span aria-hidden="true" className="absolute -top-10 -bottom-10 right-[14%] w-9 bg-[#EB2127] -skew-x-[18deg]" />
         <span aria-hidden="true" className="absolute -top-10 -bottom-10 right-[calc(14%-48px)] w-9 bg-[#004281] -skew-x-[18deg]" />
         <div className="relative max-w-6xl mx-auto px-4 sm:px-6 py-16 sm:py-20">
-          <p className="text-sm font-extrabold text-[#FF5A63] mb-3">THANKS — WE&apos;VE GOT YOUR INFO</p>
           <h1 className="max-w-3xl text-4xl sm:text-5xl font-black leading-[1.15] mb-5">
             Meet the team that will take care of your new system
           </h1>
           <p className="max-w-2xl text-lg text-white/85 leading-relaxed mb-8">
-            A Viking specialist will call you shortly. Your estimate is just below.
+            Thanks, we&apos;ve got your info. A Viking specialist will call you shortly, and your estimate is just below.
           </p>
           <div className="flex flex-wrap gap-2 mb-8">
             {['Champion Authorized Dealer', 'Mitsubishi Diamond Contractor', siteConfig.license].map((chip) => (
