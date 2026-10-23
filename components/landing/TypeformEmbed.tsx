@@ -33,7 +33,6 @@ interface TypeformEmbedProps {
  * land in Viking's responses.
  */
 export function TypeformEmbed({ formId, leadName, height = 620 }: TypeformEmbedProps) {
-  const [submitted, setSubmitted] = useState(false);
   // Decided after mount (needs the query string); the widget and the embed
   // script render only once it is set, so the script never sees a stale div.
   const [sandbox, setSandbox] = useState<boolean | null>(null);
@@ -61,7 +60,6 @@ export function TypeformEmbed({ formId, leadName, height = 620 }: TypeformEmbedP
       }
       window.dataLayer = window.dataLayer || [];
       window.dataLayer.push({ event: isSandbox ? 'typeform_test_submit' : 'typeform_submit', form_id: formId });
-      setSubmitted(true);
     };
 
     return () => {
@@ -69,37 +67,10 @@ export function TypeformEmbed({ formId, leadName, height = 620 }: TypeformEmbedP
     };
   }, [formId, leadName]);
 
-  if (submitted) {
-    return (
-      // Distinct keys: Typeform injects its iframe into the widget div, which
-      // React doesn't track, so the form tree must be torn down, not reused.
-      <div key="thanks" className="bg-white rounded-2xl shadow-xl p-8 md:p-12 text-center">
-        <div className="w-20 h-20 mx-auto mb-6 rounded-full bg-green-100 flex items-center justify-center">
-          <svg className="w-12 h-12 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
-          </svg>
-        </div>
-        <h2 className="text-3xl md:text-4xl font-extrabold text-[#002147] mb-4">
-          Quote Request Received!
-        </h2>
-        <p className="text-lg text-gray-700 leading-relaxed mb-8">
-          Thanks for reaching out. A {siteConfig.shortName} specialist will contact you shortly to confirm your details.
-        </p>
-        <div className="bg-red-50 rounded-xl p-6">
-          <p className="text-sm text-gray-700 mb-2">Need to speak with us right now?</p>
-          <a
-            href={`tel:${siteConfig.phoneRaw}`}
-            className="inline-flex items-center gap-2 font-extrabold text-2xl md:text-3xl text-[#eb1c23] hover:text-[#c41018] transition-colors"
-          >
-            {siteConfig.phone}
-          </a>
-        </div>
-      </div>
-    );
-  }
-
+  // After submit the widget stays up so Typeform's ending is shown: new-system
+  // answers land on an ending with the size and monthly estimate.
   return (
-    <div key="form" className="bg-white rounded-2xl shadow-xl overflow-hidden">
+    <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
       {sandbox !== null && (
         <>
           <div
